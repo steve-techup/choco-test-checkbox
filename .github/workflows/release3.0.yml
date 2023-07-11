@@ -20,10 +20,9 @@ jobs:
         uses: microsoft/setup-msbuild@v1.0.2
 
       - name: Setup NuGet
-        uses: nuget/setup-nuget@v1
-
-      - name: Add Nuget Source
-        run:  nuget add source --username steve_techup --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/caretag/index.json"
+        uses: nuget/setup-nuget@v1 
+        env:
+            NUGET_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 
       - name: Restore NuGet packages
