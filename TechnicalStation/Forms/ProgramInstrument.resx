@@ -1,0 +1,1449 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tableLayoutPanel2.ColumnCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="readerPowerBar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1470, 76</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="readerPowerBar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="readerPowerBar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>197, 69</value>
+  </data>
+  <data name="readerPowerBar.TabIndex" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="&gt;&gt;readerPowerBar.Name" xml:space="preserve">
+    <value>readerPowerBar</value>
+  </data>
+  <data name="&gt;&gt;readerPowerBar.Type" xml:space="preserve">
+    <value>UIControls.WinForms.Controls.ReaderPowerBar, Main, Version=1.1.4.46, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;readerPowerBar.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;readerPowerBar.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="progressBar.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="progressBar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 1000</value>
+  </data>
+  <data name="progressBar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="progressBar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1669, 18</value>
+  </data>
+  <data name="progressBar.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="&gt;&gt;progressBar.Name" xml:space="preserve">
+    <value>progressBar</value>
+  </data>
+  <data name="&gt;&gt;progressBar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;progressBar.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;progressBar.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="frontPageLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="frontPageLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="frontPageLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 68</value>
+  </data>
+  <data name="frontPageLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="frontPageLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>402, 20</value>
+  </data>
+  <data name="frontPageLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="frontPageLabel.Text" xml:space="preserve">
+    <value>Click 'Scan' to read tag and start programming asset</value>
+  </data>
+  <data name="&gt;&gt;frontPageLabel.Name" xml:space="preserve">
+    <value>frontPageLabel</value>
+  </data>
+  <data name="&gt;&gt;frontPageLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;frontPageLabel.Parent" xml:space="preserve">
+    <value>frontPageGroupBox</value>
+  </data>
+  <data name="&gt;&gt;frontPageLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="frontPageGroupBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="frontPageGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 7</value>
+  </data>
+  <data name="frontPageGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="frontPageGroupBox.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="frontPageGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1644, 703</value>
+  </data>
+  <data name="frontPageGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="frontPageGroupBox.Text" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="&gt;&gt;frontPageGroupBox.Name" xml:space="preserve">
+    <value>frontPageGroupBox</value>
+  </data>
+  <data name="&gt;&gt;frontPageGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;frontPageGroupBox.Parent" xml:space="preserve">
+    <value>frontPage</value>
+  </data>
+  <data name="&gt;&gt;frontPageGroupBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="scanButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="scanButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1507, 718</value>
+  </data>
+  <data name="scanButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="scanButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 81</value>
+  </data>
+  <data name="scanButton.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="scanButton.Text" xml:space="preserve">
+    <value>Scan</value>
+  </data>
+  <data name="&gt;&gt;scanButton.Name" xml:space="preserve">
+    <value>scanButton</value>
+  </data>
+  <data name="&gt;&gt;scanButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;scanButton.Parent" xml:space="preserve">
+    <value>frontPage</value>
+  </data>
+  <data name="&gt;&gt;scanButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="frontPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
+  </data>
+  <data name="frontPage.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="frontPage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="frontPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1661, 809</value>
+  </data>
+  <data name="frontPage.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="frontPage.Text" xml:space="preserve">
+    <value>Front page</value>
+  </data>
+  <data name="&gt;&gt;frontPage.Name" xml:space="preserve">
+    <value>frontPage</value>
+  </data>
+  <data name="&gt;&gt;frontPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;frontPage.Parent" xml:space="preserve">
+    <value>tabWizardControl</value>
+  </data>
+  <data name="&gt;&gt;frontPage.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="resetButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="resetButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 718</value>
+  </data>
+  <data name="resetButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="resetButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>185, 81</value>
+  </data>
+  <data name="resetButton.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="resetButton.Text" xml:space="preserve">
+    <value>Reset tag</value>
+  </data>
+  <data name="resetButton.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;resetButton.Name" xml:space="preserve">
+    <value>resetButton</value>
+  </data>
+  <data name="&gt;&gt;resetButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;resetButton.Parent" xml:space="preserve">
+    <value>instrumentReadPage</value>
+  </data>
+  <data name="&gt;&gt;resetButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="programButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="programButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1355, 718</value>
+  </data>
+  <data name="programButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="programButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 81</value>
+  </data>
+  <data name="programButton.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="programButton.Text" xml:space="preserve">
+    <value>Program tag</value>
+  </data>
+  <data name="&gt;&gt;programButton.Name" xml:space="preserve">
+    <value>programButton</value>
+  </data>
+  <data name="&gt;&gt;programButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;programButton.Parent" xml:space="preserve">
+    <value>instrumentReadPage</value>
+  </data>
+  <data name="&gt;&gt;programButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="restartButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="restartButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1203, 716</value>
+  </data>
+  <data name="restartButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="restartButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 81</value>
+  </data>
+  <data name="restartButton.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="restartButton.Text" xml:space="preserve">
+    <value>Restart</value>
+  </data>
+  <data name="&gt;&gt;restartButton.Name" xml:space="preserve">
+    <value>restartButton</value>
+  </data>
+  <data name="&gt;&gt;restartButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;restartButton.Parent" xml:space="preserve">
+    <value>instrumentReadPage</value>
+  </data>
+  <data name="&gt;&gt;restartButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="programTagAccessPasswordLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="programTagAccessPasswordLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.2pt</value>
+  </data>
+  <data name="programTagAccessPasswordLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 588</value>
+  </data>
+  <data name="programTagAccessPasswordLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>326, 20</value>
+  </data>
+  <data name="programTagAccessPasswordLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="programTagAccessPasswordLabel.Text" xml:space="preserve">
+    <value>Access Password (if in doubt, leave blank)</value>
+  </data>
+  <data name="&gt;&gt;programTagAccessPasswordLabel.Name" xml:space="preserve">
+    <value>programTagAccessPasswordLabel</value>
+  </data>
+  <data name="&gt;&gt;programTagAccessPasswordLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;programTagAccessPasswordLabel.Parent" xml:space="preserve">
+    <value>instrumentReadGroupBox</value>
+  </data>
+  <data name="&gt;&gt;programTagAccessPasswordLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="accessPasswordTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.2pt</value>
+  </data>
+  <data name="accessPasswordTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>377, 585</value>
+  </data>
+  <data name="accessPasswordTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="accessPasswordTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>288, 27</value>
+  </data>
+  <data name="accessPasswordTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;accessPasswordTextBox.Name" xml:space="preserve">
+    <value>accessPasswordTextBox</value>
+  </data>
+  <data name="&gt;&gt;accessPasswordTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;accessPasswordTextBox.Parent" xml:space="preserve">
+    <value>instrumentReadGroupBox</value>
+  </data>
+  <data name="&gt;&gt;accessPasswordTextBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="instrumentReadLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="instrumentReadLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.2pt</value>
+  </data>
+  <data name="instrumentReadLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 68</value>
+  </data>
+  <data name="instrumentReadLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="instrumentReadLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 20</value>
+  </data>
+  <data name="instrumentReadLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="instrumentReadLabel.Text" xml:space="preserve">
+    <value>[Info about instrument]</value>
+  </data>
+  <data name="&gt;&gt;instrumentReadLabel.Name" xml:space="preserve">
+    <value>instrumentReadLabel</value>
+  </data>
+  <data name="&gt;&gt;instrumentReadLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;instrumentReadLabel.Parent" xml:space="preserve">
+    <value>instrumentReadGroupBox</value>
+  </data>
+  <data name="&gt;&gt;instrumentReadLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="instrumentReadGroupBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="instrumentReadGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 7</value>
+  </data>
+  <data name="instrumentReadGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="instrumentReadGroupBox.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="instrumentReadGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1643, 704</value>
+  </data>
+  <data name="instrumentReadGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="instrumentReadGroupBox.Text" xml:space="preserve">
+    <value>Asset information</value>
+  </data>
+  <data name="&gt;&gt;instrumentReadGroupBox.Name" xml:space="preserve">
+    <value>instrumentReadGroupBox</value>
+  </data>
+  <data name="&gt;&gt;instrumentReadGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;instrumentReadGroupBox.Parent" xml:space="preserve">
+    <value>instrumentReadPage</value>
+  </data>
+  <data name="&gt;&gt;instrumentReadGroupBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="instrumentReadLinkAssetButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="instrumentReadLinkAssetButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1507, 718</value>
+  </data>
+  <data name="instrumentReadLinkAssetButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="instrumentReadLinkAssetButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 81</value>
+  </data>
+  <data name="instrumentReadLinkAssetButton.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="instrumentReadLinkAssetButton.Text" xml:space="preserve">
+    <value>Link asset</value>
+  </data>
+  <data name="&gt;&gt;instrumentReadLinkAssetButton.Name" xml:space="preserve">
+    <value>instrumentReadLinkAssetButton</value>
+  </data>
+  <data name="&gt;&gt;instrumentReadLinkAssetButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;instrumentReadLinkAssetButton.Parent" xml:space="preserve">
+    <value>instrumentReadPage</value>
+  </data>
+  <data name="&gt;&gt;instrumentReadLinkAssetButton.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="instrumentReadPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
+  </data>
+  <data name="instrumentReadPage.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="instrumentReadPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1661, 809</value>
+  </data>
+  <data name="instrumentReadPage.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="instrumentReadPage.Text" xml:space="preserve">
+    <value>Instrument Read Page</value>
+  </data>
+  <data name="&gt;&gt;instrumentReadPage.Name" xml:space="preserve">
+    <value>instrumentReadPage</value>
+  </data>
+  <data name="&gt;&gt;instrumentReadPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;instrumentReadPage.Parent" xml:space="preserve">
+    <value>tabWizardControl</value>
+  </data>
+  <data name="&gt;&gt;instrumentReadPage.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="productiondDateHintLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="productiondDateHintLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>181, 161</value>
+  </data>
+  <data name="productiondDateHintLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="productiondDateHintLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 25</value>
+  </data>
+  <data name="productiondDateHintLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="productiondDateHintLabel.Text" xml:space="preserve">
+    <value>Format: dd/mm/yyyy</value>
+  </data>
+  <data name="&gt;&gt;productiondDateHintLabel.Name" xml:space="preserve">
+    <value>productiondDateHintLabel</value>
+  </data>
+  <data name="&gt;&gt;productiondDateHintLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;productiondDateHintLabel.Parent" xml:space="preserve">
+    <value>extraDataGroupBox</value>
+  </data>
+  <data name="&gt;&gt;productiondDateHintLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="productionDateTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>187, 126</value>
+  </data>
+  <data name="productionDateTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="productionDateTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>280, 30</value>
+  </data>
+  <data name="productionDateTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;productionDateTextBox.Name" xml:space="preserve">
+    <value>productionDateTextBox</value>
+  </data>
+  <data name="&gt;&gt;productionDateTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;productionDateTextBox.Parent" xml:space="preserve">
+    <value>extraDataGroupBox</value>
+  </data>
+  <data name="&gt;&gt;productionDateTextBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="extraDataLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="extraDataLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 30</value>
+  </data>
+  <data name="extraDataLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="extraDataLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>357, 25</value>
+  </data>
+  <data name="extraDataLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="extraDataLabel.Text" xml:space="preserve">
+    <value>Fill in extra data for the instrument below</value>
+  </data>
+  <data name="&gt;&gt;extraDataLabel.Name" xml:space="preserve">
+    <value>extraDataLabel</value>
+  </data>
+  <data name="&gt;&gt;extraDataLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;extraDataLabel.Parent" xml:space="preserve">
+    <value>extraDataGroupBox</value>
+  </data>
+  <data name="&gt;&gt;extraDataLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="productionDateLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="productionDateLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 129</value>
+  </data>
+  <data name="productionDateLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="productionDateLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 25</value>
+  </data>
+  <data name="productionDateLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="productionDateLabel.Text" xml:space="preserve">
+    <value>Production Date</value>
+  </data>
+  <data name="&gt;&gt;productionDateLabel.Name" xml:space="preserve">
+    <value>productionDateLabel</value>
+  </data>
+  <data name="&gt;&gt;productionDateLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;productionDateLabel.Parent" xml:space="preserve">
+    <value>extraDataGroupBox</value>
+  </data>
+  <data name="&gt;&gt;productionDateLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lotTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>187, 85</value>
+  </data>
+  <data name="lotTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="lotTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>280, 30</value>
+  </data>
+  <data name="lotTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lotTextBox.Name" xml:space="preserve">
+    <value>lotTextBox</value>
+  </data>
+  <data name="&gt;&gt;lotTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lotTextBox.Parent" xml:space="preserve">
+    <value>extraDataGroupBox</value>
+  </data>
+  <data name="&gt;&gt;lotTextBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lotLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lotLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 89</value>
+  </data>
+  <data name="lotLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="lotLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 25</value>
+  </data>
+  <data name="lotLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lotLabel.Text" xml:space="preserve">
+    <value>Lot No.</value>
+  </data>
+  <data name="&gt;&gt;lotLabel.Name" xml:space="preserve">
+    <value>lotLabel</value>
+  </data>
+  <data name="&gt;&gt;lotLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lotLabel.Parent" xml:space="preserve">
+    <value>extraDataGroupBox</value>
+  </data>
+  <data name="&gt;&gt;lotLabel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="extraDataGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1161, 69</value>
+  </data>
+  <data name="extraDataGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="extraDataGroupBox.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="extraDataGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>476, 607</value>
+  </data>
+  <data name="extraDataGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="extraDataGroupBox.Text" xml:space="preserve">
+    <value>Extra Data</value>
+  </data>
+  <data name="&gt;&gt;extraDataGroupBox.Name" xml:space="preserve">
+    <value>extraDataGroupBox</value>
+  </data>
+  <data name="&gt;&gt;extraDataGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;extraDataGroupBox.Parent" xml:space="preserve">
+    <value>saveInstrumentInDatabaseGroupBox</value>
+  </data>
+  <data name="&gt;&gt;extraDataGroupBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="containerRadioButton.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="containerRadioButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 91</value>
+  </data>
+  <data name="containerRadioButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="containerRadioButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 29</value>
+  </data>
+  <data name="containerRadioButton.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="containerRadioButton.Text" xml:space="preserve">
+    <value>Container</value>
+  </data>
+  <data name="&gt;&gt;containerRadioButton.Name" xml:space="preserve">
+    <value>containerRadioButton</value>
+  </data>
+  <data name="&gt;&gt;containerRadioButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;containerRadioButton.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;containerRadioButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="trayRadioButton.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="trayRadioButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 60</value>
+  </data>
+  <data name="trayRadioButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="trayRadioButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 29</value>
+  </data>
+  <data name="trayRadioButton.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="trayRadioButton.Text" xml:space="preserve">
+    <value>Tray</value>
+  </data>
+  <data name="&gt;&gt;trayRadioButton.Name" xml:space="preserve">
+    <value>trayRadioButton</value>
+  </data>
+  <data name="&gt;&gt;trayRadioButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;trayRadioButton.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;trayRadioButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="instrumentRadioButton.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="instrumentRadioButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 33</value>
+  </data>
+  <data name="instrumentRadioButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="instrumentRadioButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 29</value>
+  </data>
+  <data name="instrumentRadioButton.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="instrumentRadioButton.Text" xml:space="preserve">
+    <value>Instrument</value>
+  </data>
+  <data name="&gt;&gt;instrumentRadioButton.Name" xml:space="preserve">
+    <value>instrumentRadioButton</value>
+  </data>
+  <data name="&gt;&gt;instrumentRadioButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;instrumentRadioButton.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;instrumentRadioButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="groupBox1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 69</value>
+  </data>
+  <data name="groupBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="groupBox1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>197, 133</value>
+  </data>
+  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Asset Type</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
+    <value>saveInstrumentInDatabaseGroupBox</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 33</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>237, 25</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Choose asset type below:</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>saveInstrumentInDatabaseGroupBox</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="searchButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>801, 85</value>
+  </data>
+  <data name="searchButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="searchButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 32</value>
+  </data>
+  <data name="searchButton.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="searchButton.Text" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="&gt;&gt;searchButton.Name" xml:space="preserve">
+    <value>searchButton</value>
+  </data>
+  <data name="&gt;&gt;searchButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;searchButton.Parent" xml:space="preserve">
+    <value>instrumentTypeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;searchButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="saveInstrumentLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="saveInstrumentLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 30</value>
+  </data>
+  <data name="saveInstrumentLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>578, 25</value>
+  </data>
+  <data name="saveInstrumentLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="saveInstrumentLabel.Text" xml:space="preserve">
+    <value>Choose intsrument type below and click 'next' to save instrument. </value>
+  </data>
+  <data name="&gt;&gt;saveInstrumentLabel.Name" xml:space="preserve">
+    <value>saveInstrumentLabel</value>
+  </data>
+  <data name="&gt;&gt;saveInstrumentLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;saveInstrumentLabel.Parent" xml:space="preserve">
+    <value>instrumentTypeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;saveInstrumentLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="instrumentTypeListBoxControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 126</value>
+  </data>
+  <data name="instrumentTypeListBoxControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="instrumentTypeListBoxControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>932, 474</value>
+  </data>
+  <data name="instrumentTypeListBoxControl.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;instrumentTypeListBoxControl.Name" xml:space="preserve">
+    <value>instrumentTypeListBoxControl</value>
+  </data>
+  <data name="&gt;&gt;instrumentTypeListBoxControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ListBoxControl, DevExpress.XtraEditors.v22.1, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;instrumentTypeListBoxControl.Parent" xml:space="preserve">
+    <value>instrumentTypeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;instrumentTypeListBoxControl.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="instrumentTypeSearchLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="instrumentTypeSearchLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 85</value>
+  </data>
+  <data name="instrumentTypeSearchLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>212, 25</value>
+  </data>
+  <data name="instrumentTypeSearchLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="instrumentTypeSearchLabel.Text" xml:space="preserve">
+    <value>Search instrument type</value>
+  </data>
+  <data name="&gt;&gt;instrumentTypeSearchLabel.Name" xml:space="preserve">
+    <value>instrumentTypeSearchLabel</value>
+  </data>
+  <data name="&gt;&gt;instrumentTypeSearchLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;instrumentTypeSearchLabel.Parent" xml:space="preserve">
+    <value>instrumentTypeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;instrumentTypeSearchLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="instrumentTypeSearchTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>241, 85</value>
+  </data>
+  <data name="instrumentTypeSearchTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="instrumentTypeSearchTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>539, 30</value>
+  </data>
+  <data name="instrumentTypeSearchTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;instrumentTypeSearchTextBox.Name" xml:space="preserve">
+    <value>instrumentTypeSearchTextBox</value>
+  </data>
+  <data name="&gt;&gt;instrumentTypeSearchTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;instrumentTypeSearchTextBox.Parent" xml:space="preserve">
+    <value>instrumentTypeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;instrumentTypeSearchTextBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="instrumentTypeGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>208, 69</value>
+  </data>
+  <data name="instrumentTypeGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="instrumentTypeGroupBox.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="instrumentTypeGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>947, 607</value>
+  </data>
+  <data name="instrumentTypeGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="instrumentTypeGroupBox.Text" xml:space="preserve">
+    <value>Instrument Type</value>
+  </data>
+  <data name="&gt;&gt;instrumentTypeGroupBox.Name" xml:space="preserve">
+    <value>instrumentTypeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;instrumentTypeGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;instrumentTypeGroupBox.Parent" xml:space="preserve">
+    <value>saveInstrumentInDatabaseGroupBox</value>
+  </data>
+  <data name="&gt;&gt;instrumentTypeGroupBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="saveInstrumentInDatabaseGroupBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="saveInstrumentInDatabaseGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 7</value>
+  </data>
+  <data name="saveInstrumentInDatabaseGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="saveInstrumentInDatabaseGroupBox.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="saveInstrumentInDatabaseGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1644, 703</value>
+  </data>
+  <data name="saveInstrumentInDatabaseGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="saveInstrumentInDatabaseGroupBox.Text" xml:space="preserve">
+    <value>Save asset in database</value>
+  </data>
+  <data name="&gt;&gt;saveInstrumentInDatabaseGroupBox.Name" xml:space="preserve">
+    <value>saveInstrumentInDatabaseGroupBox</value>
+  </data>
+  <data name="&gt;&gt;saveInstrumentInDatabaseGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;saveInstrumentInDatabaseGroupBox.Parent" xml:space="preserve">
+    <value>saveInstrumentPage</value>
+  </data>
+  <data name="&gt;&gt;saveInstrumentInDatabaseGroupBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="saveInstrumentRestartButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="saveInstrumentRestartButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1356, 718</value>
+  </data>
+  <data name="saveInstrumentRestartButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="saveInstrumentRestartButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 81</value>
+  </data>
+  <data name="saveInstrumentRestartButton.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="saveInstrumentRestartButton.Text" xml:space="preserve">
+    <value>Restart</value>
+  </data>
+  <data name="&gt;&gt;saveInstrumentRestartButton.Name" xml:space="preserve">
+    <value>saveInstrumentRestartButton</value>
+  </data>
+  <data name="&gt;&gt;saveInstrumentRestartButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;saveInstrumentRestartButton.Parent" xml:space="preserve">
+    <value>saveInstrumentPage</value>
+  </data>
+  <data name="&gt;&gt;saveInstrumentRestartButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="saveInstrumentNextButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="saveInstrumentNextButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1508, 718</value>
+  </data>
+  <data name="saveInstrumentNextButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="saveInstrumentNextButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 81</value>
+  </data>
+  <data name="saveInstrumentNextButton.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="saveInstrumentNextButton.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="&gt;&gt;saveInstrumentNextButton.Name" xml:space="preserve">
+    <value>saveInstrumentNextButton</value>
+  </data>
+  <data name="&gt;&gt;saveInstrumentNextButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;saveInstrumentNextButton.Parent" xml:space="preserve">
+    <value>saveInstrumentPage</value>
+  </data>
+  <data name="&gt;&gt;saveInstrumentNextButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="saveInstrumentPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
+  </data>
+  <data name="saveInstrumentPage.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="saveInstrumentPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1661, 809</value>
+  </data>
+  <data name="saveInstrumentPage.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="saveInstrumentPage.Text" xml:space="preserve">
+    <value>saveInstrumentPage</value>
+  </data>
+  <data name="&gt;&gt;saveInstrumentPage.Name" xml:space="preserve">
+    <value>saveInstrumentPage</value>
+  </data>
+  <data name="&gt;&gt;saveInstrumentPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;saveInstrumentPage.Parent" xml:space="preserve">
+    <value>tabWizardControl</value>
+  </data>
+  <data name="&gt;&gt;saveInstrumentPage.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tabWizardControl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tabWizardControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 154</value>
+  </data>
+  <data name="tabWizardControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tabWizardControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1669, 838</value>
+  </data>
+  <data name="tabWizardControl.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="&gt;&gt;tabWizardControl.Name" xml:space="preserve">
+    <value>tabWizardControl</value>
+  </data>
+  <data name="&gt;&gt;tabWizardControl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabWizardControl.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;tabWizardControl.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="messageTextBox.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="messageTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="messageTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 75</value>
+  </data>
+  <data name="messageTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="messageTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="messageTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1457, 71</value>
+  </data>
+  <data name="messageTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="messageTextBox.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;messageTextBox.Name" xml:space="preserve">
+    <value>messageTextBox</value>
+  </data>
+  <data name="&gt;&gt;messageTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;messageTextBox.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;messageTextBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="tableLayoutPanel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tableLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tableLayoutPanel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tableLayoutPanel2.RowCount" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="tableLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1677, 1022</value>
+  </data>
+  <data name="tableLayoutPanel2.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.Name" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="readerPowerBar" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="progressBar" Row="3" RowSpan="1" Column="0" ColumnSpan="2" /&gt;&lt;Control Name="Panel1" Row="0" RowSpan="1" Column="0" ColumnSpan="2" /&gt;&lt;Control Name="tabWizardControl" Row="2" RowSpan="1" Column="0" ColumnSpan="2" /&gt;&lt;Control Name="messageTextBox" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100,Absolute,212" /&gt;&lt;Rows Styles="Percent,47,10145,Percent,52,89855,Absolute,846,Absolute,25" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="tableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="TopTitle.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="TopTitle.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TopTitle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 26.25pt, style=Bold</value>
+  </data>
+  <data name="TopTitle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="TopTitle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>652, 9</value>
+  </data>
+  <data name="TopTitle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="TopTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>373, 52</value>
+  </data>
+  <data name="TopTitle.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="TopTitle.Text" xml:space="preserve">
+    <value>Technical Station</value>
+  </data>
+  <data name="TopTitle.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;TopTitle.Name" xml:space="preserve">
+    <value>TopTitle</value>
+  </data>
+  <data name="&gt;&gt;TopTitle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TopTitle.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;TopTitle.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tableLayoutPanel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tableLayoutPanel1.RowCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1677, 71</value>
+  </data>
+  <data name="tableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Name" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Parent" xml:space="preserve">
+    <value>Panel1</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="TopTitle" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50" /&gt;&lt;Rows Styles="Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="Panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="Panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="Panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="Panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1677, 71</value>
+  </data>
+  <data name="Panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="&gt;&gt;Panel1.Name" xml:space="preserve">
+    <value>Panel1</value>
+  </data>
+  <data name="&gt;&gt;Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Panel1.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;Panel1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="searchBackgroundWorker.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="programmingBackgroundWorker.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>209, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>101</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 16</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1677, 1022</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Program Instrument</value>
+  </data>
+  <data name="&gt;&gt;searchBackgroundWorker.Name" xml:space="preserve">
+    <value>searchBackgroundWorker</value>
+  </data>
+  <data name="&gt;&gt;searchBackgroundWorker.Type" xml:space="preserve">
+    <value>System.ComponentModel.BackgroundWorker, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;programmingBackgroundWorker.Name" xml:space="preserve">
+    <value>programmingBackgroundWorker</value>
+  </data>
+  <data name="&gt;&gt;programmingBackgroundWorker.Type" xml:space="preserve">
+    <value>System.ComponentModel.BackgroundWorker, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>ProgramInstrument</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

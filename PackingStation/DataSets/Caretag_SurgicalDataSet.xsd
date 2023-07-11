@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<xs:schema id="Caretag_SurgicalDataSet" targetNamespace="http://tempuri.org/Caretag_SurgicalDataSet.xsd"
+           xmlns:mstns="http://tempuri.org/Caretag_SurgicalDataSet.xsd"
+           xmlns="http://tempuri.org/Caretag_SurgicalDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop"
+           attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter"
+                  Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema"
+                  xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Caretag_SurgicalConnectionStringSQL"
+                      ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly"
+                      Name="Caretag_SurgicalConnectionStringSQL (Settings)" ParameterPrefix="@"
+                      PropertyReference="ApplicationSettings.PackingStation.Settings.GlobalReference.Default.Caretag_SurgicalConnectionStringSQL"
+                      Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component"
+                        DataAccessorModifier="AutoLayout, AnsiClass, Class, Public"
+                        DataAccessorName="View_Packed_TraysTableAdapter"
+                        GeneratorDataComponentClassName="View_Packed_TraysTableAdapter" Name="View_Packed_Trays"
+                        UserDataComponentName="View_Packed_TraysTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Caretag_SurgicalConnectionStringSQL (Settings)" DbObjectType="Unknown"
+                        FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both"
+                        GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill"
+                        GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset"
+                        ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                        UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>
+                      SELECT        Tray_Packed.Tray_EPC_Nr, Tray_Description.Tray_Name, Tray_Description.Tray_Description, Tray_Description.Tray_Lock, Tray_Packed.EPC_Nr, Tray_Packed.Packed_Locked, Tray_Packed.Pack_User_ID,
+                      Tray_Packed.Pack_Station_ID, Tray_Packed.Date_Changed, Reader_Description.Reader_Name, Instrument_Description.Description_Name + Instrument_Description.D + Instrument_Description.E AS FullName,
+                      TblPassword.UserName, DATEDIFF(day, GETDATE(), Tray_Packed.Date_Changed) AS Expr1
+                      FROM            Tray_Packed INNER JOIN
+                      Tray_Description ON Tray_Packed.Tray_Description_ID = Tray_Description.Description_ID INNER JOIN
+                      TblPassword ON Tray_Packed.Pack_User_ID = TblPassword.UserID INNER JOIN
+                      Instrument_Description ON Tray_Packed.Description_ID = Instrument_Description.Description_ID LEFT OUTER JOIN
+                      Reader_Description ON Tray_Packed.Pack_Station_ID = Reader_Description.Reader_ID
+                      ORDER BY Tray_Packed.Date_Changed
+                    </CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Tray_EPC_Nr" DataSetColumn="Tray_EPC_Nr" />
+              <Mapping SourceColumn="Tray_Name" DataSetColumn="Tray_Name" />
+              <Mapping SourceColumn="Tray_Description" DataSetColumn="Tray_Description" />
+              <Mapping SourceColumn="Tray_Lock" DataSetColumn="Tray_Lock" />
+              <Mapping SourceColumn="EPC_Nr" DataSetColumn="EPC_Nr" />
+              <Mapping SourceColumn="Packed_Locked" DataSetColumn="Packed_Locked" />
+              <Mapping SourceColumn="Pack_User_ID" DataSetColumn="Pack_User_ID" />
+              <Mapping SourceColumn="Pack_Station_ID" DataSetColumn="Pack_Station_ID" />
+              <Mapping SourceColumn="Date_Changed" DataSetColumn="Date_Changed" />
+              <Mapping SourceColumn="Reader_Name" DataSetColumn="Reader_Name" />
+              <Mapping SourceColumn="FullName" DataSetColumn="FullName" />
+              <Mapping SourceColumn="UserName" DataSetColumn="UserName" />
+              <Mapping SourceColumn="Expr1" DataSetColumn="Expr1" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Caretag_SurgicalDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true"
+              msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Caretag_SurgicalDataSet"
+              msprop:Generator_UserDSName="Caretag_SurgicalDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="View_Packed_Trays" msprop:Generator_TableClassName="View_Packed_TraysDataTable"
+                    msprop:Generator_TableVarName="tableView_Packed_Trays"
+                    msprop:Generator_TablePropName="View_Packed_Trays"
+                    msprop:Generator_RowDeletingName="View_Packed_TraysRowDeleting"
+                    msprop:Generator_RowChangingName="View_Packed_TraysRowChanging"
+                    msprop:Generator_RowEvHandlerName="View_Packed_TraysRowChangeEventHandler"
+                    msprop:Generator_RowDeletedName="View_Packed_TraysRowDeleted"
+                    msprop:Generator_UserTableName="View_Packed_Trays"
+                    msprop:Generator_RowChangedName="View_Packed_TraysRowChanged"
+                    msprop:Generator_RowEvArgName="View_Packed_TraysRowChangeEvent"
+                    msprop:Generator_RowClassName="View_Packed_TraysRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Tray_EPC_Nr" msprop:Generator_ColumnVarNameInTable="columnTray_EPC_Nr"
+                          msprop:Generator_ColumnPropNameInRow="Tray_EPC_Nr"
+                          msprop:Generator_ColumnPropNameInTable="Tray_EPC_NrColumn"
+                          msprop:Generator_UserColumnName="Tray_EPC_Nr" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Tray_Name" msprop:Generator_ColumnVarNameInTable="columnTray_Name"
+                          msprop:Generator_ColumnPropNameInRow="Tray_Name"
+                          msprop:Generator_ColumnPropNameInTable="Tray_NameColumn"
+                          msprop:Generator_UserColumnName="Tray_Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Tray_Description" msprop:Generator_ColumnVarNameInTable="columnTray_Description"
+                          msprop:Generator_ColumnPropNameInRow="Tray_Description"
+                          msprop:Generator_ColumnPropNameInTable="Tray_DescriptionColumn"
+                          msprop:Generator_UserColumnName="Tray_Description" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Tray_Lock" msprop:Generator_ColumnVarNameInTable="columnTray_Lock"
+                          msprop:Generator_ColumnPropNameInRow="Tray_Lock"
+                          msprop:Generator_ColumnPropNameInTable="Tray_LockColumn"
+                          msprop:Generator_UserColumnName="Tray_Lock" type="xs:boolean" minOccurs="0" />
+              <xs:element name="EPC_Nr" msprop:Generator_ColumnVarNameInTable="columnEPC_Nr"
+                          msprop:Generator_ColumnPropNameInRow="EPC_Nr"
+                          msprop:Generator_ColumnPropNameInTable="EPC_NrColumn"
+                          msprop:Generator_UserColumnName="EPC_Nr">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Packed_Locked" msprop:Generator_ColumnVarNameInTable="columnPacked_Locked"
+                          msprop:Generator_ColumnPropNameInRow="Packed_Locked"
+                          msprop:Generator_ColumnPropNameInTable="Packed_LockedColumn"
+                          msprop:Generator_UserColumnName="Packed_Locked" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Pack_User_ID" msprop:Generator_ColumnVarNameInTable="columnPack_User_ID"
+                          msprop:Generator_ColumnPropNameInRow="Pack_User_ID"
+                          msprop:Generator_ColumnPropNameInTable="Pack_User_IDColumn"
+                          msprop:Generator_UserColumnName="Pack_User_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="Pack_Station_ID" msprop:Generator_ColumnVarNameInTable="columnPack_Station_ID"
+                          msprop:Generator_ColumnPropNameInRow="Pack_Station_ID"
+                          msprop:Generator_ColumnPropNameInTable="Pack_Station_IDColumn"
+                          msprop:Generator_UserColumnName="Pack_Station_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="Date_Changed" msprop:Generator_ColumnVarNameInTable="columnDate_Changed"
+                          msprop:Generator_ColumnPropNameInRow="Date_Changed"
+                          msprop:Generator_ColumnPropNameInTable="Date_ChangedColumn"
+                          msprop:Generator_UserColumnName="Date_Changed" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Reader_Name" msprop:Generator_ColumnVarNameInTable="columnReader_Name"
+                          msprop:Generator_ColumnPropNameInRow="Reader_Name"
+                          msprop:Generator_ColumnPropNameInTable="Reader_NameColumn"
+                          msprop:Generator_UserColumnName="Reader_Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FullName" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnFullName"
+                          msprop:Generator_ColumnPropNameInRow="FullName"
+                          msprop:Generator_ColumnPropNameInTable="FullNameColumn"
+                          msprop:Generator_UserColumnName="FullName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="765" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UserName" msprop:Generator_ColumnVarNameInTable="columnUserName"
+                          msprop:Generator_ColumnPropNameInRow="UserName"
+                          msprop:Generator_ColumnPropNameInTable="UserNameColumn"
+                          msprop:Generator_UserColumnName="UserName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Expr1" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnExpr1"
+                          msprop:Generator_ColumnPropNameInRow="Expr1"
+                          msprop:Generator_ColumnPropNameInTable="Expr1Column" msprop:Generator_UserColumnName="Expr1"
+                          type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

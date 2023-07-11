@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<result created="20230201T122208Z">
+  <rows>
+    <statuses new="3537" inuse="1778" changed="4" contextchanged="0" unused="393"/>
+    <lastscan new="0" inuse="0" changed="0" contextchanged="0" unused="0"/>
+  </rows>
+  <translations>
+    <statuses nottranslated="7087" bestguess="0" autotranslated="402" forreview="1405" translated="2530" complete="0"/>
+    <lastimport clear="0" import="0" overwrite="0">
+      <language id="cs-CZ" clear="0" import="0" overwrite="0"/>
+      <language id="de-DE" clear="0" import="0" overwrite="0"/>
+    </lastimport>
+  </translations>
+  <imports>
+  </imports>
+  <outputfiles>
+  </outputfiles>
+</result>

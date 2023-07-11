@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="settingsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Nastavení</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>ID - tagu: </value>
+  </data>
+  <data name="_ButtonReadInstrument.Text" xml:space="preserve">
+    <value>Číst DALŠÍ nástroj</value>
+  </data>
+  <data name="_ButtonReadInstrument.ToolTip" xml:space="preserve">
+    <value>Použijte tlačítko MEZERNÍK</value>
+  </data>
+  <data name="_Button_AcceptService.Text" xml:space="preserve">
+    <value>Přijmout nástroj ze servisu</value>
+  </data>
+  <data name="TotalNumber.Text" xml:space="preserve">
+    <value>Celkový počet</value>
+  </data>
+  <data name="tsslStatus1.Text" xml:space="preserve">
+    <value>Připraveno...</value>
+  </data>
+  <data name="tsslReadPause1.Text" xml:space="preserve">
+    <value>Pozastavit</value>
+  </data>
+  <data name="statusStrip1.Text" xml:space="preserve">
+    <value>statusStrip1</value>
+  </data>
+  <data name="Label1.Text" xml:space="preserve">
+    <value>Štítek1</value>
+  </data>
+  <data name="_ButtonStatus.Text" xml:space="preserve">
+    <value>Stav</value>
+  </data>
+  <data name="_TopTitle.Text" xml:space="preserve">
+    <value> Servisní stanice</value>
+  </data>
+  <data name="PowerStatus.Text" xml:space="preserve">
+    <value>Stav napájení ?</value>
+  </data>
+  <data name="LabelPower.Text" xml:space="preserve">
+    <value>Kapacita</value>
+  </data>
+  <data name="LabelInserted.Text" xml:space="preserve">
+    <value>Štítek2</value>
+  </data>
+  <data name="StatusUpdate.Text" xml:space="preserve">
+    <value> Stav </value>
+  </data>
+  <data name="Rule.HeaderText" xml:space="preserve">
+    <value>Na servis</value>
+  </data>
+  <data name="_Button_Check_All.Text" xml:space="preserve">
+    <value>Zkontrolovat vše</value>
+  </data>
+  <data name="_ButtonLifeCycle.Text" xml:space="preserve">
+    <value>Životní cyklus</value>
+  </data>
+  <data name="_Button_SentBack.Text" xml:space="preserve">
+    <value>Odeslat zpět</value>
+  </data>
+  <data name="_Button_Service.Text" xml:space="preserve">
+    <value>Vykázat nástroje na servis - Pro obnovení stiskněte</value>
+  </data>
+  <data name="Label_EPC_NR.Text" xml:space="preserve">
+    <value>Štítek2</value>
+  </data>
+  <data name="Label2.Text" xml:space="preserve">
+    <value>Zobrazit pouze nástroje, které byly v servisu naposledy:</value>
+  </data>
+  <data name="_Button_Report.Text" xml:space="preserve">
+    <value>Report: Nástroj na servis</value>
+  </data>
+  <data name="CheckBox_UseFilter.Text" xml:space="preserve">
+    <value>Použijte filtr :</value>
+  </data>
+  <data name="_Button_Send_To_Service.Text" xml:space="preserve">
+    <value>Odeslat na servis</value>
+  </data>
+  <data name="_Button_RESET.Text" xml:space="preserve">
+    <value>RESETOVAT</value>
+  </data>
+  <data name="Label_DataGrid_Green.Text" xml:space="preserve">
+    <value>Datová mřížka_zelená</value>
+  </data>
+</root>

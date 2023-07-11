@@ -1,0 +1,1059 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Dot Net Version ... is NOT Okay" xml:space="preserve">
+    <value>Verze Dot Net ... NENÍ schválena</value>
+  </data>
+  <data name="Connecting to SQL_SERVER ..." xml:space="preserve">
+    <value>Připojování k SQL_SERVERu ...</value>
+  </data>
+  <data name="Checking for Update !" xml:space="preserve">
+    <value>Kontrola aktualizace !</value>
+  </data>
+  <data name="Packing_Station" xml:space="preserve">
+    <value>Balicí_stanice</value>
+  </data>
+  <data name="The SQL_SERVER is NOT running .. Correct and try again !" xml:space="preserve">
+    <value>SQL_SERVER NENÍ spuštěn .. Opravte a zkuste to znovu !</value>
+  </data>
+  <data name="The Station is NOT Recognized .. Check with Administrator and try again !" xml:space="preserve">
+    <value>Stanice NENÍ rozpoznána .. Zkontrolujte u administrátora a zkuste to znovu !</value>
+  </data>
+  <data name="No Update ..." xml:space="preserve">
+    <value>Žádná aktualizace...</value>
+  </data>
+  <data name="Issue in LogIn ... Try Again ! {0}{1}" xml:space="preserve">
+    <value>Problém v přihlášení ... Zkuste to znovu ! {0}{1}</value>
+  </data>
+  <data name="Issue ... Program will Not Work Correct !" xml:space="preserve">
+    <value>Problém ... Program nebude pracovat správně !</value>
+  </data>
+  <data name="FindingReader" xml:space="preserve">
+    <value>Vyhledávání čtečky</value>
+  </data>
+  <data name="Dot Net Version ... Is Okay" xml:space="preserve">
+    <value>Verze Dot Net .. Je schválena</value>
+  </data>
+  <data name="Default Configuration Used - Reader ID:" xml:space="preserve">
+    <value>Použitá výchozí konfigurace - ID čtečky:</value>
+  </data>
+  <data name="Correct Issue and Program is Shutting Down" xml:space="preserve">
+    <value>Opravte problém a program se vypíná</value>
+  </data>
+  <data name="Contact IT department Or Caretag !" xml:space="preserve">
+    <value>Kontaktujte IT oddělení nebo Caretag !</value>
+  </data>
+  <data name="Connected..." xml:space="preserve">
+    <value>Připojeno...</value>
+  </data>
+  <data name="Checking Version &amp; License ..." xml:space="preserve">
+    <value>Kontrola verze &amp; licence ...</value>
+  </data>
+  <data name="Checking Reader_ID ..." xml:space="preserve">
+    <value>Kontrola ID_čtečky ...</value>
+  </data>
+  <data name="Checking Dot Net Version ..." xml:space="preserve">
+    <value>Kontrola verze DotNet ...</value>
+  </data>
+  <data name="Check Version Or License  - An Issue !" xml:space="preserve">
+    <value>Zkontrolujte verzi nebo licenci - problém !</value>
+  </data>
+  <data name="Be aware NO Reader can be Found ! ...." xml:space="preserve">
+    <value>Uvědomte si, že nelze nalézt žádnou čtečku ! ....</value>
+  </data>
+  <data name="Issue Read_SQLConnection..." xml:space="preserve">
+    <value>Problém se čtením_Připojení SQL...</value>
+  </data>
+  <data name="Loading Program Settings ..." xml:space="preserve">
+    <value>Načítání nastavení programu ...</value>
+  </data>
+  <data name="No Service Vendor EXIST !   Please Correct" xml:space="preserve">
+    <value>NEEXISTUJE žádný dodavatel servisních služeb !   Prosím, opravte</value>
+  </data>
+  <data name="Not Connected to:" xml:space="preserve">
+    <value>Není připojeno k:</value>
+  </data>
+  <data name="Not Connected..." xml:space="preserve">
+    <value>Nepřipojeno...</value>
+  </data>
+  <data name="Read NEXT Instrument" xml:space="preserve">
+    <value>Načíst DALŠÍ nástroj</value>
+  </data>
+  <data name="Set this Instrument aside ...." xml:space="preserve">
+    <value>Tento nástroj vyřaďte ....</value>
+  </data>
+  <data name="Status for Sent To Service :" xml:space="preserve">
+    <value>Stav pro Odesláno na servis :</value>
+  </data>
+  <data name="Status for Sent To Service : All Users" xml:space="preserve">
+    <value>Stav pro Odesláno na servis : Všichni uživatelé</value>
+  </data>
+  <data name="The Instrument     MAY NOT    be Used  !" xml:space="preserve">
+    <value>Nástroj    NESMÍ    být používán !</value>
+  </data>
+  <data name="Issue in Send To Service ... Please Report !" xml:space="preserve">
+    <value>Problém při odesílání na servis ... Nahlaste prosím !</value>
+  </data>
+  <data name="Is Already SENT to SERVICE !" xml:space="preserve">
+    <value>Je již ODESLÁNO na SERVIS !</value>
+  </data>
+  <data name="There Is a Demand Service from :" xml:space="preserve">
+    <value>Existuje poptávka servisních služeb od :</value>
+  </data>
+  <data name="You Can Not Exit -&gt; There is a Service Request !" xml:space="preserve">
+    <value>Nelze ukončit -&gt; Je zde požadavek na servis !</value>
+  </data>
+  <data name="Issue in Loading Combobox .. Restart and Try Again !{0}{1}" xml:space="preserve">
+    <value>Problém při načítání kombinovaného pole .. Restartujte a zkuste to znovu !{0}{1}</value>
+  </data>
+  <data name="Issue in Login -&gt; Exit ! {0}{1}" xml:space="preserve">
+    <value>Problém v přihlášení -&gt; Ukončit ! {0}{1}</value>
+  </data>
+  <data name="Maybe Issue in Registry Database .. Correct and try again !{0}{1}" xml:space="preserve">
+    <value>Možná je problém v databázi registru .. Opravte a zkuste to znovu !{0}{1}</value>
+  </data>
+  <data name="... Stopping Packing the Tray ..." xml:space="preserve">
+    <value>... Pozastavení balení síta ...</value>
+  </data>
+  <data name="... The Tray is Packed  ..." xml:space="preserve">
+    <value>... Síto je zabaleno  ...</value>
+  </data>
+  <data name="Be aware you are Changing LOCK TRAY Status" xml:space="preserve">
+    <value>Uvědomte si, že měníte stav ZAMČENÉ SÍTO</value>
+  </data>
+  <data name="Click to Read The Tray for Packing ..." xml:space="preserve">
+    <value>Klikněte pro přečtení síta určeného k zabalení ...</value>
+  </data>
+  <data name="DO NOT PLACE IN TRAY !    and Set this Instrument aside ...." xml:space="preserve">
+    <value>NEVKLÁDEJTE DO SÍTA !    a odložte tento nástroj stranou .....</value>
+  </data>
+  <data name="DO NOT PLACE IN TRAY !!!!  Send Instrument to SERVICE ...." xml:space="preserve">
+    <value>NEVKLÁDEJTE DO SÍTA !!!!  Odešlete nástroj na SERVIS ....</value>
+  </data>
+  <data name="EMPTY the Tray and Start Again !" xml:space="preserve">
+    <value>VYPRÁZDNĚTE síto a začněte znovu !</value>
+  </data>
+  <data name="Instruments" xml:space="preserve">
+    <value>Nástroje</value>
+  </data>
+  <data name="Not between 1 and 10, inclusive" xml:space="preserve">
+    <value>Ne v rozmezí 1 až 10 včetně</value>
+  </data>
+  <data name="NOT in PACKING List !" xml:space="preserve">
+    <value>NENÍ v DODACÍM listu obsahujícím seznam nástrojů !</value>
+  </data>
+  <data name="Only   ONE   Instruments at the Time !" xml:space="preserve">
+    <value>V danou chvíli pouze   JEDEN   nástroj !</value>
+  </data>
+  <data name="PLACE   INSTRUMENT   IN TRAY !" xml:space="preserve">
+    <value>VLOŽTE   NÁSTROJ   DO SÍTA !</value>
+  </data>
+  <data name="Please Choose another One !" xml:space="preserve">
+    <value>Vyberte prosím jiný !</value>
+  </data>
+  <data name="Save Tray Configuration" xml:space="preserve">
+    <value>Uložit konfiguraci síta</value>
+  </data>
+  <data name="Should NOT be Packed - Do NOT Place INSTRUMENT in TRAY !" xml:space="preserve">
+    <value>NEMĚL by se balit - NEVKLÁDEJTE NÁSTROJ do SÍTA !</value>
+  </data>
+  <data name="Sorry This Tray has Just been Taken to Pack ..." xml:space="preserve">
+    <value>Je nám líto, ale toto síto bylo právě vzato k zabalení...</value>
+  </data>
+  <data name="Sure That you want to change to UN_LOCKED TRAY ?" xml:space="preserve">
+    <value>Opravdu chcete změnit na NEZAMČENÉ SÍTO ?</value>
+  </data>
+  <data name="The Instrument is  NOT  Known  !" xml:space="preserve">
+    <value>Nástroj NENÍ známý !</value>
+  </data>
+  <data name="The Tray is Packed - Are you Sure ?" xml:space="preserve">
+    <value>Síto je zabalené - jste si jisti ?</value>
+  </data>
+  <data name="The tray is packed with" xml:space="preserve">
+    <value>Síto je přeplněno </value>
+  </data>
+  <data name="There is a Demand Service on this Instrument  !" xml:space="preserve">
+    <value>U tohoto nástroje je požadavek na servis !</value>
+  </data>
+  <data name="There is a Security Issue on this Instrument  !" xml:space="preserve">
+    <value>U tohoto nástroje je problém se zabezpečením  !</value>
+  </data>
+  <data name="This Instrument is ALREADY Packed -&gt; PLACE BACK IN TRAY !" xml:space="preserve">
+    <value>Tento nástroj je JIŽ zabalen -&gt; VLOŽTE ZPĚT DO SÍTA !</value>
+  </data>
+  <data name="TOO MANY Packed - Do NOT Place INSTRUMENT in TRAY !" xml:space="preserve">
+    <value>Zabaleno PŘÍLIŠ MNOHO - NEVKLÁDEJTE NÁSTROJ DO SÍTA !</value>
+  </data>
+  <data name="Translation for:" xml:space="preserve">
+    <value>Převod pro:</value>
+  </data>
+  <data name="Tray Is LOCKED !" xml:space="preserve">
+    <value>Síto je ZAMČENÉ !</value>
+  </data>
+  <data name="Tray Is NOT LOCKED !" xml:space="preserve">
+    <value>Síto NENÍ ZAMČENÉ !</value>
+  </data>
+  <data name="Would you Like to Save the Tray Configuration for Future Use ?" xml:space="preserve">
+    <value>Chcete uložit konfiguraci síta pro budoucí použití ?</value>
+  </data>
+  <data name="You are about to STOP/CANCEL Packing a Tray - Are you Sure ?" xml:space="preserve">
+    <value>Chystáte se POZASTAVIT / ZRUŠIT balení síta - jste si jisti ?</value>
+  </data>
+  <data name="Be aware CANCEL the FUNCTION" xml:space="preserve">
+    <value>Buďte opatrní, ZRUŠTE FUNKCI</value>
+  </data>
+  <data name="Sure That you want to CANCEL the Connection CONTAINER - TRAY ?" xml:space="preserve">
+    <value>Jste si jisti, že chcete ZRUŠIT propojení KONTEJNER - SÍTO ?</value>
+  </data>
+  <data name="The Container with and RFID Tag is NOT Known  !" xml:space="preserve">
+    <value>Kontejner s tagem RFID NENÍ znám !</value>
+  </data>
+  <data name="Software End_Of_Life (EOL) : {0}" xml:space="preserve">
+    <value>Software Konec_životnosti_výrobku (EOL) : {0}</value>
+  </data>
+  <data name="Information for ALL Users &amp;  ONLY : Last 30 Days !" xml:space="preserve">
+    <value>Informace pro VŠECHNY uživatele a POUZE : posledních 30 dní !</value>
+  </data>
+  <data name="Information for User:" xml:space="preserve">
+    <value>Informace pro uživatele:</value>
+  </data>
+  <data name="ONLY for ToDay !" xml:space="preserve">
+    <value>POUZE pro dnešní den !</value>
+  </data>
+  <data name="Contact Administrator" xml:space="preserve">
+    <value>Kontaktujte administrátora</value>
+  </data>
+  <data name="Issue Directory on SERVER Does NOT Exist {0}{1}" xml:space="preserve">
+    <value>Soupis problémů na SERVERu NEEXISTUJE {0}{1}</value>
+  </data>
+  <data name="New Cost Center:" xml:space="preserve">
+    <value>Nové nákladové středisko:</value>
+  </data>
+  <data name="No Cost Center" xml:space="preserve">
+    <value>Žádné nákladové středisko:</value>
+  </data>
+  <data name="You are about to Change Cost Center .... Please Take Care" xml:space="preserve">
+    <value>Chystáte se změnit nákladové středisko .... Dávejte prosím pozor</value>
+  </data>
+  <data name="Aggregate" xml:space="preserve">
+    <value>Souhrn</value>
+  </data>
+  <data name="Added_Database" xml:space="preserve">
+    <value>Přidaná_databáze ..</value>
+  </data>
+  <data name="All_Same_Changed" xml:space="preserve">
+    <value>Všechno stejné změněno</value>
+  </data>
+  <data name="Checking Software ..." xml:space="preserve">
+    <value>Kontrola softwaru ...</value>
+  </data>
+  <data name="Coming Instruments" xml:space="preserve">
+    <value>Příchozí nástroje </value>
+  </data>
+  <data name="Confirm and Send Request" xml:space="preserve">
+    <value>Potvrdit a odeslat poptávku</value>
+  </data>
+  <data name="Contact_Admin" xml:space="preserve">
+    <value>Kontaktovat_administrátora</value>
+  </data>
+  <data name="Correct_Again" xml:space="preserve">
+    <value>Opravit_znovu</value>
+  </data>
+  <data name="Cost_Center" xml:space="preserve">
+    <value>Nákladové_středisko</value>
+  </data>
+  <data name="Cost_Center_Code" xml:space="preserve">
+    <value>Kód_nákladového_střediska</value>
+  </data>
+  <data name="Cost_Center_ID" xml:space="preserve">
+    <value>ID_nákladového_střediska</value>
+  </data>
+  <data name="Cost_Center_Name" xml:space="preserve">
+    <value>Název_nákladového_střediska</value>
+  </data>
+  <data name="Cost_Price" xml:space="preserve">
+    <value>Nákladová_cena</value>
+  </data>
+  <data name="Cost_Type" xml:space="preserve">
+    <value>Typ_nákladů</value>
+  </data>
+  <data name="Default_Always" xml:space="preserve">
+    <value>Výchozí_vždy</value>
+  </data>
+  <data name="Deleted_Tray" xml:space="preserve">
+    <value>Smazané_síto</value>
+  </data>
+  <data name="Demand_ID" xml:space="preserve">
+    <value>ID_požadavku</value>
+  </data>
+  <data name="Department Name" xml:space="preserve">
+    <value>Název oddělení</value>
+  </data>
+  <data name="Difference" xml:space="preserve">
+    <value>Rozdíl</value>
+  </data>
+  <data name="Last 3 Month" xml:space="preserve">
+    <value>Poslední 3 měsíce</value>
+  </data>
+  <data name="Last_Date_Change" xml:space="preserve">
+    <value>Datum_poslední_změny</value>
+  </data>
+  <data name="No Data" xml:space="preserve">
+    <value>- Žádná data -</value>
+  </data>
+  <data name="No_ODBC" xml:space="preserve">
+    <value>Žádné_otevřené databázové připojení !</value>
+  </data>
+  <data name="NoFile_selected" xml:space="preserve">
+    <value>Není vybrán žádný soubor</value>
+  </data>
+  <data name="Number of Tray Types: {0:N0}" xml:space="preserve">
+    <value>Počet typů sít: {0:N0}</value>
+  </data>
+  <data name="Number of Trays:" xml:space="preserve">
+    <value>Počet sít</value>
+  </data>
+  <data name="Number Of Trays: {0:N0}" xml:space="preserve">
+    <value>Počet sít: {0:N0}</value>
+  </data>
+  <data name="Numbers" xml:space="preserve">
+    <value>Počty</value>
+  </data>
+  <data name="OK_Save" xml:space="preserve">
+    <value>OK Uložit</value>
+  </data>
+  <data name="Number of Instruments" xml:space="preserve">
+    <value>Počet nástrojů :</value>
+  </data>
+  <data name="Not_Load_Gridview" xml:space="preserve">
+    <value>Nenačítat_zobrazení mřížky</value>
+  </data>
+  <data name="Not_Import_Identical_Data" xml:space="preserve">
+    <value>Neimportovat_identická_data</value>
+  </data>
+  <data name="Not_Import_File" xml:space="preserve">
+    <value>Neimportovat_soubor</value>
+  </data>
+  <data name="Not_Filter_Gridview" xml:space="preserve">
+    <value>Nefiltrovat_zobrazení mřížky</value>
+  </data>
+  <data name="Not_Delete" xml:space="preserve">
+    <value>Nemazat</value>
+  </data>
+  <data name="Not_Correct_Format" xml:space="preserve">
+    <value>Neopravovat_formát</value>
+  </data>
+  <data name="Not_Conn_Server" xml:space="preserve">
+    <value>Nepřipojovat_server</value>
+  </data>
+  <data name="Not Found" xml:space="preserve">
+    <value>Nenalezeno</value>
+  </data>
+  <data name="Packed By" xml:space="preserve">
+    <value>Zabaleno (kým)</value>
+  </data>
+  <data name="Packed By: {0}" xml:space="preserve">
+    <value>Zabaleno (kým): {0} </value>
+  </data>
+  <data name="Packed in Minutes" xml:space="preserve">
+    <value>Baleno v minutách</value>
+  </data>
+  <data name="Packed on Devices ID: {0}" xml:space="preserve">
+    <value>Baleno na zařízeních ID: {0}</value>
+  </data>
+  <data name="Packed_From" xml:space="preserve">
+    <value>Zabaleno_(kým)</value>
+  </data>
+  <data name="Packed_Day" xml:space="preserve">
+    <value>Zabaleno_dne</value>
+  </data>
+  <data name="Please Choose the Tray First !" xml:space="preserve">
+    <value>Nejprve prosím vyberte síto !</value>
+  </data>
+  <data name="Please Confirm that you want to add this to Demand for Packing List !" xml:space="preserve">
+    <value>Potvrďte prosím, že toto chcete přidat k požadavku na dodací list obsahující seznam nástrojů !</value>
+  </data>
+  <data name="Please Update !" xml:space="preserve">
+    <value>Aktualizujte prosím !</value>
+  </data>
+  <data name="Print_Data" xml:space="preserve">
+    <value>Vytisknout_data - ?</value>
+  </data>
+  <data name="Please Select a Image" xml:space="preserve">
+    <value>Vyberte prosím obrázek</value>
+  </data>
+  <data name="Priority" xml:space="preserve">
+    <value>Priorita</value>
+  </data>
+  <data name="Problem in Update Table" xml:space="preserve">
+    <value>Problém v aktualizaci tabulky </value>
+  </data>
+  <data name="Problem_DateTime" xml:space="preserve">
+    <value>Problém v datování</value>
+  </data>
+  <data name="Problem_InputFile" xml:space="preserve">
+    <value>Problém_vstupní soubor</value>
+  </data>
+  <data name="Problem_Loading" xml:space="preserve">
+    <value>Problém_načítání</value>
+  </data>
+  <data name="Problem_Table" xml:space="preserve">
+    <value>Problém_tabulka</value>
+  </data>
+  <data name="Procedure_Name" xml:space="preserve">
+    <value>Název postupu</value>
+  </data>
+  <data name="Report For Packed Locked Trays" xml:space="preserve">
+    <value>Zpráva o zabalených uzamčených sítech</value>
+  </data>
+  <data name="Report For Packed Unlocked Trays" xml:space="preserve">
+    <value>Zpráva o zabalených neuzamčených sítech</value>
+  </data>
+  <data name="Report for SPD Diff. IN-OUT" xml:space="preserve">
+    <value>Zpráva o rozdílu na CS UVNITŘ - VEN</value>
+  </data>
+  <data name="Report_Problem" xml:space="preserve">
+    <value>Nahlásit_problém</value>
+  </data>
+  <data name="Select the Folder" xml:space="preserve">
+    <value>Vyberte složku</value>
+  </data>
+  <data name="The value must be a non-negative integer" xml:space="preserve">
+    <value>Hodnota musí být nezáporné celé číslo.</value>
+  </data>
+  <data name="There are an Update Waiting." xml:space="preserve">
+    <value>Čeká se na aktualizaci !</value>
+  </data>
+  <data name="This Month" xml:space="preserve">
+    <value>Tento měsíc</value>
+  </data>
+  <data name="Time_Arrived" xml:space="preserve">
+    <value>Čas_dodání</value>
+  </data>
+  <data name="Today" xml:space="preserve">
+    <value>Dnes</value>
+  </data>
+  <data name="Total number of Data Lines in Database :" xml:space="preserve">
+    <value>Celkový počet řádků s daty v databázi : </value>
+  </data>
+  <data name="Total Number Of Instruments Types: {0:N0}" xml:space="preserve">
+    <value>Celkový počet typů nástrojů: {0:N0}</value>
+  </data>
+  <data name="Total Number of Instruments: {0:N0}" xml:space="preserve">
+    <value>Celkový počet nástrojů: {0:N0}</value>
+  </data>
+  <data name="Total Number of Pack Done will be Removed:" xml:space="preserve">
+    <value>Celkový počet balení Hotová budou odstraněna:</value>
+  </data>
+  <data name="Total Number of Tray Types: {0:N0}" xml:space="preserve">
+    <value>Celkový počet typů sít: {0:N0}</value>
+  </data>
+  <data name="Total Number of Trays: {0:N0}" xml:space="preserve">
+    <value>Celkový počet sít: {0:N0}</value>
+  </data>
+  <data name="Tray Name" xml:space="preserve">
+    <value>Název síta</value>
+  </data>
+  <data name="Tray Packed" xml:space="preserve">
+    <value>Síto je zabaleno</value>
+  </data>
+  <data name="Tray Packed End" xml:space="preserve">
+    <value>Síto je zabaleno Ukončit</value>
+  </data>
+  <data name="Tray Packed Place" xml:space="preserve">
+    <value>Síto je zabaleno Uložit</value>
+  </data>
+  <data name="Tray Packed Start" xml:space="preserve">
+    <value>Síto je zabaleno Spustit</value>
+  </data>
+  <data name="Tray_Description" xml:space="preserve">
+    <value>Popis síta</value>
+  </data>
+  <data name="Tray_ID" xml:space="preserve">
+    <value>ID_síta</value>
+  </data>
+  <data name="Try Update again..." xml:space="preserve">
+    <value>Zkuste aktualizovat znovu...</value>
+  </data>
+  <data name="Undefined_Issue" xml:space="preserve">
+    <value>Nedefinovaný_problém</value>
+  </data>
+  <data name="Unsaved Information" xml:space="preserve">
+    <value>Neuložené informace</value>
+  </data>
+  <data name="Unsaved_Data" xml:space="preserve">
+    <value>Neuložená_data</value>
+  </data>
+  <data name="Until ToDay" xml:space="preserve">
+    <value>Do dnešního dne</value>
+  </data>
+  <data name="Use Filter" xml:space="preserve">
+    <value>- Použít filtr -</value>
+  </data>
+  <data name="Vendor_Abbreviation" xml:space="preserve">
+    <value>Zkratka_dodavatele</value>
+  </data>
+  <data name="Vendor_Name" xml:space="preserve">
+    <value>Název_dodavatele</value>
+  </data>
+  <data name="Write  Pack List   Failed !" xml:space="preserve">
+    <value>Zápis dodacího listu obsahujícího seznam nástrojů selhal !</value>
+  </data>
+  <data name="You are about to ADD a TRAY - Okay ?" xml:space="preserve">
+    <value>Chystáte se PŘIDAT SÍTO - V pořádku ?</value>
+  </data>
+  <data name="You are about to REMOVE a TRAY from Collection - Okay ?" xml:space="preserve">
+    <value>Chystáte se ODSTRANIT SÍTO ze soupravy - ano ?</value>
+  </data>
+  <data name="You can't use this Function if the Cost Center is not in Use !" xml:space="preserve">
+    <value>Tuto funkci nelze použít, pokud není nákladové středisko používáno !</value>
+  </data>
+  <data name="Types of Instruments" xml:space="preserve">
+    <value>Typy nástrojů :</value>
+  </data>
+  <data name="Date_Changed" xml:space="preserve">
+    <value>Datum_změny</value>
+  </data>
+  <data name="For Instrument Types:" xml:space="preserve">
+    <value>Pro typy nástrojů: </value>
+  </data>
+  <data name="From :" xml:space="preserve">
+    <value> Od : </value>
+  </data>
+  <data name="Going Instruments" xml:space="preserve">
+    <value>Existující nástroje</value>
+  </data>
+  <data name="Hidden Procedures:" xml:space="preserve">
+    <value>Skryté postupy:</value>
+  </data>
+  <data name="Hidden_Center" xml:space="preserve">
+    <value>Skryté_středisko</value>
+  </data>
+  <data name="Hide_Tray" xml:space="preserve">
+    <value>Skrýt_síto</value>
+  </data>
+  <data name="IN" xml:space="preserve">
+    <value>UVNITŘ</value>
+  </data>
+  <data name="Instrument Name" xml:space="preserve">
+    <value>Název nástroje</value>
+  </data>
+  <data name="Insert_Failed" xml:space="preserve">
+    <value>Vložení se nezdařilo</value>
+  </data>
+  <data name="Is_Used" xml:space="preserve">
+    <value>Je_používáno</value>
+  </data>
+  <data name="Issue" xml:space="preserve">
+    <value>Problém</value>
+  </data>
+  <data name="Issue No Cost Center !" xml:space="preserve">
+    <value>Problém Žádné nákladové středisko !</value>
+  </data>
+  <data name="Issue_Updating" xml:space="preserve">
+    <value>Problém_aktualizace !</value>
+  </data>
+  <data name="Locked Tray" xml:space="preserve">
+    <value>Zamčené síto</value>
+  </data>
+  <data name="Period:" xml:space="preserve">
+    <value> Období: </value>
+  </data>
+  <data name="Pivot_Not_Loading" xml:space="preserve">
+    <value>Pivot_se nenačítá</value>
+  </data>
+  <data name="Problem_In" xml:space="preserve">
+    <value>Problém_v</value>
+  </data>
+  <data name="Reader_Name" xml:space="preserve">
+    <value>Název_čtečky</value>
+  </data>
+  <data name="Remove_Automated" xml:space="preserve">
+    <value>Odstranit_automatizované ?</value>
+  </data>
+  <data name="Report For" xml:space="preserve">
+    <value>Zpráva pro</value>
+  </data>
+  <data name="Changed_All_Tags" xml:space="preserve">
+    <value>Změněny_všechny_tagy</value>
+  </data>
+  <data name="Check_Sheet" xml:space="preserve">
+    <value>Kontrolní_list</value>
+  </data>
+  <data name="Correct_ESC" xml:space="preserve">
+    <value>Opravit pomocí ESC !</value>
+  </data>
+  <data name="ProblemPlus" xml:space="preserve">
+    <value>Problém......</value>
+  </data>
+  <data name="Something went very wrong ! ...." xml:space="preserve">
+    <value>Něco se velmi pokazilo! ....</value>
+  </data>
+  <data name="Successfully Removed the Data  !" xml:space="preserve">
+    <value>Data byla úspěšně odstraněna !</value>
+  </data>
+  <data name="Sure To ADD Tray ?" xml:space="preserve">
+    <value>Určitě chcete PŘIDAT síto ?</value>
+  </data>
+  <data name="Sure To REMOVE Tray ?" xml:space="preserve">
+    <value>Určitě chcete ODSTRANIT síto ?</value>
+  </data>
+  <data name="Table_Not_Edit" xml:space="preserve">
+    <value>Tabulku_neupravovat</value>
+  </data>
+  <data name="The SQL_SERVER is NOT running .. Correct and try again !1" xml:space="preserve">
+    <value>SQL_SERVER NENÍ spuštěn .. Opravte a zkuste to znovu !</value>
+  </data>
+  <data name="The Date" xml:space="preserve">
+    <value>Datum</value>
+  </data>
+  <data name="There is Unsaved Information Click Yes to Save ?" xml:space="preserve">
+    <value>Existují neuložené informace Klikněte na Ano pro uložení ? </value>
+  </data>
+  <data name="Issue_Cell_VAl" xml:space="preserve">
+    <value>Problém při ověřování buňky !</value>
+  </data>
+  <data name="File_Saved" xml:space="preserve">
+    <value>Excelový soubor je uložen !</value>
+  </data>
+  <data name="File_Not_Saved" xml:space="preserve">
+    <value>Excelový soubor_není_uložen:</value>
+  </data>
+  <data name="Extra_Text" xml:space="preserve">
+    <value>Doplňkový text</value>
+  </data>
+  <data name="Expires" xml:space="preserve">
+    <value>Platnost končí</value>
+  </data>
+  <data name="Error_SQL" xml:space="preserve">
+    <value>Chyba v SQL:</value>
+  </data>
+  <data name="Error_RowCount" xml:space="preserve">
+    <value>Chyba v počtu řádků !</value>
+  </data>
+  <data name="Error_txt" xml:space="preserve">
+    <value>Chyba v textu :</value>
+  </data>
+  <data name="Only_Double" xml:space="preserve">
+    <value>Pouze_dvojí</value>
+  </data>
+  <data name="Only_Integer" xml:space="preserve">
+    <value>Pouze_celé číslo</value>
+  </data>
+  <data name="Only_One" xml:space="preserve">
+    <value>Pouze_jeden</value>
+  </data>
+  <data name="Only_Strings" xml:space="preserve">
+    <value>Pouze_řetězce</value>
+  </data>
+  <data name="OR_Procedure_ID" xml:space="preserve">
+    <value>ID_postupy_OS</value>
+  </data>
+  <data name="OUT" xml:space="preserve">
+    <value>VEN</value>
+  </data>
+  <data name="There is a ReCall on this Instrument  !" xml:space="preserve">
+    <value>U tohoto nástroje je storno !</value>
+  </data>
+  <data name="DO NOT PLACE IN TRAY !!!!  Set this Instrument aside ...." xml:space="preserve">
+    <value>NEVKLÁDEJTE DO SÍTA !!!!  Odložte tento nástroj stranou ....</value>
+  </data>
+  <data name="An error occurred when loading the application." xml:space="preserve">
+    <value>Při načítání aplikace došlo k chybě.</value>
+  </data>
+  <data name="An error occurred when trying to connect to the database." xml:space="preserve">
+    <value>Při pokusu o připojení k databázi došlo k chybě.</value>
+  </data>
+  <data name="An error occurred when trying to connect to the RFID reader." xml:space="preserve">
+    <value>Při pokusu o připojení ke čtečce RFID došlo k chybě.</value>
+  </data>
+  <data name="An error occurred, no RFID reader was found." xml:space="preserve">
+    <value>Došlo k chybě, nebyla nalezena žádná čtečka RFID.</value>
+  </data>
+  <data name="An error occurred when choosing the language version." xml:space="preserve">
+    <value>Při výběru jazykové verze došlo k chybě.</value>
+  </data>
+  <data name="An error occurred when logging in." xml:space="preserve">
+    <value>Při přihlašování došlo k chybě.</value>
+  </data>
+  <data name="An error occurred when preparing the tray." xml:space="preserve">
+    <value>Při přípravě síta došlo k chybě.</value>
+  </data>
+  <data name="An error in the UI occurred." xml:space="preserve">
+    <value>V uživatelském rozhraní došlo k chybě.</value>
+  </data>
+  <data name="An error occurred when packing the tray." xml:space="preserve">
+    <value>Při balení síta došlo k chybě.</value>
+  </data>
+  <data name="An error occurred when updating RFID tag information." xml:space="preserve">
+    <value>Při aktualizaci informací o tagu RFID došlo k chybě.</value>
+  </data>
+  <data name="An error occurred when updating instrument information." xml:space="preserve">
+    <value>Při aktualizaci informací o nástroji došlo k chybě.</value>
+  </data>
+  <data name="If this does not solve the problem, contact Caretag support and report the error code." xml:space="preserve">
+    <value>Pokud to problém nevyřeší, kontaktujte podporu společnosti Caretag a nahlaste chybový kód.</value>
+  </data>
+  <data name="Please restart the application." xml:space="preserve">
+    <value>Restartujte prosím aplikaci.</value>
+  </data>
+  <data name="An error occurred when loading instrument information." xml:space="preserve">
+    <value>Při načítání informací o nástroji došlo k chybě.</value>
+  </data>
+  <data name="An error occurred when reading tray information." xml:space="preserve">
+    <value>Při čtení informací o sítu došlo k chybě.</value>
+  </data>
+  <data name="An error occurred when deleting the tray." xml:space="preserve">
+    <value>Při mazání síta došlo k chybě.</value>
+  </data>
+  <data name="An error occurred when saving the tray." xml:space="preserve">
+    <value>Při ukládání síta došlo k chybě.</value>
+  </data>
+  <data name="An error occurred when loading vendors." xml:space="preserve">
+    <value>Při načítání dodavatelů došlo k chybě.</value>
+  </data>
+  <data name="An error occurred when loading packing overview." xml:space="preserve">
+    <value>Při načítání přehledu balení došlo k chybě.</value>
+  </data>
+  <data name="An error occurred when loading the container." xml:space="preserve">
+    <value>Při načítání kontejneru došlo k chybě.</value>
+  </data>
+  <data name="An error occurred when reading the container." xml:space="preserve">
+    <value>Při čtení kontejneru došlo k chybě.</value>
+  </data>
+  <data name="An error occurred when updating container information." xml:space="preserve">
+    <value>Při aktualizaci informací o kontejneru došlo k chybě.</value>
+  </data>
+  <data name="An error occurred when printing." xml:space="preserve">
+    <value>Při tisku došlo k chybě.</value>
+  </data>
+  <data name="An error occured when recording which user logged in/out." xml:space="preserve">
+    <value>Při zaznamenávání, který uživatel se přihlásil / odhlásil, došlo k chybě.</value>
+  </data>
+  <data name="An error occurred when loading cost center information." xml:space="preserve">
+    <value>Při načítání informací o nákladovém středisku došlo k chybě.</value>
+  </data>
+  <data name="An error occurred when loading tray information." xml:space="preserve">
+    <value>Při načítání informací o sítu došlo k chybě.</value>
+  </data>
+  <data name="An error occurred when saving cost center log." xml:space="preserve">
+    <value>Při ukládání protokolu nákladového střediska došlo k chybě.</value>
+  </data>
+  <data name="An error occurred when saving the file." xml:space="preserve">
+    <value>Při ukládání souboru došlo k chybě.</value>
+  </data>
+  <data name="Error code:" xml:space="preserve">
+    <value>Chybový kód:</value>
+  </data>
+  <data name="ERROR: Instrument already sent for service, do not pack in tray!" xml:space="preserve">
+    <value>CHYBA: Nástroj byl již odeslán na servis, nebalte jej do síta!</value>
+  </data>
+  <data name="Rules triggered" xml:space="preserve">
+    <value>Pravidla byla spuštěna</value>
+  </data>
+  <data name="The following rules triggered when scanning instrument:" xml:space="preserve">
+    <value>Při skenování nástroje se spustí následující pravidla:</value>
+  </data>
+  <data name="The instruments should be sent to service, print a service report in the next screen." xml:space="preserve">
+    <value>Nástroje by měly být odeslány na servis, na další obrazovce vytiskněte servisní report.</value>
+  </data>
+  <data name="PackingStation" xml:space="preserve">
+    <value>Balicí stanice</value>
+  </data>
+  <data name="Tray not found!" xml:space="preserve">
+    <value>Síto nenalezeno!</value>
+  </data>
+  <data name="Tray not found! Make sure area around RFID scanner is clear of instruments and try again." xml:space="preserve">
+    <value>Síto nenalezeno! Ujistěte se, že v okolí skeneru RFID nejsou žádné nástroje, a zkuste to znovu.</value>
+  </data>
+  <data name="An error occurred while saving the scan log (scan event) in the database." xml:space="preserve">
+    <value>Při ukládání skenovacího protokolu (sken. případu) do databáze došlo k chybě.</value>
+  </data>
+  <data name="ERROR: Instrument is already in use. Do not place in tray." xml:space="preserve">
+    <value>CHYBA: Nástroj se již používá. Nevkládejte do síta.</value>
+  </data>
+  <data name="ERROR: Instrument was already packed. Place back in tray." xml:space="preserve">
+    <value>CHYBA: Nástroj byl již zabalen. Vložte zpět do síta.</value>
+  </data>
+  <data name="ERROR: Instrument was recalled. Do not place in tray." xml:space="preserve">
+    <value>CHYBA: Nástroj byl odřeknut. Nevkládejte do síta.</value>
+  </data>
+  <data name="ERROR: Instrument was sent for service on-demand. do not place in try. Send to service." xml:space="preserve">
+    <value>CHYBA: Nástroj byl na požádání odeslán na servis. Nevkládejte do síta. Odeslat na servis.</value>
+  </data>
+  <data name="ERROR: Unknown instrument! Contact the administrator of the system." xml:space="preserve">
+    <value>CHYBA: Neznámý nástroj! Kontaktujte administrátora systému.</value>
+  </data>
+  <data name="The instruments should be sent to service, print a service report in the pop-up." xml:space="preserve">
+    <value>Nástroje by měly být odeslány na servis, ve vyskakovacím okně vytiskněte servisní report.</value>
+  </data>
+  <data name="FrmMain_UpdateTableTraySelected_Tray_Name" xml:space="preserve">
+    <value>Název_síta</value>
+  </data>
+  <data name="FrmMain_UpdateTableTraySelected_Tray_Description" xml:space="preserve">
+    <value>Popis_síta</value>
+  </data>
+  <data name="Description_ID" xml:space="preserve">
+    <value>Popisné ID</value>
+  </data>
+  <data name="Description_Name" xml:space="preserve">
+    <value>Popisný název</value>
+  </data>
+  <data name="Full_Name" xml:space="preserve">
+    <value>Celé jméno</value>
+  </data>
+  <data name="Index_ID" xml:space="preserve">
+    <value>ID indexu</value>
+  </data>
+  <data name="instruments." xml:space="preserve">
+    <value>nástroje.</value>
+  </data>
+  <data name="Instrument_Company" xml:space="preserve">
+    <value>Společnost pro výrobu nástrojů</value>
+  </data>
+  <data name="Place instrument in the tray!" xml:space="preserve">
+    <value>Umístěte nástroj do síta!</value>
+  </data>
+  <data name="Should_Pack" xml:space="preserve">
+    <value>Mělo by se zabalit</value>
+  </data>
+  <data name="To_Pack" xml:space="preserve">
+    <value>K zabalení</value>
+  </data>
+  <data name="Tray_Description_ID" xml:space="preserve">
+    <value>Popisné ID síta</value>
+  </data>
+  <data name="Tray_Name" xml:space="preserve">
+    <value>Název síta</value>
+  </data>
+  <data name="Not in packing list!" xml:space="preserve">
+    <value>Není na balicím seznamu!</value>
+  </data>
+  <data name="AboutChangeCostCenter" xml:space="preserve">
+    <value>Chystáte se změnit nákladové středisko .... Dávejte prosím pozor</value>
+  </data>
+  <data name="CancelPacking" xml:space="preserve">
+    <value>Zrušit balení</value>
+  </data>
+  <data name="CancelPackingTray" xml:space="preserve">
+    <value>Chcete zrušit balení síta?</value>
+  </data>
+  <data name="ChangingCostCenter" xml:space="preserve">
+    <value>Změna nákladového střediska !</value>
+  </data>
+  <data name="ConectSql" xml:space="preserve">
+    <value>Připojování k SQL_SERVERu:</value>
+  </data>
+  <data name="ContainerScannedOK" xml:space="preserve">
+    <value>Kontejner naskenován v pořádku!</value>
+  </data>
+  <data name="DescriptionID" xml:space="preserve">
+    <value>Popisné ID</value>
+  </data>
+  <data name="DescriptionName" xml:space="preserve">
+    <value>Popisný název</value>
+  </data>
+  <data name="EmptyTray" xml:space="preserve">
+    <value>Vyprázdněte síto a začněte znovu!</value>
+  </data>
+  <data name="FullName" xml:space="preserve">
+    <value>Celé jméno</value>
+  </data>
+  <data name="IndexID" xml:space="preserve">
+    <value>ID indexu</value>
+  </data>
+  <data name="InformationUser" xml:space="preserve">
+    <value>Informace pro uživatele:</value>
+  </data>
+  <data name="InstrumentCompany" xml:space="preserve">
+    <value>Společnost pro výrobu nástrojů</value>
+  </data>
+  <data name="InstrumentInUse" xml:space="preserve">
+    <value>CHYBA: Nástroj se již používá. Nevkládejte do síta.</value>
+  </data>
+  <data name="InstrumentIsPacked" xml:space="preserve">
+    <value>CHYBA: Nástroj byl již zabalen. Vložte zpět do síta.</value>
+  </data>
+  <data name="InstrumentNotInPackingList" xml:space="preserve">
+    <value>CHYBA: Nástroj není v balicím seznamu! Nevkládejte do síta.</value>
+  </data>
+  <data name="LikeToSaveTrayConfiguration" xml:space="preserve">
+    <value>Chcete uložit konfiguraci síta pro budoucí použití?</value>
+  </data>
+  <data name="NoCostCenter" xml:space="preserve">
+    <value>Žádné nákladové středisko</value>
+  </data>
+  <data name="OneInstrumentScan" xml:space="preserve">
+    <value>Skenujte prosím vždy po jednom nástroji!</value>
+  </data>
+  <data name="OnlyForToday" xml:space="preserve">
+    <value>POUZE pro dnešní den !</value>
+  </data>
+  <data name="OnlyOneTag" xml:space="preserve">
+    <value>Naskenován více než jeden tag. Ujistěte se, že je v blízkosti čtečky pouze jeden tag.</value>
+  </data>
+  <data name="PlaceInstrumnetInTheTray" xml:space="preserve">
+    <value>Umístěte nástroj do síta!</value>
+  </data>
+  <data name="RestartAfterChangingLanguage" xml:space="preserve">
+    <value>Po změně nastavení jazyka restartujte prosím aplikaci.</value>
+  </data>
+  <data name="SaveTrayConfiguration" xml:space="preserve">
+    <value>Uložit konfiguraci síta</value>
+  </data>
+  <data name="SelectContainer" xml:space="preserve">
+    <value>Před uložením vyberte prosím kontejner.</value>
+  </data>
+  <data name="ShouldPack" xml:space="preserve">
+    <value>Mělo by se zabalit</value>
+  </data>
+  <data name="TooManyPacked" xml:space="preserve">
+    <value>Zabaleno příliš mnoho - neumisťujte nástroj do síta!</value>
+  </data>
+  <data name="ToPack" xml:space="preserve">
+    <value>K zabalení</value>
+  </data>
+  <data name="TrayDescription" xml:space="preserve">
+    <value>Popis síta</value>
+  </data>
+  <data name="TrayDescriptionID" xml:space="preserve">
+    <value>Popisné ID síta</value>
+  </data>
+  <data name="TrayIsLocked" xml:space="preserve">
+    <value>Síto je uzamčeno a nelze je dokončit, ačkoli je částečně zabaleno. Před dokončením prosím zkompletujte balicí seznam nebo odemkněte síto pomocí zaškrtávacího políčka vpravo nahoře.</value>
+  </data>
+  <data name="TrayName" xml:space="preserve">
+    <value>Název síta</value>
+  </data>
+  <data name="TrayNotFound" xml:space="preserve">
+    <value>Síto nenalezeno! Ujistěte se, že v okolí skeneru RFID nejsou žádné nástroje, a zkuste to znovu.</value>
+  </data>
+  <data name="TrayPacked" xml:space="preserve">
+    <value>Síto je přeplněno </value>
+  </data>
+  <data name="UnknownInstrument" xml:space="preserve">
+    <value>CHYBA: Neznámý nástroj! Kontaktujte administrátora systému.</value>
+  </data>
+  <data name="UnknownTag" xml:space="preserve">
+    <value>Neznámý tag, naskenujte prosím jiný kontejner nebo použijte k načtení tagu technickou stanici. </value>
+  </data>
+  <data name="TrayIsPacked" xml:space="preserve">
+    <value>Síto je zabalené! Pro dokončení balení síta stiskněte tlačítko "Dokončit". </value>
+  </data>
+</root>

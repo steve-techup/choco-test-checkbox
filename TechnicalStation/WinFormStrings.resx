@@ -1,0 +1,618 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Be aware NO Reader can be Found ! ...." xml:space="preserve">
+    <value>Be aware NO Reader can be Found ! ....</value>
+  </data>
+  <data name="Check Version Or License  - An Issue !" xml:space="preserve">
+    <value>Check Version Or License  - An Issue !</value>
+  </data>
+  <data name="Checking Dot Net Version ..." xml:space="preserve">
+    <value>Checking Dot Net Version ...</value>
+  </data>
+  <data name="Checking for Update !" xml:space="preserve">
+    <value>Checking for Update ! </value>
+  </data>
+  <data name="Checking Reader_ID ..." xml:space="preserve">
+    <value>Checking Reader_ID ...</value>
+  </data>
+  <data name="Checking Version &amp; License ..." xml:space="preserve">
+    <value>Checking Version &amp; License ...</value>
+  </data>
+  <data name="Connected" xml:space="preserve">
+    <value>Connected</value>
+  </data>
+  <data name="Connected..." xml:space="preserve">
+    <value>Connected...</value>
+  </data>
+  <data name="Connecting to SQL_SERVER ..." xml:space="preserve">
+    <value>Connecting to SQL_SERVER ... </value>
+  </data>
+  <data name="Contact IT department Or Caretag !" xml:space="preserve">
+    <value>Contact IT department Or Caretag !</value>
+  </data>
+  <data name="Correct Issue and Program is Shutting Down" xml:space="preserve">
+    <value>Correct Issue and Program is Shutting Down</value>
+  </data>
+  <data name="Day_To_Now" xml:space="preserve">
+    <value>Days To Now</value>
+  </data>
+  <data name="Default Configuration Used - Reader ID:" xml:space="preserve">
+    <value>Default Configuration Used - Reader ID:</value>
+  </data>
+  <data name="Dot Net Version ... is NOT Okay" xml:space="preserve">
+    <value>Dot Net Version ... is NOT Okay</value>
+  </data>
+  <data name="Dot Net Version ... Is Okay" xml:space="preserve">
+    <value>Dot Net Version ... Is Okay</value>
+  </data>
+  <data name="File_Saved" xml:space="preserve">
+    <value>File Saved</value>
+  </data>
+  <data name="Finding Reader ..." xml:space="preserve">
+    <value>Finding Reader ...</value>
+  </data>
+  <data name="Information for ALL Users &amp; Last 30 Days" xml:space="preserve">
+    <value>Information for ALL Users - Last 30 Days</value>
+  </data>
+  <data name="Information for User:" xml:space="preserve">
+    <value>Information for User: </value>
+  </data>
+  <data name="Is Already SENT to SERVICE !" xml:space="preserve">
+    <value>Is Already SENT to SERVICE !</value>
+  </data>
+  <data name="Issue ... Program will Not Work Correct !" xml:space="preserve">
+    <value>Issue ... Program will Not Work Correct !</value>
+  </data>
+  <data name="Issue in LogIn ... Try Again ! {0}{1}" xml:space="preserve">
+    <value>Issue in LogIn ... Try Again ! {0}{1}</value>
+  </data>
+  <data name="Issue in Send To Service ... Please Report !" xml:space="preserve">
+    <value>Issue in Send To Service ... Please Report !</value>
+  </data>
+  <data name="Issue Read_SQLConnection..." xml:space="preserve">
+    <value>Issue Read_SQLConnection... </value>
+  </data>
+  <data name="LastSeen_Date" xml:space="preserve">
+    <value>LastSeen Date</value>
+  </data>
+  <data name="LastSeen_Place" xml:space="preserve">
+    <value>LastSeen Place</value>
+  </data>
+  <data name="Loading Program Settings ..." xml:space="preserve">
+    <value>Loading Program Settings ...</value>
+  </data>
+  <data name="No Service Vendor EXIST !   Please Correct" xml:space="preserve">
+    <value>No Service Vendor EXIST !   Please Correct</value>
+  </data>
+  <data name="No Update ..." xml:space="preserve">
+    <value>No Update ...</value>
+  </data>
+  <data name="Not Connected to:" xml:space="preserve">
+    <value>Not Connected to:</value>
+  </data>
+  <data name="Not Connected..." xml:space="preserve">
+    <value>Not Connected...</value>
+  </data>
+  <data name="Pivot_Not_Loading" xml:space="preserve">
+    <value>Pivot is Not Loading</value>
+  </data>
+  <data name="Read NEXT Instrument" xml:space="preserve">
+    <value>Read NEXT Instrument</value>
+  </data>
+  <data name="Reader Is Correct Connected !" xml:space="preserve">
+    <value>Reader Is Correct Connected !</value>
+  </data>
+  <data name="Rules_Station" xml:space="preserve">
+    <value>Rules_Station</value>
+  </data>
+  <data name="Select the Folder" xml:space="preserve">
+    <value>Select the Folder </value>
+  </data>
+  <data name="Set this Instrument aside ...." xml:space="preserve">
+    <value>Set this Instrument aside ....</value>
+  </data>
+  <data name="Software End_Of_Life (EOL) : {0}" xml:space="preserve">
+    <value>Software End_Of_Life (EOL) : {0}</value>
+  </data>
+  <data name="Something went very wrong ! ...." xml:space="preserve">
+    <value>Something went very wrong ! ....</value>
+  </data>
+  <data name="Status for Sent To Service :" xml:space="preserve">
+    <value>Status for Sent To Service : </value>
+  </data>
+  <data name="Status for Sent To Service : All Users" xml:space="preserve">
+    <value>Status for Sent To Service : All Users</value>
+  </data>
+  <data name="Status Overview for Rules :" xml:space="preserve">
+    <value>Status Overview for Rules : </value>
+  </data>
+  <data name="Surgical_TechnicalStation" xml:space="preserve">
+    <value>Surgical_TechnicalStation</value>
+  </data>
+  <data name="Technical_Type" xml:space="preserve">
+    <value>Technical Type</value>
+  </data>
+  <data name="The Instrument     MAY NOT    be Used  !" xml:space="preserve">
+    <value>The Instrument     MAY NOT    be Used  !</value>
+  </data>
+  <data name="The SQL_SERVER is NOT running .. Correct and try again !" xml:space="preserve">
+    <value>The SQL_SERVER is NOT running .. Correct and try again !</value>
+  </data>
+  <data name="The Station is NOT Recognized .. Check with Administrator and try again !" xml:space="preserve">
+    <value>The Station is NOT Recognized .. Check with Administrator and try again !</value>
+  </data>
+  <data name="There Is a Demand Service from :" xml:space="preserve">
+    <value>There Is a Demand Service from :</value>
+  </data>
+  <data name="You Can Not Exit -&gt; There is a Service Request !" xml:space="preserve">
+    <value>You Can Not Exit -&gt; There is a Service Request !</value>
+  </data>
+  <data name="From ToDay" xml:space="preserve">
+    <value>From ToDay</value>
+  </data>
+  <data name="Firmware_too_old_error" xml:space="preserve">
+    <value>An error occurred because the Firmware may be too old</value>
+  </data>
+  <data name="LogIn failed" xml:space="preserve">
+    <value>An error occurred because the LogIn failed</value>
+  </data>
+  <data name="An error occurred when trying to connect to the database" xml:space="preserve">
+    <value>An error occurred when trying to connect to the database</value>
+  </data>
+  <data name="An error occurred while changing the selected index" xml:space="preserve">
+    <value>An error occurred while changing the selected index</value>
+  </data>
+  <data name="An error occurred while changing the text" xml:space="preserve">
+    <value>An error occurred while changing the text</value>
+  </data>
+  <data name="An error occurred while checking if the item is in the database" xml:space="preserve">
+    <value>An error occurred while checking if the item is in the database</value>
+  </data>
+  <data name="An error occurred while checking if the Tag is Caretag" xml:space="preserve">
+    <value>An error occurred while checking if the Tag is Caretag</value>
+  </data>
+  <data name="An error occurred while checking the reader" xml:space="preserve">
+    <value>An error occurred while checking the reader</value>
+  </data>
+  <data name="An error occurred while clicking the group description" xml:space="preserve">
+    <value>An error occurred while clicking the group description</value>
+  </data>
+  <data name="An error occurred while clicking the Tag update button" xml:space="preserve">
+    <value>An error occurred while clicking the Tag update button</value>
+  </data>
+  <data name="An error occurred while loading the application" xml:space="preserve">
+    <value>An error occurred while loading the application</value>
+  </data>
+  <data name="An error occurred while making groups" xml:space="preserve">
+    <value>An error occurred while making groups</value>
+  </data>
+  <data name="An error occurred while manipulating the text" xml:space="preserve">
+    <value>An error occurred while manipulating the text</value>
+  </data>
+  <data name="An error occurred while moving the mouse over the picturebox" xml:space="preserve">
+    <value>An error occurred while moving the mouse over the picturebox</value>
+  </data>
+  <data name="An error occurred while pressing the video camera" xml:space="preserve">
+    <value>An error occurred while pressing the video camera</value>
+  </data>
+  <data name="An error occurred while pressing the world picture" xml:space="preserve">
+    <value>An error occurred while pressing the world picture</value>
+  </data>
+  <data name="An error occurred while trying to add a label" xml:space="preserve">
+    <value>An error occurred while trying to add a label</value>
+  </data>
+  <data name="An error occurred while trying to add one EPC" xml:space="preserve">
+    <value>An error occurred while trying to add one EPC</value>
+  </data>
+  <data name="An error occurred while trying to change the index" xml:space="preserve">
+    <value>An error occurred while trying to change the index</value>
+  </data>
+  <data name="An error occurred while trying to check if the TAG exists in the database" xml:space="preserve">
+    <value>An error occurred while trying to check if the TAG exists in the database</value>
+  </data>
+  <data name="An error occurred while trying to check if the Tag is in the database" xml:space="preserve">
+    <value>An error occurred while trying to check if the Tag is in the database</value>
+  </data>
+  <data name="An error occurred while trying to check the TAG info" xml:space="preserve">
+    <value>An error occurred while trying to check the TAG info</value>
+  </data>
+  <data name="An error occurred while trying to check the Tag relation" xml:space="preserve">
+    <value>An error occurred while trying to check the Tag relation</value>
+  </data>
+  <data name="An error occurred while trying to clean up the interface" xml:space="preserve">
+    <value>An error occurred while trying to clean up the interface</value>
+  </data>
+  <data name="An error occurred while trying to click the Camera" xml:space="preserve">
+    <value>An error occurred while trying to click the Camera</value>
+  </data>
+  <data name="An error occurred while trying to convert from Hex to Byte" xml:space="preserve">
+    <value>An error occurred while trying to convert from Hex to Byte</value>
+  </data>
+  <data name="An error occurred while trying to convert Hex to Byte" xml:space="preserve">
+    <value>An error occurred while trying to convert Hex to Byte</value>
+  </data>
+  <data name="An error occurred while trying to create the first REC" xml:space="preserve">
+    <value>An error occurred while trying to create the first REC</value>
+  </data>
+  <data name="An error occurred while trying to delete the Tag from the database" xml:space="preserve">
+    <value>An error occurred while trying to delete the Tag from the database</value>
+  </data>
+  <data name="An error occurred while trying to display the pivotgrid text" xml:space="preserve">
+    <value>An error occurred while trying to display the pivotgrid text</value>
+  </data>
+  <data name="An error occurred while trying to do maintenance for instrument RFID" xml:space="preserve">
+    <value>An error occurred while trying to do maintenance for instrument RFID</value>
+  </data>
+  <data name="An error occurred while trying to exit" xml:space="preserve">
+    <value>An error occurred while trying to exit</value>
+  </data>
+  <data name="An error occurred while trying to exit the form" xml:space="preserve">
+    <value>An error occurred while trying to exit the form</value>
+  </data>
+  <data name="An error occurred while trying to exit the page" xml:space="preserve">
+    <value>An error occurred while trying to exit the page</value>
+  </data>
+  <data name="An error occurred while trying to export the Excel" xml:space="preserve">
+    <value>An error occurred while trying to export the Excel</value>
+  </data>
+  <data name="An error occurred while trying to fill the description" xml:space="preserve">
+    <value>An error occurred while trying to fill the description</value>
+  </data>
+  <data name="An error occurred while trying to fill the field" xml:space="preserve">
+    <value>An error occurred while trying to fill the field</value>
+  </data>
+  <data name="An error occurred while trying to fill the tray combobox" xml:space="preserve">
+    <value>An error occurred while trying to fill the tray combobox</value>
+  </data>
+  <data name="An error occurred while trying to filter by ID" xml:space="preserve">
+    <value>An error occurred while trying to filter by ID</value>
+  </data>
+  <data name="An error occurred while trying to filter by name" xml:space="preserve">
+    <value>An error occurred while trying to filter by name</value>
+  </data>
+  <data name="An error occurred while trying to get a new EPC" xml:space="preserve">
+    <value>An error occurred while trying to get a new EPC</value>
+  </data>
+  <data name="An error occurred while trying to get the ID back." xml:space="preserve">
+    <value>An error occurred while trying to get the ID back.</value>
+  </data>
+  <data name="An error occurred while trying to hide the hide the picturebox" xml:space="preserve">
+    <value>An error occurred while trying to hide the hide the picturebox</value>
+  </data>
+  <data name="An error occurred while trying to initialize the Active Directory Login page" xml:space="preserve">
+    <value>An error occurred while trying to initialize the Active Directory Login page</value>
+  </data>
+  <data name="An error occurred while trying to insert a Tag in the database" xml:space="preserve">
+    <value>An error occurred while trying to insert a Tag in the database</value>
+  </data>
+  <data name="An error occurred while trying to insert the item in the database" xml:space="preserve">
+    <value>An error occurred while trying to insert the item in the database</value>
+  </data>
+  <data name="An error occurred while trying to insert the Tag in the database" xml:space="preserve">
+    <value>An error occurred while trying to insert the Tag in the database</value>
+  </data>
+  <data name="An error occurred while trying to load the cart pivotgrid" xml:space="preserve">
+    <value>An error occurred while trying to load the cart pivotgrid</value>
+  </data>
+  <data name="An error occurred while trying to load the company department" xml:space="preserve">
+    <value>An error occurred while trying to load the company department</value>
+  </data>
+  <data name="An error occurred while trying to load the container pivotgrid" xml:space="preserve">
+    <value>An error occurred while trying to load the container pivotgrid</value>
+  </data>
+  <data name="An error occurred while trying to load the form" xml:space="preserve">
+    <value>An error occurred while trying to load the form</value>
+  </data>
+  <data name="An error occurred while trying to load the page" xml:space="preserve">
+    <value>An error occurred while trying to load the page</value>
+  </data>
+  <data name="An error occurred while trying to load the pivotgrid" xml:space="preserve">
+    <value>An error occurred while trying to load the pivotgrid</value>
+  </data>
+  <data name="An error occurred while trying to load the tray pivotgrid" xml:space="preserve">
+    <value>An error occurred while trying to load the tray pivotgrid</value>
+  </data>
+  <data name="An error occurred while trying to Log a message in the database" xml:space="preserve">
+    <value>An error occurred while trying to Log a message in the database</value>
+  </data>
+  <data name="An error occurred while trying to Log a message to the database" xml:space="preserve">
+    <value>An error occurred while trying to Log a message to the database</value>
+  </data>
+  <data name="An error occurred while trying to Log to the database" xml:space="preserve">
+    <value>An error occurred while trying to Log to the database</value>
+  </data>
+  <data name="An error occurred while trying to LogIn" xml:space="preserve">
+    <value>An error occurred while trying to LogIn</value>
+  </data>
+  <data name="An error occurred while trying to make a group identifier" xml:space="preserve">
+    <value>An error occurred while trying to make a group identifier</value>
+  </data>
+  <data name="An error occurred while trying to make a new EPC" xml:space="preserve">
+    <value>An error occurred while trying to make a new EPC</value>
+  </data>
+  <data name="An error occurred while trying to open an image" xml:space="preserve">
+    <value>An error occurred while trying to open an image</value>
+  </data>
+  <data name="An error occurred while trying to open the Department window" xml:space="preserve">
+    <value>An error occurred while trying to open the Department window</value>
+  </data>
+  <data name="An error occurred while trying to read the next instrument" xml:space="preserve">
+    <value>An error occurred while trying to read the next instrument</value>
+  </data>
+  <data name="An error occurred while trying to read the SEQ" xml:space="preserve">
+    <value>An error occurred while trying to read the SEQ</value>
+  </data>
+  <data name="An error occurred while trying to save a Log to the database" xml:space="preserve">
+    <value>An error occurred while trying to save a Log to the database</value>
+  </data>
+  <data name="An error occurred while trying to save the image" xml:space="preserve">
+    <value>An error occurred while trying to save the image</value>
+  </data>
+  <data name="An error occurred while trying to substract one EPC" xml:space="preserve">
+    <value>An error occurred while trying to substract one EPC</value>
+  </data>
+  <data name="An error occurred while trying to Tag an EPC" xml:space="preserve">
+    <value>An error occurred while trying to Tag an EPC</value>
+  </data>
+  <data name="An error occurred while trying to update the database" xml:space="preserve">
+    <value>An error occurred while trying to update the database</value>
+  </data>
+  <data name="An error occurred while trying to update the serial number" xml:space="preserve">
+    <value>An error occurred while trying to update the serial number</value>
+  </data>
+  <data name="An error occurred while trying to update the Tag from the database" xml:space="preserve">
+    <value>An error occurred while trying to update the Tag from the database</value>
+  </data>
+  <data name="An error occurred while trying to update the Tag in the database" xml:space="preserve">
+    <value>An error occurred while trying to update the Tag in the database</value>
+  </data>
+  <data name="An error occurred while trying to update the Tag info" xml:space="preserve">
+    <value>An error occurred while trying to update the Tag info</value>
+  </data>
+  <data name="An error occurred while trying to verify if the TAG is active in another database" xml:space="preserve">
+    <value>An error occurred while trying to verify if the TAG is active in another database</value>
+  </data>
+  <data name="An error occurred while trying update the Tag info" xml:space="preserve">
+    <value>An error occurred while trying update the Tag info</value>
+  </data>
+  <data name="An error related to the TAG occurred while trying to make a new EPC" xml:space="preserve">
+    <value>An error related to the TAG occurred while trying to make a new EPC</value>
+  </data>
+  <data name="Connecting to SQL_SERVER:" xml:space="preserve">
+    <value>Connecting to SQL_SERVER:</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="Error code :" xml:space="preserve">
+    <value>Error code :</value>
+  </data>
+  <data name="error code:" xml:space="preserve">
+    <value>error code:</value>
+  </data>
+  <data name="If this does not solve the problem, contact Caretag support and report the error code." xml:space="preserve">
+    <value>If this does not solve the problem, contact Caretag support and report the error code.</value>
+  </data>
+  <data name="Please restart the application and if this does not solve the problem, contact Caretag Support and report the Error Code" xml:space="preserve">
+    <value>Please restart the application and if this does not solve the problem, contact Caretag Support and report the Error Code</value>
+  </data>
+  <data name="Please restart the application." xml:space="preserve">
+    <value>Please restart the application.</value>
+  </data>
+  <data name="AssetIsContainer" xml:space="preserve">
+    <value>Asset is already a container.</value>
+  </data>
+  <data name="AssetIsTray" xml:space="preserve">
+    <value>Asset is already a tray.</value>
+  </data>
+  <data name="AttemptingToProgramTag" xml:space="preserve">
+    <value>Attempting to program tag.</value>
+  </data>
+  <data name="CannotChangeAssetTypeToContainer" xml:space="preserve">
+    <value>Cannot change asset type to container. If the asset was programmed by mistake, it must be reset.</value>
+  </data>
+  <data name="CannotChangeAssetTypeToInstrument" xml:space="preserve">
+    <value>Cannot change asset type to instrument. If the asset was programmed by mistake, it must be reset.</value>
+  </data>
+  <data name="CannotChangeAssetTypeToTray" xml:space="preserve">
+    <value>Cannot change asset type to tray. If the asset was programmed by mistake, it must be reset.</value>
+  </data>
+  <data name="ConnectingDB" xml:space="preserve">
+    <value>Connecting to database server</value>
+  </data>
+  <data name="ContainerSaved" xml:space="preserve">
+    <value>Container saved!</value>
+  </data>
+  <data name="CouldNotProgramTag" xml:space="preserve">
+    <value>Could not program tag after 10 tries. Tag may not be mounted correctly. Reposition tag and try again.</value>
+  </data>
+  <data name="Enter4CharactersForSearch" xml:space="preserve">
+    <value>Please enter at least 4 characters to search for an instrument type</value>
+  </data>
+  <data name="ErrorResettingTag" xml:space="preserve">
+    <value>Error resetting tag.</value>
+  </data>
+  <data name="FindingRFIDreader" xml:space="preserve">
+    <value>Finding RFID reader</value>
+  </data>
+  <data name="InstrumentSaved" xml:space="preserve">
+    <value>Instrument saved!</value>
+  </data>
+  <data name="NoReaderFound" xml:space="preserve">
+    <value>No reader found!</value>
+  </data>
+  <data name="NoTagFound" xml:space="preserve">
+    <value>No tag found</value>
+  </data>
+  <data name="NotRecognizedPrefix" xml:space="preserve">
+    <value>Tag matches GS1 prefix but is not recognized as an instrument or tray or container. Click 'next' to set asset type.</value>
+  </data>
+  <data name="OnlyOneTagShouldBeOnTheReader" xml:space="preserve">
+    <value>Only one tag should be on the reader. Remove any other tags from the reader area and try again.</value>
+  </data>
+  <data name="SelectInstrument" xml:space="preserve">
+    <value>Please select an instrument type.</value>
+  </data>
+  <data name="SuccessfullyTag" xml:space="preserve">
+    <value>Successfully read tag!</value>
+  </data>
+  <data name="TagDoesNotMatchGS1Prefix" xml:space="preserve">
+    <value>Tag does not match GS1 prefix. This is most likely because it is fresh from the factory and should be programmed. Press 'next' to program.</value>
+  </data>
+  <data name="TagProgrammed" xml:space="preserve">
+    <value>Tag has been programmed!</value>
+  </data>
+  <data name="TagReset" xml:space="preserve">
+    <value>Tag has been reset.</value>
+  </data>
+  <data name="TechnicalStation" xml:space="preserve">
+    <value>Technical Station</value>
+  </data>
+  <data name="TraySaved" xml:space="preserve">
+    <value>Tray saved!</value>
+  </data>
+  <data name="ChangeInstrumentType" xml:space="preserve">
+    <value>.Click 'next' to change instrument type or 'restart' to scan a different asset.</value>
+  </data>
+  <data name="TagMatchesContainer" xml:space="preserve">
+    <value>Tag matches container in database. Click 'Finish' to start over with another asset.</value>
+  </data>
+  <data name="TagMatchesInstrument" xml:space="preserve">
+    <value>Tag matches instrument in database:</value>
+  </data>
+  <data name="TagMatchesTray" xml:space="preserve">
+    <value>Tag matches tray in database. Click 'Finish' to start over with another asset.</value>
+  </data>
+  <data name="Enter4CharactersForSearch." xml:space="preserve">
+    <value>Please enter at least 4 characters to search for an instrument type</value>
+  </data>
+  <data name="EnterLot" xml:space="preserve">
+    <value>Please enter Lot number</value>
+  </data>
+  <data name="EnterProductionDate" xml:space="preserve">
+    <value>Please enter production date</value>
+  </data>
+  <data name="ProductionDateFormatIncorrect" xml:space="preserve">
+    <value>Production date format is incorrect. </value>
+  </data>
+  <data name="ProductionDateInFuture" xml:space="preserve">
+    <value>Production date is in the future! Please enter a date in the past. </value>
+  </data>
+</root>

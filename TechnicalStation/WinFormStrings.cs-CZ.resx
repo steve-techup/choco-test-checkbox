@@ -1,0 +1,618 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Be aware NO Reader can be Found ! ...." xml:space="preserve">
+    <value>Uvědomte si, že NELZE nalézt žádnou čtečku ! ....</value>
+  </data>
+  <data name="Check Version Or License  - An Issue !" xml:space="preserve">
+    <value>Zkontrolujte verzi nebo licenci - problém !</value>
+  </data>
+  <data name="Checking Dot Net Version ..." xml:space="preserve">
+    <value>Kontrola verze DotNet ...</value>
+  </data>
+  <data name="Checking for Update !" xml:space="preserve">
+    <value>Kontrola aktualizace ! </value>
+  </data>
+  <data name="Checking Reader_ID ..." xml:space="preserve">
+    <value>Kontrola ID_čtečky ...</value>
+  </data>
+  <data name="Checking Version &amp; License ..." xml:space="preserve">
+    <value>Kontrola verze &amp; licence ...</value>
+  </data>
+  <data name="Connected" xml:space="preserve">
+    <value>Připojeno</value>
+  </data>
+  <data name="Connected..." xml:space="preserve">
+    <value>Připojeno...</value>
+  </data>
+  <data name="Connecting to SQL_SERVER ..." xml:space="preserve">
+    <value>Připojení k SQL_SERVERu ... </value>
+  </data>
+  <data name="Contact IT department Or Caretag !" xml:space="preserve">
+    <value>Kontaktujte IT oddělení nebo Caretag !</value>
+  </data>
+  <data name="Correct Issue and Program is Shutting Down" xml:space="preserve">
+    <value>Opravte problém a program se vypíná</value>
+  </data>
+  <data name="Day_To_Now" xml:space="preserve">
+    <value>Dnů do dneška</value>
+  </data>
+  <data name="Default Configuration Used - Reader ID:" xml:space="preserve">
+    <value>Použitá výchozí konfigurace - ID čtečky:</value>
+  </data>
+  <data name="Dot Net Version ... is NOT Okay" xml:space="preserve">
+    <value>Verze Dot Net ... NENÍ schválena</value>
+  </data>
+  <data name="Dot Net Version ... Is Okay" xml:space="preserve">
+    <value>Verze DotNet ... JE schválena</value>
+  </data>
+  <data name="File_Saved" xml:space="preserve">
+    <value>Uložený soubor</value>
+  </data>
+  <data name="Finding Reader ..." xml:space="preserve">
+    <value>Vyhledávání čtečky ...</value>
+  </data>
+  <data name="Information for ALL Users &amp; Last 30 Days" xml:space="preserve">
+    <value>Informace pro VŠECHNY uživatele - posledních 30 dní</value>
+  </data>
+  <data name="Information for User:" xml:space="preserve">
+    <value>Informace pro uživatele: </value>
+  </data>
+  <data name="Is Already SENT to SERVICE !" xml:space="preserve">
+    <value>Je již ODESLÁNO na SERVIS !</value>
+  </data>
+  <data name="Issue ... Program will Not Work Correct !" xml:space="preserve">
+    <value>Problém ... Program nebude pracovat správně !</value>
+  </data>
+  <data name="Issue in LogIn ... Try Again ! {0}{1}" xml:space="preserve">
+    <value>Problém v přihlášení do systému ... Zkuste to znovu ! {0}{1}</value>
+  </data>
+  <data name="Issue in Send To Service ... Please Report !" xml:space="preserve">
+    <value>Problém při odesílání na servis ... Nahlaste prosím !</value>
+  </data>
+  <data name="Issue Read_SQLConnection..." xml:space="preserve">
+    <value>Problém Čtečka_Připojení k SQL...</value>
+  </data>
+  <data name="LastSeen_Date" xml:space="preserve">
+    <value>Naposledy spatřeno (datum)</value>
+  </data>
+  <data name="LastSeen_Place" xml:space="preserve">
+    <value>Naposledy spatřeno (místo)</value>
+  </data>
+  <data name="Loading Program Settings ..." xml:space="preserve">
+    <value>Načítání nastavení programu ...</value>
+  </data>
+  <data name="No Service Vendor EXIST !   Please Correct" xml:space="preserve">
+    <value>NEEXISTUJE žádný dodavatel servisních služeb !   Prosím opravte</value>
+  </data>
+  <data name="No Update ..." xml:space="preserve">
+    <value>Žádná aktualizace...</value>
+  </data>
+  <data name="Not Connected to:" xml:space="preserve">
+    <value>Není připojeno k:</value>
+  </data>
+  <data name="Not Connected..." xml:space="preserve">
+    <value>Nepřipojeno...</value>
+  </data>
+  <data name="Pivot_Not_Loading" xml:space="preserve">
+    <value>Pivot se nenačítá</value>
+  </data>
+  <data name="Read NEXT Instrument" xml:space="preserve">
+    <value>Přečíst DALŠÍ nástroj</value>
+  </data>
+  <data name="Reader Is Correct Connected !" xml:space="preserve">
+    <value>Čtečka je správně připojena !</value>
+  </data>
+  <data name="Rules_Station" xml:space="preserve">
+    <value>Stanice_pro pravidla</value>
+  </data>
+  <data name="Select the Folder" xml:space="preserve">
+    <value>Vyberte složku</value>
+  </data>
+  <data name="Set this Instrument aside ...." xml:space="preserve">
+    <value>Tento nástroj vyřaďte ....</value>
+  </data>
+  <data name="Software End_Of_Life (EOL) : {0}" xml:space="preserve">
+    <value>Software Konec_životnosti_výrobku (EOL) : {0}</value>
+  </data>
+  <data name="Something went very wrong ! ...." xml:space="preserve">
+    <value>Něco se velmi pokazilo! ....</value>
+  </data>
+  <data name="Status for Sent To Service :" xml:space="preserve">
+    <value>Stav pro Odesláno na servis :</value>
+  </data>
+  <data name="Status for Sent To Service : All Users" xml:space="preserve">
+    <value>Stav pro Odesláno na servis : Všichni uživatelé</value>
+  </data>
+  <data name="Status Overview for Rules :" xml:space="preserve">
+    <value>Stav Přehled pravidel : </value>
+  </data>
+  <data name="Surgical_TechnicalStation" xml:space="preserve">
+    <value>Chirurgická_technická stanice</value>
+  </data>
+  <data name="Technical_Type" xml:space="preserve">
+    <value>Technický typ</value>
+  </data>
+  <data name="The Instrument     MAY NOT    be Used  !" xml:space="preserve">
+    <value>Nástroj    NESMÍ    být používán !</value>
+  </data>
+  <data name="The SQL_SERVER is NOT running .. Correct and try again !" xml:space="preserve">
+    <value>SQL_SERVER NENÍ spuštěn .. Opravte a zkuste to znovu !</value>
+  </data>
+  <data name="The Station is NOT Recognized .. Check with Administrator and try again !" xml:space="preserve">
+    <value>Stanice NENÍ rozpoznána .. Prověřte u administrátora a zkuste to znovu !</value>
+  </data>
+  <data name="There Is a Demand Service from :" xml:space="preserve">
+    <value>Existuje poptávka servisních služeb od :</value>
+  </data>
+  <data name="You Can Not Exit -&gt; There is a Service Request !" xml:space="preserve">
+    <value>Nelze ukončit -&gt; Je zde poptávka na servis !</value>
+  </data>
+  <data name="From ToDay" xml:space="preserve">
+    <value>Ode dneška</value>
+  </data>
+  <data name="Firmware_too_old_error" xml:space="preserve">
+    <value>Došlo k chybě, protože firmware může být příliš zastaralý</value>
+  </data>
+  <data name="LogIn failed" xml:space="preserve">
+    <value>Došlo k chybě, protože přihlášení selhalo</value>
+  </data>
+  <data name="An error occurred when trying to connect to the database" xml:space="preserve">
+    <value>Při pokusu o připojení k databázi došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while changing the selected index" xml:space="preserve">
+    <value>Při změně vybraného indexu došlo k chybě</value>
+  </data>
+  <data name="An error occurred while changing the text" xml:space="preserve">
+    <value>Při změně textu došlo k chybě</value>
+  </data>
+  <data name="An error occurred while checking if the item is in the database" xml:space="preserve">
+    <value>Při kontrole, zda je položka v databázi, došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while checking if the Tag is Caretag" xml:space="preserve">
+    <value>Při kontrole, zda je tag od společnosti Caretag, došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while checking the reader" xml:space="preserve">
+    <value>Při kontrole čtečky došlo k chybě</value>
+  </data>
+  <data name="An error occurred while clicking the group description" xml:space="preserve">
+    <value>Při kliknutí na popis skupiny došlo k chybě</value>
+  </data>
+  <data name="An error occurred while clicking the Tag update button" xml:space="preserve">
+    <value>Při kliknutí na tlačítko Aktualizace tagu došlo k chybě</value>
+  </data>
+  <data name="An error occurred while loading the application" xml:space="preserve">
+    <value>Při načítání aplikace došlo k chybě</value>
+  </data>
+  <data name="An error occurred while making groups" xml:space="preserve">
+    <value>Při vytváření skupin došlo k chybě</value>
+  </data>
+  <data name="An error occurred while manipulating the text" xml:space="preserve">
+    <value>Při manipulaci s textem došlo k chybě</value>
+  </data>
+  <data name="An error occurred while moving the mouse over the picturebox" xml:space="preserve">
+    <value>Při pohybu myší nad PictureBox došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while pressing the video camera" xml:space="preserve">
+    <value>Při stisknutí videokamery došlo k chybě</value>
+  </data>
+  <data name="An error occurred while pressing the world picture" xml:space="preserve">
+    <value>Při stisknutí obrázku zeměkoule došlo k chybě</value>
+  </data>
+  <data name="An error occurred while trying to add a label" xml:space="preserve">
+    <value>Při pokusu o přidání štítku došlo k chybě</value>
+  </data>
+  <data name="An error occurred while trying to add one EPC" xml:space="preserve">
+    <value>Při pokusu o přidání jednoho EPC došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to change the index" xml:space="preserve">
+    <value>Při pokusu o změnu indexu došlo k chybě</value>
+  </data>
+  <data name="An error occurred while trying to check if the TAG exists in the database" xml:space="preserve">
+    <value>Při pokusu zkontrolovat, zda TAG v databázi existuje, došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to check if the Tag is in the database" xml:space="preserve">
+    <value>Při pokusu zkontrolovat, zda je tag v databázi, došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to check the TAG info" xml:space="preserve">
+    <value>Při pokusu o kontrolu informací o TAGu došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to check the Tag relation" xml:space="preserve">
+    <value>Při pokusu o kontrolu relace Tagu došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to clean up the interface" xml:space="preserve">
+    <value>Při pokusu o vyčištění rozhraní došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to click the Camera" xml:space="preserve">
+    <value>Při pokusu o kliknutí na Kameru došlo k chybě</value>
+  </data>
+  <data name="An error occurred while trying to convert from Hex to Byte" xml:space="preserve">
+    <value>Při pokusu o převod z hex na bajty došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to convert Hex to Byte" xml:space="preserve">
+    <value>Při pokusu o převod hex na bajty došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to create the first REC" xml:space="preserve">
+    <value>Při pokusu o vytvoření prvního REC došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to delete the Tag from the database" xml:space="preserve">
+    <value>Při pokusu o odstranění Tagu z databáze došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to display the pivotgrid text" xml:space="preserve">
+    <value>Při pokusu o zobrazení textu Pivot mřížky došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to do maintenance for instrument RFID" xml:space="preserve">
+    <value>Při pokusu o provedení údržby nástroje RFID došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to exit" xml:space="preserve">
+    <value>Při pokusu o ukončení došlo k chybě</value>
+  </data>
+  <data name="An error occurred while trying to exit the form" xml:space="preserve">
+    <value>Při pokusu o ukončení formuláře došlo k chybě</value>
+  </data>
+  <data name="An error occurred while trying to exit the page" xml:space="preserve">
+    <value>Při pokusu o ukončení stránky došlo k chybě</value>
+  </data>
+  <data name="An error occurred while trying to export the Excel" xml:space="preserve">
+    <value>Při pokusu o export aplikace Excel došlo k chybě</value>
+  </data>
+  <data name="An error occurred while trying to fill the description" xml:space="preserve">
+    <value>Při pokusu o vyplnění popisu došlo k chybě</value>
+  </data>
+  <data name="An error occurred while trying to fill the field" xml:space="preserve">
+    <value>Při pokusu o vyplnění pole došlo k chybě</value>
+  </data>
+  <data name="An error occurred while trying to fill the tray combobox" xml:space="preserve">
+    <value>Při pokusu o vyplnění ComboBoxu síta došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to filter by ID" xml:space="preserve">
+    <value>Při pokusu o filtrování podle ID došlo k chybě</value>
+  </data>
+  <data name="An error occurred while trying to filter by name" xml:space="preserve">
+    <value>Při pokusu o filtrování podle názvu došlo k chybě</value>
+  </data>
+  <data name="An error occurred while trying to get a new EPC" xml:space="preserve">
+    <value>Při pokusu o získání nového EPC došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to get the ID back." xml:space="preserve">
+    <value>Při pokusu o zpětné získání ID došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to hide the hide the picturebox" xml:space="preserve">
+    <value>Při pokusu o skrytí PictureBox došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to initialize the Active Directory Login page" xml:space="preserve">
+    <value>Při pokusu o inicializaci přihlašovací stránky služby Active Directory došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to insert a Tag in the database" xml:space="preserve">
+    <value>Při pokusu o vložení Tagu do databáze došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to insert the item in the database" xml:space="preserve">
+    <value>Při pokusu o vložení položky do databáze došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to insert the Tag in the database" xml:space="preserve">
+    <value>Při pokusu o vložení Tagu do databáze došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to load the cart pivotgrid" xml:space="preserve">
+    <value>Při pokusu o načtení Pivot mřížky vozíku došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to load the company department" xml:space="preserve">
+    <value>Při pokusu o načtení oddělení společnosti došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to load the container pivotgrid" xml:space="preserve">
+    <value>Při pokusu o načtení Pivot mřížky kontejneru došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to load the form" xml:space="preserve">
+    <value>Při pokusu o načtení formuláře došlo k chybě</value>
+  </data>
+  <data name="An error occurred while trying to load the page" xml:space="preserve">
+    <value>Při pokusu o načtení stránky došlo k chybě</value>
+  </data>
+  <data name="An error occurred while trying to load the pivotgrid" xml:space="preserve">
+    <value>Při pokusu o načtení Pivot mřížky došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to load the tray pivotgrid" xml:space="preserve">
+    <value>Při pokusu o načtení Pivot mřížky síta došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to Log a message in the database" xml:space="preserve">
+    <value>Při pokusu o zapsání zprávy do databáze došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to Log a message to the database" xml:space="preserve">
+    <value>Při pokusu o zápis zprávy do databáze došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to Log to the database" xml:space="preserve">
+    <value>Při pokusu o přihlášení do databáze došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to LogIn" xml:space="preserve">
+    <value>Při pokusu o přihlášení došlo k chybě</value>
+  </data>
+  <data name="An error occurred while trying to make a group identifier" xml:space="preserve">
+    <value>Při pokusu o vytvoření identifikátoru skupiny došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to make a new EPC" xml:space="preserve">
+    <value>Při pokusu o vytvoření nového EPC došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to open an image" xml:space="preserve">
+    <value>Při pokusu o otevření obrázku došlo k chybě</value>
+  </data>
+  <data name="An error occurred while trying to open the Department window" xml:space="preserve">
+    <value>Při pokusu o otevření okna Oddělení došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to read the next instrument" xml:space="preserve">
+    <value>Při pokusu o načtení dalšího nástroje došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to read the SEQ" xml:space="preserve">
+    <value>Při pokusu o přečtení SEQ došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to save a Log to the database" xml:space="preserve">
+    <value>Při pokusu o uložení protokolu do databáze došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to save the image" xml:space="preserve">
+    <value>Při pokusu o uložení obrázku došlo k chybě</value>
+  </data>
+  <data name="An error occurred while trying to substract one EPC" xml:space="preserve">
+    <value>Při pokusu o odečtení jednoho EPC došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to Tag an EPC" xml:space="preserve">
+    <value>Při pokusu o označení EPC tagem došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to update the database" xml:space="preserve">
+    <value>Při pokusu o aktualizaci databáze došlo k chybě</value>
+  </data>
+  <data name="An error occurred while trying to update the serial number" xml:space="preserve">
+    <value>Při pokusu o aktualizaci sériového čísla došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to update the Tag from the database" xml:space="preserve">
+    <value>Při pokusu o aktualizaci Tagu z databáze došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to update the Tag in the database" xml:space="preserve">
+    <value>Při pokusu o aktualizaci Tagu v databázi došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to update the Tag info" xml:space="preserve">
+    <value>Při pokusu o aktualizaci informací o Tagu došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to verify if the TAG is active in another database" xml:space="preserve">
+    <value>Při pokusu o ověření, zda je TAG aktivní v jiné databázi, došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying update the Tag info" xml:space="preserve">
+    <value>Při pokusu o aktualizaci informací o Tagu došlo k chybě</value>
+  </data>
+  <data name="An error related to the TAG occurred while trying to make a new EPC" xml:space="preserve">
+    <value>Při pokusu o vytvoření nového EPC došlo k chybě související s TAGem.</value>
+  </data>
+  <data name="Connecting to SQL_SERVER:" xml:space="preserve">
+    <value>Připojování k SQL_SERVERu:</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Chyba</value>
+  </data>
+  <data name="Error code :" xml:space="preserve">
+    <value>Chybový kód:</value>
+  </data>
+  <data name="error code:" xml:space="preserve">
+    <value>Chybový kód:</value>
+  </data>
+  <data name="If this does not solve the problem, contact Caretag support and report the error code." xml:space="preserve">
+    <value>Pokud to problém nevyřeší, kontaktujte podporu společnosti Caretag a nahlaste chybový kód.</value>
+  </data>
+  <data name="Please restart the application and if this does not solve the problem, contact Caretag Support and report the Error Code" xml:space="preserve">
+    <value>Restartujte prosím aplikaci, a pokud se tím problém nevyřeší, kontaktujte podporu společnosti Caretag a nahlaste chybový kód.</value>
+  </data>
+  <data name="Please restart the application." xml:space="preserve">
+    <value>Restartujte prosím aplikaci.</value>
+  </data>
+  <data name="AssetIsContainer" xml:space="preserve">
+    <value>Aktivem je již kontejner.</value>
+  </data>
+  <data name="AssetIsTray" xml:space="preserve">
+    <value>Aktivem je již síto.</value>
+  </data>
+  <data name="AttemptingToProgramTag" xml:space="preserve">
+    <value>Pokus o naprogramování tagu.</value>
+  </data>
+  <data name="CannotChangeAssetTypeToContainer" xml:space="preserve">
+    <value>Nelze změnit typ aktiva na kontejner. Pokud bylo aktivum naprogramováno omylem, je třeba je smazat.</value>
+  </data>
+  <data name="CannotChangeAssetTypeToInstrument" xml:space="preserve">
+    <value>Nelze změnit typ aktiva na nástroj. Pokud bylo aktivum naprogramováno omylem, je třeba je smazat.</value>
+  </data>
+  <data name="CannotChangeAssetTypeToTray" xml:space="preserve">
+    <value>Nelze změnit typ aktiva na síto. Pokud bylo aktivum naprogramováno omylem, je třeba je smazat.</value>
+  </data>
+  <data name="ConnectingDB" xml:space="preserve">
+    <value>Připojování k databázovému serveru</value>
+  </data>
+  <data name="ContainerSaved" xml:space="preserve">
+    <value>Kontejner uložen!</value>
+  </data>
+  <data name="CouldNotProgramTag" xml:space="preserve">
+    <value>Po 10 pokusech se nepodařilo tag naprogramovat. Tag nemusí být správně nainstalován. Tag přemístěte a zkuste to znovu.</value>
+  </data>
+  <data name="Enter4CharactersForSearch" xml:space="preserve">
+    <value>Pro vyhledání typu nástroje zadejte alespoň 4 znaky.</value>
+  </data>
+  <data name="ErrorResettingTag" xml:space="preserve">
+    <value>Chyba při resetování tagu.</value>
+  </data>
+  <data name="FindingRFIDreader" xml:space="preserve">
+    <value>Vyhledávání čtečky RFID</value>
+  </data>
+  <data name="InstrumentSaved" xml:space="preserve">
+    <value>Nástroj uložen!</value>
+  </data>
+  <data name="NoReaderFound" xml:space="preserve">
+    <value>Nebyla nalezena žádná čtečka!</value>
+  </data>
+  <data name="NoTagFound" xml:space="preserve">
+    <value>Nebyl nalezen žádný tag</value>
+  </data>
+  <data name="NotRecognizedPrefix" xml:space="preserve">
+    <value>Tag odpovídá předponě GS1, ale není rozpoznán jako nástroj, síto nebo kontejner. Kliknutím na tlačítko "další" nastavte typ aktiva.</value>
+  </data>
+  <data name="OnlyOneTagShouldBeOnTheReader" xml:space="preserve">
+    <value>Na čtečce by měl být pouze jeden tag. Z okruhu čtečky odstraňte všechny ostatní tagy a zkuste to znovu.</value>
+  </data>
+  <data name="SelectInstrument" xml:space="preserve">
+    <value>Vyberte prosím typ nástroje.</value>
+  </data>
+  <data name="SuccessfullyTag" xml:space="preserve">
+    <value>Úspěšně přečtený tag!</value>
+  </data>
+  <data name="TagDoesNotMatchGS1Prefix" xml:space="preserve">
+    <value>Tag neodpovídá předponě GS1. Je to pravděpodobně proto, že je čerstvě z výroby a měl by být naprogramován. Pro naprogramování stiskněte tlačítko "další".</value>
+  </data>
+  <data name="TagProgrammed" xml:space="preserve">
+    <value>Tag byl naprogramován!</value>
+  </data>
+  <data name="TagReset" xml:space="preserve">
+    <value>Tag byl resetován.</value>
+  </data>
+  <data name="TechnicalStation" xml:space="preserve">
+    <value>Technická stanice</value>
+  </data>
+  <data name="TraySaved" xml:space="preserve">
+    <value>Síto uloženo!</value>
+  </data>
+  <data name="ChangeInstrumentType" xml:space="preserve">
+    <value>Pro změnu typu nástroje klikněte na tlačítko "další" nebo pro skenování jiného aktiva na tlačítko "restartovat".</value>
+  </data>
+  <data name="TagMatchesContainer" xml:space="preserve">
+    <value>Tag odpovídá kontejneru v databázi. Kliknutím na tlačítko "Dokončit" začnete znovu s jiným aktivem.</value>
+  </data>
+  <data name="TagMatchesInstrument" xml:space="preserve">
+    <value>Tag odpovídá nástroji v databázi:</value>
+  </data>
+  <data name="TagMatchesTray" xml:space="preserve">
+    <value>Tag odpovídá sítu v databázi. Kliknutím na tlačítko "Dokončit" začnete znovu s jiným aktivem.</value>
+  </data>
+  <data name="Enter4CharactersForSearch." xml:space="preserve">
+    <value>Pro vyhledání typu nástroje zadejte alespoň 4 znaky.</value>
+  </data>
+  <data name="EnterLot" xml:space="preserve">
+    <value>Zadejte prosím číslo šarže</value>
+  </data>
+  <data name="EnterProductionDate" xml:space="preserve">
+    <value>Zadejte prosím datum výroby</value>
+  </data>
+  <data name="ProductionDateFormatIncorrect" xml:space="preserve">
+    <value>Formát data výroby je nesprávný. </value>
+  </data>
+  <data name="ProductionDateInFuture" xml:space="preserve">
+    <value>Datum výroby je v budoucnosti! Zadejte prosím datum v minulosti. </value>
+  </data>
+</root>

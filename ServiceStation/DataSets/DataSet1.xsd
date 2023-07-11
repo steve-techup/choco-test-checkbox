@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Caretag_SurgicalConnectionStringSQL" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Caretag_SurgicalConnectionStringSQL (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Service_Station.Settings.GlobalReference.Default.Caretag_SurgicalConnectionStringSQL" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Instrument_Maintenance_RulesTableAdapter" GeneratorDataComponentClassName="Instrument_Maintenance_RulesTableAdapter" Name="Instrument_Maintenance_Rules" UserDataComponentName="Instrument_Maintenance_RulesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Caretag_SurgicalConnectionStringSQL (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        Instrument_Rules.Maintenance_Text, Instrument_Rules.Maintenance_Value, Instrument_Rules.Maintenance_Periods, Instrument_Rules.Maintenance_Period_Start, Instrument_Rules.Maintenance_Alarm, 
+                         Instrument_Rules.Deleted, Instrument_Rules.ChangeDate, Instrument_Rules.Description_ID, Instrument_Rules.Rules_ID, Instrument_Description.Description_Name
+FROM            Instrument_Description RIGHT OUTER JOIN
+                         Instrument_Rules ON Instrument_Description.Description_ID = Instrument_Rules.Description_ID</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Description_ID" DataSetColumn="Description_ID" />
+              <Mapping SourceColumn="Maintenance_Text" DataSetColumn="Maintenance_Text" />
+              <Mapping SourceColumn="Maintenance_Value" DataSetColumn="Maintenance_Value" />
+              <Mapping SourceColumn="Maintenance_Periods" DataSetColumn="Maintenance_Periods" />
+              <Mapping SourceColumn="Maintenance_Period_Start" DataSetColumn="Maintenance_Period_Start" />
+              <Mapping SourceColumn="Maintenance_Alarm" DataSetColumn="Maintenance_Alarm" />
+              <Mapping SourceColumn="Deleted" DataSetColumn="Deleted" />
+              <Mapping SourceColumn="ChangeDate" DataSetColumn="ChangeDate" />
+              <Mapping SourceColumn="Rules_ID" DataSetColumn="Rules_ID" />
+              <Mapping SourceColumn="Description_Name" DataSetColumn="Description_Name" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Instrument_Maintenance_Rules" msprop:Generator_TableClassName="Instrument_Maintenance_RulesDataTable" msprop:Generator_TableVarName="tableInstrument_Maintenance_Rules" msprop:Generator_TablePropName="Instrument_Maintenance_Rules" msprop:Generator_RowDeletingName="Instrument_Maintenance_RulesRowDeleting" msprop:Generator_RowChangingName="Instrument_Maintenance_RulesRowChanging" msprop:Generator_RowEvHandlerName="Instrument_Maintenance_RulesRowChangeEventHandler" msprop:Generator_RowDeletedName="Instrument_Maintenance_RulesRowDeleted" msprop:Generator_UserTableName="Instrument_Maintenance_Rules" msprop:Generator_RowChangedName="Instrument_Maintenance_RulesRowChanged" msprop:Generator_RowEvArgName="Instrument_Maintenance_RulesRowChangeEvent" msprop:Generator_RowClassName="Instrument_Maintenance_RulesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Description_ID" msprop:Generator_ColumnVarNameInTable="columnDescription_ID" msprop:Generator_ColumnPropNameInRow="Description_ID" msprop:Generator_ColumnPropNameInTable="Description_IDColumn" msprop:Generator_UserColumnName="Description_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Maintenance_Text" msprop:Generator_ColumnVarNameInTable="columnMaintenance_Text" msprop:Generator_ColumnPropNameInRow="Maintenance_Text" msprop:Generator_ColumnPropNameInTable="Maintenance_TextColumn" msprop:Generator_UserColumnName="Maintenance_Text" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Maintenance_Value" msprop:Generator_ColumnVarNameInTable="columnMaintenance_Value" msprop:Generator_ColumnPropNameInRow="Maintenance_Value" msprop:Generator_ColumnPropNameInTable="Maintenance_ValueColumn" msprop:Generator_UserColumnName="Maintenance_Value" type="xs:short" minOccurs="0" />
+              <xs:element name="Maintenance_Periods" msprop:Generator_ColumnVarNameInTable="columnMaintenance_Periods" msprop:Generator_ColumnPropNameInRow="Maintenance_Periods" msprop:Generator_ColumnPropNameInTable="Maintenance_PeriodsColumn" msprop:Generator_UserColumnName="Maintenance_Periods" type="xs:short" minOccurs="0" />
+              <xs:element name="Maintenance_Period_Start" msprop:Generator_ColumnVarNameInTable="columnMaintenance_Period_Start" msprop:Generator_ColumnPropNameInRow="Maintenance_Period_Start" msprop:Generator_ColumnPropNameInTable="Maintenance_Period_StartColumn" msprop:Generator_UserColumnName="Maintenance_Period_Start" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Maintenance_Alarm" msprop:Generator_ColumnVarNameInTable="columnMaintenance_Alarm" msprop:Generator_ColumnPropNameInRow="Maintenance_Alarm" msprop:Generator_ColumnPropNameInTable="Maintenance_AlarmColumn" msprop:Generator_UserColumnName="Maintenance_Alarm" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Deleted" msprop:Generator_ColumnVarNameInTable="columnDeleted" msprop:Generator_ColumnPropNameInRow="Deleted" msprop:Generator_ColumnPropNameInTable="DeletedColumn" msprop:Generator_UserColumnName="Deleted" type="xs:boolean" minOccurs="0" />
+              <xs:element name="ChangeDate" msprop:Generator_ColumnVarNameInTable="columnChangeDate" msprop:Generator_ColumnPropNameInRow="ChangeDate" msprop:Generator_ColumnPropNameInTable="ChangeDateColumn" msprop:Generator_UserColumnName="ChangeDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Rules_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnRules_ID" msprop:Generator_ColumnPropNameInRow="Rules_ID" msprop:Generator_ColumnPropNameInTable="Rules_IDColumn" msprop:Generator_UserColumnName="Rules_ID" type="xs:long" />
+              <xs:element name="Description_Name" msprop:Generator_ColumnVarNameInTable="columnDescription_Name" msprop:Generator_ColumnPropNameInRow="Description_Name" msprop:Generator_ColumnPropNameInTable="Description_NameColumn" msprop:Generator_UserColumnName="Description_Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Instrument_Maintenance_Rules" />
+      <xs:field xpath="mstns:Rules_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Caretag_SurgicalDataSet1" targetNamespace="http://tempuri.org/Caretag_SurgicalDataSet1.xsd" xmlns:mstns="http://tempuri.org/Caretag_SurgicalDataSet1.xsd" xmlns="http://tempuri.org/Caretag_SurgicalDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Caretag_SurgicalConnectionStringSQL" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Caretag_SurgicalConnectionStringSQL (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Service_Station.Settings.GlobalReference.Default.Caretag_SurgicalConnectionStringSQL" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Service_LogTableAdapter" GeneratorDataComponentClassName="Service_LogTableAdapter" Name="Service_Log" UserDataComponentName="Service_LogTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Caretag_SurgicalConnectionStringSQL (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        dbo.TblPassword.UserName, dbo.Instrument_RFID.Description_Text, dbo.Service_Log.ChangeDate, dbo.Service_Log.ServiceVendor_ID, dbo.Service_Vendor.Vendor_Name, dbo.Service_Log.EPC_Nr, 
+                         dbo.Service_Vendor.Vendor_City, dbo.Instrument_Rules.Maintenance_Text, dbo.Instrument_Rules.Maintenance_Value, dbo.Instrument_Rules.Maintenance_Periods, dbo.Instrument_Rules.Maintenance_Period_Start
+FROM            dbo.Service_Log INNER JOIN
+                         dbo.TblPassword ON dbo.Service_Log.UserID = dbo.TblPassword.UserID INNER JOIN
+                         dbo.Instrument_RFID ON dbo.Service_Log.EPC_Nr = dbo.Instrument_RFID.EPC_Nr INNER JOIN
+                         dbo.Instrument_Rules ON dbo.Service_Log.Rules_ID = dbo.Instrument_Rules.Rules_ID LEFT OUTER JOIN
+                         dbo.Service_Vendor ON dbo.Service_Log.ServiceVendor_ID = dbo.Service_Vendor.ServiceVendor_ID</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="EPC_Nr" DataSetColumn="EPC_Nr" />
+              <Mapping SourceColumn="ChangeDate" DataSetColumn="ChangeDate" />
+              <Mapping SourceColumn="UserName" DataSetColumn="UserName" />
+              <Mapping SourceColumn="Maintenance_Text" DataSetColumn="Maintenance_Text" />
+              <Mapping SourceColumn="Maintenance_Value" DataSetColumn="Maintenance_Value" />
+              <Mapping SourceColumn="Maintenance_Periods" DataSetColumn="Maintenance_Periods" />
+              <Mapping SourceColumn="Maintenance_Period_Start" DataSetColumn="Maintenance_Period_Start" />
+              <Mapping SourceColumn="Description_Text" DataSetColumn="Description_Text" />
+              <Mapping SourceColumn="ServiceVendor_ID" DataSetColumn="ServiceVendor_ID" />
+              <Mapping SourceColumn="Vendor_Name" DataSetColumn="Vendor_Name" />
+              <Mapping SourceColumn="Vendor_City" DataSetColumn="Vendor_City" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Caretag_SurgicalDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Caretag_SurgicalDataSet1" msprop:Generator_UserDSName="Caretag_SurgicalDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Service_Log" msprop:Generator_TableClassName="Service_LogDataTable" msprop:Generator_TableVarName="tableService_Log" msprop:Generator_RowChangedName="Service_LogRowChanged" msprop:Generator_TablePropName="Service_Log" msprop:Generator_RowDeletingName="Service_LogRowDeleting" msprop:Generator_RowChangingName="Service_LogRowChanging" msprop:Generator_RowEvHandlerName="Service_LogRowChangeEventHandler" msprop:Generator_RowDeletedName="Service_LogRowDeleted" msprop:Generator_RowClassName="Service_LogRow" msprop:Generator_UserTableName="Service_Log" msprop:Generator_RowEvArgName="Service_LogRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EPC_Nr" msprop:Generator_ColumnVarNameInTable="columnEPC_Nr" msprop:Generator_ColumnPropNameInRow="EPC_Nr" msprop:Generator_ColumnPropNameInTable="EPC_NrColumn" msprop:Generator_UserColumnName="EPC_Nr" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ChangeDate" msprop:Generator_ColumnVarNameInTable="columnChangeDate" msprop:Generator_ColumnPropNameInRow="ChangeDate" msprop:Generator_ColumnPropNameInTable="ChangeDateColumn" msprop:Generator_UserColumnName="ChangeDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="UserName" msprop:Generator_ColumnVarNameInTable="columnUserName" msprop:Generator_ColumnPropNameInRow="UserName" msprop:Generator_ColumnPropNameInTable="UserNameColumn" msprop:Generator_UserColumnName="UserName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Maintenance_Text" msprop:Generator_ColumnVarNameInTable="columnMaintenance_Text" msprop:Generator_ColumnPropNameInRow="Maintenance_Text" msprop:Generator_ColumnPropNameInTable="Maintenance_TextColumn" msprop:Generator_UserColumnName="Maintenance_Text" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Maintenance_Value" msprop:Generator_ColumnVarNameInTable="columnMaintenance_Value" msprop:Generator_ColumnPropNameInRow="Maintenance_Value" msprop:Generator_ColumnPropNameInTable="Maintenance_ValueColumn" msprop:Generator_UserColumnName="Maintenance_Value" type="xs:short" minOccurs="0" />
+              <xs:element name="Maintenance_Periods" msprop:Generator_ColumnVarNameInTable="columnMaintenance_Periods" msprop:Generator_ColumnPropNameInRow="Maintenance_Periods" msprop:Generator_ColumnPropNameInTable="Maintenance_PeriodsColumn" msprop:Generator_UserColumnName="Maintenance_Periods" type="xs:short" minOccurs="0" />
+              <xs:element name="Maintenance_Period_Start" msprop:Generator_ColumnVarNameInTable="columnMaintenance_Period_Start" msprop:Generator_ColumnPropNameInRow="Maintenance_Period_Start" msprop:Generator_ColumnPropNameInTable="Maintenance_Period_StartColumn" msprop:Generator_UserColumnName="Maintenance_Period_Start" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Description_Text" msprop:Generator_ColumnVarNameInTable="columnDescription_Text" msprop:Generator_ColumnPropNameInRow="Description_Text" msprop:Generator_ColumnPropNameInTable="Description_TextColumn" msprop:Generator_UserColumnName="Description_Text" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ServiceVendor_ID" msprop:Generator_ColumnVarNameInTable="columnServiceVendor_ID" msprop:Generator_ColumnPropNameInRow="ServiceVendor_ID" msprop:Generator_ColumnPropNameInTable="ServiceVendor_IDColumn" msprop:Generator_UserColumnName="ServiceVendor_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="Vendor_Name" msprop:Generator_ColumnVarNameInTable="columnVendor_Name" msprop:Generator_ColumnPropNameInRow="Vendor_Name" msprop:Generator_ColumnPropNameInTable="Vendor_NameColumn" msprop:Generator_UserColumnName="Vendor_Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Vendor_City" msprop:Generator_ColumnVarNameInTable="columnVendor_City" msprop:Generator_ColumnPropNameInRow="Vendor_City" msprop:Generator_ColumnPropNameInTable="Vendor_CityColumn" msprop:Generator_UserColumnName="Vendor_City" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

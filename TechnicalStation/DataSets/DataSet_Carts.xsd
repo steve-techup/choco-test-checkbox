@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet_Carts" targetNamespace="http://tempuri.org/DataSet_Carts.xsd" xmlns:mstns="http://tempuri.org/DataSet_Carts.xsd" xmlns="http://tempuri.org/DataSet_Carts.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Caretag_SurgicalConnectionStringSQL" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Caretag_SurgicalConnectionStringSQL (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.TechnicalStation.Settings.GlobalReference.Default.Caretag_SurgicalConnectionStringSQL" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Carts_In_DatabaseTableAdapter" GeneratorDataComponentClassName="Carts_In_DatabaseTableAdapter" Name="Carts_In_Database" UserDataComponentName="Carts_In_DatabaseTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Caretag_SurgicalConnectionStringSQL (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        Cart_RFID.Cart_ID, Cart_RFID.EPC_Nr, Cart_RFID.SEQ_Nr, Cart_Description.Cart_Name, Cart_Description.Cart_Description, Cart_Description.Cart_Lock, Cart_Description.Date_Changed, Cart_RFID.Description_ID, 
+                         Cart_RFID.Cart_LastSeen_Place, Cart_RFID.Cart_LastSeen_Date, Cart_RFID.Cart_Changed, Cart_RFID.Cart_Contents, DATEDIFF(day, Cart_RFID.Cart_LastSeen_Date, GETDATE()) AS Days
+FROM            Cart_RFID INNER JOIN
+                         Cart_Description ON Cart_RFID.Description_ID = Cart_Description.Description_ID</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="EPC_Nr" DataSetColumn="EPC_Nr" />
+              <Mapping SourceColumn="Description_ID" DataSetColumn="Description_ID" />
+              <Mapping SourceColumn="Date_Changed" DataSetColumn="Date_Changed" />
+              <Mapping SourceColumn="Days" DataSetColumn="Days" />
+              <Mapping SourceColumn="Cart_ID" DataSetColumn="Cart_ID" />
+              <Mapping SourceColumn="SEQ_Nr" DataSetColumn="SEQ_Nr" />
+              <Mapping SourceColumn="Cart_Name" DataSetColumn="Cart_Name" />
+              <Mapping SourceColumn="Cart_Description" DataSetColumn="Cart_Description" />
+              <Mapping SourceColumn="Cart_Lock" DataSetColumn="Cart_Lock" />
+              <Mapping SourceColumn="Cart_LastSeen_Place" DataSetColumn="Cart_LastSeen_Place" />
+              <Mapping SourceColumn="Cart_LastSeen_Date" DataSetColumn="Cart_LastSeen_Date" />
+              <Mapping SourceColumn="Cart_Changed" DataSetColumn="Cart_Changed" />
+              <Mapping SourceColumn="Cart_Contents" DataSetColumn="Cart_Contents" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet_Carts" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet_Carts" msprop:Generator_UserDSName="DataSet_Carts">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Carts_In_Database" msprop:Generator_TableClassName="Carts_In_DatabaseDataTable" msprop:Generator_TableVarName="tableCarts_In_Database" msprop:Generator_RowChangedName="Carts_In_DatabaseRowChanged" msprop:Generator_TablePropName="Carts_In_Database" msprop:Generator_RowDeletingName="Carts_In_DatabaseRowDeleting" msprop:Generator_RowChangingName="Carts_In_DatabaseRowChanging" msprop:Generator_RowEvHandlerName="Carts_In_DatabaseRowChangeEventHandler" msprop:Generator_RowDeletedName="Carts_In_DatabaseRowDeleted" msprop:Generator_RowClassName="Carts_In_DatabaseRow" msprop:Generator_UserTableName="Carts_In_Database" msprop:Generator_RowEvArgName="Carts_In_DatabaseRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EPC_Nr" msprop:Generator_ColumnVarNameInTable="columnEPC_Nr" msprop:Generator_ColumnPropNameInRow="EPC_Nr" msprop:Generator_ColumnPropNameInTable="EPC_NrColumn" msprop:Generator_UserColumnName="EPC_Nr" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Description_ID" msprop:Generator_ColumnVarNameInTable="columnDescription_ID" msprop:Generator_ColumnPropNameInRow="Description_ID" msprop:Generator_ColumnPropNameInTable="Description_IDColumn" msprop:Generator_UserColumnName="Description_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="Date_Changed" msprop:Generator_ColumnVarNameInTable="columnDate_Changed" msprop:Generator_ColumnPropNameInRow="Date_Changed" msprop:Generator_ColumnPropNameInTable="Date_ChangedColumn" msprop:Generator_UserColumnName="Date_Changed" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Days" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDays" msprop:Generator_ColumnPropNameInRow="Days" msprop:Generator_ColumnPropNameInTable="DaysColumn" msprop:Generator_UserColumnName="Days" type="xs:int" minOccurs="0" />
+              <xs:element name="Cart_ID" msprop:Generator_ColumnVarNameInTable="columnCart_ID" msprop:Generator_ColumnPropNameInRow="Cart_ID" msprop:Generator_ColumnPropNameInTable="Cart_IDColumn" msprop:Generator_UserColumnName="Cart_ID" type="xs:long" />
+              <xs:element name="SEQ_Nr" msprop:Generator_ColumnVarNameInTable="columnSEQ_Nr" msprop:Generator_ColumnPropNameInRow="SEQ_Nr" msprop:Generator_ColumnPropNameInTable="SEQ_NrColumn" msprop:Generator_UserColumnName="SEQ_Nr" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cart_Name" msprop:Generator_ColumnVarNameInTable="columnCart_Name" msprop:Generator_ColumnPropNameInRow="Cart_Name" msprop:Generator_ColumnPropNameInTable="Cart_NameColumn" msprop:Generator_UserColumnName="Cart_Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cart_Description" msprop:Generator_ColumnVarNameInTable="columnCart_Description" msprop:Generator_ColumnPropNameInRow="Cart_Description" msprop:Generator_ColumnPropNameInTable="Cart_DescriptionColumn" msprop:Generator_UserColumnName="Cart_Description" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cart_Lock" msprop:Generator_ColumnVarNameInTable="columnCart_Lock" msprop:Generator_ColumnPropNameInRow="Cart_Lock" msprop:Generator_ColumnPropNameInTable="Cart_LockColumn" msprop:Generator_UserColumnName="Cart_Lock" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Cart_LastSeen_Place" msprop:Generator_ColumnVarNameInTable="columnCart_LastSeen_Place" msprop:Generator_ColumnPropNameInRow="Cart_LastSeen_Place" msprop:Generator_ColumnPropNameInTable="Cart_LastSeen_PlaceColumn" msprop:Generator_UserColumnName="Cart_LastSeen_Place" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cart_LastSeen_Date" msprop:Generator_ColumnVarNameInTable="columnCart_LastSeen_Date" msprop:Generator_ColumnPropNameInRow="Cart_LastSeen_Date" msprop:Generator_ColumnPropNameInTable="Cart_LastSeen_DateColumn" msprop:Generator_UserColumnName="Cart_LastSeen_Date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Cart_Changed" msprop:Generator_ColumnVarNameInTable="columnCart_Changed" msprop:Generator_ColumnPropNameInRow="Cart_Changed" msprop:Generator_ColumnPropNameInTable="Cart_ChangedColumn" msprop:Generator_UserColumnName="Cart_Changed" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Cart_Contents" msprop:Generator_ColumnVarNameInTable="columnCart_Contents" msprop:Generator_ColumnPropNameInRow="Cart_Contents" msprop:Generator_ColumnPropNameInTable="Cart_ContentsColumn" msprop:Generator_UserColumnName="Cart_Contents" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Carts_In_Database" />
+      <xs:field xpath="mstns:Cart_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

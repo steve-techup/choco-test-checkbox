@@ -1,0 +1,472 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{560CCBAA-9FF6-0710-3C28-B5CAF9587FF9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Service_Station</RootNamespace>
+    <AssemblyName>Service_Station</AssemblyName>
+    <ApplicationIcon>Resources\Knowledge Hub_TransP.ico</ApplicationIcon>
+    <StartupObject>Service_Station.Program</StartupObject>
+    <ManifestCertificateThumbprint>652ADE1393A7055E61D379683EFF224516CBF913</ManifestCertificateThumbprint>
+    <ManifestKeyFile>CaretagCodeSigningCA.pfx</ManifestKeyFile>
+    <GenerateManifests>false</GenerateManifests>
+    <SignManifests>false</SignManifests>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <DefaultItemExcludes>$(DefaultItemExcludes);$(ProjectDir)**\*.vb</DefaultItemExcludes>
+    <LangVersion>latest</LangVersion>
+    <PublishUrl>C:\Caretag\Publish\Construction_ServiceStation\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>Service_Station</ProductName>
+    <PublisherName>Caretag Aps</PublisherName>
+    <SuiteName>Caretag</SuiteName>
+    <ApplicationRevision>15</ApplicationRevision>
+    <ApplicationVersion>2.5.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <PropertyGroup>
+    <MyType>WindowsForms</MyType>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Common\ExternalBinaries\Microsoft.VisualBasic.PowerPacks.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Design">
+      <HintPath>..\Common\ExternalBinaries\Microsoft.VisualBasic.PowerPacks.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Web" />
+    <Import Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Configuration\ServiceStationAppSettings.cs" />
+    <Compile Include="Infrastructure\DiExtensions.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\MyNamespace.Static.1.Designer.cs" />
+    <Compile Include="Properties\MyNamespace.Static.2.Designer.cs" />
+    <Compile Include="Properties\MyNamespace.Static.3.Designer.cs" />
+    <Compile Include="ApplicationEvents.cs" />
+    <Compile Include="DataSets\Caretag_SurgicalDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Caretag_SurgicalDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_CompanyDepartmentID.Designer.cs">
+      <DependentUpon>Form_CompanyDepartmentID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_CompanyDepartmentID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_LifeCycle.Designer.cs">
+      <DependentUpon>Form_LifeCycle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_LifeCycle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_Active.Designer.cs">
+      <DependentUpon>Form_Active.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_Active.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_Exit.Designer.cs">
+      <DependentUpon>Form_Exit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_Exit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Network_Down.Designer.cs">
+      <DependentUpon>Network_Down.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Network_Down.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Print_Service_Report.Designer.cs">
+      <DependentUpon>Print_Service_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Print_Service_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SystemInfo.designer.cs">
+      <DependentUpon>SystemInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SystemInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Start.Designer.cs">
+      <DependentUpon>Form_Start.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Start.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\Application.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PivotGridView_1.Designer.cs">
+      <DependentUpon>PivotGridView_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PivotGridView_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\XtraReportALL_Rules.Designer.cs">
+      <DependentUpon>XtraReportALL_Rules.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\XtraReportALL_Rules.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\XtraReportServiceLog.Designer.cs">
+      <DependentUpon>XtraReportServiceLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\XtraReportServiceLog.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\XtraReport_Service_One.Designer.cs">
+      <DependentUpon>XtraReport_Service_One.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\XtraReport_Service_One.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\XtraReport_To_Service.Designer.cs">
+      <DependentUpon>XtraReport_To_Service.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\XtraReport_To_Service.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WinFormStrings.de-DE.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WinFormStrings.de-DE.resx</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="WinFormStrings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WinFormStrings.resx</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <EmbeddedResource Include="Forms\Form_CompanyDepartmentID.resx">
+      <DependentUpon>Form_CompanyDepartmentID.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_Exit.de-DE.resx">
+      <DependentUpon>Form_Exit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_LifeCycle.de-DE.resx">
+      <DependentUpon>Form_LifeCycle.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_LifeCycle.resx">
+      <DependentUpon>Form_LifeCycle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_Active.resx">
+      <DependentUpon>Form_Active.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_Exit.resx">
+      <DependentUpon>Form_Exit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Network_Down.resx">
+      <DependentUpon>Network_Down.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Print_Service_Report.de-DE.resx">
+      <DependentUpon>Print_Service_Report.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Print_Service_Report.resx">
+      <DependentUpon>Print_Service_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SystemInfo.resx">
+      <DependentUpon>SystemInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Start.de-DE.resx">
+      <DependentUpon>Form_Start.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Start.resx">
+      <DependentUpon>Form_Start.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>Service_Station.My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotGridView_1.de-DE.resx">
+      <DependentUpon>PivotGridView_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotGridView_1.resx">
+      <DependentUpon>PivotGridView_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\XtraReportALL_Rules.resx">
+      <DependentUpon>XtraReportALL_Rules.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\XtraReportServiceLog.resx">
+      <DependentUpon>XtraReportServiceLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\XtraReport_Service_One.resx">
+      <DependentUpon>XtraReport_Service_One.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\XtraReport_To_Service.resx">
+      <DependentUpon>XtraReport_To_Service.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormStrings.de-DE.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>WinFormStrings.de-DE.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Service_Station.My.Resources</CustomToolNamespace>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormStrings.resx">
+      <CustomToolNamespace>Service_Station.My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>WinFormStrings.Designer.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Buildscripts\InjectGitVersion.ps1" />
+    <None Include="DataSets\Caretag_SurgicalDataSet1.xsc">
+      <DependentUpon>Caretag_SurgicalDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\Caretag_SurgicalDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Caretag_SurgicalDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSets\Caretag_SurgicalDataSet1.xss">
+      <DependentUpon>Caretag_SurgicalDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSets\DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GareTag_Logo_New.jpg" />
+    <None Include="Resources\GareTag_Logo_New.png" />
+    <None Include="Resources\GareTag_Logo_simple.png" />
+    <None Include="Resources\GareTag_Logo_Transfer.png" />
+    <None Include="Resources\TagSymbol - Small.png" />
+    <None Include="Resources\TagSymbol.png" />
+    <None Include="Properties\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\GareTag_Logo_Transfer.ico" />
+    <None Include="Resources\Knowledge Hub_TransP.ico" />
+    <None Include="Resources\TagSymbol_Trans.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\Knowledge Hub_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TextFile1.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\USB_CAM.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\USB_Camera.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\USB_Camera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\World_Map.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\No_Network.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Main\Main.csproj">
+      <Project>{0D226ADF-C558-026E-09A7-A03CE3BADC55}</Project>
+      <Name>Main</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\RFIDAbstractionLayer\RFIDAbstractionLayer.csproj">
+      <Project>{f57d2810-bec8-490d-bfdd-3cc3980f938c}</Project>
+      <Name>RFIDAbstractionLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="DevExpress.ExpressApp.PivotGrid">
+      <Version>22.1.7</Version>
+    </PackageReference>
+    <PackageReference Include="DevExpress.ExpressApp.PivotGrid.Win">
+      <Version>22.1.7</Version>
+    </PackageReference>
+    <PackageReference Include="DevExpress.ExpressApp.Win.All">
+      <Version>22.1.7</Version>
+    </PackageReference>
+    <PackageReference Include="DevExpress.Win">
+      <Version>22.1.7</Version>
+    </PackageReference>
+    <PackageReference Include="EmptyLicensesLicx">
+      <Version>3.0.0</Version>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Hosting">
+      <Version>7.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="Serilog.Settings.Configuration">
+      <Version>3.4.0</Version>
+    </PackageReference>
+    <PackageReference Include="Serilog.Sinks.Console">
+      <Version>4.1.0</Version>
+    </PackageReference>
+    <PackageReference Include="Serilog.Sinks.File">
+      <Version>5.0.0</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <UsingTask TaskName="SmartAssembly.MSBuild.Tasks.Build" AssemblyName="SmartAssembly.MSBuild.Tasks, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7f465a1c156d4d57" />
+  <Target Name="AfterBuild" Condition=" '$(Configuration)' == 'Release' ">
+    <SmartAssembly.MSBuild.Tasks.Build ProjectFile="..\Service_Station.saproj" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+    </VisualStudio>
+  </ProjectExtensions>
+  <ItemGroup>
+    <JsonFiles Include="$(ProjectDir)\*.json" />
+  </ItemGroup>
+  <Target Name="CopyJsonFiles" AfterTargets="Build">
+    <Message Text="Executing CopyJsonFiles task" Importance="High" />
+    <Copy SourceFiles="@(JsonFiles);" DestinationFolder="$(TargetDir)" />
+    <Message Text="Copied json files" Importance="High" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

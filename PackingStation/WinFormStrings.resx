@@ -1,0 +1,1059 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Dot Net Version ... is NOT Okay" xml:space="preserve">
+    <value>Dot Net Version ... is NOT Okay</value>
+  </data>
+  <data name="Connecting to SQL_SERVER ..." xml:space="preserve">
+    <value>Connecting to SQL_SERVER ...</value>
+  </data>
+  <data name="Checking for Update !" xml:space="preserve">
+    <value>Checking for Update !</value>
+  </data>
+  <data name="Packing_Station" xml:space="preserve">
+    <value>Packing_Station</value>
+  </data>
+  <data name="The SQL_SERVER is NOT running .. Correct and try again !" xml:space="preserve">
+    <value>The SQL_SERVER is NOT running .. Correct and try again !</value>
+  </data>
+  <data name="The Station is NOT Recognized .. Check with Administrator and try again !" xml:space="preserve">
+    <value>The Station is NOT Recognized .. Check with Administrator and try again !</value>
+  </data>
+  <data name="No Update ..." xml:space="preserve">
+    <value>No Update ...</value>
+  </data>
+  <data name="Issue in LogIn ... Try Again ! {0}{1}" xml:space="preserve">
+    <value>Issue in LogIn ... Try Again ! {0}{1}</value>
+  </data>
+  <data name="Issue ... Program will Not Work Correct !" xml:space="preserve">
+    <value>Issue ... Program will Not Work Correct !</value>
+  </data>
+  <data name="FindingReader" xml:space="preserve">
+    <value>Finding Reader …</value>
+  </data>
+  <data name="Dot Net Version ... Is Okay" xml:space="preserve">
+    <value>Dot Net Version ... Is Okay</value>
+  </data>
+  <data name="Default Configuration Used - Reader ID:" xml:space="preserve">
+    <value>Default Configuration Used - Reader ID:</value>
+  </data>
+  <data name="Correct Issue and Program is Shutting Down" xml:space="preserve">
+    <value>Correct Issue and Program is Shutting Down</value>
+  </data>
+  <data name="Contact IT department Or Caretag !" xml:space="preserve">
+    <value>Contact IT department Or Caretag !</value>
+  </data>
+  <data name="Connected..." xml:space="preserve">
+    <value>Connected...</value>
+  </data>
+  <data name="Checking Version &amp; License ..." xml:space="preserve">
+    <value>Checking Version &amp; License ...</value>
+  </data>
+  <data name="Checking Reader_ID ..." xml:space="preserve">
+    <value>Checking Reader_ID ...</value>
+  </data>
+  <data name="Checking Dot Net Version ..." xml:space="preserve">
+    <value>Checking Dot Net Version ...</value>
+  </data>
+  <data name="Check Version Or License  - An Issue !" xml:space="preserve">
+    <value>Check Version Or License  - An Issue !</value>
+  </data>
+  <data name="Be aware NO Reader can be Found ! ...." xml:space="preserve">
+    <value>Be aware NO Reader can be Found ! ....</value>
+  </data>
+  <data name="Issue Read_SQLConnection..." xml:space="preserve">
+    <value>Issue Read_SQLConnection...</value>
+  </data>
+  <data name="Loading Program Settings ..." xml:space="preserve">
+    <value>Loading Program Settings ...</value>
+  </data>
+  <data name="No Service Vendor EXIST !   Please Correct" xml:space="preserve">
+    <value>No Service Vendor EXIST !   Please Correct</value>
+  </data>
+  <data name="Not Connected to:" xml:space="preserve">
+    <value>Not Connected to:</value>
+  </data>
+  <data name="Not Connected..." xml:space="preserve">
+    <value>Not Connected...</value>
+  </data>
+  <data name="Read NEXT Instrument" xml:space="preserve">
+    <value>Read NEXT Instrument</value>
+  </data>
+  <data name="Set this Instrument aside ...." xml:space="preserve">
+    <value>Set this Instrument aside ....</value>
+  </data>
+  <data name="Status for Sent To Service :" xml:space="preserve">
+    <value>Status for Sent To Service : </value>
+  </data>
+  <data name="Status for Sent To Service : All Users" xml:space="preserve">
+    <value>Status for Sent To Service : All Users</value>
+  </data>
+  <data name="The Instrument     MAY NOT    be Used  !" xml:space="preserve">
+    <value>The Instrument     MAY NOT    be Used  !</value>
+  </data>
+  <data name="Issue in Send To Service ... Please Report !" xml:space="preserve">
+    <value>Issue in Send To Service ... Please Report !</value>
+  </data>
+  <data name="Is Already SENT to SERVICE !" xml:space="preserve">
+    <value>Is Already SENT to SERVICE !</value>
+  </data>
+  <data name="There Is a Demand Service from :" xml:space="preserve">
+    <value>There Is a Demand Service from :</value>
+  </data>
+  <data name="You Can Not Exit -&gt; There is a Service Request !" xml:space="preserve">
+    <value>You Can Not Exit -&gt; There is a Service Request !</value>
+  </data>
+  <data name="Issue in Loading Combobox .. Restart and Try Again !{0}{1}" xml:space="preserve">
+    <value>Issue in Loading Combobox .. Restart and Try Again !{0}{1}</value>
+  </data>
+  <data name="Issue in Login -&gt; Exit ! {0}{1}" xml:space="preserve">
+    <value>Issue in Login -&gt; Exit ! {0}{1}</value>
+  </data>
+  <data name="Maybe Issue in Registry Database .. Correct and try again !{0}{1}" xml:space="preserve">
+    <value>Maybe Issue in Registry Database .. Correct and try again !{0}{1}</value>
+  </data>
+  <data name="... Stopping Packing the Tray ..." xml:space="preserve">
+    <value>... Stopping Packing the Tray ...</value>
+  </data>
+  <data name="... The Tray is Packed  ..." xml:space="preserve">
+    <value>... The Tray is Packed  ...</value>
+  </data>
+  <data name="Be aware you are Changing LOCK TRAY Status" xml:space="preserve">
+    <value>Be aware you are Changing LOCK TRAY Status</value>
+  </data>
+  <data name="Click to Read The Tray for Packing ..." xml:space="preserve">
+    <value>Click to Read The Tray for Packing ...</value>
+  </data>
+  <data name="DO NOT PLACE IN TRAY !    and Set this Instrument aside ...." xml:space="preserve">
+    <value>DO NOT PLACE IN TRAY !    and Set this Instrument aside ....</value>
+  </data>
+  <data name="DO NOT PLACE IN TRAY !!!!  Send Instrument to SERVICE ...." xml:space="preserve">
+    <value>DO NOT PLACE IN TRAY !!!!  Send Instrument to SERVICE ....</value>
+  </data>
+  <data name="EMPTY the Tray and Start Again !" xml:space="preserve">
+    <value>EMPTY the Tray and Start Again !</value>
+  </data>
+  <data name="Instruments" xml:space="preserve">
+    <value> Instruments</value>
+  </data>
+  <data name="Not between 1 and 10, inclusive" xml:space="preserve">
+    <value>Not between 1 and 10, inclusive</value>
+  </data>
+  <data name="NOT in PACKING List !" xml:space="preserve">
+    <value>NOT in PACKING List !</value>
+  </data>
+  <data name="Only   ONE   Instruments at the Time !" xml:space="preserve">
+    <value>Only   ONE   Instruments at the Time !</value>
+  </data>
+  <data name="PLACE   INSTRUMENT   IN TRAY !" xml:space="preserve">
+    <value>PLACE   INSTRUMENT   IN TRAY !</value>
+  </data>
+  <data name="Please Choose another One !" xml:space="preserve">
+    <value>Please Choose another One !</value>
+  </data>
+  <data name="Save Tray Configuration" xml:space="preserve">
+    <value>Save Tray Configuration</value>
+  </data>
+  <data name="Should NOT be Packed - Do NOT Place INSTRUMENT in TRAY !" xml:space="preserve">
+    <value>Should NOT be Packed - Do NOT Place INSTRUMENT in TRAY !</value>
+  </data>
+  <data name="Sorry This Tray has Just been Taken to Pack ..." xml:space="preserve">
+    <value>Sorry This Tray has Just been Taken to Pack ...</value>
+  </data>
+  <data name="Sure That you want to change to UN_LOCKED TRAY ?" xml:space="preserve">
+    <value>Sure That you want to change to UN_LOCKED TRAY ?</value>
+  </data>
+  <data name="The Instrument is  NOT  Known  !" xml:space="preserve">
+    <value>The Instrument is  NOT  Known  !</value>
+  </data>
+  <data name="The Tray is Packed - Are you Sure ?" xml:space="preserve">
+    <value>The Tray is Packed - Are you Sure ?</value>
+  </data>
+  <data name="The tray is packed with" xml:space="preserve">
+    <value>The tray is packed with </value>
+  </data>
+  <data name="There is a Demand Service on this Instrument  !" xml:space="preserve">
+    <value>There is a Demand Service on this Instrument  !</value>
+  </data>
+  <data name="There is a Security Issue on this Instrument  !" xml:space="preserve">
+    <value>There is a Security Issue on this Instrument  !</value>
+  </data>
+  <data name="This Instrument is ALREADY Packed -&gt; PLACE BACK IN TRAY !" xml:space="preserve">
+    <value>This Instrument is ALREADY Packed -&gt; PLACE BACK IN TRAY !</value>
+  </data>
+  <data name="TOO MANY Packed - Do NOT Place INSTRUMENT in TRAY !" xml:space="preserve">
+    <value>TOO MANY Packed - Do NOT Place INSTRUMENT in TRAY !</value>
+  </data>
+  <data name="Translation for:" xml:space="preserve">
+    <value>Translation for:</value>
+  </data>
+  <data name="Tray Is LOCKED !" xml:space="preserve">
+    <value>Tray Is LOCKED !</value>
+  </data>
+  <data name="Tray Is NOT LOCKED !" xml:space="preserve">
+    <value>Tray Is NOT LOCKED !</value>
+  </data>
+  <data name="Would you Like to Save the Tray Configuration for Future Use ?" xml:space="preserve">
+    <value>Would you Like to Save the Tray Configuration for Future Use ?</value>
+  </data>
+  <data name="You are about to STOP/CANCEL Packing a Tray - Are you Sure ?" xml:space="preserve">
+    <value>You are about to STOP/CANCEL Packing a Tray - Are you Sure ?</value>
+  </data>
+  <data name="Be aware CANCEL the FUNCTION" xml:space="preserve">
+    <value>Be aware CANCEL the FUNCTION</value>
+  </data>
+  <data name="Sure That you want to CANCEL the Connection CONTAINER - TRAY ?" xml:space="preserve">
+    <value>Sure That you want to CANCEL the Connection CONTAINER - TRAY ?</value>
+  </data>
+  <data name="The Container with and RFID Tag is NOT Known  !" xml:space="preserve">
+    <value>The Container with and RFID Tag is NOT Known  !</value>
+  </data>
+  <data name="Software End_Of_Life (EOL) : {0}" xml:space="preserve">
+    <value>Software End_Of_Life (EOL) : {0}</value>
+  </data>
+  <data name="Information for ALL Users &amp;  ONLY : Last 30 Days !" xml:space="preserve">
+    <value>Information for ALL Users &amp;  ONLY : Last 30 Days !</value>
+  </data>
+  <data name="Information for User:" xml:space="preserve">
+    <value>Information for User:</value>
+  </data>
+  <data name="ONLY for ToDay !" xml:space="preserve">
+    <value>ONLY for ToDay !</value>
+  </data>
+  <data name="Contact Administrator" xml:space="preserve">
+    <value>Contact Administrator</value>
+  </data>
+  <data name="Issue Directory on SERVER Does NOT Exist {0}{1}" xml:space="preserve">
+    <value>Issue Directory on SERVER Does NOT Exist {0}{1}</value>
+  </data>
+  <data name="New Cost Center:" xml:space="preserve">
+    <value>New Cost Center:</value>
+  </data>
+  <data name="No Cost Center" xml:space="preserve">
+    <value>No Cost Center </value>
+  </data>
+  <data name="You are about to Change Cost Center .... Please Take Care" xml:space="preserve">
+    <value>You are about to Change Cost Center .... Please Take Care </value>
+  </data>
+  <data name="Aggregate" xml:space="preserve">
+    <value>Aggregate</value>
+  </data>
+  <data name="Added_Database" xml:space="preserve">
+    <value>Added_Database ..</value>
+  </data>
+  <data name="All_Same_Changed" xml:space="preserve">
+    <value>All Same Changed</value>
+  </data>
+  <data name="Checking Software ..." xml:space="preserve">
+    <value>Checking Software ...</value>
+  </data>
+  <data name="Coming Instruments" xml:space="preserve">
+    <value> Coming Instruments </value>
+  </data>
+  <data name="Confirm and Send Request" xml:space="preserve">
+    <value>Confirm and Send Request</value>
+  </data>
+  <data name="Contact_Admin" xml:space="preserve">
+    <value>Contact_Admin</value>
+  </data>
+  <data name="Correct_Again" xml:space="preserve">
+    <value>Correct_Again</value>
+  </data>
+  <data name="Cost_Center" xml:space="preserve">
+    <value>Cost_Center</value>
+  </data>
+  <data name="Cost_Center_Code" xml:space="preserve">
+    <value>Cost_Center_Code</value>
+  </data>
+  <data name="Cost_Center_ID" xml:space="preserve">
+    <value>Cost_Center_ID</value>
+  </data>
+  <data name="Cost_Center_Name" xml:space="preserve">
+    <value>Cost_Center_Name</value>
+  </data>
+  <data name="Cost_Price" xml:space="preserve">
+    <value>Cost_Price</value>
+  </data>
+  <data name="Cost_Type" xml:space="preserve">
+    <value>Cost_Type</value>
+  </data>
+  <data name="Default_Always" xml:space="preserve">
+    <value>Default_Always</value>
+  </data>
+  <data name="Deleted_Tray" xml:space="preserve">
+    <value>Deleted_Tray</value>
+  </data>
+  <data name="Demand_ID" xml:space="preserve">
+    <value>Demand_ID</value>
+  </data>
+  <data name="Department Name" xml:space="preserve">
+    <value>Department Name</value>
+  </data>
+  <data name="Difference" xml:space="preserve">
+    <value>Difference</value>
+  </data>
+  <data name="Last 3 Month" xml:space="preserve">
+    <value>Last 3 Month</value>
+  </data>
+  <data name="Last_Date_Change" xml:space="preserve">
+    <value>Last_Date_Change</value>
+  </data>
+  <data name="No Data" xml:space="preserve">
+    <value> - No Data - </value>
+  </data>
+  <data name="No_ODBC" xml:space="preserve">
+    <value>No_ODBC !</value>
+  </data>
+  <data name="NoFile_selected" xml:space="preserve">
+    <value>No File selected</value>
+  </data>
+  <data name="Number of Tray Types: {0:N0}" xml:space="preserve">
+    <value>Number of Tray Types: {0:N0}</value>
+  </data>
+  <data name="Number of Trays:" xml:space="preserve">
+    <value>Number of Trays:</value>
+  </data>
+  <data name="Number Of Trays: {0:N0}" xml:space="preserve">
+    <value>Number Of Trays: {0:N0}</value>
+  </data>
+  <data name="Numbers" xml:space="preserve">
+    <value>Numbers</value>
+  </data>
+  <data name="OK_Save" xml:space="preserve">
+    <value>OK Save</value>
+  </data>
+  <data name="Number of Instruments" xml:space="preserve">
+    <value>Number of Instruments :</value>
+  </data>
+  <data name="Not_Load_Gridview" xml:space="preserve">
+    <value>Not_Load_Gridview</value>
+  </data>
+  <data name="Not_Import_Identical_Data" xml:space="preserve">
+    <value>Not_Import_Identical_Data</value>
+  </data>
+  <data name="Not_Import_File" xml:space="preserve">
+    <value>Not_Import_File</value>
+  </data>
+  <data name="Not_Filter_Gridview" xml:space="preserve">
+    <value>Not_Filter_Gridview</value>
+  </data>
+  <data name="Not_Delete" xml:space="preserve">
+    <value>Not_Delete</value>
+  </data>
+  <data name="Not_Correct_Format" xml:space="preserve">
+    <value>Not_Correct_Format</value>
+  </data>
+  <data name="Not_Conn_Server" xml:space="preserve">
+    <value>Not_Conn_Server</value>
+  </data>
+  <data name="Not Found" xml:space="preserve">
+    <value>Not Found</value>
+  </data>
+  <data name="Packed By" xml:space="preserve">
+    <value>Packed By</value>
+  </data>
+  <data name="Packed By: {0}" xml:space="preserve">
+    <value>Packed By: {0} </value>
+  </data>
+  <data name="Packed in Minutes" xml:space="preserve">
+    <value>Packed in Minutes</value>
+  </data>
+  <data name="Packed on Devices ID: {0}" xml:space="preserve">
+    <value>Packed on Devices ID: {0}</value>
+  </data>
+  <data name="Packed_From" xml:space="preserve">
+    <value>Packed_From </value>
+  </data>
+  <data name="Packed_Day" xml:space="preserve">
+    <value>Packed_Day</value>
+  </data>
+  <data name="Please Choose the Tray First !" xml:space="preserve">
+    <value>Please Choose the Tray First !</value>
+  </data>
+  <data name="Please Confirm that you want to add this to Demand for Packing List !" xml:space="preserve">
+    <value>Please Confirm that you want to add this to Demand for Packing List !</value>
+  </data>
+  <data name="Please Update !" xml:space="preserve">
+    <value>Please Update !</value>
+  </data>
+  <data name="Print_Data" xml:space="preserve">
+    <value>Print_Data - ?</value>
+  </data>
+  <data name="Please Select a Image" xml:space="preserve">
+    <value>Please Select a Image</value>
+  </data>
+  <data name="Priority" xml:space="preserve">
+    <value>Priority</value>
+  </data>
+  <data name="Problem in Update Table" xml:space="preserve">
+    <value>Problem in Update Table </value>
+  </data>
+  <data name="Problem_DateTime" xml:space="preserve">
+    <value>Problem Date Time</value>
+  </data>
+  <data name="Problem_InputFile" xml:space="preserve">
+    <value>Problem_Input File</value>
+  </data>
+  <data name="Problem_Loading" xml:space="preserve">
+    <value>Problem_Loading</value>
+  </data>
+  <data name="Problem_Table" xml:space="preserve">
+    <value>Problem_Table</value>
+  </data>
+  <data name="Procedure_Name" xml:space="preserve">
+    <value>Procedure Name</value>
+  </data>
+  <data name="Report For Packed Locked Trays" xml:space="preserve">
+    <value>Report For Packed Locked Trays</value>
+  </data>
+  <data name="Report For Packed Unlocked Trays" xml:space="preserve">
+    <value>Report For Packed Unlocked Trays</value>
+  </data>
+  <data name="Report for SPD Diff. IN-OUT" xml:space="preserve">
+    <value>Report for SPD Diff. IN-OUT</value>
+  </data>
+  <data name="Report_Problem" xml:space="preserve">
+    <value>Report_Problem</value>
+  </data>
+  <data name="Select the Folder" xml:space="preserve">
+    <value>Select the Folder</value>
+  </data>
+  <data name="The value must be a non-negative integer" xml:space="preserve">
+    <value>The value must be a non-negative integer</value>
+  </data>
+  <data name="There are an Update Waiting." xml:space="preserve">
+    <value>There are an Update Waiting !</value>
+  </data>
+  <data name="This Month" xml:space="preserve">
+    <value>This Month</value>
+  </data>
+  <data name="Time_Arrived" xml:space="preserve">
+    <value>Time_Arrived</value>
+  </data>
+  <data name="Today" xml:space="preserve">
+    <value>Today</value>
+  </data>
+  <data name="Total number of Data Lines in Database :" xml:space="preserve">
+    <value>Total number of Data Lines in Database : </value>
+  </data>
+  <data name="Total Number Of Instruments Types: {0:N0}" xml:space="preserve">
+    <value>Total Number Of Instruments Types: {0:N0}</value>
+  </data>
+  <data name="Total Number of Instruments: {0:N0}" xml:space="preserve">
+    <value>Total Number of Instruments: {0:N0}</value>
+  </data>
+  <data name="Total Number of Pack Done will be Removed:" xml:space="preserve">
+    <value>Total Number of Pack Done will be Removed: </value>
+  </data>
+  <data name="Total Number of Tray Types: {0:N0}" xml:space="preserve">
+    <value>Total Number of Tray Types: {0:N0}</value>
+  </data>
+  <data name="Total Number of Trays: {0:N0}" xml:space="preserve">
+    <value>Total Number of Trays: {0:N0}</value>
+  </data>
+  <data name="Tray Name" xml:space="preserve">
+    <value>Tray Name</value>
+  </data>
+  <data name="Tray Packed" xml:space="preserve">
+    <value>Tray Packed</value>
+  </data>
+  <data name="Tray Packed End" xml:space="preserve">
+    <value>Tray Packed End</value>
+  </data>
+  <data name="Tray Packed Place" xml:space="preserve">
+    <value>Tray Packed Place</value>
+  </data>
+  <data name="Tray Packed Start" xml:space="preserve">
+    <value>Tray Packed Start</value>
+  </data>
+  <data name="Tray_Description" xml:space="preserve">
+    <value>Tray Description</value>
+  </data>
+  <data name="Tray_ID" xml:space="preserve">
+    <value>Tray_ID</value>
+  </data>
+  <data name="Try Update again..." xml:space="preserve">
+    <value>Try Update again...</value>
+  </data>
+  <data name="Undefined_Issue" xml:space="preserve">
+    <value>Undefined_Issue</value>
+  </data>
+  <data name="Unsaved Information" xml:space="preserve">
+    <value>Unsaved Information</value>
+  </data>
+  <data name="Unsaved_Data" xml:space="preserve">
+    <value>Unsaved_Data</value>
+  </data>
+  <data name="Until ToDay" xml:space="preserve">
+    <value>Until ToDay</value>
+  </data>
+  <data name="Use Filter" xml:space="preserve">
+    <value>- Use Filter -</value>
+  </data>
+  <data name="Vendor_Abbreviation" xml:space="preserve">
+    <value>Vendor_Abbreviation</value>
+  </data>
+  <data name="Vendor_Name" xml:space="preserve">
+    <value>Vendor_Name</value>
+  </data>
+  <data name="Write  Pack List   Failed !" xml:space="preserve">
+    <value>Write  Pack List   Failed !</value>
+  </data>
+  <data name="You are about to ADD a TRAY - Okay ?" xml:space="preserve">
+    <value>You are about to ADD a TRAY - Okay ?</value>
+  </data>
+  <data name="You are about to REMOVE a TRAY from Collection - Okay ?" xml:space="preserve">
+    <value>You are about to REMOVE a TRAY from Collection - Okay ?</value>
+  </data>
+  <data name="You can't use this Function if the Cost Center is not in Use !" xml:space="preserve">
+    <value>You can't use this Function if the Cost Center is not in Use !</value>
+  </data>
+  <data name="Types of Instruments" xml:space="preserve">
+    <value>Types of Instruments :</value>
+  </data>
+  <data name="Date_Changed" xml:space="preserve">
+    <value>Date_Changed</value>
+  </data>
+  <data name="For Instrument Types:" xml:space="preserve">
+    <value>For Instrument Types: </value>
+  </data>
+  <data name="From :" xml:space="preserve">
+    <value> From : </value>
+  </data>
+  <data name="Going Instruments" xml:space="preserve">
+    <value> Going Instruments </value>
+  </data>
+  <data name="Hidden Procedures:" xml:space="preserve">
+    <value>Hidden Procedures:</value>
+  </data>
+  <data name="Hidden_Center" xml:space="preserve">
+    <value>Hidden_Center</value>
+  </data>
+  <data name="Hide_Tray" xml:space="preserve">
+    <value>Hide_Tray</value>
+  </data>
+  <data name="IN" xml:space="preserve">
+    <value>IN</value>
+  </data>
+  <data name="Instrument Name" xml:space="preserve">
+    <value>Instrument Name</value>
+  </data>
+  <data name="Insert_Failed" xml:space="preserve">
+    <value>Insert_Failed</value>
+  </data>
+  <data name="Is_Used" xml:space="preserve">
+    <value>Is_Used</value>
+  </data>
+  <data name="Issue" xml:space="preserve">
+    <value>Issue </value>
+  </data>
+  <data name="Issue No Cost Center !" xml:space="preserve">
+    <value>Issue No Cost Center !</value>
+  </data>
+  <data name="Issue_Updating" xml:space="preserve">
+    <value>Issue_Updating !</value>
+  </data>
+  <data name="Locked Tray" xml:space="preserve">
+    <value>Locked Tray</value>
+  </data>
+  <data name="Period:" xml:space="preserve">
+    <value> Period: </value>
+  </data>
+  <data name="Pivot_Not_Loading" xml:space="preserve">
+    <value>Pivot_Not_Loading</value>
+  </data>
+  <data name="Problem_In" xml:space="preserve">
+    <value>Problem_In</value>
+  </data>
+  <data name="Reader_Name" xml:space="preserve">
+    <value>Reader_Name</value>
+  </data>
+  <data name="Remove_Automated" xml:space="preserve">
+    <value>Remove_Automated ? </value>
+  </data>
+  <data name="Report For" xml:space="preserve">
+    <value>Report For </value>
+  </data>
+  <data name="Changed_All_Tags" xml:space="preserve">
+    <value>Changed_All_Tags</value>
+  </data>
+  <data name="Check_Sheet" xml:space="preserve">
+    <value>Check_Sheet</value>
+  </data>
+  <data name="Correct_ESC" xml:space="preserve">
+    <value>Correct with ESC !</value>
+  </data>
+  <data name="ProblemPlus" xml:space="preserve">
+    <value>Problem......</value>
+  </data>
+  <data name="Something went very wrong ! ...." xml:space="preserve">
+    <value>Something went very wrong ! ....</value>
+  </data>
+  <data name="Successfully Removed the Data  !" xml:space="preserve">
+    <value>Successfully Removed the Data  !</value>
+  </data>
+  <data name="Sure To ADD Tray ?" xml:space="preserve">
+    <value>Sure To ADD Tray ?</value>
+  </data>
+  <data name="Sure To REMOVE Tray ?" xml:space="preserve">
+    <value>Sure To REMOVE Tray ?</value>
+  </data>
+  <data name="Table_Not_Edit" xml:space="preserve">
+    <value>Table_Not_Edit</value>
+  </data>
+  <data name="The SQL_SERVER is NOT running .. Correct and try again !1" xml:space="preserve">
+    <value>The SQL_SERVER is NOT running .. Correct and try again !</value>
+  </data>
+  <data name="The Date" xml:space="preserve">
+    <value>The Date</value>
+  </data>
+  <data name="There is Unsaved Information Click Yes to Save ?" xml:space="preserve">
+    <value>There is Unsaved Information Click Yes to Save ? </value>
+  </data>
+  <data name="Issue_Cell_VAl" xml:space="preserve">
+    <value>Issue in Cell validating !</value>
+  </data>
+  <data name="File_Saved" xml:space="preserve">
+    <value>Excel File Saved !</value>
+  </data>
+  <data name="File_Not_Saved" xml:space="preserve">
+    <value>Excel File_Not_Saved:</value>
+  </data>
+  <data name="Extra_Text" xml:space="preserve">
+    <value>Extra Text</value>
+  </data>
+  <data name="Expires" xml:space="preserve">
+    <value>Expires </value>
+  </data>
+  <data name="Error_SQL" xml:space="preserve">
+    <value>Error in SQL:</value>
+  </data>
+  <data name="Error_RowCount" xml:space="preserve">
+    <value>Error Row Count !</value>
+  </data>
+  <data name="Error_txt" xml:space="preserve">
+    <value>Error in txt :</value>
+  </data>
+  <data name="Only_Double" xml:space="preserve">
+    <value>Only_Double</value>
+  </data>
+  <data name="Only_Integer" xml:space="preserve">
+    <value>Only_Integer</value>
+  </data>
+  <data name="Only_One" xml:space="preserve">
+    <value>Only_One</value>
+  </data>
+  <data name="Only_Strings" xml:space="preserve">
+    <value>Only_Strings</value>
+  </data>
+  <data name="OR_Procedure_ID" xml:space="preserve">
+    <value>OR_Procedure_ID</value>
+  </data>
+  <data name="OUT" xml:space="preserve">
+    <value>OUT</value>
+  </data>
+  <data name="There is a ReCall on this Instrument  !" xml:space="preserve">
+    <value>There is a ReCall on this Instrument  !</value>
+  </data>
+  <data name="DO NOT PLACE IN TRAY !!!!  Set this Instrument aside ...." xml:space="preserve">
+    <value>DO NOT PLACE IN TRAY !!!!  Set this Instrument aside ....</value>
+  </data>
+  <data name="An error occurred when loading the application." xml:space="preserve">
+    <value>An error occurred when loading the application.</value>
+  </data>
+  <data name="An error occurred when trying to connect to the database." xml:space="preserve">
+    <value>An error occurred when trying to connect to the database.</value>
+  </data>
+  <data name="An error occurred when trying to connect to the RFID reader." xml:space="preserve">
+    <value>An error occurred when trying to connect to the RFID reader.</value>
+  </data>
+  <data name="An error occurred, no RFID reader was found." xml:space="preserve">
+    <value>An error occurred, no RFID reader was found.</value>
+  </data>
+  <data name="An error occurred when choosing the language version." xml:space="preserve">
+    <value>An error occurred when choosing the language version.</value>
+  </data>
+  <data name="An error occurred when logging in." xml:space="preserve">
+    <value>An error occurred when logging in.</value>
+  </data>
+  <data name="An error occurred when preparing the tray." xml:space="preserve">
+    <value>An error occurred when preparing the tray.</value>
+  </data>
+  <data name="An error in the UI occurred." xml:space="preserve">
+    <value>An error in the UI occurred.</value>
+  </data>
+  <data name="An error occurred when packing the tray." xml:space="preserve">
+    <value>An error occurred when packing the tray.</value>
+  </data>
+  <data name="An error occurred when updating RFID tag information." xml:space="preserve">
+    <value>An error occurred when updating RFID tag information.</value>
+  </data>
+  <data name="An error occurred when updating instrument information." xml:space="preserve">
+    <value>An error occurred when updating instrument information.</value>
+  </data>
+  <data name="If this does not solve the problem, contact Caretag support and report the error code." xml:space="preserve">
+    <value>If this does not solve the problem, contact Caretag support and report the error code.</value>
+  </data>
+  <data name="Please restart the application." xml:space="preserve">
+    <value>Please restart the application.</value>
+  </data>
+  <data name="An error occurred when loading instrument information." xml:space="preserve">
+    <value>An error occurred when loading instrument information.</value>
+  </data>
+  <data name="An error occurred when reading tray information." xml:space="preserve">
+    <value>An error occurred when reading tray information.</value>
+  </data>
+  <data name="An error occurred when deleting the tray." xml:space="preserve">
+    <value>An error occurred when deleting the tray.</value>
+  </data>
+  <data name="An error occurred when saving the tray." xml:space="preserve">
+    <value>An error occurred when saving the tray.</value>
+  </data>
+  <data name="An error occurred when loading vendors." xml:space="preserve">
+    <value>An error occurred when loading vendors.</value>
+  </data>
+  <data name="An error occurred when loading packing overview." xml:space="preserve">
+    <value>An error occurred when loading packing overview.</value>
+  </data>
+  <data name="An error occurred when loading the container." xml:space="preserve">
+    <value>An error occurred when loading the container.</value>
+  </data>
+  <data name="An error occurred when reading the container." xml:space="preserve">
+    <value>An error occurred when reading the container.</value>
+  </data>
+  <data name="An error occurred when updating container information." xml:space="preserve">
+    <value>An error occurred when updating container information.</value>
+  </data>
+  <data name="An error occurred when printing." xml:space="preserve">
+    <value>An error occurred when printing.</value>
+  </data>
+  <data name="An error occured when recording which user logged in/out." xml:space="preserve">
+    <value>An error occured when recording which user logged in/out.</value>
+  </data>
+  <data name="An error occurred when loading cost center information." xml:space="preserve">
+    <value>An error occurred when loading cost center information.</value>
+  </data>
+  <data name="An error occurred when loading tray information." xml:space="preserve">
+    <value>An error occurred when loading tray information.</value>
+  </data>
+  <data name="An error occurred when saving cost center log." xml:space="preserve">
+    <value>An error occurred when saving cost center log.</value>
+  </data>
+  <data name="An error occurred when saving the file." xml:space="preserve">
+    <value>An error occurred when saving the file.</value>
+  </data>
+  <data name="Error code:" xml:space="preserve">
+    <value>Error code:</value>
+  </data>
+  <data name="ERROR: Instrument already sent for service, do not pack in tray!" xml:space="preserve">
+    <value>ERROR: Instrument already sent for service, do not pack in tray!</value>
+  </data>
+  <data name="Rules triggered" xml:space="preserve">
+    <value>Rules triggered</value>
+  </data>
+  <data name="The following rules triggered when scanning instrument:" xml:space="preserve">
+    <value>The following rules triggered when scanning instrument:</value>
+  </data>
+  <data name="The instruments should be sent to service, print a service report in the next screen." xml:space="preserve">
+    <value>The instruments should be sent to service, print a service report in the next screen.</value>
+  </data>
+  <data name="PackingStation" xml:space="preserve">
+    <value>PackingStation</value>
+  </data>
+  <data name="Tray not found!" xml:space="preserve">
+    <value>Tray not found!</value>
+  </data>
+  <data name="Tray not found! Make sure area around RFID scanner is clear of instruments and try again." xml:space="preserve">
+    <value>Tray not found! Make sure area around RFID scanner is clear of instruments and try again.</value>
+  </data>
+  <data name="An error occurred while saving the scan log (scan event) in the database." xml:space="preserve">
+    <value>An error occurred while saving the scan log (scan event) in the database.</value>
+  </data>
+  <data name="ERROR: Instrument is already in use. Do not place in tray." xml:space="preserve">
+    <value>ERROR: Instrument is already in use. Do not place in tray.</value>
+  </data>
+  <data name="ERROR: Instrument was already packed. Place back in tray." xml:space="preserve">
+    <value>ERROR: Instrument was already packed. Place back in tray.</value>
+  </data>
+  <data name="ERROR: Instrument was recalled. Do not place in tray." xml:space="preserve">
+    <value>ERROR: Instrument was recalled. Do not place in tray.</value>
+  </data>
+  <data name="ERROR: Instrument was sent for service on-demand. do not place in try. Send to service." xml:space="preserve">
+    <value>ERROR: Instrument was sent for service on-demand. do not place in try. Send to service.</value>
+  </data>
+  <data name="ERROR: Unknown instrument! Contact the administrator of the system." xml:space="preserve">
+    <value>ERROR: Unknown instrument! Contact the administrator of the system.</value>
+  </data>
+  <data name="The instruments should be sent to service, print a service report in the pop-up." xml:space="preserve">
+    <value>The instruments should be sent to service, print a service report in the pop-up.</value>
+  </data>
+  <data name="FrmMain_UpdateTableTraySelected_Tray_Name" xml:space="preserve">
+    <value>Tray_Name</value>
+  </data>
+  <data name="FrmMain_UpdateTableTraySelected_Tray_Description" xml:space="preserve">
+    <value>Tray_Description</value>
+  </data>
+  <data name="Description_ID" xml:space="preserve">
+    <value>Description ID</value>
+  </data>
+  <data name="Description_Name" xml:space="preserve">
+    <value>Description Name</value>
+  </data>
+  <data name="Full_Name" xml:space="preserve">
+    <value>Full Name</value>
+  </data>
+  <data name="Index_ID" xml:space="preserve">
+    <value>Index ID</value>
+  </data>
+  <data name="instruments." xml:space="preserve">
+    <value>instruments.</value>
+  </data>
+  <data name="Instrument_Company" xml:space="preserve">
+    <value>Instrument Company</value>
+  </data>
+  <data name="Place instrument in the tray!" xml:space="preserve">
+    <value>Place instrument in the tray!</value>
+  </data>
+  <data name="Should_Pack" xml:space="preserve">
+    <value>Should Pack</value>
+  </data>
+  <data name="To_Pack" xml:space="preserve">
+    <value>To Pack</value>
+  </data>
+  <data name="Tray_Description_ID" xml:space="preserve">
+    <value>Tray Description ID</value>
+  </data>
+  <data name="Tray_Name" xml:space="preserve">
+    <value>Tray Name</value>
+  </data>
+  <data name="Not in packing list!" xml:space="preserve">
+    <value>Not in packing list!</value>
+  </data>
+  <data name="AboutChangeCostCenter" xml:space="preserve">
+    <value>You are about to Change Cost Center .... Please Take Care</value>
+  </data>
+  <data name="CancelPacking" xml:space="preserve">
+    <value>Cancel packing</value>
+  </data>
+  <data name="CancelPackingTray" xml:space="preserve">
+    <value>Do you want to cancel packing the tray?</value>
+  </data>
+  <data name="ChangingCostCenter" xml:space="preserve">
+    <value>Changing Cost Center !</value>
+  </data>
+  <data name="ConectSql" xml:space="preserve">
+    <value>Connecting to SQL_SERVER: </value>
+  </data>
+  <data name="ContainerScannedOK" xml:space="preserve">
+    <value>Container scanned OK!</value>
+  </data>
+  <data name="DescriptionID" xml:space="preserve">
+    <value>Description ID</value>
+  </data>
+  <data name="DescriptionName" xml:space="preserve">
+    <value>Description Name</value>
+  </data>
+  <data name="EmptyTray" xml:space="preserve">
+    <value>Empty the Tray and Start Again!</value>
+  </data>
+  <data name="FullName" xml:space="preserve">
+    <value>Full Name</value>
+  </data>
+  <data name="IndexID" xml:space="preserve">
+    <value>Index ID</value>
+  </data>
+  <data name="InformationUser" xml:space="preserve">
+    <value>Information for User:</value>
+  </data>
+  <data name="InstrumentCompany" xml:space="preserve">
+    <value>Instrument Company</value>
+  </data>
+  <data name="InstrumentInUse" xml:space="preserve">
+    <value>ERROR: Instrument is already in use. Do not place in tray.</value>
+  </data>
+  <data name="InstrumentIsPacked" xml:space="preserve">
+    <value>ERROR: Instrument was already packed. Place back in tray.</value>
+  </data>
+  <data name="InstrumentNotInPackingList" xml:space="preserve">
+    <value>ERROR: Instrument not in packing list! Do not place in tray.</value>
+  </data>
+  <data name="LikeToSaveTrayConfiguration" xml:space="preserve">
+    <value>Would you like to save the tray configuration for future use?</value>
+  </data>
+  <data name="NoCostCenter" xml:space="preserve">
+    <value>No Cost Center</value>
+  </data>
+  <data name="OneInstrumentScan" xml:space="preserve">
+    <value>Please scan one instrument at a time!</value>
+  </data>
+  <data name="OnlyForToday" xml:space="preserve">
+    <value>ONLY for ToDay !</value>
+  </data>
+  <data name="OnlyOneTag" xml:space="preserve">
+    <value>Scanned more than one tag. Please make sure only one tag is close to the reader.</value>
+  </data>
+  <data name="PlaceInstrumnetInTheTray" xml:space="preserve">
+    <value>Place instrumnet in the tray!</value>
+  </data>
+  <data name="RestartAfterChangingLanguage" xml:space="preserve">
+    <value>Please restart the application after changing the language setting.</value>
+  </data>
+  <data name="SaveTrayConfiguration" xml:space="preserve">
+    <value>Save tray configuration</value>
+  </data>
+  <data name="SelectContainer" xml:space="preserve">
+    <value>Please select a container before saving.</value>
+  </data>
+  <data name="ShouldPack" xml:space="preserve">
+    <value>Should Pack</value>
+  </data>
+  <data name="TooManyPacked" xml:space="preserve">
+    <value>Too many packed - Do not place instrument in the tray!</value>
+  </data>
+  <data name="ToPack" xml:space="preserve">
+    <value>To Pack</value>
+  </data>
+  <data name="TrayDescription" xml:space="preserve">
+    <value>Tray Description</value>
+  </data>
+  <data name="TrayDescriptionID" xml:space="preserve">
+    <value>Tray Description ID</value>
+  </data>
+  <data name="TrayIsLocked" xml:space="preserve">
+    <value>Tray is locked and cannot be finished while partially packed. Please complete the packing list before finishing or unlock tray using checkbox top right.</value>
+  </data>
+  <data name="TrayName" xml:space="preserve">
+    <value>Tray Name</value>
+  </data>
+  <data name="TrayNotFound" xml:space="preserve">
+    <value>Tray not found! Make sure area around RFID scanner is clear of instruments and try again.</value>
+  </data>
+  <data name="TrayPacked" xml:space="preserve">
+    <value>The tray is packed with </value>
+  </data>
+  <data name="UnknownInstrument" xml:space="preserve">
+    <value>ERROR: Unknown instrument! Contact the administrator of the system.</value>
+  </data>
+  <data name="UnknownTag" xml:space="preserve">
+    <value>Unknown tag, please scan a different container or use Technical Station to load the tag. </value>
+  </data>
+  <data name="TrayIsPacked" xml:space="preserve">
+    <value>Tray is packed! Press 'Finish' to finish packing the tray. </value>
+  </data>
+</root>

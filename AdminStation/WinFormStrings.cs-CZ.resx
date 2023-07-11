@@ -1,0 +1,1503 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Added_Database" xml:space="preserve">
+    <value>Přidáno do databáze_tabulka: ..</value>
+  </data>
+  <data name="All_Same_Changed" xml:space="preserve">
+    <value>Chcete, aby byly změněny VŠECHNY stejné typy existujících tagů ?</value>
+  </data>
+  <data name="Changed_All_Tags" xml:space="preserve">
+    <value>Změněny VŠECHNY tagy - Vezměte to prosím na vědomí !</value>
+  </data>
+  <data name="Check_Sheet" xml:space="preserve">
+    <value>ZKONTROLUJTE Název listu je 'List1' a názvy sloupců jsou A-B-C-D !</value>
+  </data>
+  <data name="Contact_Admin" xml:space="preserve">
+    <value>Kontaktujte administrátora</value>
+  </data>
+  <data name="Correct_ESC" xml:space="preserve">
+    <value>Opravte nebo použijte ESC pro zrušení !</value>
+  </data>
+  <data name="Error_RowCount" xml:space="preserve">
+    <value>CHYBA v RowCount_DataGridview !</value>
+  </data>
+  <data name="Error_SQL" xml:space="preserve">
+    <value>Chyba v příkazu SQL:</value>
+  </data>
+  <data name="Error_txt" xml:space="preserve">
+    <value>Chyba:</value>
+  </data>
+  <data name="Expires" xml:space="preserve">
+    <value>Platnost vyprší podle smlouvy</value>
+  </data>
+  <data name="File_Not_Saved" xml:space="preserve">
+    <value>Soubor NENÍ uložen :</value>
+  </data>
+  <data name="File_Saved" xml:space="preserve">
+    <value>Soubor aplikace Excel je uložen !</value>
+  </data>
+  <data name="Import_Rows" xml:space="preserve">
+    <value>Připraveno k importu Počet řádků (nástroje) :</value>
+  </data>
+  <data name="Insert_Failed" xml:space="preserve">
+    <value>Vložit pro VŠECHNY selhalo</value>
+  </data>
+  <data name="Issue" xml:space="preserve">
+    <value>Problém v </value>
+  </data>
+  <data name="Issue_Cell_VAl" xml:space="preserve">
+    <value>Problém ve funkci CellValidating !</value>
+  </data>
+  <data name="Issue_Updating" xml:space="preserve">
+    <value>Problém při aktualizaci !</value>
+  </data>
+  <data name="NoFile_selected" xml:space="preserve">
+    <value>Není vybrán žádný soubor nebo oblast -&gt; Zrušit nebo Vybrat soubor !</value>
+  </data>
+  <data name="Not_Conn_Server" xml:space="preserve">
+    <value>Nelze se připojit k serveru SQl ! -&gt; POZASTAVENÍ</value>
+  </data>
+  <data name="Not_Correct_Format" xml:space="preserve">
+    <value>Vaše data NEJSOU ve správném formátu</value>
+  </data>
+  <data name="Not_Delete" xml:space="preserve">
+    <value>NENÍ povoleno mazání dat v tabulce - pouze PŘIDÁVÁNÍ dat !</value>
+  </data>
+  <data name="Not_Filter_Gridview" xml:space="preserve">
+    <value>Nelze filtrovat data v zobrazení DataGridView !</value>
+  </data>
+  <data name="Not_Import_File" xml:space="preserve">
+    <value>Nelze importovat soubor - problém není znám:</value>
+  </data>
+  <data name="Not_Import_Identical_Data" xml:space="preserve">
+    <value>Nelze importovat katalog, protože v prvním sloupci jsou identická DATA:</value>
+  </data>
+  <data name="Not_Load_Gridview" xml:space="preserve">
+    <value>Nelze načíst data do zobrazení Gridview</value>
+  </data>
+  <data name="No_ODBC" xml:space="preserve">
+    <value>Neexistují žádná deklarovaná připojení SYSTÉMU ODBC  !</value>
+  </data>
+  <data name="OK_Save" xml:space="preserve">
+    <value>Pro uložení dat klikněte na OK</value>
+  </data>
+  <data name="Only_Double" xml:space="preserve">
+    <value>Vaše data by měla obsahovat POUZE DOUBLE</value>
+  </data>
+  <data name="Only_Integer" xml:space="preserve">
+    <value>Vaše data by měla obsahovat POUZE celočíselné proměnné / čísla</value>
+  </data>
+  <data name="Only_One" xml:space="preserve">
+    <value>Program může běžet pouze jako jedna instance !</value>
+  </data>
+  <data name="Only_Strings" xml:space="preserve">
+    <value>Vaše data by měla obsahovat POUZE řetězce / písmena</value>
+  </data>
+  <data name="Pivot_Not_Loading" xml:space="preserve">
+    <value>Pivot DataTable se nenačítá</value>
+  </data>
+  <data name="Print_Data" xml:space="preserve">
+    <value>Chcete vytisknout data - ?</value>
+  </data>
+  <data name="ProblemPlus" xml:space="preserve">
+    <value>Problém......</value>
+  </data>
+  <data name="Problem_DateTime" xml:space="preserve">
+    <value>Problém ... Opravte vstupní soubor kvůli chybějícímu - chybnému DateTime u sloupce:</value>
+  </data>
+  <data name="Problem_In" xml:space="preserve">
+    <value>Problém v</value>
+  </data>
+  <data name="Problem_InputFile" xml:space="preserve">
+    <value>Problém ... Opravte vstupní soubor:</value>
+  </data>
+  <data name="Problem_Loading" xml:space="preserve">
+    <value>Problém s načítáním tabulky z databáze</value>
+  </data>
+  <data name="Problem_Table" xml:space="preserve">
+    <value>Problém s názvem tabulky</value>
+  </data>
+  <data name="Remove_Automated" xml:space="preserve">
+    <value>Chcete ji ODSTRANIT automaticky ? </value>
+  </data>
+  <data name="Report_Problem" xml:space="preserve">
+    <value>Nahlásit problém - Nevyjádřená návratová hodnota</value>
+  </data>
+  <data name="String11" xml:space="preserve">
+    <value>Admin_Manual.PDF NENÍ umístěn na adrese:</value>
+  </data>
+  <data name="Table_Not_Edit" xml:space="preserve">
+    <value>Chyba = tabulka není připravena pro ÚPRAVU -&gt; kontaktujte administrátora</value>
+  </data>
+  <data name="Undefined_Issue" xml:space="preserve">
+    <value>Nalezen nedefinovaný problém ... Nahlaste prosím</value>
+  </data>
+  <data name="Unsaved_Data" xml:space="preserve">
+    <value>Máte neuložená data !</value>
+  </data>
+  <data name="Correct_Again" xml:space="preserve">
+    <value>Opravte a zkuste to znovu</value>
+  </data>
+  <data name="Connecting to SQL_SERVER ..." xml:space="preserve">
+    <value>Připojování k SQL_SERVERu ...</value>
+  </data>
+  <data name="Big Issue ..Check with Administrator and try again !" xml:space="preserve">
+    <value>Velký problém ..Nahlaste administrátorovi a zkuste to znovu !</value>
+  </data>
+  <data name="Checking Dot Net Version .." xml:space="preserve">
+    <value>Kontrola verze Dot Net ..</value>
+  </data>
+  <data name="Checking for Update !" xml:space="preserve">
+    <value>Kontrola aktualizace ! </value>
+  </data>
+  <data name="Checking Software ..." xml:space="preserve">
+    <value>Kontrola softwaru ...</value>
+  </data>
+  <data name="Checking Version &amp; License ..." xml:space="preserve">
+    <value>Kontrola verze &amp; licence ...</value>
+  </data>
+  <data name="Issue ... Program will Not Work Correct !" xml:space="preserve">
+    <value>Problém ... Program nebude pracovat správně !</value>
+  </data>
+  <data name="Loading Program Settings ..." xml:space="preserve">
+    <value>Načítání nastavení programu ...</value>
+  </data>
+  <data name="No Update ..." xml:space="preserve">
+    <value>Žádná aktualizace...</value>
+  </data>
+  <data name="The SQL_SERVER is NOT running .. Correct and try again !" xml:space="preserve">
+    <value>SQL_SERVER NENÍ spuštěn .. Opravte a zkuste to znovu !</value>
+  </data>
+  <data name="Choose RFID to Delete" xml:space="preserve">
+    <value>Vybere RFID ke smazání</value>
+  </data>
+  <data name="Found :" xml:space="preserve">
+    <value>Nalezeno : </value>
+  </data>
+  <data name="NOT Found :" xml:space="preserve">
+    <value>NEnalezeno : </value>
+  </data>
+  <data name="The File is NOT saved :" xml:space="preserve">
+    <value>Soubor NENÍ uložen :</value>
+  </data>
+  <data name="The Final Table does NOT Exits !!! - Has to STOP :" xml:space="preserve">
+    <value>Finální tabulka NEEXISTUJE !!! Je nutné PŘESTAT :</value>
+  </data>
+  <data name="Write to CSV file FAILED !" xml:space="preserve">
+    <value>Zápis do souboru CSV SELHAL !</value>
+  </data>
+  <data name="Finding Reader ..." xml:space="preserve">
+    <value>Vyhledávání čtečky ...</value>
+  </data>
+  <data name=".Added to DataTable.." xml:space="preserve">
+    <value>Přidáno do datové tabulky.. </value>
+  </data>
+  <data name=".Back Up ERROR.." xml:space="preserve">
+    <value>CHYBA zálohování..</value>
+  </data>
+  <data name=".Back Up.." xml:space="preserve">
+    <value>Zálohovat</value>
+  </data>
+  <data name=".DataTable Overwritten.." xml:space="preserve">
+    <value>Datová tabulka přepsána..</value>
+  </data>
+  <data name=".Finish.." xml:space="preserve">
+    <value>Ukončit</value>
+  </data>
+  <data name=".In ERROR.." xml:space="preserve">
+    <value>OMYLEM..</value>
+  </data>
+  <data name=".Operation Cancel.." xml:space="preserve">
+    <value>Zrušení operace</value>
+  </data>
+  <data name=".Operation STOPPED.." xml:space="preserve">
+    <value>Operace ZASTAVENA..</value>
+  </data>
+  <data name="Added to DataTable..." xml:space="preserve">
+    <value>Přidáno do databáze...</value>
+  </data>
+  <data name="Are You Sure that there should  NOT to use COST Center ?" xml:space="preserve">
+    <value>Jste si jisti, že by se NEMĚLO používat NÁKLADOVÉ středisko?</value>
+  </data>
+  <data name="Are You Sure that you will Change Text To UPPER for Table:" xml:space="preserve">
+    <value>Jste si jisti, že změníte text pro tabulku na HORNÍ : </value>
+  </data>
+  <data name="Are You Sure that you will Correct Tables with Same Text and Correct Spelling ?" xml:space="preserve">
+    <value>Jste si jisti, že budete opravovat tabulky se stejným textem a správným pravopisem ?</value>
+  </data>
+  <data name="Are You Sure You want to DELETE RFID Card ?" xml:space="preserve">
+    <value>Jste si jisti, že chcete SMAZAT kartu RFID ?</value>
+  </data>
+  <data name="Are You Sure You want to DELETE User ?" xml:space="preserve">
+    <value>Jste si jisti, že chcete SMAZAT uživatele ?</value>
+  </data>
+  <data name="Area Name:" xml:space="preserve">
+    <value>Název oblasti:</value>
+  </data>
+  <data name="Area_Description:" xml:space="preserve">
+    <value>Oblast_Popis:</value>
+  </data>
+  <data name="BACKUP DONE" xml:space="preserve">
+    <value>ZÁLOHOVÁNÍ DOKONČENO</value>
+  </data>
+  <data name="BackUp:" xml:space="preserve">
+    <value>Záložní soubor:</value>
+  </data>
+  <data name="Can NOT import file ... The columns are Not IDENTICAL See Column:" xml:space="preserve">
+    <value>NELZE importovat soubor ... Sloupce nejsou IDENTICKÉ Viz sloupec: </value>
+  </data>
+  <data name="Changing Text" xml:space="preserve">
+    <value>Změna textu</value>
+  </data>
+  <data name="Check that it is the Correct Record !" xml:space="preserve">
+    <value>Zkontrolujte, zda se jedná o správný záznam ! </value>
+  </data>
+  <data name="Chosen Trays:" xml:space="preserve">
+    <value>Vybraná síta:</value>
+  </data>
+  <data name="Cost_Center" xml:space="preserve">
+    <value>Nákladové středisko</value>
+  </data>
+  <data name="Cost_Center In Use" xml:space="preserve">
+    <value>Používaná nákladová střediska</value>
+  </data>
+  <data name="Cost_Center Not Used" xml:space="preserve">
+    <value>Nepoužívaná nákladová střediska</value>
+  </data>
+  <data name="Cost_Center_ID" xml:space="preserve">
+    <value>ID nákladového střediska</value>
+  </data>
+  <data name="Count:" xml:space="preserve">
+    <value>Počet:</value>
+  </data>
+  <data name="Creating User Failed Contact -&gt;  Caretag !" xml:space="preserve">
+    <value>Vytvoření uživatele selhalo Kontaktujte -&gt;  Caretag !</value>
+  </data>
+  <data name="CSV_File_Saved" xml:space="preserve">
+    <value>Soubor_CSV_uložen</value>
+  </data>
+  <data name="Date_Changed" xml:space="preserve">
+    <value>Data změněna</value>
+  </data>
+  <data name="DELETE RFID User Card" xml:space="preserve">
+    <value>SMAZAT uživatelskou kartu RFID</value>
+  </data>
+  <data name="Deleted_Tray" xml:space="preserve">
+    <value>Smazat síto</value>
+  </data>
+  <data name="Deleting User" xml:space="preserve">
+    <value>Smazat uživatele</value>
+  </data>
+  <data name="Empty File - Check File NOT is Open" xml:space="preserve">
+    <value>Prázdný soubor - Zkontrolujte, zda NENÍ soubor otevřený</value>
+  </data>
+  <data name="Empty File:" xml:space="preserve">
+    <value>Prázdný soubor: </value>
+  </data>
+  <data name="EPC Length must be EVEN !&quot; &amp; &quot;Do Not Use This Configuration - Crashing Technical Station" xml:space="preserve">
+    <value>Délka EPC musí být STEJNÁ !" &amp; "Nepoužívejte tuto konfiguraci - Havárie technické stanice</value>
+  </data>
+  <data name="Error in the Parser command - Check Table" xml:space="preserve">
+    <value>Chyba v příkazu Parser - Zkontrolujte tabulku</value>
+  </data>
+  <data name="Establish Synchronization between Check_Boxes IN/OUT" xml:space="preserve">
+    <value>Vytvořit synchronizaci mezi Check_Boxy IN/OUT</value>
+  </data>
+  <data name="Final Check Result: {0} Original Catalog Items: {1}{0} New Items: {2}{0}{0}Check and ready to Update ?" xml:space="preserve">
+    <value>Výsledek finální kontroly: {0} Původní katalogové položky: {1} {0} Nové položky: {2}{0}{0}Kontrola a připraveno k aktualizaci ?</value>
+  </data>
+  <data name="Instruments: {0:N0}" xml:space="preserve">
+    <value>Nástroje: {0:N0}</value>
+  </data>
+  <data name="IP Adress:" xml:space="preserve">
+    <value>IP adresa:   </value>
+  </data>
+  <data name="No Data in File - Check File" xml:space="preserve">
+    <value>V souboru nejsou žádná data - zkontrolujte soubor</value>
+  </data>
+  <data name="No Data in File:" xml:space="preserve">
+    <value>V souboru nejsou žádná data: </value>
+  </data>
+  <data name="NO File selected -&gt; Cancel or Select File !" xml:space="preserve">
+    <value>Nebyl vybrán ŽÁDNÝ soubor -&gt; Zrušit nebo vybrat soubor !</value>
+  </data>
+  <data name="NOT Allow to delete data in Table - Only ADD data !" xml:space="preserve">
+    <value>NENÍ povoleno mazání dat v tabulce - pouze PŘIDÁVÁNÍ dat !</value>
+  </data>
+  <data name="NOT use COST Center" xml:space="preserve">
+    <value>NEpoužívat NÁKLADOVÉ středisko</value>
+  </data>
+  <data name="Number Of CheckBox_OR_IN: {0:N0}" xml:space="preserve">
+    <value>Počet CheckBox_OS_IN: {0:N0}</value>
+  </data>
+  <data name="Number Of CheckBox_SPD: {0:N0}" xml:space="preserve">
+    <value>Počet CheckBox_CS: {0:N0}</value>
+  </data>
+  <data name="Only when Cost Center is Activated !" xml:space="preserve">
+    <value>Pouze pokud je nákladové středisko aktivováno !</value>
+  </data>
+  <data name="Please DO NOT Change if you are in Doubt - This is a Fundamental change to System ! -&gt; Continue Yes ?" xml:space="preserve">
+    <value>Pokud máte pochybnosti, NEPROVÁDĚJTE ZMĚNU - Jedná se o zásadní změnu systému ! -&gt; Pokračovat Ano ?</value>
+  </data>
+  <data name="Problem DELETING data:" xml:space="preserve">
+    <value>Problém s MAZÁNÍM dat:</value>
+  </data>
+  <data name="Problem in Update Table" xml:space="preserve">
+    <value>Problém s aktualizací tabulky </value>
+  </data>
+  <data name="Problem OVERWRITING data:" xml:space="preserve">
+    <value>Problém s PŘEPISOVÁNÍM dat: </value>
+  </data>
+  <data name="Procedure_ID" xml:space="preserve">
+    <value>ID postupu</value>
+  </data>
+  <data name="Procedure_Name" xml:space="preserve">
+    <value>Název postupu</value>
+  </data>
+  <data name="Ready to Update ?" xml:space="preserve">
+    <value>Připraveno k aktualizaci ?</value>
+  </data>
+  <data name="Remove Synchronization between Check_Boxes IN/OUT" xml:space="preserve">
+    <value>Odstranit synchronizaci mezi Check_Boxy IN/OUT</value>
+  </data>
+  <data name="Return value: ImportLoadData:" xml:space="preserve">
+    <value>Vrátit hodnotu: Importovat Nahrát data: </value>
+  </data>
+  <data name="SAVED AT:" xml:space="preserve">
+    <value>ULOŽENO NA: </value>
+  </data>
+  <data name="Security Level Failed:" xml:space="preserve">
+    <value>Úroveň zabezpečení selhala:</value>
+  </data>
+  <data name="Setting  Level  Failed:" xml:space="preserve">
+    <value>Nastavení úrovně selhalo:</value>
+  </data>
+  <data name="Text to UPPER" xml:space="preserve">
+    <value>Text k HORNÍMU</value>
+  </data>
+  <data name="The Tray Name Exist - Make a New Name" xml:space="preserve">
+    <value>Název síta existuje - Vytvořte nový název </value>
+  </data>
+  <data name="The User Name Exist - Change Name to Create a New User !" xml:space="preserve">
+    <value>Uživatelské jméno existuje - Pro vytvoření nového uživatele změňte jméno !</value>
+  </data>
+  <data name="Total Number Of CheckBox_OR_IN: {0:N0}" xml:space="preserve">
+    <value>Celkový počet CheckBox_OS_IN: {0:N0}</value>
+  </data>
+  <data name="Total Number Of CheckBox_SPD: {0:N0}" xml:space="preserve">
+    <value>Celkový počet CheckBox_CS: {0:N0}</value>
+  </data>
+  <data name="Tray's in Database :" xml:space="preserve">
+    <value>Síta v databázi :</value>
+  </data>
+  <data name="Trays: {0:N0}" xml:space="preserve">
+    <value>Síta: {0:N0}</value>
+  </data>
+  <data name="Tray_Description" xml:space="preserve">
+    <value>Popis síta</value>
+  </data>
+  <data name="Tray_Lock" xml:space="preserve">
+    <value>Zámek síta</value>
+  </data>
+  <data name="Tray_Name" xml:space="preserve">
+    <value>Název síta</value>
+  </data>
+  <data name="Try Update again..." xml:space="preserve">
+    <value>Zkuste znovu aktualizovat...</value>
+  </data>
+  <data name="Write  Verification Failed !" xml:space="preserve">
+    <value>Ověření zápisu selhalo !</value>
+  </data>
+  <data name="You have Changed the Path to where Updated Files is Located.  Cancel this operation ?" xml:space="preserve">
+    <value>Změnili jste cestu k umístění aktualizovaných souborů.  Zrušit tuto operaci ?</value>
+  </data>
+  <data name="Software_Name" xml:space="preserve">
+    <value>Název softwaru</value>
+  </data>
+  <data name="Update_Code" xml:space="preserve">
+    <value>Aktualizační kód</value>
+  </data>
+  <data name="Update_Time_End" xml:space="preserve">
+    <value>Konec doby aktualizace</value>
+  </data>
+  <data name="Update_Time_Start" xml:space="preserve">
+    <value>Spuštění doby aktualizace</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>Verze</value>
+  </data>
+  <data name="Number off instruments in Database:" xml:space="preserve">
+    <value>Počet nástrojů v databázi: </value>
+  </data>
+  <data name="Overview For Instrument With Image" xml:space="preserve">
+    <value>Přehled nástrojů s obrázkem</value>
+  </data>
+  <data name="Overview For Instrument with No Image" xml:space="preserve">
+    <value>Přehled nástrojů bez obrázku</value>
+  </data>
+  <data name="Cancel this operation?" xml:space="preserve">
+    <value>Zrušit tuto operaci ?</value>
+  </data>
+  <data name="Deleting Files" xml:space="preserve">
+    <value>Odstraňování souborů</value>
+  </data>
+  <data name="From Area:" xml:space="preserve">
+    <value>  Z oblasti:  </value>
+  </data>
+  <data name="Last 3 Month" xml:space="preserve">
+    <value>Poslední 3 měsíce</value>
+  </data>
+  <data name="This Month" xml:space="preserve">
+    <value>Tento měsíc</value>
+  </data>
+  <data name="Today" xml:space="preserve">
+    <value>Dnes</value>
+  </data>
+  <data name="Until ToDay" xml:space="preserve">
+    <value>Do dnešního dne</value>
+  </data>
+  <data name="You are about to Delete files that are Older than:" xml:space="preserve">
+    <value>Chystáte se odstranit soubory, které jsou starší než: </value>
+  </data>
+  <data name="Are you Sure ? -  If Not Cancel this Operation = NO" xml:space="preserve">
+    <value>Jste si jisti? - Pokud ne, zrušte tuto operaci = NE</value>
+  </data>
+  <data name="Cost_Center_Name" xml:space="preserve">
+    <value>Název nákladového střediska</value>
+  </data>
+  <data name="Hidden_Center" xml:space="preserve">
+    <value>Skryté středisko</value>
+  </data>
+  <data name="Default_Always" xml:space="preserve">
+    <value>Vždy výchozí nastavení</value>
+  </data>
+  <data name="Extra_Text" xml:space="preserve">
+    <value>Doplňkový text</value>
+  </data>
+  <data name="Cost_Center_Code" xml:space="preserve">
+    <value>Kód nákladového střediska</value>
+  </data>
+  <data name="Change_Date" xml:space="preserve">
+    <value>Změněná data</value>
+  </data>
+  <data name="Checking Reader_ID ..." xml:space="preserve">
+    <value>Ověřování ID čtečky ...</value>
+  </data>
+  <data name="An error occurred during the LogIn while trying to get the user ID from the database" xml:space="preserve">
+    <value>Při pokusu o získání ID uživatele z databáze došlo během přihlašování k chybě.</value>
+  </data>
+  <data name="An error occurred when trying to connect to the database" xml:space="preserve">
+    <value>Při pokusu o připojení k databázi došlo k chybě</value>
+  </data>
+  <data name="An error occurred while adding the instruments to the combo box" xml:space="preserve">
+    <value>Při přidávání nástrojů do ComboBoxu došlo k chybě</value>
+  </data>
+  <data name="An error occurred while clicking the world picture box" xml:space="preserve">
+    <value>Při kliknutí na rámeček s obrázkem zeměkoule došlo k chybě</value>
+  </data>
+  <data name="An error occurred while loading the page" xml:space="preserve">
+    <value>Při načítání stránky došlo k chybě</value>
+  </data>
+  <data name="An error occurred while trying to apply the update procedure for a tray" xml:space="preserve">
+    <value>Při pokusu o použití aktualizačního postupu pro síto došlo k chybě</value>
+  </data>
+  <data name="An error occurred while trying to change the selected index" xml:space="preserve">
+    <value>Při pokusu o změnu vybraného indexu došlo k chybě</value>
+  </data>
+  <data name="An error occurred while trying to color the data grid view" xml:space="preserve">
+    <value>Při pokusu o vybarvení zobrazení datové mřížky došlo k chybě</value>
+  </data>
+  <data name="An error occurred while trying to create a backup" xml:space="preserve">
+    <value>Při pokusu o vytvoření zálohy došlo k chybě</value>
+  </data>
+  <data name="An error occurred while trying to delete the database" xml:space="preserve">
+    <value>Při pokusu o smazání databáze došlo k chybě</value>
+  </data>
+  <data name="An error occurred while trying to delete the database connection" xml:space="preserve">
+    <value>Při pokusu o smazání databázového připojení došlo k chybě</value>
+  </data>
+  <data name="An error occurred while trying to design the filter box" xml:space="preserve">
+    <value>Při pokusu o návrh pole filtru došlo k chybě</value>
+  </data>
+  <data name="An error occurred while trying to do the configuration for the first time" xml:space="preserve">
+    <value>Při prvním pokusu o konfiguraci došlo k chybě</value>
+  </data>
+  <data name="An error occurred while trying to export the data to a CSV file" xml:space="preserve">
+    <value>Při pokusu o export dat do souboru CSV došlo k chybě</value>
+  </data>
+  <data name="An error occurred while trying to fill data in the data table" xml:space="preserve">
+    <value>Při pokusu o vyplnění dat v datové tabulce došlo k chybě</value>
+  </data>
+  <data name="An error occurred while trying to fill the tray data table" xml:space="preserve">
+    <value>Při pokusu o vyplnění datové tabulky síta došlo k chybě</value>
+  </data>
+  <data name="An error occurred while trying to load data in the data grid view" xml:space="preserve">
+    <value>Při pokusu o načtení dat v zobrazení datové mřížky došlo k chybě</value>
+  </data>
+  <data name="An error occurred while trying to load the cost center" xml:space="preserve">
+    <value>Při pokusu o načtení nákladového střediska došlo k chybě</value>
+  </data>
+  <data name="An error occurred while trying to look up an information in the database" xml:space="preserve">
+    <value>Při pokusu o vyhledání informace v databázi došlo k chybě</value>
+  </data>
+  <data name="An error occurred while trying to make the record string" xml:space="preserve">
+    <value>Při pokusu o vytvoření řetězce záznamů došlo k chybě</value>
+  </data>
+  <data name="An error occurred while trying to make the variable string" xml:space="preserve">
+    <value>Při pokusu o vytvoření řetězce proměnných došlo k chybě</value>
+  </data>
+  <data name="An error occurred while trying to parse the date" xml:space="preserve">
+    <value>Při pokusu o analýzu data došlo k chybě</value>
+  </data>
+  <data name="An error occurred while trying to select a group from the database" xml:space="preserve">
+    <value>Při pokusu o výběr skupiny z databáze došlo k chybě</value>
+  </data>
+  <data name="An error occurred while trying to set up the data grid view" xml:space="preserve">
+    <value>Při pokusu o nastavení zobrazení datové mřížky došlo k chybě</value>
+  </data>
+  <data name="An error occurred while trying to update the data table in the database" xml:space="preserve">
+    <value>Při pokusu o aktualizaci datové tabulky v databázi došlo k chybě</value>
+  </data>
+  <data name="An error occurred while trying to update the reader information in the database" xml:space="preserve">
+    <value>Při pokusu o aktualizaci informací o čtečce v databázi došlo k chybě</value>
+  </data>
+  <data name="An error occurred while trying to write in the database" xml:space="preserve">
+    <value>Při pokusu o zápis do databáze došlo k chybě</value>
+  </data>
+  <data name="An error occurred while trying to write the data table in the database" xml:space="preserve">
+    <value>Při pokusu o zápis datové tabulky do databáze došlo k chybě</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Chyba</value>
+  </data>
+  <data name="Error code :" xml:space="preserve">
+    <value>Chybový kód:</value>
+  </data>
+  <data name="error code:" xml:space="preserve">
+    <value>Chybový kód:</value>
+  </data>
+  <data name="If this does not solve the problem, contact Caretag support and report the error code." xml:space="preserve">
+    <value>Pokud to problém nevyřeší, kontaktujte podporu společnosti Caretag a nahlaste chybový kód</value>
+  </data>
+  <data name="Please restart the application." xml:space="preserve">
+    <value>Restartujte prosím aplikaci.</value>
+  </data>
+  <data name="An error in the UI occurred." xml:space="preserve">
+    <value>V uživatelském rozhraní došlo k chybě.</value>
+  </data>
+  <data name="An error occurred when printing." xml:space="preserve">
+    <value>Během tisku došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while retrieving the results from the database." xml:space="preserve">
+    <value>Při obnovování výsledků z databáze došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while deleting the results from the database." xml:space="preserve">
+    <value>Při mazání výsledků z databáze došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while saving the results in the database." xml:space="preserve">
+    <value>Při ukládání výsledků do databáze došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while updating the results in the database." xml:space="preserve">
+    <value>Při aktualizaci výsledků v databázi došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while opening the file." xml:space="preserve">
+    <value>Při otevírání souboru došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while copying the file." xml:space="preserve">
+    <value>Při kopírování souboru došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while deleting the file." xml:space="preserve">
+    <value>Při mazání souboru došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while saving the file." xml:space="preserve">
+    <value>Při ukládání souboru došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while pressing a button." xml:space="preserve">
+    <value>Při stisknutí tlačítka došlo k chybě.</value>
+  </data>
+  <data name="An error occurred during the user checking procedure" xml:space="preserve">
+    <value>Při postupu kontroly uživatele došlo k chybě</value>
+  </data>
+  <data name="An error occurred while changing the checkbox check" xml:space="preserve">
+    <value>Při změně CheckBoxu došlo k chybě</value>
+  </data>
+  <data name="An error occurred while changing the filter name text" xml:space="preserve">
+    <value>Při změně textu názvu filtru došlo k chybě</value>
+  </data>
+  <data name="An error occurred while changing the filter text" xml:space="preserve">
+    <value>Při změně textu filtru došlo k chybě</value>
+  </data>
+  <data name="An error occurred while changing the ID filter text" xml:space="preserve">
+    <value>Při změně textu filtru ID došlo k chybě</value>
+  </data>
+  <data name="An error occurred while changing the index of the area name combo box" xml:space="preserve">
+    <value>Při změně indexu ComboBoxu Název oblasti došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while changing the search text of the tray text box" xml:space="preserve">
+    <value>Při změně vyhledávacího textu v textovém poli síta došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while changing the selected index in the company combo box" xml:space="preserve">
+    <value>Při změně vybraného indexu v ComboBoxu Společnost došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while changing the selected index of the check out combo box" xml:space="preserve">
+    <value>Při změně vybraného indexu ComboBoxu CheckOut došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while changing the selected index of the chosen instrument" xml:space="preserve">
+    <value>Při změně vybraného indexu zvoleného nástroje došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while changing the text in the name filter text box" xml:space="preserve">
+    <value>Při změně textu v textovém poli Název filtru došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while changing the text in the treatment text box" xml:space="preserve">
+    <value>Při změně textu v textovém poli Ošetření došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while checking if the item exists in the database" xml:space="preserve">
+    <value>Při kontrole existence položky v databázi došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while choosing between the active directory and the local system" xml:space="preserve">
+    <value>Při výběru mezi aktivním adresářem a místním systémem došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while cleaning the Sync table" xml:space="preserve">
+    <value>Při čištění tabulky Sync došlo k chybě</value>
+  </data>
+  <data name="An error occurred while clicking a cell in the cost data grid view" xml:space="preserve">
+    <value>Při kliknutí na buňku v zobrazení datové mřížky Náklady došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while clicking a cell in the data grid view" xml:space="preserve">
+    <value>Při kliknutí na buňku v zobrazení datové mřížky došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while clicking a cell in the procedure data grid view" xml:space="preserve">
+    <value>Při kliknutí na buňku v zobrazení datové mřížky Postupy došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while clicking a chosen tray data grid view cell" xml:space="preserve">
+    <value>Při kliknutí na vybranou buňku zobrazení datové mřížky Síto došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while clicking a tray data grid view cell" xml:space="preserve">
+    <value>Při kliknutí na buňku zobrazení datové mřížky Síto došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while clicking on a cell in the data grid view" xml:space="preserve">
+    <value>Při kliknutí na buňku v zobrazení datové mřížky došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while clicking on the delete button" xml:space="preserve">
+    <value>Při kliknutí na tlačítko Smazat došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while clicking on the print treatment button" xml:space="preserve">
+    <value>Při kliknutí na tlačítko pro tisk došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while clicking the cmd delete function" xml:space="preserve">
+    <value>Při kliknutí na funkci cmd delete došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while clicking the confirmation button" xml:space="preserve">
+    <value>Při kliknutí na potvrzovací tlačítko došlo k chybě</value>
+  </data>
+  <data name="An error occurred while clicking the delete user button" xml:space="preserve">
+    <value>Při kliknutí na tlačítko odstranit uživatele došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while clicking the instrument combo box" xml:space="preserve">
+    <value>Při kliknutí na ComboBox nástroje došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while clicking the new name button" xml:space="preserve">
+    <value>Při kliknutí na tlačítko Nový název došlo k chybě</value>
+  </data>
+  <data name="An error occurred while clicking the print button" xml:space="preserve">
+    <value>Při kliknutí na tlačítko pro tisk došlo k chybě</value>
+  </data>
+  <data name="An error occurred while clicking the reset password button" xml:space="preserve">
+    <value>Při kliknutí na tlačítko Obnovit heslo došlo k chybě</value>
+  </data>
+  <data name="An error occurred while clicking the tray name" xml:space="preserve">
+    <value>Při kliknutí na název síta došlo k chybě</value>
+  </data>
+  <data name="An error occurred while clicking the update info button" xml:space="preserve">
+    <value>Při kliknutí na tlačítko Aktualizovat informace došlo k chybě</value>
+  </data>
+  <data name="An error occurred while doing database operations" xml:space="preserve">
+    <value>Při provádění operací databáze došlo k chybě</value>
+  </data>
+  <data name="An error occurred while filling the data in the data grid view" xml:space="preserve">
+    <value>Při vyplňování dat v zobrazení datové mřížky došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while filling the information text box" xml:space="preserve">
+    <value>Při vyplňování informačního textového pole došlo k chybě</value>
+  </data>
+  <data name="An error occurred while filling the pivot grid" xml:space="preserve">
+    <value>Při vyplňování Pivot mřížky došlo k chybě</value>
+  </data>
+  <data name="An error occurred while filtering the text box by ID" xml:space="preserve">
+    <value>Při filtrování textového pole podle ID došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while leaving a row in the data grid view" xml:space="preserve">
+    <value>Při opuštění řádku v zobrazení datové mřížky došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while loading all the trays" xml:space="preserve">
+    <value>Při načítání všech sít došlo k chybě</value>
+  </data>
+  <data name="An error occurred while loading the chosen trays" xml:space="preserve">
+    <value>Při načítání vybraných sít došlo k chybě</value>
+  </data>
+  <data name="An error occurred while loading the Cost Center page" xml:space="preserve">
+    <value>Při načítání stránky Nákladové středisko došlo k chybě</value>
+  </data>
+  <data name="An error occurred while loading the cost data grid view" xml:space="preserve">
+    <value>Při načítání zobrazení datové mřížky Náklady došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while loading the data grid view" xml:space="preserve">
+    <value>Při načítání zobrazení datové mřížky došlo k chybě</value>
+  </data>
+  <data name="An error occurred while loading the database functions page" xml:space="preserve">
+    <value>Při načítání stránky s funkcemi databáze došlo k chybě</value>
+  </data>
+  <data name="An error occurred while loading the edit container page" xml:space="preserve">
+    <value>Při načítání stránky Upravit kontejner došlo k chybě</value>
+  </data>
+  <data name="An error occurred while loading the grid view" xml:space="preserve">
+    <value>Při načítání zobrazení mřížky došlo k chybě</value>
+  </data>
+  <data name="An error occurred while loading the procedure data grid view" xml:space="preserve">
+    <value>Při načítání zobrazení datové mřížky Postup došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while loading the Sync box" xml:space="preserve">
+    <value>Při načítání pole Synchronizace došlo k chybě</value>
+  </data>
+  <data name="An error occurred while pressing a cell in the data grid view" xml:space="preserve">
+    <value>Při stisknutí buňky v zobrazení datové mřížky došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while pressing a key in the ID filter text box" xml:space="preserve">
+    <value>Při stisknutí klávesy v textovém poli ID filtru došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while pressing the change logo button" xml:space="preserve">
+    <value>Při stisknutí tlačítka Změnit logo došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while pressing the change map button" xml:space="preserve">
+    <value>Při stisknutí tlačítka Změnit graf došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while pressing the check all box" xml:space="preserve">
+    <value>Při stisknutí políčka Zkontrolovat vše došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while pressing the check container RFID life button" xml:space="preserve">
+    <value>Při stisknutí tlačítka Zkontrolovat životnost RFID kontejneru došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while pressing the check if empty button" xml:space="preserve">
+    <value>Při stisknutí tlačítka Zkontrolovat, zda je prázdné došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while pressing the check RFID life button" xml:space="preserve">
+    <value>Při stisknutí tlačítka Zkontrolovat životnost RFID došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while pressing the check rules button" xml:space="preserve">
+    <value>Při stisknutí tlačítka pro kontrolu pravidel došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while pressing the check series button" xml:space="preserve">
+    <value>Při stisknutí tlačítka Zkontrolovat série došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while pressing the close button" xml:space="preserve">
+    <value>Při stisknutí tlačítka Zavřít došlo k chybě</value>
+  </data>
+  <data name="An error occurred while pressing the compare button" xml:space="preserve">
+    <value>Při stisknutí porovnávacího tlačítka došlo k chybě</value>
+  </data>
+  <data name="An error occurred while pressing the connect button" xml:space="preserve">
+    <value>Při stisknutí tlačítka pro připojení došlo k chybě</value>
+  </data>
+  <data name="An error occurred while pressing the data grid view container" xml:space="preserve">
+    <value>Při stisknutí zobrazení datové mřížky Kontejner došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while pressing the delete button" xml:space="preserve">
+    <value>Při stisknutí tlačítka Smazat došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while pressing the delete item button" xml:space="preserve">
+    <value>Při stisknutí tlačítka Smazat položku došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while pressing the delete logo button" xml:space="preserve">
+    <value>Při stisknutí tlačítka Smazat logo došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while pressing the delete map button" xml:space="preserve">
+    <value>Při stisknutí tlačítka Smazat graf došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while pressing the edit data button" xml:space="preserve">
+    <value>Při stisknutí tlačítka Upravit data došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while pressing the edit security level button" xml:space="preserve">
+    <value>Při stisknutí tlačítka Upravit úroveň zabezpečení došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while pressing the filter by name text box" xml:space="preserve">
+    <value>Při stisknutí textového pole Filtrovat podle názvu došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while pressing the GUID button" xml:space="preserve">
+    <value>Při stisknutí tlačítka GUID došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while pressing the is deleted button" xml:space="preserve">
+    <value>Při stisknutí tlačítka Je smazáno došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while pressing the load group button" xml:space="preserve">
+    <value>Při stisknutí tlačítka Načíst skupinu došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while pressing the maintenance button" xml:space="preserve">
+    <value>Při stisknutí tlačítka údržby došlo k chybě</value>
+  </data>
+  <data name="An error occurred while pressing the print button" xml:space="preserve">
+    <value>Při stisknutí tlačítka pro tisk došlo k chybě</value>
+  </data>
+  <data name="An error occurred while pressing the relation button" xml:space="preserve">
+    <value>Při stisknutí tlačítka Relace došlo k chybě</value>
+  </data>
+  <data name="An error occurred while pressing the repair button" xml:space="preserve">
+    <value>Při stisknutí tlačítka pro opravu došlo k chybě</value>
+  </data>
+  <data name="An error occurred while pressing the repair log button" xml:space="preserve">
+    <value>Při stisknutí tlačítka pro opravu protokolu došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while pressing the report button" xml:space="preserve">
+    <value>Při stisknutí tlačítka pro report došlo k chybě</value>
+  </data>
+  <data name="An error occurred while pressing the security level button" xml:space="preserve">
+    <value>Při stisknutí tlačítka pro úroveň zabezpečení došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while pressing the select image button" xml:space="preserve">
+    <value>Při stisknutí tlačítka pro výběr obrázku došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while pressing the treatment button" xml:space="preserve">
+    <value>Při stisknutí tlačítka Ošetření došlo k chybě</value>
+  </data>
+  <data name="An error occurred while pressing the update button" xml:space="preserve">
+    <value>Při stisknutí tlačítka Aktualizace došlo k chybě</value>
+  </data>
+  <data name="An error occurred while pressing the update database button" xml:space="preserve">
+    <value>Při stisknutí tlačítka Aktualizovat databázi došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while pressing the update information button" xml:space="preserve">
+    <value>Při stisknutí tlačítka Aktualizovat informace došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while pressing the update RFID life button" xml:space="preserve">
+    <value>Při stisknutí tlačítka Aktualizovat životnost RFID life došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while pressing the use cost button" xml:space="preserve">
+    <value>Při stisknutí tlačítka Použít náklady došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while pressing the username text box" xml:space="preserve">
+    <value>Při stisknutí textového pole Uživatelské jméno došlo k chybě</value>
+  </data>
+  <data name="An error occurred while pressing the vendor id button" xml:space="preserve">
+    <value>Při stisknutí tlačítka ID dodavatele došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while pressing the vendor name button" xml:space="preserve">
+    <value>Při stisknutí tlačítka Název dodavatele došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while pressing the view button" xml:space="preserve">
+    <value>Při stisknutí tlačítka pro zobrazení došlo k chybě</value>
+  </data>
+  <data name="An error occurred while setting the filter ID" xml:space="preserve">
+    <value>Při nastavování ID filtru došlo k chybě</value>
+  </data>
+  <data name="An error occurred while setting the filter name" xml:space="preserve">
+    <value>Při nastavování názvu filtru došlo k chybě</value>
+  </data>
+  <data name="An error occurred while setting the ID filter" xml:space="preserve">
+    <value>Při nastavování filtru ID došlo k chybě</value>
+  </data>
+  <data name="An error occurred while setting the name filter" xml:space="preserve">
+    <value>Při nastavování filtru Název došlo k chybě</value>
+  </data>
+  <data name="An error occurred while setting up the data grid view" xml:space="preserve">
+    <value>Při nastavování zobrazení datové mřížky došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to add the database values to the row's cells" xml:space="preserve">
+    <value>Při pokusu o přidání hodnot databáze do buněk řádku došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to add the instruments to the table" xml:space="preserve">
+    <value>Při pokusu o přidání nástrojů do tabulky došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to add the tray" xml:space="preserve">
+    <value>Při pokusu o přidání síta došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to allow editing" xml:space="preserve">
+    <value>Při pokusu o povolení úprav došlo k chybě</value>
+  </data>
+  <data name="An error occurred while trying to auto generate the cmd insert" xml:space="preserve">
+    <value>Při pokusu o automatické generování vložení příkazu cmd došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to build the data table" xml:space="preserve">
+    <value>Při pokusu o sestavení datové tabulky došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to change the cell color" xml:space="preserve">
+    <value>Při pokusu o změnu barvy buňky došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to change the combo box" xml:space="preserve">
+    <value>Při pokusu o změnu ComboBoxu došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to change the Login system" xml:space="preserve">
+    <value>Při pokusu o změnu přihlašovacího systému došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to change the procedure combo box selected index" xml:space="preserve">
+    <value>Při pokusu o změnu vybraného indexu ComboBoxu postupu došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to change the row color" xml:space="preserve">
+    <value>Při pokusu o změnu barvy řádku došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to change the selected check box" xml:space="preserve">
+    <value>Při pokusu o změnu vybraného CheckBoxu došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to change the selected index of the description combo box" xml:space="preserve">
+    <value>Při pokusu o změnu vybraného indexu ComboBoxu Popis došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to change the selected index of the tray combo box" xml:space="preserve">
+    <value>Při pokusu o změnu vybraného indexu ComboBoxu Síto došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to change the selected index of the type combo box" xml:space="preserve">
+    <value>Při pokusu o změnu vybraného indexu ComboBoxu Typ došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to change the selected index of the username combo box" xml:space="preserve">
+    <value>Při pokusu o změnu vybraného indexu ComboBoxu Uživatelské jméno došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to change the users security level" xml:space="preserve">
+    <value>Při pokusu o změnu úrovně uživatelského zabezpečení došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to check the path" xml:space="preserve">
+    <value>Při pokusu o kontrolu cesty došlo k chybě</value>
+  </data>
+  <data name="An error occurred while trying to click a cell in the data grid view" xml:space="preserve">
+    <value>Při pokusu o kliknutí na buňku v zobrazení datové mřížky došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to click on the connect button" xml:space="preserve">
+    <value>Při pokusu o kliknutí na tlačítko pro připojení došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to click on the delete button" xml:space="preserve">
+    <value>Při pokusu o kliknutí na tlačítko Smazat došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to create a back up" xml:space="preserve">
+    <value>Při pokusu o vytvoření zálohy došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to create a CSV file" xml:space="preserve">
+    <value>Při pokusu o vytvoření souboru CSV došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to create a new SQL data adapter" xml:space="preserve">
+    <value>Při pokusu o vytvoření nového datového adaptéru SQL došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to create an user" xml:space="preserve">
+    <value>Při pokusu o vytvoření uživatele došlo k chybě</value>
+  </data>
+  <data name="An error occurred while trying to create an user and assign a security level" xml:space="preserve">
+    <value>Při pokusu o vytvoření uživatele a přiřazení úrovně zabezpečení došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to delete a row" xml:space="preserve">
+    <value>Při pokusu o smazání řádku došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to delete the rfid user card" xml:space="preserve">
+    <value>Při pokusu o smazání karty uživatele RFID došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to delete the row" xml:space="preserve">
+    <value>Při pokusu o smazání řádku došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to display the data from the database" xml:space="preserve">
+    <value>Při pokusu o zobrazení dat z databáze došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to display the instruments in the table" xml:space="preserve">
+    <value>Při pokusu o zobrazení nástrojů v tabulce došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to display the reader table" xml:space="preserve">
+    <value>Při pokusu o zobrazení tabulky čtečky došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to double click the pivot grid control" xml:space="preserve">
+    <value>Při pokusu o dvojklik na ovládací prvek Pivot mřížky došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to edit a cell in the data grid view" xml:space="preserve">
+    <value>Při pokusu o úpravu buňky v zobrazení datové mřížky došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to establish synchronization between the IN/OUT Checkboxes" xml:space="preserve">
+    <value>Při pokusu o vytvoření synchronizace mezi CheckBox IN/OUT došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to fill data in the data grid view" xml:space="preserve">
+    <value>Při pokusu o vyplnění dat v zobrazení datové mřížky došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to fill the combo box" xml:space="preserve">
+    <value>Při pokusu o vyplnění ComboBoxu došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to fill the cost combo box" xml:space="preserve">
+    <value>Při pokusu o vyplnění ComboBoxu Náklady došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to fill the data in the data grid view" xml:space="preserve">
+    <value>Při pokusu o vyplnění dat v zobrazení datové mřížky došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to fill the tray combo box" xml:space="preserve">
+    <value>Při pokusu o vyplnění ComboBoxu Síto došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to filter by ID" xml:space="preserve">
+    <value>Při pokusu o filtrování podle ID došlo k chybě</value>
+  </data>
+  <data name="An error occurred while trying to hide the cost" xml:space="preserve">
+    <value>Při pokusu o skrytí nákladů došlo k chybě</value>
+  </data>
+  <data name="An error occurred while trying to insert a new row" xml:space="preserve">
+    <value>Při pokusu o vložení nového řádku došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to leave a row in the data grid view" xml:space="preserve">
+    <value>Při pokusu o opuštění řádku v zobrazení datové mřížky došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to load the data grid view" xml:space="preserve">
+    <value>Při pokusu o načtení zobrazení datové mřížky došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to load the data table" xml:space="preserve">
+    <value>Při pokusu o načtení datové tabulky došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to load the page" xml:space="preserve">
+    <value>Při pokusu o načtení stránky došlo k chybě</value>
+  </data>
+  <data name="An error occurred while trying to make a group identifier" xml:space="preserve">
+    <value>Při pokusu o vytvoření identifikátoru skupiny došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to press the print button" xml:space="preserve">
+    <value>Při pokusu o stisknutí tlačítka pro tisk došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to remove a row from the data grid view" xml:space="preserve">
+    <value>Při pokusu o odstranění řádku ze zobrazení datové mřížky došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to remove the synchronization between the IN/OUT Checkboxes" xml:space="preserve">
+    <value>Při pokusu o odstranění synchronizace mezi CheckBox IN/OUT došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to reset the default cost" xml:space="preserve">
+    <value>Při pokusu o obnovení výchozích nákladů došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to reset the default cost for center" xml:space="preserve">
+    <value>Při pokusu o obnovení výchozích nákladů na středisko došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to save the Excel file" xml:space="preserve">
+    <value>Při pokusu o uložení souboru aplikace Excel došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to send an update to the database" xml:space="preserve">
+    <value>Při pokusu o odeslání aktualizace do databáze došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to send the update to the database" xml:space="preserve">
+    <value>Při pokusu o odeslání aktualizace do databáze došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to set the filter ID" xml:space="preserve">
+    <value>Při pokusu o nastavení ID filtru došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to set the security level" xml:space="preserve">
+    <value>Při pokusu o nastavení úrovně zabezpečení došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to set up the chosen trays data grid view" xml:space="preserve">
+    <value>Při pokusu o nastavení zobrazení datové mřížky vybraných sít došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to set up the trays data grid view" xml:space="preserve">
+    <value>Při pokusu o nastavení zobrazení datové mřížky sít došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to show the reader table" xml:space="preserve">
+    <value>Při pokusu o zobrazení tabulky čtečky došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to switch the cell style of the grid view" xml:space="preserve">
+    <value>Při pokusu o přepnutí stylu buněk zobrazení mřížky došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to switch the row style of the grid view" xml:space="preserve">
+    <value>Při pokusu o přepnutí stylu řádku v zobrazení mřížky došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to update a cell content in the data grid view" xml:space="preserve">
+    <value>Při pokusu o aktualizaci obsahu buňky v zobrazení datové mřížky došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to update a row" xml:space="preserve">
+    <value>Při pokusu o aktualizaci řádku došlo k chybě</value>
+  </data>
+  <data name="An error occurred while trying to update the cell after leaving it" xml:space="preserve">
+    <value>Při pokusu o aktualizaci buňky po jejím opuštění došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to update the cell information in the database" xml:space="preserve">
+    <value>Při pokusu o aktualizaci informací o buňce v databázi došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to update the cmd function" xml:space="preserve">
+    <value>Při pokusu o aktualizaci funkce cmd došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to update the cmd table" xml:space="preserve">
+    <value>Při pokusu o aktualizaci tabulky cmd došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to update the data grid view" xml:space="preserve">
+    <value>Při pokusu o aktualizaci zobrazení datové mřížky došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to update the data grid view after leaving the cell" xml:space="preserve">
+    <value>Při pokusu o aktualizaci zobrazení datové mřížky po opuštění buňky došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to update the data grid view after leaving the row" xml:space="preserve">
+    <value>Při pokusu o aktualizaci zobrazení datové mřížky po opuštění řádku došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to update the database" xml:space="preserve">
+    <value>Při pokusu o aktualizaci databáze došlo k chybě</value>
+  </data>
+  <data name="An error occurred while trying to update the number of rows" xml:space="preserve">
+    <value>Při pokusu o aktualizaci počtu řádků došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to update the path" xml:space="preserve">
+    <value>Při pokusu o aktualizaci cesty došlo k chybě</value>
+  </data>
+  <data name="An error occurred while trying to update the RFID life" xml:space="preserve">
+    <value>Při pokusu o aktualizaci životnosti RFID došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to update the row" xml:space="preserve">
+    <value>Při pokusu o aktualizaci řádku došlo k chybě</value>
+  </data>
+  <data name="An error occurred while trying to update the security" xml:space="preserve">
+    <value>Při pokusu o aktualizaci zabezpečení došlo k chybě</value>
+  </data>
+  <data name="An error occurred while trying to update the Sync table" xml:space="preserve">
+    <value>Při pokusu o aktualizaci tabulky Sync došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to update the text info" xml:space="preserve">
+    <value>Při pokusu o aktualizaci textových informací došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to update the text information" xml:space="preserve">
+    <value>Při pokusu o aktualizaci textových informací došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to write the default cost" xml:space="preserve">
+    <value>Při pokusu o zápis výchozích nákladů došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while updating the number of rows" xml:space="preserve">
+    <value>Při aktualizaci počtu řádků došlo k chybě.</value>
+  </data>
+  <data name="Are you sure that you want to Delete this Map ?" xml:space="preserve">
+    <value>Jste si jisti, že chcete tento graf smazat ?</value>
+  </data>
+  <data name="Deleting Map" xml:space="preserve">
+    <value>Mazání grafu</value>
+  </data>
+  <data name="An error occurred while changing the value of a cell in the grid view" xml:space="preserve">
+    <value>Při změně hodnoty buňky v zobrazení mřížky došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while clicking on a cell in the vendor data grid view" xml:space="preserve">
+    <value>Při kliknutí na buňku v zobrazení datové mřížky dodavatele došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while clicking on the import button" xml:space="preserve">
+    <value>Při kliknutí na tlačítko pro import došlo k chybě</value>
+  </data>
+  <data name="An error occurred while clicking on the print labels button" xml:space="preserve">
+    <value>Při kliknutí na tlačítko pro tisk štítků došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while clicking on the reload button" xml:space="preserve">
+    <value>Při kliknutí na tlačítko Nahrát znovu došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while clicking on the report button" xml:space="preserve">
+    <value>Při kliknutí na tlačítko Report došlo k chybě</value>
+  </data>
+  <data name="An error occurred while filling the data grid view" xml:space="preserve">
+    <value>Při vyplňování zobrazení datové mřížky došlo k chybě</value>
+  </data>
+  <data name="An error occurred while filling the vendor ID grid" xml:space="preserve">
+    <value>Při vyplňování mřížky ID dodavatele došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while pressing the change name button" xml:space="preserve">
+    <value>Při stisknutí tlačítka Změnit název došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while pressing the clean button" xml:space="preserve">
+    <value>Při stisknutí tlačítka Vyčistit došlo k chybě</value>
+  </data>
+  <data name="An error occurred while processing the vendor names" xml:space="preserve">
+    <value>Při zpracování názvů dodavatelů došlo k chybě</value>
+  </data>
+  <data name="An error occurred while trying check for new items" xml:space="preserve">
+    <value>Při pokusu o kontrolu nových položek došlo k chybě</value>
+  </data>
+  <data name="An error occurred while trying to check the instruments vendor" xml:space="preserve">
+    <value>Při pokusu o kontrolu dodavatele nástrojů došlo k chybě.</value>
+  </data>
+  <data name="An error occurred while trying to load a file" xml:space="preserve">
+    <value>Při pokusu o načtení souboru došlo k chybě</value>
+  </data>
+  <data name="Saved" xml:space="preserve">
+    <value>Uloženo</value>
+  </data>
+  <data name="Tray name was saved. The window will close now." xml:space="preserve">
+    <value>Název síta byl uložen. Okno se nyní zavře.</value>
+  </data>
+  <data name="qdDeleteImageMessage" xml:space="preserve">
+    <value>Jste si jisti, že chcete obrázek smazat?</value>
+  </data>
+  <data name="qdDeleteImageTitle" xml:space="preserve">
+    <value>Smazat obrázek</value>
+  </data>
+  <data name="qdDeleteInstrumentMessage" xml:space="preserve">
+    <value>Jste si jistí, že chcete smazat tento nástroj ze síta?</value>
+  </data>
+  <data name="qdDeleteInstrumentTitle" xml:space="preserve">
+    <value>Smazat nástroj</value>
+  </data>
+  <data name="qdReloadDataInfoGridViewMessage" xml:space="preserve">
+    <value>Znovu nahrát data do zobrazení GridView?</value>
+  </data>
+  <data name="qdReloadDataIntoGridViewTitle" xml:space="preserve">
+    <value>Nahrát znovu</value>
+  </data>
+  <data name="qdUnsavedInfoMessage" xml:space="preserve">
+    <value>Existují neuložené informace!\r\nChcete uložit?</value>
+  </data>
+  <data name="qdUnsavedInfoTitle" xml:space="preserve">
+    <value>Neuložené informace</value>
+  </data>
+  <data name="The Tray Name Exists - Make a New Name" xml:space="preserve">
+    <value>Název síta existuje - Vytvořte nový název</value>
+  </data>
+  <data name="The tray name exists, please enter a different name and try again." xml:space="preserve">
+    <value>Název síta existuje, zadejte prosím odlišný název a zkuste to znovu.</value>
+  </data>
+  <data name="Tray name exists" xml:space="preserve">
+    <value>Název síta existuje</value>
+  </data>
+  <data name="The file doesn't contains correct columns! Please choose a valid file!" xml:space="preserve">
+    <value>Soubor neobsahuje správné sloupce! Vyberte prosím platný soubor!</value>
+  </data>
+  <data name="There is no data in this file" xml:space="preserve">
+    <value>V tomto souboru nejsou žádná data</value>
+  </data>
+  <data name="Selected File is Invalid! Please Select valid csv file." xml:space="preserve">
+    <value>Vybraný soubor je neplatný! Vyberte prosím platný soubor csv.</value>
+  </data>
+  <data name="You didn't choose a delimiter!Please choose a delimiter!" xml:space="preserve">
+    <value>Nezvolili jste oddělovací znak! Zvolte prosím oddělovací znak!</value>
+  </data>
+  <data name="The delimiter is wrong! Please choose another delimiter!" xml:space="preserve">
+    <value>Oddělovací znak je chybný! Zvolte prosím jiný oddělovací znak!</value>
+  </data>
+  <data name="Finished Import" xml:space="preserve">
+    <value>Dokončený import</value>
+  </data>
+  <data name="Instrument" xml:space="preserve">
+    <value>Nástroj</value>
+  </data>
+  <data name=" already exists in the database. Do you want to overwrite all instruments?" xml:space="preserve">
+    <value> již v databázi existuje. Chcete přepsat všechny nástroje?</value>
+  </data>
+  <data name="already exists in the database. Do you want to overwrite all instruments?" xml:space="preserve">
+    <value>již v databázi existuje. Chcete přepsat všechny nástroje?</value>
+  </data>
+  <data name="One or more columns missing. Format is: (&quot;Packing set Name&quot;,&quot;Item Number&quot;,&quot;Amount&quot;,&quot;Description (optional)&quot;" xml:space="preserve">
+    <value>Chybí jeden nebo více sloupců. Formát je: ("Název balicí sady", "Číslo položky", "Částka", "Popis (nepovinný)".</value>
+  </data>
+  <data name="Column format error" xml:space="preserve">
+    <value>Chyba formátu sloupce</value>
+  </data>
+  <data name="Please choose a delimiter. " xml:space="preserve">
+    <value>Zvolte prosím oddělovací znak. </value>
+  </data>
+  <data name="Unmatched delimiter! Please choose a different delimiter." xml:space="preserve">
+    <value>Neodpovídající oddělovací znak! Zvolte prosím odlišný oddělovací znak.</value>
+  </data>
+  <data name="The file does not contain expected columns. Expected format is: (&quot;Packing set Name&quot;,&quot;Item Number&quot;,&quot;Amount&quot;,&quot;Description (optional)&quot;" xml:space="preserve">
+    <value>Soubor neobsahuje očekávané sloupce. Očekávaný formát je: ("Název balicí sady", "Číslo položky", "Částka", "Popis (nepovinný)".</value>
+  </data>
+  <data name="The packing list &quot;" xml:space="preserve">
+    <value>Dodací list obsahující seznam zboží "</value>
+  </data>
+  <data name="&quot; already exists in the database. Do you want to overwrite it?" xml:space="preserve">
+    <value>" již v databázi existuje. Chcete ho přepsat?</value>
+  </data>
+  <data name="One or more columns missing. Expected format is: (&quot;Packing set Name&quot;,&quot;Item Number&quot;,&quot;Amount&quot;,&quot;Description (optional)&quot;" xml:space="preserve">
+    <value>Chybí jeden nebo více sloupců. Očekávaný formát je: ("Název balicí sady", "Číslo položky", "Částka", "Popis (nepovinný)".</value>
+  </data>
+  <data name="Import successful" xml:space="preserve">
+    <value>Import proběhl úspěšně</value>
+  </data>
+  <data name="Error while importing!" xml:space="preserve">
+    <value>Chyba při importu!</value>
+  </data>
+  <data name="Description id is not valid: " xml:space="preserve">
+    <value>Popisné ID není platné:</value>
+  </data>
+  <data name="Description name is not valid:" xml:space="preserve">
+    <value>Popisný název není platný:</value>
+  </data>
+  <data name=" doesn't exist in the database" xml:space="preserve">
+    <value>neexistuje v databázi</value>
+  </data>
+  <data name="Vendor id: " xml:space="preserve">
+    <value>ID dodavatele:</value>
+  </data>
+  <data name="Success" xml:space="preserve">
+    <value>Úspěch</value>
+  </data>
+  <data name="Data is successfully uploaded. Processed " xml:space="preserve">
+    <value>Data byla úspěšně nahrána. Zpracováno </value>
+  </data>
+  <data name=" records and ignored " xml:space="preserve">
+    <value>záznamy a ignorované</value>
+  </data>
+  <data name="OneOrMoreFieldsError" xml:space="preserve">
+    <value>V jednom nebo více polích se vyskytla chyba. Chybu opravte a zkuste to znovu.</value>
+  </data>
+  <data name="ErrorSavingUser" xml:space="preserve">
+    <value>Chyba při ukládání uživatele.</value>
+  </data>
+  <data name="CouldNotSaveUser" xml:space="preserve">
+    <value>Uživatele se nepodařilo uložit.</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>Potvrďte </value>
+  </data>
+  <data name="ConfirmDeleteUser" xml:space="preserve">
+    <value>Jste si jisti, že chcete smazat uživatele:</value>
+  </data>
+  <data name="UserNameMustBeAtLeast7Chars" xml:space="preserve">
+    <value>Uživatelské jméno musí obsahovat nejméně 7 znaků.</value>
+  </data>
+  <data name="UsernameExistsChooseDifferent" xml:space="preserve">
+    <value>Uživatelské jméno existuje, zvolte prosím jiné uživatelské jméno.</value>
+  </data>
+  <data name="ErrorValidatingUsername" xml:space="preserve">
+    <value>Chyba při ověřování uživatelského jména. </value>
+  </data>
+  <data name="CouldNotValidateUsername" xml:space="preserve">
+    <value>Nepodařilo se ověřit uživatelské jméno. </value>
+  </data>
+  <data name="FirstNameMustBeAtLeast2Chars" xml:space="preserve">
+    <value>Křestní jméno musí obsahovat nejméně 2 znaky.</value>
+  </data>
+  <data name="LastNameMustBeAtLeast2Chars" xml:space="preserve">
+    <value>Příjmení musí obsahovat nejméně 2 znaky.</value>
+  </data>
+  <data name="PasswordMustBeAtLeast8Chars" xml:space="preserve">
+    <value>Heslo musí obsahovat nejméně 2 znaky.</value>
+  </data>
+  <data name="EditUser" xml:space="preserve">
+    <value>Upravit uživatele</value>
+  </data>
+  <data name="UserSaved" xml:space="preserve">
+    <value>Uživatel uložen!</value>
+  </data>
+  <data name="UserCreated" xml:space="preserve">
+    <value>Uživatel vytvořen!</value>
+  </data>
+  <data name="ConfirmDeleteTray" xml:space="preserve">
+    <value>Jste si jisti, že chcete síto smazat?</value>
+  </data>
+  <data name="DeleteTray" xml:space="preserve">
+    <value>Smazat síto</value>
+  </data>
+  <data name="There are too MANY instruments - Max allowed: " xml:space="preserve">
+    <value>Je zde příliš MNOHO nástrojů - max. povoleno: </value>
+  </data>
+  <data name="Reduce number of Instruments" xml:space="preserve">
+    <value>Snižte počet nástrojů</value>
+  </data>
+  <data name="If you are making this Tray Visible to Users They can start Using It." xml:space="preserve">
+    <value>Pokud toto síto uživatelům zviditelníte, mohou jej začít používat.</value>
+  </data>
+  <data name="Tray Visible to Users" xml:space="preserve">
+    <value>Síto viditelné pro uživatele</value>
+  </data>
+  <data name="If you are Hiding the Tray the Users will not be able to Use It." xml:space="preserve">
+    <value>Pokud síto skryjete, uživatelé jej nebudou moci používat.</value>
+  </data>
+  <data name="Hide Tray for Users" xml:space="preserve">
+    <value>Skrýt síto pro uživatele</value>
+  </data>
+</root>

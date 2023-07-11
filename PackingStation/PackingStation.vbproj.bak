@@ -1,0 +1,543 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EB996FB7-985E-4F72-8E32-9009D56195FD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PackingStation</RootNamespace>
+    <AssemblyName>Packing_Station_Big</AssemblyName>
+    <ApplicationIcon>Resources\Knowledge Hub_TransP.ico</ApplicationIcon>
+    <StartupObject>PackingStation.My.MyApplication</StartupObject>
+    <ManifestCertificateThumbprint>652ADE1393A7055E61D379683EFF224516CBF913</ManifestCertificateThumbprint>
+    <ManifestKeyFile>CaretagCodeSigningCA.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <TargetFrameworkProfile />
+    <PublishUrl>C:\Caretag\Publish\Surgical_PackingStation_CAEN\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>ServiceStation</ProductName>
+    <PublisherName>Caretag AB</PublisherName>
+    <SuiteName>Caretag Surgical</SuiteName>
+    <ApplicationRevision>10</ApplicationRevision>
+    <ApplicationVersion>2.2.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+    <NoWarn>42017,42018,42019,42032,42036</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+    <NoWarn>42017,42018,42019,42032,42036</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <MyType>WindowsForms</MyType>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CAENRFIDLibrary, Version=4.5.0.17395, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\COMMON_DLL\CAENRFIDLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Caretag_AutoUpdate">
+      <HintPath>..\..\..\..\COMMON_DLL\Caretag_AutoUpdate.dll</HintPath>
+    </Reference>
+    <Reference Include="Caretag_Check">
+      <HintPath>..\..\..\..\COMMON_DLL\Caretag_Check.dll</HintPath>
+    </Reference>
+    <Reference Include="Caretag_Class, Version=1.1.4.33, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\COMMON_DLL\Caretag_Class.dll</HintPath>
+    </Reference>
+    <Reference Include="Caretag_DotNet">
+      <HintPath>..\..\..\..\COMMON_DLL\Caretag_DotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Caretag_LDAP">
+      <HintPath>..\..\..\..\COMMON_DLL\Caretag_LDAP.dll</HintPath>
+    </Reference>
+    <Reference Include="Caretag_Localizer">
+      <HintPath>..\..\..\..\COMMON_DLL\Caretag_Localizer.dll</HintPath>
+    </Reference>
+    <Reference Include="Caretag_Login, Version=1.2.4.33, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\COMMON_DLL\Caretag_Login.dll</HintPath>
+    </Reference>
+    <Reference Include="Caretag_RFID">
+      <HintPath>..\..\..\..\COMMON_DLL\Caretag_RFID.dll</HintPath>
+    </Reference>
+    <Reference Include="Caretag_SQL_Instance, Version=1.0.1.4, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\COMMON_DLL\Caretag_SQL_Instance.dll</HintPath>
+    </Reference>
+    <Reference Include="Caretag_Welcome">
+      <HintPath>..\..\..\..\COMMON_DLL\Caretag_Welcome.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v20.2.Core, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v20.2.Core, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v20.2.Core, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v20.2.Export, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v20.2.Core, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v20.2.Core, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v20.2.Core, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.Desktop.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v20.2.UI, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v20.2.Wizard, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v20.2.Core, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v20.2.Core, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.CodeParser.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v20.2.Extensions, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DYMO.Label.Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5426002a38745af9, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\COMMON_DLL\DYMO.Label.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Design, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Web" />
+    <Import Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="DataSets\Caretag_SurgicalDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Caretag_SurgicalDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\DataSet_Tray.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Tray.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Container_Connect.Designer.vb">
+      <DependentUpon>Container_Connect.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Container_Connect.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_Print_Info.Designer.vb">
+      <DependentUpon>Form_Print_Info.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_Print_Info.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_Security.Designer.vb">
+      <DependentUpon>Form_Security.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_Security.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_CostCenter.Designer.vb">
+      <DependentUpon>Frm_CostCenter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Frm_CostCenter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSaveTrayName.Designer.vb">
+      <DependentUpon>frmSaveTrayName.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSaveTrayName.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmTray_Layout.Designer.vb">
+      <DependentUpon>FrmTray_Layout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmTray_Layout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_Active.Designer.vb">
+      <DependentUpon>frm_Active.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_Active.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_Exit.Designer.vb">
+      <DependentUpon>frm_Exit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_Exit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Network_Down.Designer.vb">
+      <DependentUpon>Network_Down.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Network_Down.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PivotGridView_1.Designer.vb">
+      <DependentUpon>PivotGridView_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PivotGridView_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Start.Designer.vb">
+      <DependentUpon>Form_Start.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Start.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Program.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="WinFormStrings.de-DE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WinFormStrings.de-DE.resx</DependentUpon>
+    </Compile>
+    <Compile Include="WinFormStrings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WinFormStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Xtra_Reports\XtraReportPackToday.Designer.vb">
+      <DependentUpon>XtraReportPackToday.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Xtra_Reports\XtraReportPackToday.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Xtra_Reports\XtraReport_PackList.Designer.vb">
+      <DependentUpon>XtraReport_PackList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Xtra_Reports\XtraReport_PackList.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Xtra_Reports\XtraReport_UnPackList.Designer.vb">
+      <DependentUpon>XtraReport_UnPackList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Xtra_Reports\XtraReport_UnPackList.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="Forms\Container_Connect.de-DE.resx">
+      <DependentUpon>Container_Connect.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Container_Connect.resx">
+      <DependentUpon>Container_Connect.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_Print_Info.de-DE.resx">
+      <DependentUpon>Form_Print_Info.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_Print_Info.resx">
+      <DependentUpon>Form_Print_Info.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_Security.de-DE.resx">
+      <DependentUpon>Form_Security.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_Security.resx">
+      <DependentUpon>Form_Security.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_CostCenter.de-DE.resx">
+      <DependentUpon>Frm_CostCenter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_CostCenter.resx">
+      <DependentUpon>Frm_CostCenter.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSaveTrayName.de-DE.resx">
+      <DependentUpon>frmSaveTrayName.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSaveTrayName.resx">
+      <DependentUpon>frmSaveTrayName.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmTray_Layout.de-DE.resx">
+      <DependentUpon>FrmTray_Layout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmTray_Layout.resx">
+      <DependentUpon>FrmTray_Layout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_Active.resx">
+      <DependentUpon>frm_Active.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_Exit.de-DE.resx">
+      <DependentUpon>frm_Exit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_Exit.resx">
+      <DependentUpon>frm_Exit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Network_Down.resx">
+      <DependentUpon>Network_Down.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotGridView_1.de-DE.resx">
+      <DependentUpon>PivotGridView_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotGridView_1.resx">
+      <DependentUpon>PivotGridView_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Start.cs-CZ.resx">
+      <DependentUpon>Form_Start.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Start.de-DE.resx">
+      <DependentUpon>Form_Start.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Start.resx">
+      <DependentUpon>Form_Start.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources1.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormStrings.de-DE.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>WinFormStrings.de-DE.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormStrings.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>WinFormStrings.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Xtra_Reports\XtraReportPackToday.cs-CZ.resx">
+      <DependentUpon>XtraReportPackToday.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Xtra_Reports\XtraReportPackToday.de-DE.resx">
+      <DependentUpon>XtraReportPackToday.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Xtra_Reports\XtraReportPackToday.resx">
+      <DependentUpon>XtraReportPackToday.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Xtra_Reports\XtraReport_PackList.de-DE.resx">
+      <DependentUpon>XtraReport_PackList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Xtra_Reports\XtraReport_PackList.resx">
+      <DependentUpon>XtraReport_PackList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Xtra_Reports\XtraReport_UnPackList.de-DE.resx">
+      <DependentUpon>XtraReport_UnPackList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Xtra_Reports\XtraReport_UnPackList.resx">
+      <DependentUpon>XtraReport_UnPackList.vb</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="CaretagCodeSigningCA.pfx" />
+    <None Include="DataSets\Caretag_SurgicalDataSet.xsc">
+      <DependentUpon>Caretag_SurgicalDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\Caretag_SurgicalDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Caretag_SurgicalDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSets\Caretag_SurgicalDataSet.xss">
+      <DependentUpon>Caretag_SurgicalDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\DataSet_Tray.xsc">
+      <DependentUpon>DataSet_Tray.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\DataSet_Tray.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Tray.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSets\DataSet_Tray.xss">
+      <DependentUpon>DataSet_Tray.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Settings.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings1.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GareTag_Logo_New.jpg" />
+    <None Include="Resources\GareTag_Logo_New.png" />
+    <None Include="Resources\GareTag_Logo_simple.png" />
+    <None Include="Resources\GareTag_Logo_Transfer.png" />
+    <None Include="Resources\TagSymbol - Small.png" />
+    <None Include="Resources\TagSymbol.png" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Resources\GareTag_Logo_Transfer.ico" />
+    <None Include="Resources\Knowledge Hub_TransP.ico" />
+    <None Include="Resources\TagSymbol_Trans.ico" />
+    <None Include="Resources\Knowledge Hub_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Germany.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baggrund_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\No_Network.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PrintSortAsc_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PrintSortDesc_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MoveDown_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MoveUp_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Support_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ViewSetting_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\USA.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\World_Map.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Short_Beep.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <UsingTask TaskName="SmartAssembly.MSBuild.Tasks.Build" AssemblyName="SmartAssembly.MSBuild.Tasks, Version=7.0.0.0, Culture=neutral,     PublicKeyToken=7f465a1c156d4d57" />
+  <Target Name="AfterBuild" Condition=" '$(Configuration)' == 'Release' ">
+    <SmartAssembly.MSBuild.Tasks.Build ProjectFile="..\Surgical_PackingStation.saproj" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

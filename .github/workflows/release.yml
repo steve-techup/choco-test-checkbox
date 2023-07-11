@@ -1,0 +1,144 @@
+name: Caretag Release
+
+on:
+  push:
+    tags:
+      - '[0-9]+.[0-9]+.[0-9]+'
+      - '[0-9]+.[0-9]+.[0-9]+-RC[0-9]+'
+
+jobs:
+  build-installers:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Setup MSBuild
+        uses: microsoft/setup-msbuild@v1.0.2
+
+      - name: Setup NuGet
+        uses: nuget/setup-nuget@v1
+
+      - name: Restore NuGet packages
+        run:  nuget restore Caretag.sln
+
+      - name: Inject Git Version for Admin
+        run: |
+          powershell -ExecutionPolicy ByPass -File  "AdminStation/BuildScripts/InjectGitVersion.ps1" "AdminStation"
+        shell: cmd
+
+      - name: Inject Git Version for Technical Station
+        run: |
+          powershell -ExecutionPolicy ByPass -File  "TechnicalStation/BuildScripts/InjectGitVersion.ps1" "TechnicalStation"
+        shell: cmd
+
+      - name: Inject Git Version for Packing Station
+        run: |
+          powershell -ExecutionPolicy ByPass -File  "PackingStation/BuildScripts/InjectGitVersion.ps1" "PackingStation"
+        shell: cmd
+
+      - name: Inject Git Version for Checkbox
+        run: |
+          powershell -ExecutionPolicy ByPass -File  "CheckboxStation/BuildScripts/InjectGitVersion.ps1" "CheckboxStation"
+        shell: cmd
+
+      - name: Inject Git Version for Service Station
+        run: |
+          powershell -ExecutionPolicy ByPass -File  "ServiceStation/BuildScripts/InjectGitVersion.ps1" "ServiceStation"
+        shell: cmd
+
+      - name: build
+        run:  MSBuild.exe Caretag.sln /t:Rebuild /p:"Configuration=Debug;Platform=Any CPU"
+
+      - name: Building Technical Station Installer
+        run: |
+          "%programfiles(x86)%\Inno Setup 6\iscc.exe" ".conf/setup/TechnicalStation/InnoSetup.iss"
+        shell: cmd
+        
+      - name: Building Admin Station Installer
+        run: |
+          "%programfiles(x86)%\Inno Setup 6\iscc.exe" ".conf/setup/AdminStation/InnoSetup.iss"
+        shell: cmd
+
+      - name: Building Packing Station Installer
+        run: |
+          "%programfiles(x86)%\Inno Setup 6\iscc.exe" ".conf/setup/PackingStation/InnoSetup.iss"
+        shell: cmd
+
+      - name: Building Checkbox Installer
+        run: |
+          "%programfiles(x86)%\Inno Setup 6\iscc.exe" ".conf/setup/CheckboxStation/InnoSetup.iss"
+        shell: cmd
+
+      #- name: Building Service Station Installer
+      #  run: |
+      #    "%programfiles(x86)%\Inno Setup 6\iscc.exe" ".conf/setup/ServiceStation/InnoSetup.iss"
+      #  shell: cmd
+
+      - name: Build Changelog
+        id: github_release
+        uses: mikepenz/release-changelog-builder-action@v3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create Release
+        uses: mikepenz/action-gh-release@v0.2.0-a03 #softprops/action-gh-release
+        with:
+          body: ${{steps.github_release.outputs.changelog}}
+          files: |
+            .conf/setup/output/TechnicalStationInstaller.exe
+            .conf/setup/output/AdminStationInstaller.exe
+            .conf/setup/output/PackingStationInstaller.exe
+            .conf/setup/output/CheckboxInstaller.exe
+            #.conf/setup/output/ServiceInstaller.exe
+
+      - name: Copy Technical Station installer
+        run: cp .conf/setup/output/TechnicalStationInstaller.exe .conf/setup/TechnicalStation/TechnicalStationChoco/tools/TechnicalStationInstaller.exe
+
+      - name: Choco pack Technical Station
+        uses: crazy-max/ghaction-chocolatey@v2
+        with:
+          args: pack .conf/setup/TechnicalStation/TechnicalStationChoco/technical-station.nuspec --version ${{ github.ref_name }}
+
+      - name: Choco push Technical Station
+        uses: crazy-max/ghaction-chocolatey@v2
+        with:
+          args: push --source https://f.feedz.io/caretag/caretag-classic/nuget -ApiKey T-QD3ovD5krR1ea1VfNhqoqEcuatMyPnEjK4 technical-station.${{ github.ref_name }}.nupkg
+
+      - name: Copy Checkbox installer
+        run: cp .conf/setup/output/CheckboxInstaller.exe .conf/setup/CheckboxStation/CheckboxChoco/tools/CheckboxInstaller.exe
+
+      - name: Choco pack Checkbox
+        uses: crazy-max/ghaction-chocolatey@v2
+        with:
+          args: pack .conf/setup/CheckboxStation/CheckboxChoco/checkbox.nuspec --version ${{ github.ref_name }}
+
+      - name: Choco push Checkbox
+        uses: crazy-max/ghaction-chocolatey@v2
+        with:
+          args: push --source https://f.feedz.io/caretag/caretag-classic/nuget -ApiKey T-QD3ovD5krR1ea1VfNhqoqEcuatMyPnEjK4 checkbox.${{ github.ref_name }}.nupkg
+
+      - name: Copy Admin Station installer
+        run: cp .conf/setup/output/AdminStationInstaller.exe .conf/setup/AdminStation/AdminStationChoco/tools/AdminStationInstaller.exe
+
+      - name: Choco pack Admin Station
+        uses: crazy-max/ghaction-chocolatey@v2
+        with:
+          args: pack .conf/setup/AdminStation/AdminStationChoco/admin-station.nuspec --version ${{ github.ref_name }}
+
+      - name: Choco push Admin Station
+        uses: crazy-max/ghaction-chocolatey@v2
+        with:
+          args: push --source https://f.feedz.io/caretag/caretag-classic/nuget -ApiKey T-QD3ovD5krR1ea1VfNhqoqEcuatMyPnEjK4 admin-station.${{ github.ref_name }}.nupkg
+
+      - name: Copy Packing Station installer
+        run: cp .conf/setup/output/PackingStationInstaller.exe .conf/setup/PackingStation/PackingStationChoco/tools/PackingStationInstaller.exe
+
+      - name: Choco pack Packing Station
+        uses: crazy-max/ghaction-chocolatey@v2
+        with:
+          args: pack .conf/setup/PackingStation/PackingStationChoco/packing-station.nuspec --version ${{ github.ref_name }}
+
+      - name: Choco push Packing Station
+        uses: crazy-max/ghaction-chocolatey@v2
+        with:
+          args: push --source https://f.feedz.io/caretag/caretag-classic/nuget -ApiKey T-QD3ovD5krR1ea1VfNhqoqEcuatMyPnEjK4 packing-station.${{ github.ref_name }}.nupkg

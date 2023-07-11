@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<xs:schema id="DataSet_Tray" targetNamespace="http://tempuri.org/DataSet_Tray.xsd"
+           xmlns:mstns="http://tempuri.org/DataSet_Tray.xsd" xmlns="http://tempuri.org/DataSet_Tray.xsd"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
+           xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified"
+           elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter"
+                  Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema"
+                  xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Caretag_SurgicalConnectionStringSQL"
+                      ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly"
+                      Name="Caretag_SurgicalConnectionStringSQL (Settings)" ParameterPrefix="@"
+                      PropertyReference="ApplicationSettings.PackingStation.Settings.GlobalReference.Default.Caretag_SurgicalConnectionStringSQL"
+                      Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component"
+                        DataAccessorModifier="AutoLayout, AnsiClass, Class, Public"
+                        DataAccessorName="View_Tray_PackListTableAdapter"
+                        GeneratorDataComponentClassName="View_Tray_PackListTableAdapter" Name="View_Tray_PackList"
+                        UserDataComponentName="View_Tray_PackListTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Caretag_SurgicalConnectionStringSQL (Settings)" DbObjectType="Unknown"
+                        FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both"
+                        GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill"
+                        GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset"
+                        ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                        UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>
+                      SELECT        Tray_PackList.Index_ID, Tray_PackList.Tray_Descrip_ID, Tray_PackList.Instrument_Descrip_ID, Tray_PackList.Number, Tray_PackList.Date_Changed, Tray_Description.Description_ID, Tray_Description.Tray_Name,
+                      Tray_Description.Tray_Description, Tray_Description.Tray_Lock, Tray_Description.Date_Changed AS Expr1, Tray_Description.Hide_Tray, Tray_Description.Deleted_Tray, Tray_Description.Cost_ID,
+                      Instrument_Description.Description_ID AS Expr2, Instrument_Description.Instrument_Company, Instrument_Description.Description_Name, Instrument_Description.D, Instrument_Description.E,
+                      Instrument_Description.Treatment_ID, Instrument_Description.Date_Changed AS Expr3, Instrument_Description.Vendor_ID,
+                      Instrument_Description.Description_Name + N' ' + Instrument_Description.D + N' ' + Instrument_Description.E AS Full_Name
+                      FROM            Tray_PackList LEFT OUTER JOIN
+                      Tray_Description ON Tray_PackList.Tray_Descrip_ID = Tray_Description.Description_ID LEFT OUTER JOIN
+                      Instrument_Description ON Tray_PackList.Instrument_Descrip_ID = Instrument_Description.Description_ID
+                      WHERE        (NOT (Instrument_Description.Description_Name IS NULL))
+                    </CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Tray_Description" DataSetColumn="Tray_Description" />
+              <Mapping SourceColumn="Tray_Name" DataSetColumn="Tray_Name" />
+              <Mapping SourceColumn="Tray_Descrip_ID" DataSetColumn="Tray_Descrip_ID" />
+              <Mapping SourceColumn="Number" DataSetColumn="Number" />
+              <Mapping SourceColumn="Description_Name" DataSetColumn="Description_Name" />
+              <Mapping SourceColumn="D" DataSetColumn="D" />
+              <Mapping SourceColumn="E" DataSetColumn="E" />
+              <Mapping SourceColumn="Instrument_Company" DataSetColumn="Instrument_Company" />
+              <Mapping SourceColumn="Index_ID" DataSetColumn="Index_ID" />
+              <Mapping SourceColumn="Instrument_Descrip_ID" DataSetColumn="Instrument_Descrip_ID" />
+              <Mapping SourceColumn="Date_Changed" DataSetColumn="Date_Changed" />
+              <Mapping SourceColumn="Description_ID" DataSetColumn="Description_ID" />
+              <Mapping SourceColumn="Tray_Lock" DataSetColumn="Tray_Lock" />
+              <Mapping SourceColumn="Hide_Tray" DataSetColumn="Hide_Tray" />
+              <Mapping SourceColumn="Deleted_Tray" DataSetColumn="Deleted_Tray" />
+              <Mapping SourceColumn="Cost_ID" DataSetColumn="Cost_ID" />
+              <Mapping SourceColumn="Treatment_ID" DataSetColumn="Treatment_ID" />
+              <Mapping SourceColumn="Vendor_ID" DataSetColumn="Vendor_ID" />
+              <Mapping SourceColumn="Expr1" DataSetColumn="Expr1" />
+              <Mapping SourceColumn="Expr2" DataSetColumn="Expr2" />
+              <Mapping SourceColumn="Expr3" DataSetColumn="Expr3" />
+              <Mapping SourceColumn="Full_Name" DataSetColumn="Full_Name" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet_Tray" msdata:IsDataSet="true" msdata:UseCurrentLocale="true"
+              msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet_Tray"
+              msprop:Generator_UserDSName="DataSet_Tray">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="View_Tray_PackList" msprop:Generator_TableClassName="View_Tray_PackListDataTable"
+                    msprop:Generator_TableVarName="tableView_Tray_PackList"
+                    msprop:Generator_RowChangedName="View_Tray_PackListRowChanged"
+                    msprop:Generator_TablePropName="View_Tray_PackList"
+                    msprop:Generator_RowDeletingName="View_Tray_PackListRowDeleting"
+                    msprop:Generator_RowChangingName="View_Tray_PackListRowChanging"
+                    msprop:Generator_RowEvHandlerName="View_Tray_PackListRowChangeEventHandler"
+                    msprop:Generator_RowDeletedName="View_Tray_PackListRowDeleted"
+                    msprop:Generator_RowClassName="View_Tray_PackListRow"
+                    msprop:Generator_UserTableName="View_Tray_PackList"
+                    msprop:Generator_RowEvArgName="View_Tray_PackListRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Tray_Description" msprop:Generator_ColumnVarNameInTable="columnTray_Description"
+                          msprop:Generator_ColumnPropNameInRow="Tray_Description"
+                          msprop:Generator_ColumnPropNameInTable="Tray_DescriptionColumn"
+                          msprop:Generator_UserColumnName="Tray_Description" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Tray_Name" msprop:Generator_ColumnVarNameInTable="columnTray_Name"
+                          msprop:Generator_ColumnPropNameInRow="Tray_Name"
+                          msprop:Generator_ColumnPropNameInTable="Tray_NameColumn"
+                          msprop:Generator_UserColumnName="Tray_Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Tray_Descrip_ID" msprop:Generator_ColumnVarNameInTable="columnTray_Descrip_ID"
+                          msprop:Generator_ColumnPropNameInRow="Tray_Descrip_ID"
+                          msprop:Generator_ColumnPropNameInTable="Tray_Descrip_IDColumn"
+                          msprop:Generator_UserColumnName="Tray_Descrip_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="Number" msprop:Generator_ColumnVarNameInTable="columnNumber"
+                          msprop:Generator_ColumnPropNameInRow="Number"
+                          msprop:Generator_ColumnPropNameInTable="NumberColumn"
+                          msprop:Generator_UserColumnName="Number" type="xs:int" minOccurs="0" />
+              <xs:element name="Description_Name" msprop:Generator_ColumnVarNameInTable="columnDescription_Name"
+                          msprop:Generator_ColumnPropNameInRow="Description_Name"
+                          msprop:Generator_ColumnPropNameInTable="Description_NameColumn"
+                          msprop:Generator_UserColumnName="Description_Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="D" msprop:Generator_ColumnVarNameInTable="columnD"
+                          msprop:Generator_ColumnPropNameInRow="D" msprop:Generator_ColumnPropNameInTable="DColumn"
+                          msprop:Generator_UserColumnName="D" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="E" msprop:Generator_ColumnVarNameInTable="columnE"
+                          msprop:Generator_ColumnPropNameInRow="E" msprop:Generator_ColumnPropNameInTable="EColumn"
+                          msprop:Generator_UserColumnName="E" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Instrument_Company" msprop:Generator_ColumnVarNameInTable="columnInstrument_Company"
+                          msprop:Generator_ColumnPropNameInRow="Instrument_Company"
+                          msprop:Generator_ColumnPropNameInTable="Instrument_CompanyColumn"
+                          msprop:Generator_UserColumnName="Instrument_Company" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Index_ID" msprop:Generator_ColumnVarNameInTable="columnIndex_ID"
+                          msprop:Generator_ColumnPropNameInRow="Index_ID"
+                          msprop:Generator_ColumnPropNameInTable="Index_IDColumn"
+                          msprop:Generator_UserColumnName="Index_ID" type="xs:long" />
+              <xs:element name="Instrument_Descrip_ID"
+                          msprop:Generator_ColumnVarNameInTable="columnInstrument_Descrip_ID"
+                          msprop:Generator_ColumnPropNameInRow="Instrument_Descrip_ID"
+                          msprop:Generator_ColumnPropNameInTable="Instrument_Descrip_IDColumn"
+                          msprop:Generator_UserColumnName="Instrument_Descrip_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Date_Changed" msprop:Generator_ColumnVarNameInTable="columnDate_Changed"
+                          msprop:Generator_ColumnPropNameInRow="Date_Changed"
+                          msprop:Generator_ColumnPropNameInTable="Date_ChangedColumn"
+                          msprop:Generator_UserColumnName="Date_Changed" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Description_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true"
+                          msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1"
+                          msprop:Generator_ColumnVarNameInTable="columnDescription_ID"
+                          msprop:Generator_ColumnPropNameInRow="Description_ID"
+                          msprop:Generator_ColumnPropNameInTable="Description_IDColumn"
+                          msprop:Generator_UserColumnName="Description_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="Tray_Lock" msprop:Generator_ColumnVarNameInTable="columnTray_Lock"
+                          msprop:Generator_ColumnPropNameInRow="Tray_Lock"
+                          msprop:Generator_ColumnPropNameInTable="Tray_LockColumn"
+                          msprop:Generator_UserColumnName="Tray_Lock" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Hide_Tray" msprop:Generator_ColumnVarNameInTable="columnHide_Tray"
+                          msprop:Generator_ColumnPropNameInRow="Hide_Tray"
+                          msprop:Generator_ColumnPropNameInTable="Hide_TrayColumn"
+                          msprop:Generator_UserColumnName="Hide_Tray" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Deleted_Tray" msprop:Generator_ColumnVarNameInTable="columnDeleted_Tray"
+                          msprop:Generator_ColumnPropNameInRow="Deleted_Tray"
+                          msprop:Generator_ColumnPropNameInTable="Deleted_TrayColumn"
+                          msprop:Generator_UserColumnName="Deleted_Tray" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Cost_ID" msprop:Generator_ColumnVarNameInTable="columnCost_ID"
+                          msprop:Generator_ColumnPropNameInRow="Cost_ID"
+                          msprop:Generator_ColumnPropNameInTable="Cost_IDColumn"
+                          msprop:Generator_UserColumnName="Cost_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="Treatment_ID" msprop:Generator_ColumnVarNameInTable="columnTreatment_ID"
+                          msprop:Generator_ColumnPropNameInRow="Treatment_ID"
+                          msprop:Generator_ColumnPropNameInTable="Treatment_IDColumn"
+                          msprop:Generator_UserColumnName="Treatment_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="Vendor_ID" msprop:Generator_ColumnVarNameInTable="columnVendor_ID"
+                          msprop:Generator_ColumnPropNameInRow="Vendor_ID"
+                          msprop:Generator_ColumnPropNameInTable="Vendor_IDColumn"
+                          msprop:Generator_UserColumnName="Vendor_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="Expr1" msprop:Generator_ColumnVarNameInTable="columnExpr1"
+                          msprop:Generator_ColumnPropNameInRow="Expr1"
+                          msprop:Generator_ColumnPropNameInTable="Expr1Column" msprop:Generator_UserColumnName="Expr1"
+                          type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Expr2" msprop:Generator_ColumnVarNameInTable="columnExpr2"
+                          msprop:Generator_ColumnPropNameInRow="Expr2"
+                          msprop:Generator_ColumnPropNameInTable="Expr2Column" msprop:Generator_UserColumnName="Expr2"
+                          minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Expr3" msprop:Generator_ColumnVarNameInTable="columnExpr3"
+                          msprop:Generator_ColumnPropNameInRow="Expr3"
+                          msprop:Generator_ColumnPropNameInTable="Expr3Column" msprop:Generator_UserColumnName="Expr3"
+                          type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Full_Name" msdata:ReadOnly="true"
+                          msprop:Generator_ColumnVarNameInTable="columnFull_Name"
+                          msprop:Generator_ColumnPropNameInRow="Full_Name"
+                          msprop:Generator_ColumnPropNameInTable="Full_NameColumn"
+                          msprop:Generator_UserColumnName="Full_Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="767" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

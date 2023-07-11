@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<desktop lang="cs-CZ" column="TInfoColumn" row="Column1.HeaderText">
+  <project>
+  </project>
+  <node>Caretag.sln</node>
+  <node>PackingStation\PackingStation.csproj</node>
+  <node>Form_Start.resx</node>
+  <column class="TInfoColumn" width="109"/>
+  <column class="TContextColumn" width="546"/>
+  <column class="TOriginalColumn" width="546"/>
+  <column class="TTranslationColumn" width="546" id="cs-CZ"/>
+  <column class="TTranslationStateColumn" width="136"/>
+  <report/>
+</desktop>

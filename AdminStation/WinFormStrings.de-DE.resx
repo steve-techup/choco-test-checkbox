@@ -1,0 +1,582 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <!-- 
+      Microsoft ResX Schema 
+      
+      Version 2.0
+      
+      The primary goals of this format is to allow a simple XML format 
+      that is mostly human readable. The generation and parsing of the 
+      various data types are done through the TypeConverter classes 
+      associated with the data types.
+      
+      Example:
+      
+      ... ado.net/XML headers & schema ...
+      <resheader name="resmimetype">text/microsoft-resx</resheader>
+      <resheader name="version">2.0</resheader>
+      <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+      <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+      <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+      <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+      <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+          <value>[base64 mime encoded serialized .NET Framework object]</value>
+      </data>
+      <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+          <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+          <comment>This is a comment</comment>
+      </data>
+                  
+      There are any number of "resheader" rows that contain simple 
+      name/value pairs.
+      
+      Each data row contains a name, and value. The row also contains a 
+      type or mimetype. Type corresponds to a .NET class that support 
+      text/value conversion through the TypeConverter architecture. 
+      Classes that don't support this are serialized and stored with the 
+      mimetype set.
+      
+      The mimetype is used for serialized objects, and tells the 
+      ResXResourceReader how to depersist the object. This is currently not 
+      extensible. For a given mimetype the value must be set accordingly:
+      
+      Note - application/x-microsoft.net.object.binary.base64 is the format 
+      that the ResXResourceWriter will generate, however the reader can 
+      read any of the formats listed below.
+      
+      mimetype: application/x-microsoft.net.object.binary.base64
+      value   : The object must be serialized with 
+              : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+              : and then encoded with base64 encoding.
+      
+      mimetype: application/x-microsoft.net.object.soap.base64
+      value   : The object must be serialized with 
+              : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+              : and then encoded with base64 encoding.
+  
+      mimetype: application/x-microsoft.net.object.bytearray.base64
+      value   : The object must be serialized into a byte array 
+              : using a System.ComponentModel.TypeConverter
+              : and then encoded with base64 encoding.
+      -->
+    <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root"
+                xmlns="">
+        <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+        <xsd:element name="root" msdata:IsDataSet="true">
+            <xsd:complexType>
+                <xsd:choice maxOccurs="unbounded">
+                    <xsd:element name="metadata">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+                            </xsd:sequence>
+                            <xsd:attribute name="name" use="required" type="xsd:string"/>
+                            <xsd:attribute name="type" type="xsd:string"/>
+                            <xsd:attribute name="mimetype" type="xsd:string"/>
+                            <xsd:attribute ref="xml:space"/>
+                        </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="assembly">
+                        <xsd:complexType>
+                            <xsd:attribute name="alias" type="xsd:string"/>
+                            <xsd:attribute name="name" type="xsd:string"/>
+                        </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="data">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+                            </xsd:sequence>
+                            <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+                            <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+                            <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+                            <xsd:attribute ref="xml:space"/>
+                        </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="resheader">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                            </xsd:sequence>
+                            <xsd:attribute name="name" type="xsd:string" use="required"/>
+                        </xsd:complexType>
+                    </xsd:element>
+                </xsd:choice>
+            </xsd:complexType>
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>2.0</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
+    </resheader>
+    <data name="Added_Database" xml:space="preserve">
+    <value>Zur Datenbanktabelle hinzugefügt: ..</value>
+  </data>
+    <data name="All_Same_Changed" xml:space="preserve">
+    <value>Möchten Sie, dass ALLE GLEICHEN Typen vorhandener Tags geändert werden?</value>
+  </data>
+    <data name="Changed_All_Tags" xml:space="preserve">
+    <value>ALLE Tags geändert - Bitte haben Sie Verständnis!</value>
+  </data>
+    <data name="Check_Sheet" xml:space="preserve">
+    <value>CHECK Blattname is 'Sheet1' und Column_Names are A-B-C-D !</value>
+  </data>
+    <data name="Contact_Admin" xml:space="preserve">
+    <value>Administrator kontaktieren</value>
+  </data>
+    <data name="Correct_ESC" xml:space="preserve">
+    <value>Korrigieren oder mit ESC abbrechen!</value>
+  </data>
+    <data name="Error_RowCount" xml:space="preserve">
+    <value>FEHLER in RowCount_DataGridview!</value>
+  </data>
+    <data name="Error_SQL" xml:space="preserve">
+    <value>Fehler in der SQL-Anweisung:</value>
+  </data>
+    <data name="Error_txt" xml:space="preserve">
+    <value>Fehler:</value>
+  </data>
+    <data name="Expires" xml:space="preserve">
+    <value>Läuft laut Vertrag aus </value>
+  </data>
+    <data name="File_Not_Saved" xml:space="preserve">
+    <value>Die Datei wird NICHT gespeichert:</value>
+  </data>
+    <data name="File_Saved" xml:space="preserve">
+    <value>Excel-Datei wird gespeichert!</value>
+  </data>
+    <data name="Import_Rows" xml:space="preserve">
+    <value>Bereit für importierte Anzahl der Zeilen (Instrumente):</value>
+  </data>
+    <data name="Insert_Failed" xml:space="preserve">
+    <value>Einfügen für ALLE fehlgeschlagen</value>
+  </data>
+    <data name="Issue" xml:space="preserve">
+    <value>Problem-ID </value>
+  </data>
+    <data name="Issue_Cell_VAl" xml:space="preserve">
+    <value>Problem bei der Zellvalidierung!</value>
+  </data>
+    <data name="Issue_Updating" xml:space="preserve">
+    <value>Problem bei der Aktualisierung!</value>
+  </data>
+    <data name="NoFile_selected" xml:space="preserve">
+    <value>Keine Datei oder Bereich ausgewählt -&gt; Abbrechen oder Datei auswählen!</value>
+  </data>
+    <data name="Not_Conn_Server" xml:space="preserve">
+    <value>Verbindung zum SQL-konnte nicht hergestellt werden! -&gt; STOPPEN</value>
+  </data>
+    <data name="Not_Correct_Format" xml:space="preserve">
+    <value>Ihre Daten liegen NICHT im richtigen Format vor</value>
+  </data>
+    <data name="Not_Delete" xml:space="preserve">
+    <value>Löschen von Daten in der Tabelle NICHT erlauben - nur Daten HINZUFÜGEN!</value>
+  </data>
+    <data name="Not_Filter_Gridview" xml:space="preserve">
+    <value>Daten konnten in DataGridview nicht gefiltert werden!</value>
+  </data>
+    <data name="Not_Import_File" xml:space="preserve">
+    <value>Kann Datei NICHT importieren, Problem nicht bekannt:</value>
+  </data>
+    <data name="Not_Import_Identical_Data" xml:space="preserve">
+    <value>Der Katalog kann nicht importiert werden, da identische DATEN in der ersten Spalte vorhanden sind:</value>
+  </data>
+    <data name="Not_Load_Gridview" xml:space="preserve">
+    <value>Daten konnten nicht in Gridview geladen werden</value>
+  </data>
+    <data name="No_ODBC" xml:space="preserve">
+    <value>Es gibt KEINE ODBC-System deklarierten Verbindungen!</value>
+  </data>
+    <data name="OK_Save" xml:space="preserve">
+    <value>Klicken Sie auf OK, um zu speichern</value>
+  </data>
+    <data name="Only_Double" xml:space="preserve">
+    <value>Ihre Daten sollten NUR DOPPELTE enthalten</value>
+  </data>
+    <data name="Only_Integer" xml:space="preserve">
+    <value>Ihre Daten sollten NUR Integer-Werte/Zahlen enthalten</value>
+  </data>
+    <data name="Only_One" xml:space="preserve">
+    <value>Das Programm kann nur als eine Instanz ausgeführt werden!</value>
+  </data>
+    <data name="Only_Strings" xml:space="preserve">
+    <value>Ihre Daten sollten NUR Zeichenfolgen/Buchstaben enthalten</value>
+  </data>
+    <data name="Pivot_Not_Loading" xml:space="preserve">
+    <value>Pivot-Datentabelle wird NICHT geladen</value>
+  </data>
+    <data name="Print_Data" xml:space="preserve">
+    <value>Möchten Sie die Daten drucken - ?</value>
+  </data>
+    <data name="Problem_DateTime" xml:space="preserve">
+    <value>Problem ... Korrigieren Sie die Eingabedatei für fehlende-falsche DatumUhrzeit-Angabe in Spalte:</value>
+  </data>
+    <data name="Problem_InputFile" xml:space="preserve">
+    <value>Problem ... Eingabedatei korrigieren:</value>
+  </data>
+    <data name="Problem_Loading" xml:space="preserve">
+    <value>Problem beim Laden der Tabelle aus der Datenbank</value>
+  </data>
+    <data name="Problem_Table" xml:space="preserve">
+    <value>Problem mit dem Tabellennamen</value>
+  </data>
+    <data name="Remove_Automated" xml:space="preserve">
+    <value>Möchten Sie es automatisiert ENTFERNEN? </value>
+  </data>
+    <data name="Report_Problem" xml:space="preserve">
+    <value>Problem melden - Unerwarteter Rückgabewert</value>
+  </data>
+    <data name="String11" xml:space="preserve">
+    <value>Admin_Manual.PDF befindet sich NICHT in:</value>
+  </data>
+    <data name="Table_Not_Edit" xml:space="preserve">
+    <value>Fehler = Tabelle nicht zum BEARBEITEN bereit -&gt; Administrator kontaktieren</value>
+  </data>
+    <data name="Undefined_Issue" xml:space="preserve">
+    <value>Undefiniertes Problem gefunden ... Bitte melden</value>
+  </data>
+    <data name="Unsaved_Data" xml:space="preserve">
+    <value>Sie haben gespeicherte Daten!</value>
+  </data>
+    <data name="Correct_Again" xml:space="preserve">
+    <value>Korrigieren Sie und versuchen Sie es erneut</value>
+  </data>
+    <data name="Connecting to SQL_SERVER ..." xml:space="preserve">
+    <value>Verbindung zum SQL-SERVER ...</value>
+  </data>
+    <data name="Big Issue ..Check with Administrator and try again !" xml:space="preserve">
+    <value>Großes Problem...Wenden Sie sich an den Administrator und versuchen Sie es erneut!</value>
+  </data>
+    <data name="Checking Dot Net Version .." xml:space="preserve">
+    <value>Überprüfen der Dot-Net-Version..</value>
+  </data>
+    <data name="Checking for Update !" xml:space="preserve">
+    <value>Auf Aktualisierungen prüfen! </value>
+  </data>
+    <data name="Checking Software ..." xml:space="preserve">
+    <value>Software wird geprüft ...</value>
+  </data>
+    <data name="Checking Version &amp; License ..." xml:space="preserve">
+    <value>Version &amp; Lizenz werden geprüft ...</value>
+  </data>
+    <data name="Issue ... Program will Not Work Correct !" xml:space="preserve">
+    <value>Problem ... Programm funktioniert nicht richtig!</value>
+  </data>
+    <data name="Loading Program Settings ..." xml:space="preserve">
+    <value>Programmeinstellungen laden ...</value>
+  </data>
+    <data name="No Update ..." xml:space="preserve">
+    <value>Kein Update ...</value>
+  </data>
+    <data name="The SQL_SERVER is NOT running .. Correct and try again !" xml:space="preserve">
+    <value>Der SQL_SERVER wird NICHT ausgeführt .. Korrigieren und erneut versuchen!</value>
+  </data>
+    <data name="Choose RFID to Delete" xml:space="preserve">
+    <value>RFID zum Löschen auswählen</value>
+  </data>
+    <data name="Found :" xml:space="preserve">
+    <value>Gefunden: </value>
+  </data>
+    <data name="NOT Found :" xml:space="preserve">
+    <value>NICHT gefunden: </value>
+  </data>
+    <data name="The File is NOT saved :" xml:space="preserve">
+    <value>Die Datei wird NICHT gespeichert: </value>
+  </data>
+    <data name="The Final Table does NOT Exits !!! - Has to STOP :" xml:space="preserve">
+    <value>Die Final-Tabelle existiert NICHT! - Muss STOPPEN: </value>
+  </data>
+    <data name="Write to CSV file FAILED !" xml:space="preserve">
+    <value>In CSV-Datei schreiben FEHLGESCHLAGEN!</value>
+  </data>
+    <data name="Finding Reader ..." xml:space="preserve">
+    <value>Reader suchen...</value>
+  </data>
+    <data name=".Added to DataTable.." xml:space="preserve">
+    <value>.Zu Datentabelle hinzugefügt.. </value>
+  </data>
+    <data name=".Back Up ERROR.." xml:space="preserve">
+    <value>.Backup-FEHLER ..</value>
+  </data>
+    <data name=".Back Up.." xml:space="preserve">
+    <value>.Backup..</value>
+  </data>
+    <data name=".DataTable Overwritten.." xml:space="preserve">
+    <value>.Datentabelle überschrieben..</value>
+  </data>
+    <data name=".Finish.." xml:space="preserve">
+    <value>.Abschließen..</value>
+  </data>
+    <data name=".In ERROR.." xml:space="preserve">
+    <value>.FEHLER..</value>
+  </data>
+    <data name=".Operation Cancel.." xml:space="preserve">
+    <value>.Vorgang abbrechen ..</value>
+  </data>
+    <data name=".Operation STOPPED.." xml:space="preserve">
+    <value>.Vorgang GESTOPPT ..</value>
+  </data>
+    <data name="Added to DataTable..." xml:space="preserve">
+    <value> Zur Datenbank hinzugefügt... </value>
+  </data>
+    <data name="Are You Sure that there should  NOT to use COST Center ?" xml:space="preserve">
+    <value>Sind Sie sicher, dass KEINE Kostenstelle verwendet werden soll?</value>
+  </data>
+    <data name="Are You Sure that you will Change Text To UPPER for Table:" xml:space="preserve">
+    <value>Sind Sie sicher, dass Sie den Text für die Tabelle in UPPER ändern möchten : </value>
+  </data>
+    <data name="Are You Sure that you will Correct Tables with Same Text and Correct Spelling ?" xml:space="preserve">
+    <value>Sind Sie sicher, dass Sie Tabellen mit demselben Text und korrekter Rechtschreibung korrigieren möchten?</value>
+  </data>
+    <data name="Are You Sure You want to DELETE RFID Card ?" xml:space="preserve">
+    <value>Sind Sie sicher, dass Sie die RFID-Karte LÖSCHEN möchten?</value>
+  </data>
+    <data name="Are You Sure You want to DELETE User ?" xml:space="preserve">
+    <value>Sind Sie sicher, dass Sie den Benutzer LÖSCHEN möchten?</value>
+  </data>
+    <data name="Area Name:" xml:space="preserve">
+    <value>Bereichsname:</value>
+  </data>
+    <data name="Area_Description:" xml:space="preserve">
+    <value>Bereichsbeschreibung:</value>
+  </data>
+    <data name="BACKUP DONE" xml:space="preserve">
+    <value>BACKUP fertiggestellt</value>
+  </data>
+    <data name="BackUp:" xml:space="preserve">
+    <value>Backup-Datei : </value>
+  </data>
+    <data name="Can NOT import file ... The columns are Not IDENTICAL See Column:" xml:space="preserve">
+    <value>Datei kann NICHT importiert werden ... Die Spalten sind nicht IDENTISCH. Siehe Spalte: </value>
+  </data>
+    <data name="Changing Text" xml:space="preserve">
+    <value>Text wechseln</value>
+  </data>
+    <data name="Check that it is the Correct Record !" xml:space="preserve">
+    <value>Überprüfen Sie, ob es sich um den richtigen Eintrag handelt! </value>
+  </data>
+    <data name="Chosen Trays:" xml:space="preserve">
+    <value>Ausgewählte Tabletts: </value>
+  </data>
+    <data name="Cost_Center" xml:space="preserve">
+    <value>Kostenstelle</value>
+  </data>
+    <data name="Cost_Center In Use" xml:space="preserve">
+    <value>Kostenstelle verwendet</value>
+  </data>
+    <data name="Cost_Center Not Used" xml:space="preserve">
+    <value>Kostenstelle nicht verwendet</value>
+  </data>
+    <data name="Cost_Center_ID" xml:space="preserve">
+    <value>Kostenstellen-ID</value>
+  </data>
+    <data name="Count:" xml:space="preserve">
+    <value>Anzahl: </value>
+  </data>
+    <data name="Creating User Failed Contact -&gt;  Caretag !" xml:space="preserve">
+    <value>Benutzerfehler beim Erstellen eines Kontakts -&gt; Caretag!</value>
+  </data>
+    <data name="CSV_File_Saved" xml:space="preserve">
+    <value>CSV-Datei_gespeichert </value>
+  </data>
+    <data name="Date_Changed" xml:space="preserve">
+    <value>Datum geändert</value>
+  </data>
+    <data name="DELETE RFID User Card" xml:space="preserve">
+    <value> RFID-Benutzerkarte LÖSCHEN </value>
+  </data>
+    <data name="Deleted_Tray" xml:space="preserve">
+    <value>Tablett gelöscht</value>
+  </data>
+    <data name="Deleting User" xml:space="preserve">
+    <value>Benutzer wird gelöscht</value>
+  </data>
+    <data name="Empty File - Check File NOT is Open" xml:space="preserve">
+    <value>Leere Datei - Stellen Sie sicher, dass die Datei NICHT geöffnet ist</value>
+  </data>
+    <data name="Empty File:" xml:space="preserve">
+    <value>Leere Datei: </value>
+  </data>
+    <data name="EPC Length must be EVEN !&quot; &amp; &quot;Do Not Use This Configuration - Crashing Technical Station"
+          xml:space="preserve">
+    <value>EPC-Länge muss GERADE sein! " &amp; "Diese Konfiguration nicht verwenden - Crashing Technical Station</value>
+  </data>
+    <data name="Error in the Parser command - Check Table" xml:space="preserve">
+    <value>Fehler im Parser-Befehl - Tabelle prüfen</value>
+  </data>
+    <data name="Establish Synchronization between Check_Boxes IN/OUT" xml:space="preserve">
+    <value>Stellen Sie die Synchronisation zwischen Checkboxes IN / OUT her</value>
+  </data>
+    <data name="Final Check Result: {0} Original Catalog Items: {1}{0} New Items: {2}{0}{0}Check and ready to Update ?"
+          xml:space="preserve">
+    <value>Endgültiges Prüfergebnis: {0} Originalkatalogelemente: {1}{0} Neue Elemente: {2}{0}{0} Überprüfen und bereit zum Aktualisieren?</value>
+  </data>
+    <data name="Instruments: {0:N0}" xml:space="preserve">
+    <value>Instrumente: {0:N0}</value>
+  </data>
+    <data name="IP Adress:" xml:space="preserve">
+    <value>IP-Adresse:   </value>
+  </data>
+    <data name="No Data in File - Check File" xml:space="preserve">
+    <value>Keine Daten in Datei - Datei prüfen</value>
+  </data>
+    <data name="No Data in File:" xml:space="preserve">
+    <value>Keine Daten in Datei: </value>
+  </data>
+    <data name="NO File selected -&gt; Cancel or Select File !" xml:space="preserve">
+    <value>KEINE Datei oder Bereich ausgewählt -&gt; Abbrechen oder Datei auswählen!</value>
+  </data>
+    <data name="NOT Allow to delete data in Table - Only ADD data !" xml:space="preserve">
+    <value>Löschen von Daten in der Tabelle NICHT erlauben - nur Daten HINZUFÜGEN!</value>
+  </data>
+    <data name="NOT use COST Center" xml:space="preserve">
+    <value>KOSTENSTELLE NICHT verwenden</value>
+  </data>
+    <data name="Number Of CheckBox_OR_IN: {0:N0}" xml:space="preserve">
+    <value>Anzahl Checkbox_OR_IN: {0:N0}</value>
+  </data>
+    <data name="Number Of CheckBox_SPD: {0:N0}" xml:space="preserve">
+    <value>Anzahl Checkbox_SPD: {0:N0}</value>
+  </data>
+    <data name="Only when Cost Center is Activated !" xml:space="preserve">
+    <value> Nur bei aktivierter Kostenstelle! </value>
+  </data>
+    <data name="Please DO NOT Change if you are in Doubt - This is a Fundamental change to System ! -&gt; Continue Yes ?"
+          xml:space="preserve">
+    <value>Bei Zweifeln bitte KEINE ÄNDERUNGEN vornehmen - dies ist eine grundlegende Änderung des Systems! -&gt; Fortfahren ja? </value>
+  </data>
+    <data name="Problem DELETING data:" xml:space="preserve">
+    <value>Problem beim LÖSCHEN von Daten: </value>
+  </data>
+    <data name="Problem in Update Table" xml:space="preserve">
+    <value>Problem beim Aktualisieren der Tabelle </value>
+  </data>
+    <data name="Problem OVERWRITING data:" xml:space="preserve">
+    <value>Problem beim ÜBERSCHREIBEN von Daten: </value>
+  </data>
+    <data name="Procedure_ID" xml:space="preserve">
+    <value>Prozedur-ID</value>
+  </data>
+    <data name="Procedure_Name" xml:space="preserve">
+    <value>Prozedurbezeichnung</value>
+  </data>
+    <data name="Ready to Update ?" xml:space="preserve">
+    <value>Bereit zum Aktualisieren?</value>
+  </data>
+    <data name="Remove Synchronization between Check_Boxes IN/OUT" xml:space="preserve">
+    <value>Synchronisation zwischen Check_Boxes IN / OUT aufheben</value>
+  </data>
+    <data name="Return value: ImportLoadData:" xml:space="preserve">
+    <value>Rückgabewert: Ladedaten importieren: </value>
+  </data>
+    <data name="SAVED AT:" xml:space="preserve">
+    <value>GESPEICHERT AM: </value>
+  </data>
+    <data name="Security Level Failed:" xml:space="preserve">
+    <value>Sicherheitsstufe fehlgeschlagen: </value>
+  </data>
+    <data name="Setting  Level  Failed:" xml:space="preserve">
+    <value>Stufe einstellen fehlgeschlagen:  </value>
+  </data>
+    <data name="Text to UPPER" xml:space="preserve">
+    <value> Text in Großbuchstaben </value>
+  </data>
+    <data name="The Tray Name Exist - Make a New Name" xml:space="preserve">
+    <value>Name des Tabletts bereits vorhanden - geben Sie einen neuen Namen ein </value>
+  </data>
+    <data name="The User Name Exist - Change Name to Create a New User !" xml:space="preserve">
+    <value>Benutzername bereits vorhanden - ändern Sie den Namen, um einen neuen Benutzer zu erstellen!</value>
+  </data>
+    <data name="Total Number Of CheckBox_OR_IN: {0:N0}" xml:space="preserve">
+    <value>Gesamtanzahl Checkbox_OR_IN: {0:N0}</value>
+  </data>
+    <data name="Total Number Of CheckBox_SPD: {0:N0}" xml:space="preserve">
+    <value>Gesamtanzahl Checkbox_SPD: {0:N0}</value>
+  </data>
+    <data name="Tray's in Database :" xml:space="preserve">
+    <value>Tabletts in der Datenbank:</value>
+  </data>
+    <data name="Trays: {0:N0}" xml:space="preserve">
+    <value>Tabletts: {0:N0}</value>
+  </data>
+    <data name="Tray_Description" xml:space="preserve">
+    <value>Tablettbezeichnung:</value>
+  </data>
+    <data name="Tray_Lock" xml:space="preserve">
+    <value>Tabletsperre</value>
+  </data>
+    <data name="Tray_Name" xml:space="preserve">
+    <value>Tablettname</value>
+  </data>
+    <data name="Try Update again..." xml:space="preserve">
+    <value>Aktualisierung erneut versuchen...</value>
+  </data>
+    <data name="Write  Verification Failed !" xml:space="preserve">
+    <value>Überprüfung fehlgeschlagen!</value>
+  </data>
+    <data name="You have Changed the Path to where Updated Files is Located.  Cancel this operation ?"
+          xml:space="preserve">
+    <value>Sie haben den Pfad geändert, an dem sich die aktualisierten Dateien befinden.  Vorgang abbrechen?</value>
+  </data>
+    <data name="Software_Name" xml:space="preserve">
+    <value>Softwarename</value>
+  </data>
+    <data name="Update_Code" xml:space="preserve">
+    <value>Code aktualisieren</value>
+  </data>
+    <data name="Update_Time_End" xml:space="preserve">
+    <value>Ende der Aktualisierung</value>
+  </data>
+    <data name="Update_Time_Start" xml:space="preserve">
+    <value>Start der Aktualisierung</value>
+  </data>
+    <data name="Number off instruments in Database:" xml:space="preserve">
+    <value>Anzahl der Instrumente in der Datenbank: </value>
+  </data>
+    <data name="Overview For Instrument With Image" xml:space="preserve">
+    <value>Übersicht für Instrument mit Bild</value>
+  </data>
+    <data name="Overview For Instrument with No Image" xml:space="preserve">
+    <value>Übersicht Für Instrument ohne Bild</value>
+  </data>
+    <data name="Cancel this operation?" xml:space="preserve">
+    <value>Vorgang abbrechen?</value>
+  </data>
+    <data name="Deleting Files" xml:space="preserve">
+    <value>Dateien werden gelöscht</value>
+  </data>
+    <data name="From Area:" xml:space="preserve">
+    <value>  Aus Bereich:  </value>
+  </data>
+    <data name="Last 3 Month" xml:space="preserve">
+    <value>Letzte 3 Monate</value>
+  </data>
+    <data name="This Month" xml:space="preserve">
+    <value>Dieser Monat</value>
+  </data>
+    <data name="Today" xml:space="preserve">
+    <value>Heute</value>
+  </data>
+    <data name="Until ToDay" xml:space="preserve">
+    <value>Bis Heute</value>
+  </data>
+    <data name="You are about to Delete files that are Older than:" xml:space="preserve">
+    <value>Sie sind dabei, Dateien zu löschen, die älter sind als: </value>
+  </data>
+    <data name="Checking Reader_ID ..." xml:space="preserve">
+    <value>Leser_ID wird überprüft ...</value>
+  </data>
+</root>

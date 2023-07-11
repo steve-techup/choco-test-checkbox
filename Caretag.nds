@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<desktop lang="cs-CZ" column="TOriginalColumn" row="settingsToolStripMenuItem.Text">
+  <project scantime="20230201T120934Z">
+  </project>
+  <node>Caretag.sln</node>
+  <node>PackingStation\PackingStation.csproj</node>
+  <node>Views</node>
+  <node>MainForm.resx</node>
+  <column class="TInfoColumn" width="88"/>
+  <column class="TContextColumn" width="438"/>
+  <column class="TOriginalColumn" width="438"/>
+  <column class="TTranslationColumn" width="438" id="cs-CZ"/>
+  <column class="TTranslationStateColumn" width="113"/>
+  <view item="TXamlNode" view="TWpfView"/>
+  <view item="TResXNode" view="TWindowsFormsView"/>
+  <view item="TResXNode" view="TWindowsFormsView" index="1"/>
+  <exchange>
+    <value class="TExchangeItem" filename="C:\git\løvenit\caretag\caretag-dev\Caretag.ntp">
+      <languages>
+        <language id="cs-CZ"/>
+        <language id="de-DE"/>
+      </languages>
+    </value>
+  </exchange>
+  <report/>
+</desktop>

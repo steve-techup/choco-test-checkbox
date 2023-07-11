@@ -1,0 +1,4 @@
+SetName	Qty	Description	DescriptionId	VendorName	Untaggable
+Test tray	1	Richardson klein	UNKN-LV-001	KLS Martin	Yes
+Test tray	2	Richardson groot	UNKN-LV-002	KLS Martin	Yes
+Test tray	2	Faraboeuf	UNKN-LV-003	KLS Martin	No

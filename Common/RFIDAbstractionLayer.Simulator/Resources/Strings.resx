@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnCancel" xml:space="preserve">
+    <value>Cancel</value>
+    <comment>Cancel</comment>
+  </data>
+  <data name="btnDefaults" xml:space="preserve">
+    <value>Defaults</value>
+    <comment>Defaults</comment>
+  </data>
+  <data name="btnLogin" xml:space="preserve">
+    <value>Login</value>
+    <comment>Login</comment>
+  </data>
+  <data name="btnOK" xml:space="preserve">
+    <value>OK</value>
+    <comment>OK</comment>
+  </data>
+  <data name="CantConnectDBApiCaption" xml:space="preserve">
+    <value>Can't connect to DB API</value>
+    <comment>Can't connect to DB API</comment>
+  </data>
+  <data name="CantConnectDBApiMsg" xml:space="preserve">
+    <value>Unable to connect to Database API. 
+
+Would you like to change login credentials?
+
+(Choosing "no" will load Hardcoded values)</value>
+    <comment>Unable to connect to Database API.</comment>
+  </data>
+  <data name="ConfiguringServices" xml:space="preserve">
+    <value>Configuring Services ...</value>
+    <comment>Configuring Services ...</comment>
+  </data>
+  <data name="ConnectingToAPI" xml:space="preserve">
+    <value>Connecting to DB Api...</value>
+    <comment>Connecting to DB Api...</comment>
+  </data>
+  <data name="EPC" xml:space="preserve">
+    <value>EPC</value>
+    <comment>EPC</comment>
+  </data>
+  <data name="ErrorInSimulation" xml:space="preserve">
+    <value>Error in simulation</value>
+    <comment>Error in simulation</comment>
+  </data>
+  <data name="GenerateID" xml:space="preserve">
+    <value>Generate ID</value>
+    <comment>Generate ID</comment>
+  </data>
+  <data name="lblApiUrl" xml:space="preserve">
+    <value>API Url</value>
+    <comment>API Url</comment>
+  </data>
+  <data name="lblPassword" xml:space="preserve">
+    <value>Password</value>
+    <comment>Password</comment>
+  </data>
+  <data name="lblUserName" xml:space="preserve">
+    <value>Username</value>
+    <comment>Username</comment>
+  </data>
+  <data name="LoadDefaultsMsg" xml:space="preserve">
+    <value>Are you sure you want to load default values?</value>
+    <comment>Are you sure you want to load default values?</comment>
+  </data>
+  <data name="LoadDefaultsTitle" xml:space="preserve">
+    <value>Load Default Values</value>
+    <comment>Load Default Values</comment>
+  </data>
+  <data name="LoadingSettings" xml:space="preserve">
+    <value>Loading Settings ...</value>
+    <comment>Loading Settings ...</comment>
+  </data>
+  <data name="NewVirtualTag" xml:space="preserve">
+    <value>New Virtual Tag</value>
+    <comment>New Virtual Tag</comment>
+  </data>
+  <data name="PowerChange" xml:space="preserve">
+    <value>Power changed to {0}</value>
+    <comment>Power changed to {0}</comment>
+  </data>
+  <data name="qdError" xml:space="preserve">
+    <value>Error</value>
+    <comment>Error</comment>
+  </data>
+  <data name="qdInformation" xml:space="preserve">
+    <value>Information</value>
+    <comment>Information</comment>
+  </data>
+  <data name="qdNotAvail" xml:space="preserve">
+    <value>Not available</value>
+    <comment>Not available</comment>
+  </data>
+  <data name="qdNullEpcMsg" xml:space="preserve">
+    <value>Can't send an item with a Null EPC value</value>
+    <comment>Can't send an item with a Null EPC value</comment>
+  </data>
+  <data name="qdQuestion" xml:space="preserve">
+    <value>Question</value>
+    <comment>Question</comment>
+  </data>
+  <data name="qdVirtualTagDBNeeded" xml:space="preserve">
+    <value>Virtual Tag requires a connection to the DatabaseAPI. Please restart the program.</value>
+    <comment>Virtual Tag requires a connection to the DatabaseAPI. Please restart the program.</comment>
+  </data>
+  <data name="qdWarning" xml:space="preserve">
+    <value>Warning</value>
+    <comment>Warning</comment>
+  </data>
+  <data name="quickBtn" xml:space="preserve">
+    <value> Quick Send </value>
+    <comment> Quick Send </comment>
+  </data>
+  <data name="QuickSendEPCLbl" xml:space="preserve">
+    <value>Quick Send EPC</value>
+    <comment>Quick Send EPC</comment>
+  </data>
+  <data name="searchBtn" xml:space="preserve">
+    <value> Search </value>
+    <comment>Search</comment>
+  </data>
+  <data name="searchLbl" xml:space="preserve">
+    <value>Search</value>
+    <comment>Search</comment>
+  </data>
+  <data name="Sent" xml:space="preserve">
+    <value>Sent</value>
+    <comment>Sent</comment>
+  </data>
+  <data name="SessionSendHistoryLbl" xml:space="preserve">
+    <value>Session History</value>
+    <comment>Session History</comment>
+  </data>
+  <data name="TagID" xml:space="preserve">
+    <value>Tag ID</value>
+    <comment>Tag ID</comment>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>RFID Simulator</value>
+    <comment>RFID Simulator</comment>
+  </data>
+  <data name="VirtualTagWarning" xml:space="preserve">
+    <value>If this tag already exists in the Database, it will break the Database</value>
+    <comment>If this tag already exists in the Database, it will break the Database</comment>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>WARNING!!!</value>
+    <comment>WARNING!!!</comment>
+  </data>
+</root>

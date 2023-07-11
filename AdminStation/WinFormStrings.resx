@@ -1,0 +1,1523 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <!-- 
+      Microsoft ResX Schema 
+      
+      Version 2.0
+      
+      The primary goals of this format is to allow a simple XML format 
+      that is mostly human readable. The generation and parsing of the 
+      various data types are done through the TypeConverter classes 
+      associated with the data types.
+      
+      Example:
+      
+      ... ado.net/XML headers & schema ...
+      <resheader name="resmimetype">text/microsoft-resx</resheader>
+      <resheader name="version">2.0</resheader>
+      <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+      <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+      <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+      <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+      <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+          <value>[base64 mime encoded serialized .NET Framework object]</value>
+      </data>
+      <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+          <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+          <comment>This is a comment</comment>
+      </data>
+                  
+      There are any number of "resheader" rows that contain simple 
+      name/value pairs.
+      
+      Each data row contains a name, and value. The row also contains a 
+      type or mimetype. Type corresponds to a .NET class that support 
+      text/value conversion through the TypeConverter architecture. 
+      Classes that don't support this are serialized and stored with the 
+      mimetype set.
+      
+      The mimetype is used for serialized objects, and tells the 
+      ResXResourceReader how to depersist the object. This is currently not 
+      extensible. For a given mimetype the value must be set accordingly:
+      
+      Note - application/x-microsoft.net.object.binary.base64 is the format 
+      that the ResXResourceWriter will generate, however the reader can 
+      read any of the formats listed below.
+      
+      mimetype: application/x-microsoft.net.object.binary.base64
+      value   : The object must be serialized with 
+              : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+              : and then encoded with base64 encoding.
+      
+      mimetype: application/x-microsoft.net.object.soap.base64
+      value   : The object must be serialized with 
+              : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+              : and then encoded with base64 encoding.
+  
+      mimetype: application/x-microsoft.net.object.bytearray.base64
+      value   : The object must be serialized into a byte array 
+              : using a System.ComponentModel.TypeConverter
+              : and then encoded with base64 encoding.
+      -->
+    <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root"
+                xmlns="">
+        <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+        <xsd:element name="root" msdata:IsDataSet="true">
+            <xsd:complexType>
+                <xsd:choice maxOccurs="unbounded">
+                    <xsd:element name="metadata">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+                            </xsd:sequence>
+                            <xsd:attribute name="name" use="required" type="xsd:string"/>
+                            <xsd:attribute name="type" type="xsd:string"/>
+                            <xsd:attribute name="mimetype" type="xsd:string"/>
+                            <xsd:attribute ref="xml:space"/>
+                        </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="assembly">
+                        <xsd:complexType>
+                            <xsd:attribute name="alias" type="xsd:string"/>
+                            <xsd:attribute name="name" type="xsd:string"/>
+                        </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="data">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+                            </xsd:sequence>
+                            <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+                            <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+                            <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+                            <xsd:attribute ref="xml:space"/>
+                        </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="resheader">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                            </xsd:sequence>
+                            <xsd:attribute name="name" type="xsd:string" use="required"/>
+                        </xsd:complexType>
+                    </xsd:element>
+                </xsd:choice>
+            </xsd:complexType>
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>2.0</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
+    </resheader>
+    <data name="Added_Database" xml:space="preserve">
+    <value>Added to Database_Table: ..</value>
+  </data>
+    <data name="All_Same_Changed" xml:space="preserve">
+    <value>Do you want ALL the SAME Type of Existing Tag's to be Changed ?</value>
+  </data>
+    <data name="Changed_All_Tags" xml:space="preserve">
+    <value>Changed ALL Tags - Please Understand !</value>
+  </data>
+    <data name="Check_Sheet" xml:space="preserve">
+    <value>CHECK Sheet name is 'Sheet1' and Column_Names are A-B-C-D !</value>
+  </data>
+    <data name="Contact_Admin" xml:space="preserve">
+    <value>Contact Administrator</value>
+  </data>
+    <data name="Correct_ESC" xml:space="preserve">
+    <value>Correct or use ESC to Cancel !</value>
+  </data>
+    <data name="Error_RowCount" xml:space="preserve">
+    <value>ERROR in RowCount_DataGridview !</value>
+  </data>
+    <data name="Error_SQL" xml:space="preserve">
+    <value>Error in SQL statement:</value>
+  </data>
+    <data name="Error_txt" xml:space="preserve">
+    <value>Error:</value>
+  </data>
+    <data name="Expires" xml:space="preserve">
+    <value>Expires According to Contract </value>
+  </data>
+    <data name="File_Not_Saved" xml:space="preserve">
+    <value>The File is NOT saved :</value>
+  </data>
+    <data name="File_Saved" xml:space="preserve">
+    <value>Excel File is saved !</value>
+  </data>
+    <data name="Import_Rows" xml:space="preserve">
+    <value>Ready To Imported Number Of Lines (Instruments) :</value>
+  </data>
+    <data name="Insert_Failed" xml:space="preserve">
+    <value>Insert For ALL Failed</value>
+  </data>
+    <data name="Issue" xml:space="preserve">
+    <value>Issue in </value>
+  </data>
+    <data name="Issue_Cell_VAl" xml:space="preserve">
+    <value>Issue in CellValidating !</value>
+  </data>
+    <data name="Issue_Updating" xml:space="preserve">
+    <value>Issue in Updating !</value>
+  </data>
+    <data name="NoFile_selected" xml:space="preserve">
+    <value>No File Or Area selected -&gt; Cancel or Select File !</value>
+  </data>
+    <data name="Not_Conn_Server" xml:space="preserve">
+    <value>Could Not connect to SQl Server ! -&gt;  STOPPING</value>
+  </data>
+    <data name="Not_Correct_Format" xml:space="preserve">
+    <value>Your Data IS NOT in Correct Format</value>
+  </data>
+    <data name="Not_Delete" xml:space="preserve">
+    <value>NOT Allow to delete data in Table - Only ADD data !</value>
+  </data>
+    <data name="Not_Filter_Gridview" xml:space="preserve">
+    <value>Could Not Filter Data in DataGridview !</value>
+  </data>
+    <data name="Not_Import_File" xml:space="preserve">
+    <value>Can NOT import file problem not known:</value>
+  </data>
+    <data name="Not_Import_Identical_Data" xml:space="preserve">
+    <value>Can't Import The Catalog because there are identical DATA in First Column:</value>
+  </data>
+    <data name="Not_Load_Gridview" xml:space="preserve">
+    <value>Could Not Load Data into Gridview</value>
+  </data>
+    <data name="No_ODBC" xml:space="preserve">
+    <value>There are NO ODBC SYSTEM Declared Connections !</value>
+  </data>
+    <data name="OK_Save" xml:space="preserve">
+    <value>Click OK to save Data</value>
+  </data>
+    <data name="Only_Double" xml:space="preserve">
+    <value>Your Data should ONLY included DOUBLE</value>
+  </data>
+    <data name="Only_Integer" xml:space="preserve">
+    <value>Your Data should ONLY included Integer / Numbers</value>
+  </data>
+    <data name="Only_One" xml:space="preserve">
+    <value>Program can only run as one instance !</value>
+  </data>
+    <data name="Only_Strings" xml:space="preserve">
+    <value>Your Data should ONLY included String / Letters</value>
+  </data>
+    <data name="Pivot_Not_Loading" xml:space="preserve">
+    <value>Pivot DataTable NOT Loading</value>
+  </data>
+    <data name="Print_Data" xml:space="preserve">
+    <value>Do you want to print the data - ?</value>
+  </data>
+    <data name="ProblemPlus" xml:space="preserve">
+    <value>Problem......</value>
+  </data>
+    <data name="Problem_DateTime" xml:space="preserve">
+    <value>Problem ... Correct the input file for Missing-Faulty DateTime at Column:</value>
+  </data>
+    <data name="Problem_In" xml:space="preserve">
+    <value>Problem in</value>
+  </data>
+    <data name="Problem_InputFile" xml:space="preserve">
+    <value>Problem ... Correct the input file:</value>
+  </data>
+    <data name="Problem_Loading" xml:space="preserve">
+    <value>Problem loading Table from Database</value>
+  </data>
+    <data name="Problem_Table" xml:space="preserve">
+    <value>Problem with Table name</value>
+  </data>
+    <data name="Remove_Automated" xml:space="preserve">
+    <value>Would You like to REMOVE it Automated ? </value>
+  </data>
+    <data name="Report_Problem" xml:space="preserve">
+    <value>Report problem - Unexspexted return value</value>
+  </data>
+    <data name="String11" xml:space="preserve">
+    <value>Admin_Manual.PDF is NOT located at:</value>
+  </data>
+    <data name="Table_Not_Edit" xml:space="preserve">
+    <value>Error = Table not ready for EDIT -&gt; Contact Administrator</value>
+  </data>
+    <data name="Undefined_Issue" xml:space="preserve">
+    <value>Undefined issue found ... Please Report</value>
+  </data>
+    <data name="Unsaved_Data" xml:space="preserve">
+    <value>You got Unsaved Data !</value>
+  </data>
+    <data name="Correct_Again" xml:space="preserve">
+    <value>Correct and try again</value>
+  </data>
+    <data name="Connecting to SQL_SERVER ..." xml:space="preserve">
+    <value>Connecting to SQL_SERVER ...</value>
+  </data>
+    <data name="Big Issue ..Check with Administrator and try again !" xml:space="preserve">
+    <value>Big Issue ..Check with Administrator and try again !</value>
+  </data>
+    <data name="Checking Dot Net Version .." xml:space="preserve">
+    <value>Checking Dot Net Version ..</value>
+  </data>
+    <data name="Checking for Update !" xml:space="preserve">
+    <value>Checking for Update ! </value>
+  </data>
+    <data name="Checking Software ..." xml:space="preserve">
+    <value>Checking Software ...</value>
+  </data>
+    <data name="Checking Version &amp; License ..." xml:space="preserve">
+    <value>Checking Version &amp; License ...</value>
+  </data>
+    <data name="Issue ... Program will Not Work Correct !" xml:space="preserve">
+    <value>Issue ... Program will Not Work Correct !</value>
+  </data>
+    <data name="Loading Program Settings ..." xml:space="preserve">
+    <value>Loading Program Settings ...</value>
+  </data>
+    <data name="No Update ..." xml:space="preserve">
+    <value>No Update ...</value>
+  </data>
+    <data name="The SQL_SERVER is NOT running .. Correct and try again !" xml:space="preserve">
+    <value>The SQL_SERVER is NOT running .. Correct and try again !</value>
+  </data>
+    <data name="Choose RFID to Delete" xml:space="preserve">
+    <value>Choose RFID to Delete</value>
+  </data>
+    <data name="Found :" xml:space="preserve">
+    <value>Found : </value>
+  </data>
+    <data name="NOT Found :" xml:space="preserve">
+    <value>NOT Found : </value>
+  </data>
+    <data name="The File is NOT saved :" xml:space="preserve">
+    <value>The File is NOT saved : </value>
+  </data>
+    <data name="The Final Table does NOT Exits !!! - Has to STOP :" xml:space="preserve">
+    <value>The Final Table does NOT Exits !!! - Has to STOP : </value>
+  </data>
+    <data name="Write to CSV file FAILED !" xml:space="preserve">
+    <value>Write to CSV file FAILED !</value>
+  </data>
+    <data name="Finding Reader ..." xml:space="preserve">
+    <value>Finding Reader ...</value>
+  </data>
+    <data name=".Added to DataTable.." xml:space="preserve">
+    <value>.Added to DataTable.. </value>
+  </data>
+    <data name=".Back Up ERROR.." xml:space="preserve">
+    <value>.Back Up ERROR..</value>
+  </data>
+    <data name=".Back Up.." xml:space="preserve">
+    <value>.Back Up..</value>
+  </data>
+    <data name=".DataTable Overwritten.." xml:space="preserve">
+    <value>.DataTable Overwritten..</value>
+  </data>
+    <data name=".Finish.." xml:space="preserve">
+    <value>.Finish..</value>
+  </data>
+    <data name=".In ERROR.." xml:space="preserve">
+    <value>.In ERROR..</value>
+  </data>
+    <data name=".Operation Cancel.." xml:space="preserve">
+    <value>.Operation Cancel..</value>
+  </data>
+    <data name=".Operation STOPPED.." xml:space="preserve">
+    <value>.Operation STOPPED..</value>
+  </data>
+    <data name="Added to DataTable..." xml:space="preserve">
+    <value> Added to Database... </value>
+  </data>
+    <data name="Are You Sure that there should  NOT to use COST Center ?" xml:space="preserve">
+    <value>Are You Sure that there should  NOT to use COST Center ?</value>
+  </data>
+    <data name="Are You Sure that you will Change Text To UPPER for Table:" xml:space="preserve">
+    <value>Are You Sure that you will Change Text To UPPER for Table: </value>
+  </data>
+    <data name="Are You Sure that you will Correct Tables with Same Text and Correct Spelling ?" xml:space="preserve">
+    <value>Are You Sure that you will Correct Tables with Same Text and Correct Spelling ?</value>
+  </data>
+    <data name="Are You Sure You want to DELETE RFID Card ?" xml:space="preserve">
+    <value>Are You Sure You want to DELETE RFID Card ?</value>
+  </data>
+    <data name="Are You Sure You want to DELETE User ?" xml:space="preserve">
+    <value>Are You Sure You want to DELETE User ?</value>
+  </data>
+    <data name="Area Name:" xml:space="preserve">
+    <value>Area Name:</value>
+  </data>
+    <data name="Area_Description:" xml:space="preserve">
+    <value>Area_Description:</value>
+  </data>
+    <data name="BACKUP DONE" xml:space="preserve">
+    <value>BACKUP DONE</value>
+  </data>
+    <data name="BackUp:" xml:space="preserve">
+    <value>BackUp File: </value>
+  </data>
+    <data name="Can NOT import file ... The columns are Not IDENTICAL See Column:" xml:space="preserve">
+    <value>Can NOT import file ... The columns are Not IDENTICAL See Column: </value>
+  </data>
+    <data name="Changing Text" xml:space="preserve">
+    <value>Changing Text</value>
+  </data>
+    <data name="Check that it is the Correct Record !" xml:space="preserve">
+    <value>Check that it is the Correct Record ! </value>
+  </data>
+    <data name="Chosen Trays:" xml:space="preserve">
+    <value>Chosen Trays: </value>
+  </data>
+    <data name="Cost_Center" xml:space="preserve">
+    <value>Cost Center</value>
+  </data>
+    <data name="Cost_Center In Use" xml:space="preserve">
+    <value>Cost_Center In Use</value>
+  </data>
+    <data name="Cost_Center Not Used" xml:space="preserve">
+    <value>Cost_Center Not Used</value>
+  </data>
+    <data name="Cost_Center_ID" xml:space="preserve">
+    <value>Cost Center ID</value>
+  </data>
+    <data name="Count:" xml:space="preserve">
+    <value>Count: </value>
+  </data>
+    <data name="Creating User Failed Contact -&gt;  Caretag !" xml:space="preserve">
+    <value>Creating User Failed Contact -&gt;  Caretag !</value>
+  </data>
+    <data name="CSV_File_Saved" xml:space="preserve">
+    <value>CSV_File_Saved </value>
+  </data>
+    <data name="Date_Changed" xml:space="preserve">
+    <value>Date Changed</value>
+  </data>
+    <data name="DELETE RFID User Card" xml:space="preserve">
+    <value> DELETE RFID User Card </value>
+  </data>
+    <data name="Deleted_Tray" xml:space="preserve">
+    <value>Deleted Tray</value>
+  </data>
+    <data name="Deleting User" xml:space="preserve">
+    <value>Deleting User</value>
+  </data>
+    <data name="Empty File - Check File NOT is Open" xml:space="preserve">
+    <value>Empty File - Check File NOT is Open</value>
+  </data>
+    <data name="Empty File:" xml:space="preserve">
+    <value>Empty File: </value>
+  </data>
+    <data name="EPC Length must be EVEN !&quot; &amp; &quot;Do Not Use This Configuration - Crashing Technical Station"
+          xml:space="preserve">
+    <value>EPC Length must be EVEN !" &amp; "Do Not Use This Configuration - Crashing Technical Station</value>
+  </data>
+    <data name="Error in the Parser command - Check Table" xml:space="preserve">
+    <value>Error in the Parser command - Check Table</value>
+  </data>
+    <data name="Establish Synchronization between Check_Boxes IN/OUT" xml:space="preserve">
+    <value>Establish Synchronization between Check_Boxes IN/OUT</value>
+  </data>
+    <data name="Final Check Result: {0} Original Catalog Items: {1}{0} New Items: {2}{0}{0}Check and ready to Update ?"
+          xml:space="preserve">
+    <value>Final Check Result: {0} Original Catalog Items: {1}{0} New Items: {2}{0}{0}Check and ready to Update ?</value>
+  </data>
+    <data name="Instruments: {0:N0}" xml:space="preserve">
+    <value>Instruments: {0:N0}</value>
+  </data>
+    <data name="IP Adress:" xml:space="preserve">
+    <value>IP Address:   </value>
+  </data>
+    <data name="No Data in File - Check File" xml:space="preserve">
+    <value>No Data in File - Check File</value>
+  </data>
+    <data name="No Data in File:" xml:space="preserve">
+    <value>No Data in File: </value>
+  </data>
+    <data name="NO File selected -&gt; Cancel or Select File !" xml:space="preserve">
+    <value>NO File selected -&gt; Cancel or Select File !</value>
+  </data>
+    <data name="NOT Allow to delete data in Table - Only ADD data !" xml:space="preserve">
+    <value>NOT Allow to delete data in Table - Only ADD data !</value>
+  </data>
+    <data name="NOT use COST Center" xml:space="preserve">
+    <value>NOT to use COST Center</value>
+  </data>
+    <data name="Number Of CheckBox_OR_IN: {0:N0}" xml:space="preserve">
+    <value>Number Of CheckBox_OR_IN: {0:N0}</value>
+  </data>
+    <data name="Number Of CheckBox_SPD: {0:N0}" xml:space="preserve">
+    <value>Number Of CheckBox_SPD: {0:N0}</value>
+  </data>
+    <data name="Only when Cost Center is Activated !" xml:space="preserve">
+    <value> Only when Cost Center is Activated ! </value>
+  </data>
+    <data name="Please DO NOT Change if you are in Doubt - This is a Fundamental change to System ! -&gt; Continue Yes ?"
+          xml:space="preserve">
+    <value>Please DO NOT Change if you are in Doubt - This is a Fundamental change to System ! -&gt; Continue Yes ? </value>
+  </data>
+    <data name="Problem DELETING data:" xml:space="preserve">
+    <value>Problem DELETING data: </value>
+  </data>
+    <data name="Problem in Update Table" xml:space="preserve">
+    <value>Problem in Updating Table </value>
+  </data>
+    <data name="Problem OVERWRITING data:" xml:space="preserve">
+    <value>Problem OVERWRITING data: </value>
+  </data>
+    <data name="Procedure_ID" xml:space="preserve">
+    <value>Procedure ID</value>
+  </data>
+    <data name="Procedure_Name" xml:space="preserve">
+    <value>Procedure Name</value>
+  </data>
+    <data name="Ready to Update ?" xml:space="preserve">
+    <value>Ready to Update ?</value>
+  </data>
+    <data name="Remove Synchronization between Check_Boxes IN/OUT" xml:space="preserve">
+    <value>Remove Synchronization between Check_Boxes IN/OUT</value>
+  </data>
+    <data name="Return value: ImportLoadData:" xml:space="preserve">
+    <value>Return value: Import Load Data: </value>
+  </data>
+    <data name="SAVED AT:" xml:space="preserve">
+    <value>SAVED AT: </value>
+  </data>
+    <data name="Security Level Failed:" xml:space="preserve">
+    <value>Security Level Failed: </value>
+  </data>
+    <data name="Setting  Level  Failed:" xml:space="preserve">
+    <value>Setting  Level  Failed:  </value>
+  </data>
+    <data name="Text to UPPER" xml:space="preserve">
+    <value> Text to UPPER </value>
+  </data>
+    <data name="The Tray Name Exist - Make a New Name" xml:space="preserve">
+    <value>The Tray Name Exist - Make a New Name </value>
+  </data>
+    <data name="The User Name Exist - Change Name to Create a New User !" xml:space="preserve">
+    <value>The User Name Exist - Change Name to Create a New User !</value>
+  </data>
+    <data name="Total Number Of CheckBox_OR_IN: {0:N0}" xml:space="preserve">
+    <value>Total Number Of CheckBox_OR_IN: {0:N0}</value>
+  </data>
+    <data name="Total Number Of CheckBox_SPD: {0:N0}" xml:space="preserve">
+    <value>Total Number Of CheckBox_SPD: {0:N0}</value>
+  </data>
+    <data name="Tray's in Database :" xml:space="preserve">
+    <value>Tray's in Database :</value>
+  </data>
+    <data name="Trays: {0:N0}" xml:space="preserve">
+    <value>Trays: {0:N0}</value>
+  </data>
+    <data name="Tray_Description" xml:space="preserve">
+    <value>Tray Description</value>
+  </data>
+    <data name="Tray_Lock" xml:space="preserve">
+    <value>Tray Lock</value>
+  </data>
+    <data name="Tray_Name" xml:space="preserve">
+    <value>Tray Name</value>
+  </data>
+    <data name="Try Update again..." xml:space="preserve">
+    <value>Try Updating again...</value>
+  </data>
+    <data name="Write  Verification Failed !" xml:space="preserve">
+    <value>Write  Verification Failed !</value>
+  </data>
+    <data name="You have Changed the Path to where Updated Files is Located.  Cancel this operation ?"
+          xml:space="preserve">
+    <value>You have Changed the Path to where Updated Files is Located.  Cancel this operation ?</value>
+  </data>
+    <data name="Software_Name" xml:space="preserve">
+    <value>Software Name</value>
+  </data>
+    <data name="Update_Code" xml:space="preserve">
+    <value>Update Code</value>
+  </data>
+    <data name="Update_Time_End" xml:space="preserve">
+    <value>Update Time End</value>
+  </data>
+    <data name="Update_Time_Start" xml:space="preserve">
+    <value>Update Time Start</value>
+  </data>
+    <data name="Version" xml:space="preserve">
+    <value>Version</value>
+  </data>
+    <data name="Number off instruments in Database:" xml:space="preserve">
+    <value>Number off instruments in Database: </value>
+  </data>
+    <data name="Overview For Instrument With Image" xml:space="preserve">
+    <value>Overview For Instrument With Image</value>
+  </data>
+    <data name="Overview For Instrument with No Image" xml:space="preserve">
+    <value>Overview For Instrument with No Image</value>
+  </data>
+    <data name="Cancel this operation?" xml:space="preserve">
+    <value>Cancel this operation ?</value>
+  </data>
+    <data name="Deleting Files" xml:space="preserve">
+    <value>Deleting Files</value>
+  </data>
+    <data name="From Area:" xml:space="preserve">
+    <value>  From Area:  </value>
+  </data>
+    <data name="Last 3 Month" xml:space="preserve">
+    <value>Last 3 Month</value>
+  </data>
+    <data name="This Month" xml:space="preserve">
+    <value>This Month</value>
+  </data>
+    <data name="Today" xml:space="preserve">
+    <value>Today</value>
+  </data>
+    <data name="Until ToDay" xml:space="preserve">
+    <value>Until ToDay</value>
+  </data>
+    <data name="You are about to Delete files that are Older than:" xml:space="preserve">
+    <value>You are about to Delete files that are Older than: </value>
+  </data>
+    <data name="Are you Sure ? -  If Not Cancel this Operation = NO" xml:space="preserve">
+    <value>Are you Sure ? -  If Not Cancel this Operation = NO</value>
+  </data>
+    <data name="Cost_Center_Name" xml:space="preserve">
+    <value>Cost Center Name</value>
+  </data>
+    <data name="Hidden_Center" xml:space="preserve">
+    <value>Hidden Center</value>
+  </data>
+    <data name="Default_Always" xml:space="preserve">
+    <value>Default Always</value>
+  </data>
+    <data name="Extra_Text" xml:space="preserve">
+    <value>Extra Text</value>
+  </data>
+    <data name="Cost_Center_Code" xml:space="preserve">
+    <value>Cost Center Code</value>
+  </data>
+    <data name="Change_Date" xml:space="preserve">
+    <value>Changed Date</value>
+  </data>
+    <data name="Checking Reader_ID ..." xml:space="preserve">
+    <value>Checking Reader ID ...</value>
+  </data>
+    <data name="An error occurred during the LogIn while trying to get the user ID from the database"
+          xml:space="preserve">
+    <value>An error occurred during the LogIn while trying to get the user ID from the database</value>
+  </data>
+    <data name="An error occurred when trying to connect to the database" xml:space="preserve">
+    <value>An error occurred when trying to connect to the database</value>
+  </data>
+    <data name="An error occurred while adding the instruments to the combo box" xml:space="preserve">
+    <value>An error occurred while adding the instruments to the combo box</value>
+  </data>
+    <data name="An error occurred while clicking the world picture box" xml:space="preserve">
+    <value>An error occurred while clicking the world picture box</value>
+  </data>
+    <data name="An error occurred while loading the page" xml:space="preserve">
+    <value>An error occurred while loading the page</value>
+  </data>
+    <data name="An error occurred while trying to apply the update procedure for a tray" xml:space="preserve">
+    <value>An error occurred while trying to apply the update procedure for a tray</value>
+  </data>
+    <data name="An error occurred while trying to change the selected index" xml:space="preserve">
+    <value>An error occurred while trying to change the selected index</value>
+  </data>
+    <data name="An error occurred while trying to color the data grid view" xml:space="preserve">
+    <value>An error occurred while trying to color the data grid view</value>
+  </data>
+    <data name="An error occurred while trying to create a backup" xml:space="preserve">
+    <value>An error occurred while trying to create a backup</value>
+  </data>
+    <data name="An error occurred while trying to delete the database" xml:space="preserve">
+    <value>An error occurred while trying to delete the database</value>
+  </data>
+    <data name="An error occurred while trying to delete the database connection" xml:space="preserve">
+    <value>An error occurred while trying to delete the database connection</value>
+  </data>
+    <data name="An error occurred while trying to design the filter box" xml:space="preserve">
+    <value>An error occurred while trying to design the filter box</value>
+  </data>
+    <data name="An error occurred while trying to do the configuration for the first time" xml:space="preserve">
+    <value>An error occurred while trying to do the configuration for the first time</value>
+  </data>
+    <data name="An error occurred while trying to export the data to a CSV file" xml:space="preserve">
+    <value>An error occurred while trying to export the data to a CSV file</value>
+  </data>
+    <data name="An error occurred while trying to fill data in the data table" xml:space="preserve">
+    <value>An error occurred while trying to fill data in the data table</value>
+  </data>
+    <data name="An error occurred while trying to fill the tray data table" xml:space="preserve">
+    <value>An error occurred while trying to fill the tray data table</value>
+  </data>
+    <data name="An error occurred while trying to load data in the data grid view" xml:space="preserve">
+    <value>An error occurred while trying to load data in the data grid view</value>
+  </data>
+    <data name="An error occurred while trying to load the cost center" xml:space="preserve">
+    <value>An error occurred while trying to load the cost center</value>
+  </data>
+    <data name="An error occurred while trying to look up an information in the database" xml:space="preserve">
+    <value>An error occurred while trying to look up an information in the database</value>
+  </data>
+    <data name="An error occurred while trying to make the record string" xml:space="preserve">
+    <value>An error occurred while trying to make the record string</value>
+  </data>
+    <data name="An error occurred while trying to make the variable string" xml:space="preserve">
+    <value>An error occurred while trying to make the variable string</value>
+  </data>
+    <data name="An error occurred while trying to parse the date" xml:space="preserve">
+    <value>An error occurred while trying to parse the date</value>
+  </data>
+    <data name="An error occurred while trying to select a group from the database" xml:space="preserve">
+    <value>An error occurred while trying to select a group from the database</value>
+  </data>
+    <data name="An error occurred while trying to set up the data grid view" xml:space="preserve">
+    <value>An error occurred while trying to set up the data grid view</value>
+  </data>
+    <data name="An error occurred while trying to update the data table in the database" xml:space="preserve">
+    <value>An error occurred while trying to update the data table in the database</value>
+  </data>
+    <data name="An error occurred while trying to update the reader information in the database" xml:space="preserve">
+    <value>An error occurred while trying to update the reader information in the database</value>
+  </data>
+    <data name="An error occurred while trying to write in the database" xml:space="preserve">
+    <value>An error occurred while trying to write in the database</value>
+  </data>
+    <data name="An error occurred while trying to write the data table in the database" xml:space="preserve">
+    <value>An error occurred while trying to write the data table in the database</value>
+  </data>
+    <data name="Error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+    <data name="Error code :" xml:space="preserve">
+    <value>Error code :</value>
+  </data>
+    <data name="error code:" xml:space="preserve">
+    <value>error code:</value>
+  </data>
+    <data name="If this does not solve the problem, contact Caretag support and report the error code."
+          xml:space="preserve">
+    <value>If this does not solve the problem, contact Caretag support and report the error code.</value>
+  </data>
+    <data name="Please restart the application." xml:space="preserve">
+    <value>Please restart the application.</value>
+  </data>
+    <data name="An error in the UI occurred." xml:space="preserve">
+    <value>An error in the UI occurred.</value>
+  </data>
+    <data name="An error occurred when printing." xml:space="preserve">
+    <value>An error occurred when printing.</value>
+  </data>
+    <data name="An error occurred while retrieving the results from the database." xml:space="preserve">
+    <value>An error occurred while retrieving the results from the database.</value>
+  </data>
+    <data name="An error occurred while deleting the results from the database." xml:space="preserve">
+    <value>An error occurred while deleting the results from the database.</value>
+  </data>
+    <data name="An error occurred while saving the results in the database." xml:space="preserve">
+    <value>An error occurred while saving the results in the database.</value>
+  </data>
+    <data name="An error occurred while updating the results in the database." xml:space="preserve">
+    <value>An error occurred while updating the results in the database.</value>
+  </data>
+    <data name="An error occurred while opening the file." xml:space="preserve">
+    <value>An error occurred while opening the file.</value>
+  </data>
+    <data name="An error occurred while copying the file." xml:space="preserve">
+    <value>An error occurred while copying the file.</value>
+  </data>
+    <data name="An error occurred while deleting the file." xml:space="preserve">
+    <value>An error occurred while deleting the file.</value>
+  </data>
+    <data name="An error occurred while saving the file." xml:space="preserve">
+    <value>An error occurred while saving the file.</value>
+  </data>
+    <data name="An error occurred while pressing a button." xml:space="preserve">
+    <value>An error occurred while pressing a button.</value>
+  </data>
+    <data name="An error occurred during the user checking procedure" xml:space="preserve">
+    <value>An error occurred during the user checking procedure</value>
+  </data>
+    <data name="An error occurred while changing the checkbox check" xml:space="preserve">
+    <value>An error occurred while changing the checkbox check</value>
+  </data>
+    <data name="An error occurred while changing the filter name text" xml:space="preserve">
+    <value>An error occurred while changing the filter name text</value>
+  </data>
+    <data name="An error occurred while changing the filter text" xml:space="preserve">
+    <value>An error occurred while changing the filter text</value>
+  </data>
+    <data name="An error occurred while changing the ID filter text" xml:space="preserve">
+    <value>An error occurred while changing the ID filter text</value>
+  </data>
+    <data name="An error occurred while changing the index of the area name combo box" xml:space="preserve">
+    <value>An error occurred while changing the index of the area name combo box</value>
+  </data>
+    <data name="An error occurred while changing the search text of the tray text box" xml:space="preserve">
+    <value>An error occurred while changing the search text of the tray text box</value>
+  </data>
+    <data name="An error occurred while changing the selected index in the company combo box" xml:space="preserve">
+    <value>An error occurred while changing the selected index in the company combo box</value>
+  </data>
+    <data name="An error occurred while changing the selected index of the check out combo box" xml:space="preserve">
+    <value>An error occurred while changing the selected index of the check out combo box</value>
+  </data>
+    <data name="An error occurred while changing the selected index of the chosen instrument" xml:space="preserve">
+    <value>An error occurred while changing the selected index of the chosen instrument</value>
+  </data>
+    <data name="An error occurred while changing the text in the name filter text box" xml:space="preserve">
+    <value>An error occurred while changing the text in the name filter text box</value>
+  </data>
+    <data name="An error occurred while changing the text in the treatment text box" xml:space="preserve">
+    <value>An error occurred while changing the text in the treatment text box</value>
+  </data>
+    <data name="An error occurred while checking if the item exists in the database" xml:space="preserve">
+    <value>An error occurred while checking if the item exists in the database</value>
+  </data>
+    <data name="An error occurred while choosing between the active directory and the local system"
+          xml:space="preserve">
+    <value>An error occurred while choosing between the active directory and the local system</value>
+  </data>
+    <data name="An error occurred while cleaning the Sync table" xml:space="preserve">
+    <value>An error occurred while cleaning the Sync table</value>
+  </data>
+    <data name="An error occurred while clicking a cell in the cost data grid view" xml:space="preserve">
+    <value>An error occurred while clicking a cell in the cost data grid view</value>
+  </data>
+    <data name="An error occurred while clicking a cell in the data grid view" xml:space="preserve">
+    <value>An error occurred while clicking a cell in the data grid view</value>
+  </data>
+    <data name="An error occurred while clicking a cell in the procedure data grid view" xml:space="preserve">
+    <value>An error occurred while clicking a cell in the procedure data grid view</value>
+  </data>
+    <data name="An error occurred while clicking a chosen tray data grid view cell" xml:space="preserve">
+    <value>An error occurred while clicking a chosen tray data grid view cell</value>
+  </data>
+    <data name="An error occurred while clicking a tray data grid view cell" xml:space="preserve">
+    <value>An error occurred while clicking a tray data grid view cell</value>
+  </data>
+    <data name="An error occurred while clicking on a cell in the data grid view" xml:space="preserve">
+    <value>An error occurred while clicking on a cell in the data grid view</value>
+  </data>
+    <data name="An error occurred while clicking on the delete button" xml:space="preserve">
+    <value>An error occurred while clicking on the delete button</value>
+  </data>
+    <data name="An error occurred while clicking on the print treatment button" xml:space="preserve">
+    <value>An error occurred while clicking on the print treatment button</value>
+  </data>
+    <data name="An error occurred while clicking the cmd delete function" xml:space="preserve">
+    <value>An error occurred while clicking the cmd delete function</value>
+  </data>
+    <data name="An error occurred while clicking the confirmation button" xml:space="preserve">
+    <value>An error occurred while clicking the confirmation button</value>
+  </data>
+    <data name="An error occurred while clicking the delete user button" xml:space="preserve">
+    <value>An error occurred while clicking the delete user button</value>
+  </data>
+    <data name="An error occurred while clicking the instrument combo box" xml:space="preserve">
+    <value>An error occurred while clicking the instrument combo box</value>
+  </data>
+    <data name="An error occurred while clicking the new name button" xml:space="preserve">
+    <value>An error occurred while clicking the new name button</value>
+  </data>
+    <data name="An error occurred while clicking the print button" xml:space="preserve">
+    <value>An error occurred while clicking the print button</value>
+  </data>
+    <data name="An error occurred while clicking the reset password button" xml:space="preserve">
+    <value>An error occurred while clicking the reset password button</value>
+  </data>
+    <data name="An error occurred while clicking the tray name" xml:space="preserve">
+    <value>An error occurred while clicking the tray name</value>
+  </data>
+    <data name="An error occurred while clicking the update info button" xml:space="preserve">
+    <value>An error occurred while clicking the update info button</value>
+  </data>
+    <data name="An error occurred while doing database operations" xml:space="preserve">
+    <value>An error occurred while doing database operations</value>
+  </data>
+    <data name="An error occurred while filling the data in the data grid view" xml:space="preserve">
+    <value>An error occurred while filling the data in the data grid view</value>
+  </data>
+    <data name="An error occurred while filling the information text box" xml:space="preserve">
+    <value>An error occurred while filling the information text box</value>
+  </data>
+    <data name="An error occurred while filling the pivot grid" xml:space="preserve">
+    <value>An error occurred while filling the pivot grid</value>
+  </data>
+    <data name="An error occurred while filtering the text box by ID" xml:space="preserve">
+    <value>An error occurred while filtering the text box by ID</value>
+  </data>
+    <data name="An error occurred while leaving a row in the data grid view" xml:space="preserve">
+    <value>An error occurred while leaving a row in the data grid view</value>
+  </data>
+    <data name="An error occurred while loading all the trays" xml:space="preserve">
+    <value>An error occurred while loading all the trays</value>
+  </data>
+    <data name="An error occurred while loading the chosen trays" xml:space="preserve">
+    <value>An error occurred while loading the chosen trays</value>
+  </data>
+    <data name="An error occurred while loading the Cost Center page" xml:space="preserve">
+    <value>An error occurred while loading the Cost Center page</value>
+  </data>
+    <data name="An error occurred while loading the cost data grid view" xml:space="preserve">
+    <value>An error occurred while loading the cost data grid view</value>
+  </data>
+    <data name="An error occurred while loading the data grid view" xml:space="preserve">
+    <value>An error occurred while loading the data grid view</value>
+  </data>
+    <data name="An error occurred while loading the database functions page" xml:space="preserve">
+    <value>An error occurred while loading the database functions page</value>
+  </data>
+    <data name="An error occurred while loading the edit container page" xml:space="preserve">
+    <value>An error occurred while loading the edit container page</value>
+  </data>
+    <data name="An error occurred while loading the grid view" xml:space="preserve">
+    <value>An error occurred while loading the grid view</value>
+  </data>
+    <data name="An error occurred while loading the procedure data grid view" xml:space="preserve">
+    <value>An error occurred while loading the procedure data grid view</value>
+  </data>
+    <data name="An error occurred while loading the Sync box" xml:space="preserve">
+    <value>An error occurred while loading the Sync box</value>
+  </data>
+    <data name="An error occurred while pressing a cell in the data grid view" xml:space="preserve">
+    <value>An error occurred while pressing a cell in the data grid view</value>
+  </data>
+    <data name="An error occurred while pressing a key in the ID filter text box" xml:space="preserve">
+    <value>An error occurred while pressing a key in the ID filter text box</value>
+  </data>
+    <data name="An error occurred while pressing the change logo button" xml:space="preserve">
+    <value>An error occurred while pressing the change logo button</value>
+  </data>
+    <data name="An error occurred while pressing the change map button" xml:space="preserve">
+    <value>An error occurred while pressing the change map button</value>
+  </data>
+    <data name="An error occurred while pressing the check all box" xml:space="preserve">
+    <value>An error occurred while pressing the check all box</value>
+  </data>
+    <data name="An error occurred while pressing the check container RFID life button" xml:space="preserve">
+    <value>An error occurred while pressing the check container RFID life button</value>
+  </data>
+    <data name="An error occurred while pressing the check if empty button" xml:space="preserve">
+    <value>An error occurred while pressing the check if empty button</value>
+  </data>
+    <data name="An error occurred while pressing the check RFID life button" xml:space="preserve">
+    <value>An error occurred while pressing the check RFID life button</value>
+  </data>
+    <data name="An error occurred while pressing the check rules button" xml:space="preserve">
+    <value>An error occurred while pressing the check rules button</value>
+  </data>
+    <data name="An error occurred while pressing the check series button" xml:space="preserve">
+    <value>An error occurred while pressing the check series button</value>
+  </data>
+    <data name="An error occurred while pressing the close button" xml:space="preserve">
+    <value>An error occurred while pressing the close button</value>
+  </data>
+    <data name="An error occurred while pressing the compare button" xml:space="preserve">
+    <value>An error occurred while pressing the compare button</value>
+  </data>
+    <data name="An error occurred while pressing the connect button" xml:space="preserve">
+    <value>An error occurred while pressing the connect button</value>
+  </data>
+    <data name="An error occurred while pressing the data grid view container" xml:space="preserve">
+    <value>An error occurred while pressing the data grid view container</value>
+  </data>
+    <data name="An error occurred while pressing the delete button" xml:space="preserve">
+    <value>An error occurred while pressing the delete button</value>
+  </data>
+    <data name="An error occurred while pressing the delete item button" xml:space="preserve">
+    <value>An error occurred while pressing the delete item button</value>
+  </data>
+    <data name="An error occurred while pressing the delete logo button" xml:space="preserve">
+    <value>An error occurred while pressing the delete logo button</value>
+  </data>
+    <data name="An error occurred while pressing the delete map button" xml:space="preserve">
+    <value>An error occurred while pressing the delete map button</value>
+  </data>
+    <data name="An error occurred while pressing the edit data button" xml:space="preserve">
+    <value>An error occurred while pressing the edit data button</value>
+  </data>
+    <data name="An error occurred while pressing the edit security level button" xml:space="preserve">
+    <value>An error occurred while pressing the edit security level button</value>
+  </data>
+    <data name="An error occurred while pressing the filter by name text box" xml:space="preserve">
+    <value>An error occurred while pressing the filter by name text box</value>
+  </data>
+    <data name="An error occurred while pressing the GUID button" xml:space="preserve">
+    <value>An error occurred while pressing the GUID button</value>
+  </data>
+    <data name="An error occurred while pressing the is deleted button" xml:space="preserve">
+    <value>An error occurred while pressing the is deleted button</value>
+  </data>
+    <data name="An error occurred while pressing the load group button" xml:space="preserve">
+    <value>An error occurred while pressing the load group button</value>
+  </data>
+    <data name="An error occurred while pressing the maintenance button" xml:space="preserve">
+    <value>An error occurred while pressing the maintenance button</value>
+  </data>
+    <data name="An error occurred while pressing the print button" xml:space="preserve">
+    <value>An error occurred while pressing the print button</value>
+  </data>
+    <data name="An error occurred while pressing the relation button" xml:space="preserve">
+    <value>An error occurred while pressing the relation button</value>
+  </data>
+    <data name="An error occurred while pressing the repair button" xml:space="preserve">
+    <value>An error occurred while pressing the repair button</value>
+  </data>
+    <data name="An error occurred while pressing the repair log button" xml:space="preserve">
+    <value>An error occurred while pressing the repair log button</value>
+  </data>
+    <data name="An error occurred while pressing the report button" xml:space="preserve">
+    <value>An error occurred while pressing the report button</value>
+  </data>
+    <data name="An error occurred while pressing the security level button" xml:space="preserve">
+    <value>An error occurred while pressing the security level button</value>
+  </data>
+    <data name="An error occurred while pressing the select image button" xml:space="preserve">
+    <value>An error occurred while pressing the select image button</value>
+  </data>
+    <data name="An error occurred while pressing the treatment button" xml:space="preserve">
+    <value>An error occurred while pressing the treatment button</value>
+  </data>
+    <data name="An error occurred while pressing the update button" xml:space="preserve">
+    <value>An error occurred while pressing the update button</value>
+  </data>
+    <data name="An error occurred while pressing the update database button" xml:space="preserve">
+    <value>An error occurred while pressing the update database button</value>
+  </data>
+    <data name="An error occurred while pressing the update information button" xml:space="preserve">
+    <value>An error occurred while pressing the update information button</value>
+  </data>
+    <data name="An error occurred while pressing the update RFID life button" xml:space="preserve">
+    <value>An error occurred while pressing the update RFID life button</value>
+  </data>
+    <data name="An error occurred while pressing the use cost button" xml:space="preserve">
+    <value>An error occurred while pressing the use cost button</value>
+  </data>
+    <data name="An error occurred while pressing the username text box" xml:space="preserve">
+    <value>An error occurred while pressing the username text box</value>
+  </data>
+    <data name="An error occurred while pressing the vendor id button" xml:space="preserve">
+    <value>An error occurred while pressing the vendor id button</value>
+  </data>
+    <data name="An error occurred while pressing the vendor name button" xml:space="preserve">
+    <value>An error occurred while pressing the vendor name button</value>
+  </data>
+    <data name="An error occurred while pressing the view button" xml:space="preserve">
+    <value>An error occurred while pressing the view button</value>
+  </data>
+    <data name="An error occurred while setting the filter ID" xml:space="preserve">
+    <value>An error occurred while setting the filter ID</value>
+  </data>
+    <data name="An error occurred while setting the filter name" xml:space="preserve">
+    <value>An error occurred while setting the filter name</value>
+  </data>
+    <data name="An error occurred while setting the ID filter" xml:space="preserve">
+    <value>An error occurred while setting the ID filter</value>
+  </data>
+    <data name="An error occurred while setting the name filter" xml:space="preserve">
+    <value>An error occurred while setting the name filter</value>
+  </data>
+    <data name="An error occurred while setting up the data grid view" xml:space="preserve">
+    <value>An error occurred while setting up the data grid view</value>
+  </data>
+    <data name="An error occurred while trying to add the database values to the row's cells" xml:space="preserve">
+    <value>An error occurred while trying to add the database values to the row's cells</value>
+  </data>
+    <data name="An error occurred while trying to add the instruments to the table" xml:space="preserve">
+    <value>An error occurred while trying to add the instruments to the table</value>
+  </data>
+    <data name="An error occurred while trying to add the tray" xml:space="preserve">
+    <value>An error occurred while trying to add the tray</value>
+  </data>
+    <data name="An error occurred while trying to allow editing" xml:space="preserve">
+    <value>An error occurred while trying to allow editing</value>
+  </data>
+    <data name="An error occurred while trying to auto generate the cmd insert" xml:space="preserve">
+    <value>An error occurred while trying to auto generate the cmd insert</value>
+  </data>
+    <data name="An error occurred while trying to build the data table" xml:space="preserve">
+    <value>An error occurred while trying to build the data table</value>
+  </data>
+    <data name="An error occurred while trying to change the cell color" xml:space="preserve">
+    <value>An error occurred while trying to change the cell color</value>
+  </data>
+    <data name="An error occurred while trying to change the combo box" xml:space="preserve">
+    <value>An error occurred while trying to change the combo box</value>
+  </data>
+    <data name="An error occurred while trying to change the Login system" xml:space="preserve">
+    <value>An error occurred while trying to change the Login system</value>
+  </data>
+    <data name="An error occurred while trying to change the procedure combo box selected index" xml:space="preserve">
+    <value>An error occurred while trying to change the procedure combo box selected index</value>
+  </data>
+    <data name="An error occurred while trying to change the row color" xml:space="preserve">
+    <value>An error occurred while trying to change the row color</value>
+  </data>
+    <data name="An error occurred while trying to change the selected check box" xml:space="preserve">
+    <value>An error occurred while trying to change the selected check box</value>
+  </data>
+    <data name="An error occurred while trying to change the selected index of the description combo box"
+          xml:space="preserve">
+    <value>An error occurred while trying to change the selected index of the description combo box</value>
+  </data>
+    <data name="An error occurred while trying to change the selected index of the tray combo box" xml:space="preserve">
+    <value>An error occurred while trying to change the selected index of the tray combo box</value>
+  </data>
+    <data name="An error occurred while trying to change the selected index of the type combo box" xml:space="preserve">
+    <value>An error occurred while trying to change the selected index of the type combo box</value>
+  </data>
+    <data name="An error occurred while trying to change the selected index of the username combo box"
+          xml:space="preserve">
+    <value>An error occurred while trying to change the selected index of the username combo box</value>
+  </data>
+    <data name="An error occurred while trying to change the users security level" xml:space="preserve">
+    <value>An error occurred while trying to change the users security level</value>
+  </data>
+    <data name="An error occurred while trying to check the path" xml:space="preserve">
+    <value>An error occurred while trying to check the path</value>
+  </data>
+    <data name="An error occurred while trying to click a cell in the data grid view" xml:space="preserve">
+    <value>An error occurred while trying to click a cell in the data grid view</value>
+  </data>
+    <data name="An error occurred while trying to click on the connect button" xml:space="preserve">
+    <value>An error occurred while trying to click on the connect button</value>
+  </data>
+    <data name="An error occurred while trying to click on the delete button" xml:space="preserve">
+    <value>An error occurred while trying to click on the delete button</value>
+  </data>
+    <data name="An error occurred while trying to create a back up" xml:space="preserve">
+    <value>An error occurred while trying to create a back up</value>
+  </data>
+    <data name="An error occurred while trying to create a CSV file" xml:space="preserve">
+    <value>An error occurred while trying to create a CSV file</value>
+  </data>
+    <data name="An error occurred while trying to create a new SQL data adapter" xml:space="preserve">
+    <value>An error occurred while trying to create a new SQL data adapter</value>
+  </data>
+    <data name="An error occurred while trying to create an user" xml:space="preserve">
+    <value>An error occurred while trying to create an user</value>
+  </data>
+    <data name="An error occurred while trying to create an user and assign a security level" xml:space="preserve">
+    <value>An error occurred while trying to create an user and assign a security level</value>
+  </data>
+    <data name="An error occurred while trying to delete a row" xml:space="preserve">
+    <value>An error occurred while trying to delete a row</value>
+  </data>
+    <data name="An error occurred while trying to delete the rfid user card" xml:space="preserve">
+    <value>An error occurred while trying to delete the rfid user card</value>
+  </data>
+    <data name="An error occurred while trying to delete the row" xml:space="preserve">
+    <value>An error occurred while trying to delete the row</value>
+  </data>
+    <data name="An error occurred while trying to display the data from the database" xml:space="preserve">
+    <value>An error occurred while trying to display the data from the database</value>
+  </data>
+    <data name="An error occurred while trying to display the instruments in the table" xml:space="preserve">
+    <value>An error occurred while trying to display the instruments in the table</value>
+  </data>
+    <data name="An error occurred while trying to display the reader table" xml:space="preserve">
+    <value>An error occurred while trying to display the reader table</value>
+  </data>
+    <data name="An error occurred while trying to double click the pivot grid control" xml:space="preserve">
+    <value>An error occurred while trying to double click the pivot grid control</value>
+  </data>
+    <data name="An error occurred while trying to edit a cell in the data grid view" xml:space="preserve">
+    <value>An error occurred while trying to edit a cell in the data grid view</value>
+  </data>
+    <data name="An error occurred while trying to establish synchronization between the IN/OUT Checkboxes"
+          xml:space="preserve">
+    <value>An error occurred while trying to establish synchronization between the IN/OUT Checkboxes</value>
+  </data>
+    <data name="An error occurred while trying to fill data in the data grid view" xml:space="preserve">
+    <value>An error occurred while trying to fill data in the data grid view</value>
+  </data>
+    <data name="An error occurred while trying to fill the combo box" xml:space="preserve">
+    <value>An error occurred while trying to fill the combo box</value>
+  </data>
+    <data name="An error occurred while trying to fill the cost combo box" xml:space="preserve">
+    <value>An error occurred while trying to fill the cost combo box</value>
+  </data>
+    <data name="An error occurred while trying to fill the data in the data grid view" xml:space="preserve">
+    <value>An error occurred while trying to fill the data in the data grid view</value>
+  </data>
+    <data name="An error occurred while trying to fill the tray combo box" xml:space="preserve">
+    <value>An error occurred while trying to fill the tray combo box</value>
+  </data>
+    <data name="An error occurred while trying to filter by ID" xml:space="preserve">
+    <value>An error occurred while trying to filter by ID</value>
+  </data>
+    <data name="An error occurred while trying to hide the cost" xml:space="preserve">
+    <value>An error occurred while trying to hide the cost</value>
+  </data>
+    <data name="An error occurred while trying to insert a new row" xml:space="preserve">
+    <value>An error occurred while trying to insert a new row</value>
+  </data>
+    <data name="An error occurred while trying to leave a row in the data grid view" xml:space="preserve">
+    <value>An error occurred while trying to leave a row in the data grid view</value>
+  </data>
+    <data name="An error occurred while trying to load the data grid view" xml:space="preserve">
+    <value>An error occurred while trying to load the data grid view</value>
+  </data>
+    <data name="An error occurred while trying to load the data table" xml:space="preserve">
+    <value>An error occurred while trying to load the data table</value>
+  </data>
+    <data name="An error occurred while trying to load the page" xml:space="preserve">
+    <value>An error occurred while trying to load the page</value>
+  </data>
+    <data name="An error occurred while trying to make a group identifier" xml:space="preserve">
+    <value>An error occurred while trying to make a group identifier</value>
+  </data>
+    <data name="An error occurred while trying to press the print button" xml:space="preserve">
+    <value>An error occurred while trying to press the print button</value>
+  </data>
+    <data name="An error occurred while trying to remove a row from the data grid view" xml:space="preserve">
+    <value>An error occurred while trying to remove a row from the data grid view</value>
+  </data>
+    <data name="An error occurred while trying to remove the synchronization between the IN/OUT Checkboxes"
+          xml:space="preserve">
+    <value>An error occurred while trying to remove the synchronization between the IN/OUT Checkboxes</value>
+  </data>
+    <data name="An error occurred while trying to reset the default cost" xml:space="preserve">
+    <value>An error occurred while trying to reset the default cost</value>
+  </data>
+    <data name="An error occurred while trying to reset the default cost for center" xml:space="preserve">
+    <value>An error occurred while trying to reset the default cost for center</value>
+  </data>
+    <data name="An error occurred while trying to save the Excel file" xml:space="preserve">
+    <value>An error occurred while trying to save the Excel file</value>
+  </data>
+    <data name="An error occurred while trying to send an update to the database" xml:space="preserve">
+    <value>An error occurred while trying to send an update to the database</value>
+  </data>
+    <data name="An error occurred while trying to send the update to the database" xml:space="preserve">
+    <value>An error occurred while trying to send the update to the database</value>
+  </data>
+    <data name="An error occurred while trying to set the filter ID" xml:space="preserve">
+    <value>An error occurred while trying to set the filter ID</value>
+  </data>
+    <data name="An error occurred while trying to set the security level" xml:space="preserve">
+    <value>An error occurred while trying to set the security level</value>
+  </data>
+    <data name="An error occurred while trying to set up the chosen trays data grid view" xml:space="preserve">
+    <value>An error occurred while trying to set up the chosen trays data grid view</value>
+  </data>
+    <data name="An error occurred while trying to set up the trays data grid view" xml:space="preserve">
+    <value>An error occurred while trying to set up the trays data grid view</value>
+  </data>
+    <data name="An error occurred while trying to show the reader table" xml:space="preserve">
+    <value>An error occurred while trying to show the reader table</value>
+  </data>
+    <data name="An error occurred while trying to switch the cell style of the grid view" xml:space="preserve">
+    <value>An error occurred while trying to switch the cell style of the grid view</value>
+  </data>
+    <data name="An error occurred while trying to switch the row style of the grid view" xml:space="preserve">
+    <value>An error occurred while trying to switch the row style of the grid view</value>
+  </data>
+    <data name="An error occurred while trying to update a cell content in the data grid view" xml:space="preserve">
+    <value>An error occurred while trying to update a cell content in the data grid view</value>
+  </data>
+    <data name="An error occurred while trying to update a row" xml:space="preserve">
+    <value>An error occurred while trying to update a row</value>
+  </data>
+    <data name="An error occurred while trying to update the cell after leaving it" xml:space="preserve">
+    <value>An error occurred while trying to update the cell after leaving it</value>
+  </data>
+    <data name="An error occurred while trying to update the cell information in the database" xml:space="preserve">
+    <value>An error occurred while trying to update the cell information in the database</value>
+  </data>
+    <data name="An error occurred while trying to update the cmd function" xml:space="preserve">
+    <value>An error occurred while trying to update the cmd function</value>
+  </data>
+    <data name="An error occurred while trying to update the cmd table" xml:space="preserve">
+    <value>An error occurred while trying to update the cmd table</value>
+  </data>
+    <data name="An error occurred while trying to update the data grid view" xml:space="preserve">
+    <value>An error occurred while trying to update the data grid view</value>
+  </data>
+    <data name="An error occurred while trying to update the data grid view after leaving the cell"
+          xml:space="preserve">
+    <value>An error occurred while trying to update the data grid view after leaving the cell</value>
+  </data>
+    <data name="An error occurred while trying to update the data grid view after leaving the row" xml:space="preserve">
+    <value>An error occurred while trying to update the data grid view after leaving the row</value>
+  </data>
+    <data name="An error occurred while trying to update the database" xml:space="preserve">
+    <value>An error occurred while trying to update the database</value>
+  </data>
+    <data name="An error occurred while trying to update the number of rows" xml:space="preserve">
+    <value>An error occurred while trying to update the number of rows</value>
+  </data>
+    <data name="An error occurred while trying to update the path" xml:space="preserve">
+    <value>An error occurred while trying to update the path</value>
+  </data>
+    <data name="An error occurred while trying to update the RFID life" xml:space="preserve">
+    <value>An error occurred while trying to update the RFID life</value>
+  </data>
+    <data name="An error occurred while trying to update the row" xml:space="preserve">
+    <value>An error occurred while trying to update the row</value>
+  </data>
+    <data name="An error occurred while trying to update the security" xml:space="preserve">
+    <value>An error occurred while trying to update the security</value>
+  </data>
+    <data name="An error occurred while trying to update the Sync table" xml:space="preserve">
+    <value>An error occurred while trying to update the Sync table</value>
+  </data>
+    <data name="An error occurred while trying to update the text info" xml:space="preserve">
+    <value>An error occurred while trying to update the text info</value>
+  </data>
+    <data name="An error occurred while trying to update the text information" xml:space="preserve">
+    <value>An error occurred while trying to update the text information</value>
+  </data>
+    <data name="An error occurred while trying to write the default cost" xml:space="preserve">
+    <value>An error occurred while trying to write the default cost</value>
+  </data>
+    <data name="An error occurred while updating the number of rows" xml:space="preserve">
+    <value>An error occurred while updating the number of rows</value>
+  </data>
+    <data name="Are you sure that you want to Delete this Map ?" xml:space="preserve">
+    <value>Are you sure that you want to Delete this Map ?</value>
+  </data>
+    <data name="Deleting Map" xml:space="preserve">
+    <value>Deleting Map</value>
+  </data>
+    <data name="An error occurred while changing the value of a cell in the grid view" xml:space="preserve">
+    <value>An error occurred while changing the value of a cell in the grid view</value>
+  </data>
+    <data name="An error occurred while clicking on a cell in the vendor data grid view" xml:space="preserve">
+    <value>An error occurred while clicking on a cell in the vendor data grid view</value>
+  </data>
+    <data name="An error occurred while clicking on the import button" xml:space="preserve">
+    <value>An error occurred while clicking on the import button</value>
+  </data>
+    <data name="An error occurred while clicking on the print labels button" xml:space="preserve">
+    <value>An error occurred while clicking on the print labels button</value>
+  </data>
+    <data name="An error occurred while clicking on the reload button" xml:space="preserve">
+    <value>An error occurred while clicking on the reload button</value>
+  </data>
+    <data name="An error occurred while clicking on the report button" xml:space="preserve">
+    <value>An error occurred while clicking on the report button</value>
+  </data>
+    <data name="An error occurred while filling the data grid view" xml:space="preserve">
+    <value>An error occurred while filling the data grid view</value>
+  </data>
+    <data name="An error occurred while filling the vendor ID grid" xml:space="preserve">
+    <value>An error occurred while filling the vendor ID grid</value>
+  </data>
+    <data name="An error occurred while pressing the change name button" xml:space="preserve">
+    <value>An error occurred while pressing the change name button</value>
+  </data>
+    <data name="An error occurred while pressing the clean button" xml:space="preserve">
+    <value>An error occurred while pressing the clean button</value>
+  </data>
+    <data name="An error occurred while processing the vendor names" xml:space="preserve">
+    <value>An error occurred while processing the vendor names</value>
+  </data>
+    <data name="An error occurred while trying check for new items" xml:space="preserve">
+    <value>An error occurred while trying check for new items</value>
+  </data>
+    <data name="An error occurred while trying to check the instruments vendor" xml:space="preserve">
+    <value>An error occurred while trying to check the instruments vendor</value>
+  </data>
+    <data name="An error occurred while trying to load a file" xml:space="preserve">
+    <value>An error occurred while trying to load a file</value>
+  </data>
+    <data name="Saved" xml:space="preserve">
+    <value>Saved</value>
+  </data>
+    <data name="Tray name was saved. The window will close now." xml:space="preserve">
+    <value>Tray name was saved. The window will close now.</value>
+  </data>
+    <data name="qdDeleteImageMessage" xml:space="preserve">
+    <value>Are you sure you wish to delete the image?</value>
+  </data>
+    <data name="qdDeleteImageTitle" xml:space="preserve">
+    <value>Delete image</value>
+  </data>
+    <data name="qdDeleteInstrumentMessage" xml:space="preserve">
+    <value>Are you sure you wish to delete this instrument from the tray?</value>
+  </data>
+    <data name="qdDeleteInstrumentTitle" xml:space="preserve">
+    <value>Delete instrument</value>
+  </data>
+    <data name="qdReloadDataInfoGridViewMessage" xml:space="preserve">
+    <value>Reload Data Into GridView?</value>
+  </data>
+    <data name="qdReloadDataIntoGridViewTitle" xml:space="preserve">
+    <value>Reload</value>
+  </data>
+    <data name="qdUnsavedInfoMessage" xml:space="preserve">
+    <value>There is Unsaved Information!\r\nWould you like to save?</value>
+  </data>
+    <data name="qdUnsavedInfoTitle" xml:space="preserve">
+    <value>Unsaved information</value>
+  </data>
+    <data name="The Tray Name Exists - Make a New Name" xml:space="preserve">
+    <value>The Tray Name Exists - Make a New Name</value>
+  </data>
+    <data name="The tray name exists, please enter a different name and try again." xml:space="preserve">
+    <value>The tray name exists, please enter a different name and try again.</value>
+  </data>
+    <data name="Tray name exists" xml:space="preserve">
+    <value>Tray name exists</value>
+  </data>
+    <data name="The file doesn't contains correct columns! Please choose a valid file!" xml:space="preserve">
+    <value>The file doesn't contains correct columns! Please choose a valid file!</value>
+  </data>
+    <data name="There is no data in this file" xml:space="preserve">
+    <value>There is no data in this file</value>
+  </data>
+    <data name="Selected File is Invalid! Please Select valid csv file." xml:space="preserve">
+    <value>Selected File is Invalid! Please Select valid csv file.</value>
+  </data>
+    <data name="You didn't choose a delimiter!Please choose a delimiter!" xml:space="preserve">
+    <value>You didn't choose a delimiter!Please choose a delimiter!</value>
+  </data>
+    <data name="The delimiter is wrong! Please choose another delimiter!" xml:space="preserve">
+    <value>The delimiter is wrong! Please choose another delimiter!</value>
+  </data>
+    <data name="Finished Import" xml:space="preserve">
+    <value>Finished Import</value>
+  </data>
+    <data name="Instrument" xml:space="preserve">
+    <value>Instrument</value>
+  </data>
+    <data name=" already exists in the database. Do you want to overwrite all instruments?" xml:space="preserve">
+    <value> already exists in the database. Do you want to overwrite all instruments?</value>
+  </data>
+    <data name="already exists in the database. Do you want to overwrite all instruments?" xml:space="preserve">
+    <value>already exists in the database. Do you want to overwrite all instruments?</value>
+  </data>
+    <data name="One or more columns missing. Format is: (&quot;Packing set Name&quot;,&quot;Item Number&quot;,&quot;Amount&quot;,&quot;Description (optional)&quot;"
+          xml:space="preserve">
+    <value>One or more columns missing. Format is: ("Packing set Name","Item Number","Amount","Description (optional)"</value>
+  </data>
+    <data name="Column format error" xml:space="preserve">
+    <value>Column format error</value>
+  </data>
+    <data name="Please choose a delimiter. " xml:space="preserve">
+    <value>Please choose a delimiter. </value>
+  </data>
+    <data name="Unmatched delimiter! Please choose a different delimiter." xml:space="preserve">
+    <value>Unmatched delimiter! Please choose a different delimiter.</value>
+  </data>
+    <data name="The file does not contain expected columns. Expected format is: (&quot;Packing set Name&quot;,&quot;Item Number&quot;,&quot;Amount&quot;,&quot;Description (optional)&quot;"
+          xml:space="preserve">
+    <value>The file does not contain expected columns. Expected format is: ("Packing set Name","Item Number","Amount","Description (optional)"</value>
+  </data>
+    <data name="The packing list &quot;" xml:space="preserve">
+    <value>The packing list "</value>
+  </data>
+    <data name="&quot; already exists in the database. Do you want to overwrite it?" xml:space="preserve">
+    <value>" already exists in the database. Do you want to overwrite it?</value>
+  </data>
+    <data name="One or more columns missing. Expected format is: (&quot;Packing set Name&quot;,&quot;Item Number&quot;,&quot;Amount&quot;,&quot;Description (optional)&quot;"
+          xml:space="preserve">
+    <value>One or more columns missing. Expected format is: ("Packing set Name","Item Number","Amount","Description (optional)"</value>
+  </data>
+    <data name="Import successful" xml:space="preserve">
+    <value>Import successful</value>
+  </data>
+    <data name="Error while importing!" xml:space="preserve">
+    <value>Error while importing!</value>
+  </data>
+    <data name="Description id is not valid: " xml:space="preserve">
+    <value>Description id is not valid: </value>
+  </data>
+    <data name="Description name is not valid:" xml:space="preserve">
+    <value>Description name is not valid:</value>
+  </data>
+    <data name=" doesn't exist in the database" xml:space="preserve">
+    <value> doesn't exist in the database</value>
+  </data>
+    <data name="Vendor id: " xml:space="preserve">
+    <value>Vendor id: </value>
+  </data>
+    <data name="Success" xml:space="preserve">
+    <value>Success</value>
+  </data>
+    <data name="Data is successfully uploaded. Processed " xml:space="preserve">
+    <value>Data is successfully uploaded. Processed </value>
+  </data>
+    <data name=" records and ignored " xml:space="preserve">
+    <value> records and ignored </value>
+  </data>
+    <data name="OneOrMoreFieldsError" xml:space="preserve">
+    <value>There is an error in one or more fields. Correct the error and try again.</value>
+  </data>
+    <data name="ErrorSavingUser" xml:space="preserve">
+    <value>Error while saving user.</value>
+  </data>
+    <data name="CouldNotSaveUser" xml:space="preserve">
+    <value>Could not save user.</value>
+  </data>
+    <data name="Confirm" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+    <data name="ConfirmDeleteUser" xml:space="preserve">
+    <value>Are you sure you want to delete user:</value>
+  </data>
+    <data name="UserNameMustBeAtLeast7Chars" xml:space="preserve">
+    <value>Username must be at least 7 characters. </value>
+  </data>
+    <data name="UsernameExistsChooseDifferent" xml:space="preserve">
+    <value>Username exists, please choose a different username.</value>
+  </data>
+    <data name="ErrorValidatingUsername" xml:space="preserve">
+    <value>Error while validating username. </value>
+  </data>
+    <data name="CouldNotValidateUsername" xml:space="preserve">
+    <value>Could not validate username. </value>
+  </data>
+    <data name="FirstNameMustBeAtLeast2Chars" xml:space="preserve">
+    <value>First name must be at least 2 characters. </value>
+  </data>
+    <data name="LastNameMustBeAtLeast2Chars" xml:space="preserve">
+    <value>Last name must be at least 2 characters. </value>
+  </data>
+    <data name="PasswordMustBeAtLeast8Chars" xml:space="preserve">
+    <value>Password must be at least 8 characters. </value>
+  </data>
+    <data name="EditUser" xml:space="preserve">
+    <value>Edit User</value>
+  </data>
+    <data name="UserSaved" xml:space="preserve">
+    <value>User saved!</value>
+  </data>
+    <data name="UserCreated" xml:space="preserve">
+    <value>User created!</value>
+  </data>
+    <data name="ConfirmDeleteTray" xml:space="preserve">
+    <value>Are you sure you want to delete the tray?</value>
+  </data>
+    <data name="DeleteTray" xml:space="preserve">
+    <value>Delete tray</value>
+  </data>
+    <data name="There are too MANY instruments - Max allowed: " xml:space="preserve">
+    <value>There are too MANY instruments - Max allowed: </value>
+  </data>
+    <data name="Reduce number of Instruments" xml:space="preserve">
+    <value>Reduce number of Instruments</value>
+  </data>
+    <data name="If you are making this Tray Visible to Users They can start Using It." xml:space="preserve">
+    <value>If you are making this Tray Visible to Users They can start Using It.</value>
+  </data>
+    <data name="Tray Visible to Users" xml:space="preserve">
+    <value>Tray Visible to Users</value>
+  </data>
+    <data name="If you are Hiding the Tray the Users will not be able to Use It." xml:space="preserve">
+    <value>If you are Hiding the Tray the Users will not be able to Use It.</value>
+  </data>
+    <data name="Hide Tray for Users" xml:space="preserve">
+    <value>Hide Tray for Users</value>
+  </data>
+</root>

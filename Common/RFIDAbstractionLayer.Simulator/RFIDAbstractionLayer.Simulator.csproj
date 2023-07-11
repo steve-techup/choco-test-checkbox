@@ -1,0 +1,203 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>rfidIcon.ico</ApplicationIcon>
+    <StartupObject>RFIDAbstractionLayer.Simulator.App</StartupObject>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Assets2\**" />
+    <EmbeddedResource Remove="Assets2\**" />
+    <None Remove="Assets2\**" />
+    <Page Remove="Assets2\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="SimulatorMainForm.cs" />
+    <Compile Remove="SimulatorMainForm.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <JsonFiles Include="$(ProjectDir)\*.json" />
+  </ItemGroup>
+  <Target Name="CopyJsonFiles" AfterTargets="Build">
+    <Message Text="Executing CopyJsonFiles task" Importance="High" />
+    <Copy SourceFiles="@(JsonFiles);" DestinationFolder="$(TargetDir)" />
+    <Message Text="Copied json files" Importance="High" />
+  </Target>
+  <ItemGroup>
+    <None Remove="Assets\barcode.png" />
+    <None Remove="Assets\barcodeInv.png" />
+    <None Remove="Assets\caretagLogoTransparent.png" />
+    <None Remove="Assets\clock.png" />
+    <None Remove="Assets\clockInv.png" />
+    <None Remove="Assets\connected.png" />
+    <None Remove="Assets\connected_0.png" />
+    <None Remove="Assets\connected_1.png" />
+    <None Remove="Assets\connected_2.png" />
+    <None Remove="Assets\connected_3.png" />
+    <None Remove="Assets\connected_4.png" />
+    <None Remove="Assets\container.png" />
+    <None Remove="Assets\containerInv.png" />
+    <None Remove="Assets\creditCard.png" />
+    <None Remove="Assets\creditCardInv.png" />
+    <None Remove="Assets\default.png" />
+    <None Remove="Assets\defaultInv.png" />
+    <None Remove="Assets\disconnected.png" />
+    <None Remove="Assets\Neo.ico" />
+    <None Remove="Assets\newVirtualTag.png" />
+    <None Remove="Assets\newVirtualTagInv.png" />
+    <None Remove="Assets\rfidLogo.png" />
+    <None Remove="Assets\Scalpel.png" />
+    <None Remove="Assets\ScalpelInv.png" />
+    <None Remove="Assets\search.png" />
+    <None Remove="Assets\searchInv.png" />
+    <None Remove="Assets\Tray.png" />
+    <None Remove="Assets\TrayInv.png" />
+    <None Remove="barcode.png" />
+    <None Remove="barcodeInv.png" />
+    <None Remove="caretagLogo.png" />
+    <None Remove="clock.png" />
+    <None Remove="clockInv.png" />
+    <None Remove="connected.png" />
+    <None Remove="creditCard.png" />
+    <None Remove="creditCardInv.png" />
+    <None Remove="disconnected.png" />
+    <None Remove="rfidLogo.png" />
+    <None Remove="Scalpel.png" />
+    <None Remove="ScalpelInv.png" />
+    <None Remove="search.png" />
+    <None Remove="searchInv.png" />
+    <None Remove="Tray.png" />
+    <None Remove="TrayInv.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EmptyLicensesLicx" Version="3.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="7.0.0" />
+    <PackageReference Include="NetCoreServer" Version="7.0.0" />
+    <PackageReference Include="WPFLocalizeExtension" Version="3.9.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\barcode.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\barcodeInv.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Assets\caretagLogoTransparent.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Assets\clock.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\clockInv.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\connected.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\connected_0.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\connected_1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\connected_2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\connected_3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\connected_4.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\container.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\containerInv.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\creditCard.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\creditCardInv.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\default.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\defaultInv.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\disconnected.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\newVirtualTag.png" />
+    <Resource Include="Assets\newVirtualTagInv.png" />
+    <Resource Include="Assets\rfidLogo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Scalpel.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\ScalpelInv.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\search.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\searchInv.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Tray.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\TrayInv.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\Strings.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Main\Main.csproj" />
+    <ProjectReference Include="..\RFIDAbstractionLayer\RFIDAbstractionLayer.csproj" />
+    <ProjectReference Include="..\UIControls.WPF\UIControls.WPF.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Resources\Strings.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Strings.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

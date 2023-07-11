@@ -1,0 +1,754 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0D226ADF-C558-026E-09A7-A03CE3BADC55}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Main</RootNamespace>
+    <AssemblyName>Main</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <DefaultItemExcludes>$(DefaultItemExcludes);$(ProjectDir)**\*.vb</DefaultItemExcludes>
+    <LangVersion>latest</LangVersion>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>bin\Debug\Main.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DefineConstants>NOSHUTDOWN</DefineConstants>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>bin\Release\Main.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Persistent.Base.v22.1, Version=22.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Persistent.BaseImpl.Xpo.v22.1, Version=22.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="MiniExcel">
+      <HintPath>..\..\..\..\..\..\Users\phili\.nuget\packages\miniexcel\1.29.0\lib\net45\MiniExcel.dll</HintPath>
+    </Reference>
+    <Reference Include="SdkApi.Desktop">
+      <HintPath>..\..\..\..\..\..\Users\phili\.nuget\packages\zebra.printer.sdk\2.15.2634\lib\net471\SdkApi.Desktop.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApiClient\ApiClientExtensions.cs" />
+    <Compile Include="CaretagModelFactory.cs" />
+    <Compile Include="Configuration\AppSettingsBase.cs" />
+    <Compile Include="Configuration\AppsettingsPortCache.cs" />
+    <Compile Include="Configuration\ConfigurationWriter.cs" />
+    <Compile Include="EventReporting\EventReporter.cs" />
+    <Compile Include="EventReporting\ReportLevel.cs" />
+    <Compile Include="Exceptions\CaretagApplicationException.cs" />
+    <Compile Include="Extensions\ConfigurationExtensions.cs" />
+    <Compile Include="Extensions\DevExpressExtensions.cs" />
+    <Compile Include="Extensions\DiExtensions.cs" />
+    <Compile Include="Extensions\EntityFrameworkExtension.cs" />
+    <Compile Include="Extensions\ReactiveUIExtensions.cs" />
+    <Compile Include="Extensions\WinformExtensions.cs" />
+    <Compile Include="Forms\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logging\VerboseLogger.cs" />
+    <Compile Include="Migrations\202211181448225_MultiInstrument.cs" />
+    <Compile Include="Migrations\202211181448225_MultiInstrument.designer.cs">
+      <DependentUpon>202211181448225_MultiInstrument.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202211221306163_PackingUpdate.cs" />
+    <Compile Include="Migrations\202211221306163_PackingUpdate.designer.cs">
+      <DependentUpon>202211221306163_PackingUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202211221515567_PackingUpdatePt2.cs" />
+    <Compile Include="Migrations\202211221515567_PackingUpdatePt2.designer.cs">
+      <DependentUpon>202211221515567_PackingUpdatePt2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202211230922032_PackingPt3.cs" />
+    <Compile Include="Migrations\202211230922032_PackingPt3.designer.cs">
+      <DependentUpon>202211230922032_PackingPt3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202211231245421_PackingPt4.cs" />
+    <Compile Include="Migrations\202211231245421_PackingPt4.designer.cs">
+      <DependentUpon>202211231245421_PackingPt4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202211301401429_CheckboxManualPackingSupport.cs" />
+    <Compile Include="Migrations\202211301401429_CheckboxManualPackingSupport.designer.cs">
+      <DependentUpon>202211301401429_CheckboxManualPackingSupport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202212061524464_TblPasswordUserNameIndex.cs" />
+    <Compile Include="Migrations\202212061524464_TblPasswordUserNameIndex.designer.cs">
+      <DependentUpon>202212061524464_TblPasswordUserNameIndex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202301100950053_TrayDescriptionCostCenterKeyType.cs" />
+    <Compile Include="Migrations\202301100950053_TrayDescriptionCostCenterKeyType.designer.cs">
+      <DependentUpon>202301100950053_TrayDescriptionCostCenterKeyType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202302231008199_ValidatedPackingListsTrayIdNullable.cs" />
+    <Compile Include="Migrations\202302231008199_ValidatedPackingListsTrayIdNullable.designer.cs">
+      <DependentUpon>202302231008199_ValidatedPackingListsTrayIdNullable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202303061321027_TrayImageTrayDescription.cs" />
+    <Compile Include="Migrations\202303061321027_TrayImageTrayDescription.designer.cs">
+      <DependentUpon>202303061321027_TrayImageTrayDescription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202303061349012_ValidatedPackingListLineItemInstrument_RFID_PK.cs" />
+    <Compile Include="Migrations\202303061349012_ValidatedPackingListLineItemInstrument_RFID_PK.designer.cs">
+      <DependentUpon>202303061349012_ValidatedPackingListLineItemInstrument_RFID_PK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DevexpressModels\CostCenterXPOModel.cs" />
+    <Compile Include="Model\DevexpressModels\CostItemXPOModel.cs" />
+    <Compile Include="Model\DevexpressModels\CostTypeXPOModel.cs" />
+    <Compile Include="Model\DevexpressModels\ImageXPOModel.cs" />
+    <Compile Include="Model\DevexpressModels\InstrumentDescriptionXPOModel.cs" />
+    <Compile Include="Model\DevexpressModels\PackingLogLineXPOModel.cs" />
+    <Compile Include="Model\DevexpressModels\PackingLogXPOModel.cs" />
+    <Compile Include="Model\DevexpressModels\TrayDescriptionXPOModel.cs" />
+    <Compile Include="Model\DevexpressModels\CostLogXPOModel.cs" />
+    <Compile Include="Model\DevexpressModels\TrayImageXPOModel.cs" />
+    <Compile Include="Model\DevexpressModels\TrayTree\TrayVirtualTreeListData.cs" />
+    <Compile Include="Model\DevexpressModels\UserXPOModel.cs" />
+    <Compile Include="Model\DevexpressModels\ValidatedPackingListXPOModel.cs" />
+    <Compile Include="Model\PackingList\PackingLog.cs" />
+    <Compile Include="Model\PackingList\PackingLogLine.cs" />
+    <Compile Include="EventReporting\ErrorReport.cs" />
+    <Compile Include="Properties\Annotations.cs" />
+    <Compile Include="ReactiveUI\CommandBinders\BarButtonItemCommandBinder.cs" />
+    <Compile Include="ReactiveUI\Extensions.cs" />
+    <Compile Include="ReactiveUI\ViewModelProvidingViewLocator.cs" />
+    <Compile Include="ReactiveUI\DefaultExceptionHandler.cs" />
+    <Compile Include="ReactiveUI\Interactions\CommonInteractionsFactory.cs" />
+    <Compile Include="Services\ExcelExportService.cs" />
+    <Compile Include="ReactiveUI\Services\ReactiveCommandService.cs" />
+    <Compile Include="ReactiveUI\ViewModels\LoginViewModel.cs" />
+    <Compile Include="ReactiveUI\ViewModels\TouchScreenNumberDialogViewModel.cs" />
+    <Compile Include="ReactiveUI\ViewModels\TouchscreenPackingListViewModel.cs" />
+    <Compile Include="ReactiveUI\Views\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReactiveUI\Views\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReactiveUI\Views\TouchscreenNumberDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReactiveUI\Views\TouchscreenNumberDialog.Designer.cs">
+      <DependentUpon>TouchscreenNumberDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReactiveUI\Views\TouchscreenPackingListView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReactiveUI\Views\TouchscreenPackingListView.Designer.cs">
+      <DependentUpon>TouchscreenPackingListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\InstrumentImageRepository.cs" />
+    <Compile Include="Repositories\UnitOfWork\LoginUnitOfWork.cs" />
+    <Compile Include="Repositories\TrayImageRepository.cs" />
+    <Compile Include="Repositories\GenericRepository.cs" />
+    <Compile Include="Repositories\UnitOfWork.cs" />
+    <Compile Include="Repositories\UnitOfWork\LoginUnitOfWorkFactory.cs" />
+    <Compile Include="Services\TrayLabel.cs" />
+    <Compile Include="Services\ZebraPrintService.cs" />
+    <Compile Include="UIControls\ExtensionMethods\ImageExtensions.cs" />
+    <Compile Include="UIControls\OnScreenKeyboard.cs" />
+    <Compile Include="UIControls\PowerTrackBarParams.cs" />
+    <Compile Include="UIControls\Winforms\Controls\BtnLogOut.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UIControls\Winforms\Controls\BtnLogOut.Designer.cs">
+      <DependentUpon>BtnLogOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIControls\Winforms\Controls\BtnOSK.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UIControls\Winforms\Controls\BtnOSK.Designer.cs">
+      <DependentUpon>BtnOSK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIControls\Winforms\Controls\ReaderPowerBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UIControls\Winforms\Controls\ReaderPowerBar.Designer.cs">
+      <DependentUpon>ReaderPowerBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIControls\Winforms\Controls\ThumbnailBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UIControls\Winforms\Controls\ThumbnailBox.Designer.cs">
+      <DependentUpon>ThumbnailBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIControls\Winforms\Dialogs\ImagePreviewDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIControls\Winforms\Dialogs\ImagePreviewDlg.Designer.cs">
+      <DependentUpon>ImagePreviewDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIControls\Winforms\Program.cs" />
+    <Compile Include="UIControls\Winforms\TestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIControls\Winforms\TestForm.Designer.cs">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Util\DataTypeViewModel.cs" />
+    <Compile Include="Util\EFBackedBindingList.cs" />
+    <Compile Include="Util\ExcelExporter.cs" />
+    <Compile Include="Util\RowValidator.cs" />
+    <Compile Include="Util\UI\DataGridViewDisableCheckBoxCell.cs" />
+    <Compile Include="Util\ImageUtil.cs" />
+    <Compile Include="Util\PasswordEncryptionUtil.cs" />
+    <Compile Include="Migrations\202210250822477_ExtraInstrumentInfo.cs" />
+    <Compile Include="Migrations\202210250822477_ExtraInstrumentInfo.designer.cs">
+      <DependentUpon>202210250822477_ExtraInstrumentInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\PackingListRepository.cs" />
+    <Compile Include="Forms\SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Util\CachingRepository.cs" />
+    <Compile Include="ReactiveUI\Interactions\CommonInteractions.cs" />
+    <Compile Include="ReactiveUI\CaretagMessageBoxArguments.cs" />
+    <Compile Include="Migrations\202207121410545_First.cs" />
+    <Compile Include="Migrations\202207121410545_First.designer.cs">
+      <DependentUpon>202207121410545_First.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202207121410545_First_Procedures.cs">
+      <DependentUpon>202207121410545_First.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202207121410545_First_Seed.cs">
+      <DependentUpon>202207121410545_First.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202207121410545_First_View.cs">
+      <DependentUpon>202207121410545_First.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202208221658265_Initial.cs" />
+    <Compile Include="Migrations\202208221658265_Initial.designer.cs">
+      <DependentUpon>202208221658265_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202208231212374_OperationInstrumentsIndices.cs" />
+    <Compile Include="Migrations\202208231212374_OperationInstrumentsIndices.designer.cs">
+      <DependentUpon>202208231212374_OperationInstrumentsIndices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202208241539289_ValidatedPackingListTrayEPC.cs" />
+    <Compile Include="Migrations\202208241539289_ValidatedPackingListTrayEPC.designer.cs">
+      <DependentUpon>202208241539289_ValidatedPackingListTrayEPC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202209121014393_Dev1.7.0.cs" />
+    <Compile Include="Migrations\202209121014393_Dev1.7.0.designer.cs">
+      <DependentUpon>202209121014393_Dev1.7.0.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202209221415531_NewEPCStrategy.cs" />
+    <Compile Include="Migrations\202209221415531_NewEPCStrategy.designer.cs">
+      <DependentUpon>202209221415531_NewEPCStrategy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Base\DbMigrationBase.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Migrations\202207121410545_First_Tables.cs">
+      <DependentUpon>202207121410545_First.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Action_Description.cs" />
+    <Compile Include="Model\Action_Type.cs" />
+    <Compile Include="Model\Antenna_Reader.cs" />
+    <Compile Include="Model\Area_Name_List.cs" />
+    <Compile Include="Model\CaretagModel.cs" />
+    <Compile Include="Model\Cart_Description.cs" />
+    <Compile Include="Model\Cart_RFID.cs" />
+    <Compile Include="Model\Cart_RFID_Life.cs" />
+    <Compile Include="Model\CheckBox_OR_Log.cs" />
+    <Compile Include="Model\CheckBox_OR_Sync.cs" />
+    <Compile Include="Model\CheckBox_SPD_Log.cs" />
+    <Compile Include="Model\CheckBox_SPD_Sync.cs" />
+    <Compile Include="Model\ConfigTable.cs" />
+    <Compile Include="Model\Container_Description.cs" />
+    <Compile Include="Model\Container_RFID.cs" />
+    <Compile Include="Model\Container_RFID_Life.cs" />
+    <Compile Include="Model\CostCenter\Cost_Center.cs" />
+    <Compile Include="Model\CostCenter\Cost_Item.cs" />
+    <Compile Include="Model\CostCenter\Cost_Log.cs" />
+    <Compile Include="Model\CostCenter\Cost_Type.cs" />
+    <Compile Include="Model\Demand_Service_Log.cs" />
+    <Compile Include="Model\Demand_Text.cs" />
+    <Compile Include="Model\Department.cs" />
+    <Compile Include="Model\Disposables_Description.cs" />
+    <Compile Include="Model\Disposables_Log.cs" />
+    <Compile Include="Model\EPC_Number_Serie.cs" />
+    <Compile Include="Model\Exchange_Log.cs" />
+    <Compile Include="Model\Exchange_Table.cs" />
+    <Compile Include="Model\Gate_Log.cs" />
+    <Compile Include="Model\Instrument_Code.cs" />
+    <Compile Include="Model\Instrument_Description.cs" />
+    <Compile Include="Model\Instrument_External.cs" />
+    <Compile Include="Model\Instrument_Group.cs" />
+    <Compile Include="Model\Instrument_Image.cs" />
+    <Compile Include="Model\Instrument_Maintenance_RFID.cs" />
+    <Compile Include="Model\Instrument_Packed_Log.cs" />
+    <Compile Include="Model\Instrument_ReCall.cs" />
+    <Compile Include="Model\Instrument_RFID.cs" />
+    <Compile Include="Model\Instrument_RFID_History.cs" />
+    <Compile Include="Model\Instrument_RFID_Life.cs" />
+    <Compile Include="Model\Instrument_Rules.cs" />
+    <Compile Include="Model\Instrument_Translation.cs" />
+    <Compile Include="Model\Instrument_Translation_Log.cs" />
+    <Compile Include="Model\Instrument_Translation_Vendor.cs" />
+    <Compile Include="Model\Instrument_Vendor.cs" />
+    <Compile Include="Model\Lend_Entity.cs" />
+    <Compile Include="Model\Lend_Instrument.cs" />
+    <Compile Include="Model\Lend_Log.cs" />
+    <Compile Include="Model\Login_Security.cs" />
+    <Compile Include="Model\LogIn_Table.cs" />
+    <Compile Include="Model\Log_Change.cs" />
+    <Compile Include="Model\Not_Known_RFID.cs" />
+    <Compile Include="Model\Operation.cs" />
+    <Compile Include="Model\OperationInstrument.cs" />
+    <Compile Include="Model\OperationState.cs" />
+    <Compile Include="Model\OR_Procedure.cs" />
+    <Compile Include="Model\OR_Trays_ID.cs" />
+    <Compile Include="Model\PackingList\Validation\ValidatedPackingList.cs" />
+    <Compile Include="Model\PackingList\Validation\ValidatedPackingListLineItem.cs" />
+    <Compile Include="Model\Procedure_Demand_List.cs" />
+    <Compile Include="Model\Reader_Description.cs" />
+    <Compile Include="Model\Reader_ErrorLog.cs" />
+    <Compile Include="Model\ReCall_Log.cs" />
+    <Compile Include="Model\Rules_Log.cs" />
+    <Compile Include="Model\ScanEvent.cs" />
+    <Compile Include="Model\Service\ServiceActionRecord.cs" />
+    <Compile Include="Model\Service\ServiceActionRecordLine.cs" />
+    <Compile Include="Model\Service\ServiceActionTemplate.cs" />
+    <Compile Include="Model\Service\ServiceActionTemplateLine.cs" />
+    <Compile Include="Model\Service\ServiceRequest.cs" />
+    <Compile Include="Model\Service\ServiceRule.cs" />
+    <Compile Include="Model\Service\ServiceState.cs" />
+    <Compile Include="Model\Service_Connections.cs" />
+    <Compile Include="Model\Service_Log.cs" />
+    <Compile Include="Model\Service_Vendor.cs" />
+    <Compile Include="Model\SPD_Machine.cs" />
+    <Compile Include="Model\Steril_Central.cs" />
+    <Compile Include="Model\Stop_Instrument.cs" />
+    <Compile Include="Model\Storage_Item.cs" />
+    <Compile Include="Model\Storage_Log.cs" />
+    <Compile Include="Model\Storage_Station.cs" />
+    <Compile Include="Model\SW_Update.cs" />
+    <Compile Include="Model\SystemInfo.cs" />
+    <Compile Include="Model\TblPassword.cs" />
+    <Compile Include="Model\Technical_Log.cs" />
+    <Compile Include="Model\Trays_To_Pack.cs" />
+    <Compile Include="Model\Tray_Description.cs" />
+    <Compile Include="Model\Tray_Image.cs" />
+    <Compile Include="Model\Tray_Items.cs" />
+    <Compile Include="Model\Tray_Log.cs" />
+    <Compile Include="Model\Tray_Packed.cs" />
+    <Compile Include="Model\Tray_PackList.cs" />
+    <Compile Include="Model\Tray_RFID.cs" />
+    <Compile Include="Model\Tray_RFID_Life.cs" />
+    <Compile Include="Model\Tray_Translation.cs" />
+    <Compile Include="Model\TreatMachine_Log.cs" />
+    <Compile Include="Model\Treatment_Description.cs" />
+    <Compile Include="Model\Treatment_Detail.cs" />
+    <Compile Include="Model\Treatment_Log.cs" />
+    <Compile Include="Model\Treatment_Machine.cs" />
+    <Compile Include="Model\Treatment_Type.cs" />
+    <Compile Include="Model\Assets\AssetId.cs" />
+    <Compile Include="Model\View_AllInstruments.cs" />
+    <Compile Include="Model\View_Carts_In_Database.cs" />
+    <Compile Include="Model\View_Cart_Container_Tray_A.cs" />
+    <Compile Include="Model\View_Cart_Container_Tray_B.cs" />
+    <Compile Include="Model\View_Combine.cs" />
+    <Compile Include="Model\View_CostCenter.cs" />
+    <Compile Include="Model\View_EPC_DescriptionName_New.cs" />
+    <Compile Include="Model\View_EPC_DescriptionName_Org.cs" />
+    <Compile Include="Model\View_EPC_To_Tray.cs" />
+    <Compile Include="Model\View_Exchange_OverView.cs" />
+    <Compile Include="Model\View_Full_UserName.cs" />
+    <Compile Include="Model\View_GridView_1.cs" />
+    <Compile Include="Model\View_Information_Schema.cs" />
+    <Compile Include="Model\View_Information_Station.cs" />
+    <Compile Include="Model\View_Instruments_DISTINCT.cs" />
+    <Compile Include="Model\View_Instru_To_Tray.cs" />
+    <Compile Include="Model\View_Life_GridView.cs" />
+    <Compile Include="Model\View_Not_InPackList.cs" />
+    <Compile Include="Model\View_Packed_Trays.cs" />
+    <Compile Include="Model\View_ReaderList.cs" />
+    <Compile Include="Model\View_Reader_Log_Error.cs" />
+    <Compile Include="Model\View_Reader_Overview.cs" />
+    <Compile Include="Model\View_Rules_Log_New.cs" />
+    <Compile Include="Model\View_Rules_Report.cs" />
+    <Compile Include="Model\View_Rules_Station.cs" />
+    <Compile Include="Model\View_Rules_Status.cs" />
+    <Compile Include="Model\View_Schemas.cs" />
+    <Compile Include="Model\View_Service_GridView.cs" />
+    <Compile Include="Model\View_Set_Syncbox_ComboBox.cs" />
+    <Compile Include="Model\View_Sync_Missing.cs" />
+    <Compile Include="Model\View_TotalInstruments.cs" />
+    <Compile Include="Model\View_Tray_Life_GridView.cs" />
+    <Compile Include="Model\View_Tray_PackList.cs" />
+    <Compile Include="Model\View_Treatment_Detail.cs" />
+    <Compile Include="Model\View_Treatment_Detail_Report.cs" />
+    <Compile Include="Properties\MyNamespace.Static.1.Designer.cs" />
+    <Compile Include="Properties\MyNamespace.Static.2.Designer.cs" />
+    <Compile Include="Properties\MyNamespace.Static.3.Designer.cs" />
+    <Compile Include="Cryptography.cs" />
+    <Compile Include="Functions.cs" />
+    <Compile Include="Main_Common_Module.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Application.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="ReactiveUI\ViewModels\StandardDialogViewModel.cs" />
+    <Compile Include="ReactiveUI\Views\StandardDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReactiveUI\Views\StandardDialog.Designer.cs">
+      <DependentUpon>StandardDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Rules\Form\Print_Service_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rules\Form\Print_Service_Report.Designer.cs">
+      <DependentUpon>Print_Service_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rules\Report\XtraReport_Service_One.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rules\Report\XtraReport_Service_One.Designer.cs">
+      <DependentUpon>XtraReport_Service_One.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rules\InstrumentServiceChecker.cs" />
+    <Compile Include="Rules\TriggeredRule.cs" />
+    <Compile Include="SQLUtil.cs" />
+    <Compile Include="Util\FormUtil.cs" />
+    <Compile Include="Util\StringDistanceCalculator.cs" />
+    <Compile Include="WinFormStrings.de-DE.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WinFormStrings.de-DE.resx</DependentUpon>
+    </Compile>
+    <Compile Include="WinFormStrings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WinFormStrings.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\LoginForm.de-DE.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202207121410545_First.resx">
+      <DependentUpon>202207121410545_First.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202208221658265_Initial.resx">
+      <DependentUpon>202208221658265_Initial.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202208231212374_OperationInstrumentsIndices.resx">
+      <DependentUpon>202208231212374_OperationInstrumentsIndices.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202208241539289_ValidatedPackingListTrayEPC.resx">
+      <DependentUpon>202208241539289_ValidatedPackingListTrayEPC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202209121014393_Dev1.7.0.resx">
+      <DependentUpon>202209121014393_Dev1.7.0.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202209221415531_NewEPCStrategy.resx">
+      <DependentUpon>202209221415531_NewEPCStrategy.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202210250822477_ExtraInstrumentInfo.resx">
+      <DependentUpon>202210250822477_ExtraInstrumentInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202211181448225_MultiInstrument.resx">
+      <DependentUpon>202211181448225_MultiInstrument.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202211221306163_PackingUpdate.resx">
+      <DependentUpon>202211221306163_PackingUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202211221515567_PackingUpdatePt2.resx">
+      <DependentUpon>202211221515567_PackingUpdatePt2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202211230922032_PackingPt3.resx">
+      <DependentUpon>202211230922032_PackingPt3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202211231245421_PackingPt4.resx">
+      <DependentUpon>202211231245421_PackingPt4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202211301401429_CheckboxManualPackingSupport.resx">
+      <DependentUpon>202211301401429_CheckboxManualPackingSupport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202212061524464_TblPasswordUserNameIndex.resx">
+      <DependentUpon>202212061524464_TblPasswordUserNameIndex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202301100950053_TrayDescriptionCostCenterKeyType.resx">
+      <DependentUpon>202301100950053_TrayDescriptionCostCenterKeyType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202302231008199_ValidatedPackingListsTrayIdNullable.resx">
+      <DependentUpon>202302231008199_ValidatedPackingListsTrayIdNullable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303061321027_TrayImageTrayDescription.resx">
+      <DependentUpon>202303061321027_TrayImageTrayDescription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303061349012_ValidatedPackingListLineItemInstrument_RFID_PK.resx">
+      <DependentUpon>202303061349012_ValidatedPackingListLineItemInstrument_RFID_PK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReactiveUI\Views\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReactiveUI\Views\StandardDialog.resx">
+      <DependentUpon>StandardDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReactiveUI\Views\TouchscreenNumberDialog.resx">
+      <DependentUpon>TouchscreenNumberDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReactiveUI\Views\TouchscreenPackingListView.resx">
+      <DependentUpon>TouchscreenPackingListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Caretag_Class.My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rules\Form\Print_Service_Report.cs-CZ.resx">
+      <DependentUpon>Print_Service_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rules\Form\Print_Service_Report.de-DE.resx">
+      <DependentUpon>Print_Service_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rules\Form\Print_Service_Report.resx">
+      <DependentUpon>Print_Service_Report.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rules\Report\XtraReport_Service_One.resx">
+      <DependentUpon>XtraReport_Service_One.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SplashScreen.de-DE.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIControls\Winforms\Controls\BtnLogOut.resx">
+      <DependentUpon>BtnLogOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIControls\Winforms\Controls\BtnOSK.resx">
+      <DependentUpon>BtnOSK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIControls\Winforms\Controls\ReaderPowerBar.resx">
+      <DependentUpon>ReaderPowerBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIControls\Winforms\Controls\ThumbnailBox.resx">
+      <DependentUpon>ThumbnailBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIControls\Winforms\Dialogs\ImagePreviewDlg.resx">
+      <DependentUpon>ImagePreviewDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIControls\Winforms\TestForm.resx">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormStrings.de-DE.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>WinFormStrings.de-DE.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormStrings.resx">
+      <CustomToolNamespace>Caretag_Class.My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>WinFormStrings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>Caretag_Class.My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="UIControls\Winforms\App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RFIDAbstractionLayer\RFIDAbstractionLayer.csproj">
+      <Project>{f57d2810-bec8-490d-bfdd-3cc3980f938c}</Project>
+      <Name>RFIDAbstractionLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="BitFaster.Caching">
+      <Version>2.1.1</Version>
+    </PackageReference>
+    <PackageReference Include="DevExpress.Charts.Core">
+      <Version>22.1.7</Version>
+    </PackageReference>
+    <PackageReference Include="DevExpress.ExpressApp.PivotGrid">
+      <Version>22.1.7</Version>
+    </PackageReference>
+    <PackageReference Include="DevExpress.Reporting.Core">
+      <Version>22.1.7</Version>
+    </PackageReference>
+    <PackageReference Include="DevExpress.Win">
+      <Version>22.1.7</Version>
+    </PackageReference>
+    <PackageReference Include="EmptyLicensesLicx">
+      <Version>3.0.0</Version>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="EntityFramework">
+      <Version>6.4.4</Version>
+    </PackageReference>
+    <PackageReference Include="FluentValidation">
+      <Version>11.4.0</Version>
+    </PackageReference>
+    <PackageReference Include="LanguageExt.Core">
+      <Version>4.4.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Hosting">
+      <Version>7.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Office.Interop.Excel">
+      <Version>15.0.4795.1001</Version>
+    </PackageReference>
+    <PackageReference Include="MiniExcel">
+      <Version>1.30.0</Version>
+    </PackageReference>
+    <PackageReference Include="NanoXLSX">
+      <Version>2.1.0</Version>
+    </PackageReference>
+    <PackageReference Include="Polly">
+      <Version>7.2.3</Version>
+    </PackageReference>
+    <PackageReference Include="ReactiveUI">
+      <Version>18.4.20</Version>
+    </PackageReference>
+    <PackageReference Include="ReactiveUI.Events.Winforms">
+      <Version>15.1.1</Version>
+    </PackageReference>
+    <PackageReference Include="ReactiveUI.WinForms">
+      <Version>18.4.20</Version>
+    </PackageReference>
+    <PackageReference Include="Refit">
+      <Version>6.3.2</Version>
+    </PackageReference>
+    <PackageReference Include="Scrutor">
+      <Version>4.2.0</Version>
+    </PackageReference>
+    <PackageReference Include="Serilog.Settings.Configuration">
+      <Version>3.4.0</Version>
+    </PackageReference>
+    <PackageReference Include="Zebra.Printer.SDK">
+      <Version>2.15.2634</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CaretagClassicLogo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addition-color-icon.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\subtract-color-icon.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit-round-line-icon-sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caretag logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\computer-keyboard-wireless-icon.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UIControls\Winforms\Resources\caretagLogoTransparent_512x130.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UIControls\Winforms\Resources\computer-keyboard-wireless-icon.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caretag_sm.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

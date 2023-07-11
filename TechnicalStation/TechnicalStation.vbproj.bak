@@ -1,0 +1,995 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{480D669F-8B7A-4915-A6FE-894907CBE70D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TechnicalStation</RootNamespace>
+    <AssemblyName>Technical_Station</AssemblyName>
+    <ApplicationIcon>Resources\Knowledge Hub_TransP.ico</ApplicationIcon>
+    <StartupObject>TechnicalStation.My.MyApplication</StartupObject>
+    <ManifestCertificateThumbprint>652ADE1393A7055E61D379683EFF224516CBF913</ManifestCertificateThumbprint>
+    <ManifestKeyFile>CaretagCodeSigningCA.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>false</SignManifests>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <DocumentationFile>Technical_Station.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <DocumentationFile>Technical_Station.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <MyType>WindowsForms</MyType>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Technical_Station.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>Technical_Station.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Win.BonusSkins.21.1.5\lib\net452\DevExpress.BonusSkins.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v21.1.Core, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Charts.Core.21.1.5\lib\net452\DevExpress.Charts.v21.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.CodeParser.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.CodeParser.21.1.5\lib\net452\DevExpress.CodeParser.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Dashboard.v21.1.Core, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Dashboard.Core.21.1.5\lib\net452\DevExpress.Dashboard.v21.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Dashboard.v21.1.Win, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Win.Dashboard.21.1.5\lib\net452\DevExpress.Dashboard.v21.1.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.Desktop.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Data.Desktop.21.1.5\lib\net452\DevExpress.Data.Desktop.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Data.21.1.5\lib\net452\DevExpress.Data.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.DataAccess.21.1.5\lib\net452\DevExpress.DataAccess.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v21.1.UI, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.DataAccess.UI.21.1.5\lib\net452\DevExpress.DataAccess.v21.1.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.DataVisualization.v21.1.Core, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.DataVisualization.Core.21.1.5\lib\net452\DevExpress.DataVisualization.v21.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Diagram.v21.1.Core, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Diagram.Core.21.1.5\lib\net452\DevExpress.Diagram.v21.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.EasyTest.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.EasyTest.21.1.5\lib\net452\DevExpress.EasyTest.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.AuditTrail.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.AuditTrail.21.1.5\lib\net452\DevExpress.ExpressApp.AuditTrail.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Chart.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.Chart.21.1.5\lib\net452\DevExpress.ExpressApp.Chart.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Chart.Win.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.Chart.Win.21.1.5\lib\net452\DevExpress.ExpressApp.Chart.Win.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.CloneObject.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.CloneObject.21.1.5\lib\net452\DevExpress.ExpressApp.CloneObject.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.ConditionalAppearance.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.ConditionalAppearance.21.1.5\lib\net452\DevExpress.ExpressApp.ConditionalAppearance.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Dashboards.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.Dashboards.21.1.5\lib\net452\DevExpress.ExpressApp.Dashboards.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Dashboards.Win.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.Dashboards.Win.21.1.5\lib\net452\DevExpress.ExpressApp.Dashboards.Win.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.EasyTest.WinAdapter.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.EasyTest.WinAdapter.21.1.5\lib\net452\DevExpress.ExpressApp.EasyTest.WinAdapter.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.FileAttachment.Win.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.FileAttachment.Win.21.1.5\lib\net452\DevExpress.ExpressApp.FileAttachment.Win.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.HtmlPropertyEditor.Win.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.HtmlPropertyEditor.Win.21.1.5\lib\net452\DevExpress.ExpressApp.HtmlPropertyEditor.Win.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Kpi.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.Kpi.21.1.5\lib\net452\DevExpress.ExpressApp.Kpi.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Notifications.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.Notifications.21.1.5\lib\net452\DevExpress.ExpressApp.Notifications.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Notifications.Win.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.Notifications.Win.21.1.5\lib\net452\DevExpress.ExpressApp.Notifications.Win.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Objects.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.Objects.21.1.5\lib\net452\DevExpress.ExpressApp.Objects.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Office.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.Office.21.1.5\lib\net452\DevExpress.ExpressApp.Office.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Office.Win.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.Office.Win.21.1.5\lib\net452\DevExpress.ExpressApp.Office.Win.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.PivotChart.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.PivotChart.21.1.5\lib\net452\DevExpress.ExpressApp.PivotChart.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.PivotChart.Win.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.PivotChart.Win.21.1.5\lib\net452\DevExpress.ExpressApp.PivotChart.Win.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.PivotGrid.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.PivotGrid.21.1.5\lib\net452\DevExpress.ExpressApp.PivotGrid.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.PivotGrid.Win.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.PivotGrid.Win.21.1.5\lib\net452\DevExpress.ExpressApp.PivotGrid.Win.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.ReportsV2.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.ReportsV2.21.1.5\lib\net452\DevExpress.ExpressApp.ReportsV2.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.ReportsV2.Win.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.ReportsV2.Win.21.1.5\lib\net452\DevExpress.ExpressApp.ReportsV2.Win.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Scheduler.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.Scheduler.21.1.5\lib\net452\DevExpress.ExpressApp.Scheduler.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Scheduler.Win.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.Scheduler.Win.21.1.5\lib\net452\DevExpress.ExpressApp.Scheduler.Win.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.ScriptRecorder.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.ScriptRecorder.21.1.5\lib\net452\DevExpress.ExpressApp.ScriptRecorder.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.ScriptRecorder.Win.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.ScriptRecorder.Win.21.1.5\lib\net452\DevExpress.ExpressApp.ScriptRecorder.Win.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Security.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.Security.21.1.5\lib\net452\DevExpress.ExpressApp.Security.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.StateMachine.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.StateMachine.21.1.5\lib\net452\DevExpress.ExpressApp.StateMachine.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.TreeListEditors.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.TreeListEditors.21.1.5\lib\net452\DevExpress.ExpressApp.TreeListEditors.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.TreeListEditors.Win.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.TreeListEditors.Win.21.1.5\lib\net452\DevExpress.ExpressApp.TreeListEditors.Win.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.21.1.5\lib\net452\DevExpress.ExpressApp.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Validation.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.Validation.21.1.5\lib\net452\DevExpress.ExpressApp.Validation.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Validation.Win.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.Validation.Win.21.1.5\lib\net452\DevExpress.ExpressApp.Validation.Win.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.ViewVariantsModule.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.ViewVariantsModule.21.1.5\lib\net452\DevExpress.ExpressApp.ViewVariantsModule.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Win.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.Win.21.1.5\lib\net452\DevExpress.ExpressApp.Win.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Workflow.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.Workflow.21.1.5\lib\net452\DevExpress.ExpressApp.Workflow.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Workflow.Win.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.Workflow.Win.21.1.5\lib\net452\DevExpress.ExpressApp.Workflow.Win.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Xpo.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.Xpo.21.1.5\lib\net452\DevExpress.ExpressApp.Xpo.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Images.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Images.21.1.5\lib\net452\DevExpress.Images.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Map.v21.1.Core, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Map.Core.21.1.5\lib\net452\DevExpress.Map.v21.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Office.v21.1.Core, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Office.Core.21.1.5\lib\net452\DevExpress.Office.v21.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v21.1.Core, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Pdf.Core.21.1.5\lib\net452\DevExpress.Pdf.v21.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v21.1.Drawing, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Pdf.Drawing.21.1.5\lib\net452\DevExpress.Pdf.v21.1.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Persistent.Base.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Persistent.Base.21.1.5\lib\net452\DevExpress.Persistent.Base.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Persistent.BaseImpl.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Persistent.BaseImpl.21.1.5\lib\net452\DevExpress.Persistent.BaseImpl.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v21.1.Core, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.PivotGrid.Core.21.1.5\lib\net452\DevExpress.PivotGrid.v21.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v21.1.Core, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Printing.Core.21.1.5\lib\net452\DevExpress.Printing.v21.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v21.1.Core, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.RichEdit.Core.21.1.5\lib\net452\DevExpress.RichEdit.v21.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v21.1.Export, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.RichEdit.Export.21.1.5\lib\net452\DevExpress.RichEdit.v21.1.Export.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v21.1.Core, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Sparkline.Core.21.1.5\lib\net452\DevExpress.Sparkline.v21.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Spreadsheet.v21.1.Core, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Spreadsheet.Core.21.1.5\lib\net452\DevExpress.Spreadsheet.v21.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.TreeMap.v21.1.Core, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.TreeMap.Core.21.1.5\lib\net452\DevExpress.TreeMap.v21.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Utils.21.1.5\lib\net452\DevExpress.Utils.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v21.1.UI, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Utils.UI.21.1.5\lib\net452\DevExpress.Utils.v21.1.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Workflow.Activities.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.Workflow.21.1.5\lib\net452\DevExpress.Workflow.Activities.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Workflow.Activities.v21.1.Design, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.ExpressApp.Workflow.Win.21.1.5\lib\net452\DevExpress.Workflow.Activities.v21.1.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Xpo.21.1.5\lib\net452\DevExpress.Xpo.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Win.Navigation.21.1.5\lib\net452\DevExpress.XtraBars.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Charts.21.1.5\lib\net452\DevExpress.XtraCharts.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v21.1.Extensions, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Win.Charts.21.1.5\lib\net452\DevExpress.XtraCharts.v21.1.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v21.1.UI, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Win.Charts.21.1.5\lib\net452\DevExpress.XtraCharts.v21.1.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v21.1.Wizard, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Win.Charts.21.1.5\lib\net452\DevExpress.XtraCharts.v21.1.Wizard.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraDiagram.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Win.Diagram.21.1.5\lib\net452\DevExpress.XtraDiagram.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Win.Navigation.21.1.5\lib\net452\DevExpress.XtraEditors.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v21.1.Core, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Gauges.Core.21.1.5\lib\net452\DevExpress.XtraGauges.v21.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v21.1.Presets, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Win.Gauges.21.1.5\lib\net452\DevExpress.XtraGauges.v21.1.Presets.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v21.1.Win, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Win.Gauges.21.1.5\lib\net452\DevExpress.XtraGauges.v21.1.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Win.Grid.21.1.5\lib\net452\DevExpress.XtraGrid.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Win.Navigation.21.1.5\lib\net452\DevExpress.XtraLayout.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraMap.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Win.Map.21.1.5\lib\net452\DevExpress.XtraMap.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Win.21.1.5\lib\net452\DevExpress.XtraNavBar.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Win.PivotGrid.21.1.5\lib\net452\DevExpress.XtraPivotGrid.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Win.Printing.21.1.5\lib\net452\DevExpress.XtraPrinting.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Reporting.Core.21.1.5\lib\net452\DevExpress.XtraReports.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v21.1.Extensions, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Win.Reporting.21.1.5\lib\net452\DevExpress.XtraReports.v21.1.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Win.RichEdit.21.1.5\lib\net452\DevExpress.XtraRichEdit.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Win.Scheduler.21.1.5\lib\net452\DevExpress.XtraScheduler.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v21.1.Core, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Scheduler.Core.21.1.5\lib\net452\DevExpress.XtraScheduler.v21.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v21.1.Core.Desktop, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Scheduler.CoreDesktop.21.1.5\lib\net452\DevExpress.XtraScheduler.v21.1.Core.Desktop.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraSpreadsheet.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Win.Spreadsheet.21.1.5\lib\net452\DevExpress.XtraSpreadsheet.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Win.TreeList.21.1.5\lib\net452\DevExpress.XtraTreeList.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeMap.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.TreeMap.21.1.5\lib\net452\DevExpress.XtraTreeMap.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeMap.v21.1.UI, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Win.TreeMap.21.1.5\lib\net452\DevExpress.XtraTreeMap.v21.1.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Win.VerticalGrid.21.1.5\lib\net452\DevExpress.XtraVerticalGrid.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraWizard.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Win.21.1.5\lib\net452\DevExpress.XtraWizard.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.WIA">
+      <HintPath>..\..\..\..\COMMON_DLL\Interop.WIA.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Common\ExternalBinaries\Microsoft.VisualBasic.PowerPacks.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Design, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Common\ExternalBinaries\Microsoft.VisualBasic.PowerPacks.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="NurApiDotNet, Version=1.9.16.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\NurApiDotNet.1.9.16\lib\net20\x86\NurApiDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="SampoExtensionAPI">
+      <HintPath>..\Common\ExternalBinaries\SampoExtensionAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Web" />
+    <Import Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="DataSets\DataSet_Tray.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Tray.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\DataSet_Container.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Container.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\DataSet_Carts.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Carts.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\DataSet_Instru.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Instru.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\DataSet_Tray.vb">
+      <DependentUpon>DataSet_Tray.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_Active.Designer.vb">
+      <DependentUpon>frm_Active.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_Active.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_Scanner.Designer.vb">
+      <DependentUpon>Frm_Scanner.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Frm_Scanner.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_CompanyDepartmentID.Designer.vb">
+      <DependentUpon>Frm_CompanyDepartmentID.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Frm_CompanyDepartmentID.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_Exit.Designer.vb">
+      <DependentUpon>frm_Exit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_Exit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_Update_Tray_Tag.Designer.vb">
+      <DependentUpon>Frm_Update_Tray_Tag.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Frm_Update_Tray_Tag.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PivotGridView_2.Designer.vb">
+      <DependentUpon>PivotGridView_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PivotGridView_2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_Form_Tag.Designer.vb">
+      <DependentUpon>frm_Form_Tag.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_Form_Tag.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_Form_Tray.Designer.vb">
+      <DependentUpon>frm_Form_Tray.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_Form_Tray.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm_Class.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Forms\PivotGridView_1.Designer.vb">
+      <DependentUpon>PivotGridView_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PivotGridView_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Start.Designer.vb">
+      <DependentUpon>Form_Start.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Start.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Program.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="WinFormStrings.de-DE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WinFormStrings.de-DE.resx</DependentUpon>
+    </Compile>
+    <Compile Include="WinFormStrings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WinFormStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="XtraReport\XtraReportAll_Carts.Designer.vb">
+      <DependentUpon>XtraReportAll_Carts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="XtraReport\XtraReportAll_Carts.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="XtraReport\XtraReportAll_Containers.Designer.vb">
+      <DependentUpon>XtraReportAll_Containers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="XtraReport\XtraReportAll_Containers.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="XtraReport\XtraReportAll_Trays.Designer.vb">
+      <DependentUpon>XtraReportAll_Trays.vb</DependentUpon>
+    </Compile>
+    <Compile Include="XtraReport\XtraReportAll_Trays.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="XtraReport\XtraReport_ToDay.Designer.vb">
+      <DependentUpon>XtraReport_ToDay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="XtraReport\XtraReport_ToDay.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="Forms\Frm_CompanyDepartmentID.resx">
+      <DependentUpon>Frm_CompanyDepartmentID.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_Active.resx">
+      <DependentUpon>frm_Active.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_Exit.de-DE.resx">
+      <DependentUpon>frm_Exit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_Exit.resx">
+      <DependentUpon>frm_Exit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_Scanner.resx">
+      <DependentUpon>Frm_Scanner.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_Update_Tray_Tag.resx">
+      <DependentUpon>Frm_Update_Tray_Tag.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotGridView_2.de-DE.resx">
+      <DependentUpon>PivotGridView_2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotGridView_2.resx">
+      <DependentUpon>PivotGridView_2.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_Form_Tag.aa.resx">
+      <DependentUpon>frm_Form_Tag.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_Form_Tag.de-DE.resx">
+      <DependentUpon>frm_Form_Tag.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_Form_Tag.resx">
+      <DependentUpon>frm_Form_Tag.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_Form_Tray.de-DE.resx">
+      <DependentUpon>frm_Form_Tray.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_Form_Tray.resx">
+      <DependentUpon>frm_Form_Tray.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Start.resx">
+      <DependentUpon>Form_Start.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotGridView_1.de-DE.resx">
+      <DependentUpon>PivotGridView_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotGridView_1.resx">
+      <DependentUpon>PivotGridView_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormStrings.de-DE.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>WinFormStrings.de-DE.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormStrings.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>WinFormStrings.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraReport\XtraReportAll_Carts.resx">
+      <DependentUpon>XtraReportAll_Carts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraReport\XtraReportAll_Containers.resx">
+      <DependentUpon>XtraReportAll_Containers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraReport\XtraReportAll_Trays.resx">
+      <DependentUpon>XtraReportAll_Trays.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraReport\XtraReport_ToDay.resx">
+      <DependentUpon>XtraReport_ToDay.vb</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="CaretagCodeSigningCA.pfx" />
+    <None Include="DataSets\DataSet_Tray.xsc">
+      <DependentUpon>DataSet_Tray.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\DataSet_Tray.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Tray.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSets\DataSet_Tray.xss">
+      <DependentUpon>DataSet_Tray.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\DataSet_Container.xsc">
+      <DependentUpon>DataSet_Container.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\DataSet_Container.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Container.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSets\DataSet_Container.xss">
+      <DependentUpon>DataSet_Container.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\DataSet_Carts.xsc">
+      <DependentUpon>DataSet_Carts.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\DataSet_Carts.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Carts.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSets\DataSet_Carts.xss">
+      <DependentUpon>DataSet_Carts.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\DataSet_Instru.xsc">
+      <DependentUpon>DataSet_Instru.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\DataSet_Instru.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Instru.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSets\DataSet_Instru.xss">
+      <DependentUpon>DataSet_Instru.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\GareTag_Logo_New.jpg" />
+    <None Include="Resources\GareTag_Logo_New.png" />
+    <None Include="Resources\GareTag_Logo_simple.png" />
+    <None Include="Resources\GareTag_Logo_Transfer.png" />
+    <None Include="Resources\TagSymbol - Small.png" />
+    <None Include="Resources\TagSymbol.png" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Resources\GareTag_Logo_Transfer.ico" />
+    <None Include="Resources\Knowledge Hub_TransP.ico" />
+    <None Include="Resources\TagSymbol_Trans.ico" />
+    <None Include="Resources\Knowledge Hub_TransP.tiff" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="DevExpress.Data.v20.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Office.v20.2.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.PivotGrid.v20.2.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Printing.v20.2.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.RichEdit.v20.2.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Utils.v20.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraBars.v20.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraEditors.v20.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraGrid.v20.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraLayout.v20.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraPivotGrid.v20.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraPrinting.v20.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraTreeList.v20.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.Common">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.WinForms">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Knowledge Hub_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TextFile1.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\USB_CAM.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\USB_Camera.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\USB_Camera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scanner.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scanner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="NURAPI.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\World_Map.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Caretag_AutoUpdate\AutoUpdate.csproj">
+      <Project>{25F08821-51CC-0BB5-3558-8414F144CF42}</Project>
+      <Name>AutoUpdate</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Caretag_Check_DLL\Caretag_Check_DLL.csproj">
+      <Project>{039D836E-C19A-0582-141D-55BC65558135}</Project>
+      <Name>Caretag_Check_DLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Caretag_Class\Caretag_Main_Common.csproj">
+      <Project>{0D226ADF-C558-026E-09A7-A03CE3BADC55}</Project>
+      <Name>Caretag_Main_Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Caretag_LDAP\Caretag_LDAP.csproj">
+      <Project>{75EBA3CB-57CE-0083-0CBA-63084D1C9813}</Project>
+      <Name>Caretag_LDAP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Caretag_Localizer\Caretag_Localizer.csproj">
+      <Project>{DF90DC07-0ACB-031C-30F8-28CDB66643D5}</Project>
+      <Name>Caretag_Localizer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Caretag_Login\Caretag_Login.csproj">
+      <Project>{6E0A613E-C096-0E65-07C1-6C7BBF0558D7}</Project>
+      <Name>Caretag_Login</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Caretag_Login_Nordic\Caretag_Login_Nordic.csproj">
+      <Project>{AF18387C-2FA2-0512-00C7-9A8B460299AB}</Project>
+      <Name>Caretag_Login_Nordic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Caretag_RFID\Caretag_RFID.csproj">
+      <Project>{F07CAC75-F2BE-01F3-3468-097E67DDFFAC}</Project>
+      <Name>Caretag_RFID</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Caretag_SQL_Instance\Caretag_SQL_Instance.csproj">
+      <Project>{8B5AEA5A-CB00-0C30-28F9-8F342133D0C5}</Project>
+      <Name>Caretag_SQL_Instance</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Caretag_Welcome\Caretag_Welcome.vbproj">
+      <Project>{44ad74f1-207b-4ca1-9396-a15b9fd2bbc6}</Project>
+      <Name>Caretag_Welcome</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\CheckDotNet_DLL\Caretag_DotNet_DLL.csproj">
+      <Project>{F4D7E640-A25D-04D4-2E32-0159714B9F28}</Project>
+      <Name>Caretag_DotNet_DLL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <UsingTask TaskName="SmartAssembly.MSBuild.Tasks.Build" AssemblyName="SmartAssembly.MSBuild.Tasks, Version=7.0.0.0, Culture=neutral,     PublicKeyToken=7f465a1c156d4d57" />
+  <Target Name="AfterBuild" Condition=" '$(Configuration)' == 'Release' ">
+    <SmartAssembly.MSBuild.Tasks.Build ProjectFile="..\Surgical_TechnicalStation.saproj" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\NurApiDotNet.1.9.16\build\net20\NurApiDotNet.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NurApiDotNet.1.9.16\build\net20\NurApiDotNet.targets'))" />
+    <Error Condition="!Exists('..\packages\NurApi.1.9.26\build\net20\NurApi.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NurApi.1.9.26\build\net20\NurApi.targets'))" />
+    <Error Condition="!Exists('..\packages\DevExpress.Reporting.Core.21.1.5\build\DevExpress.Reporting.Core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\DevExpress.Reporting.Core.21.1.5\build\DevExpress.Reporting.Core.targets'))" />
+  </Target>
+  <Import Project="..\packages\NurApiDotNet.1.9.16\build\net20\NurApiDotNet.targets" Condition="Exists('..\packages\NurApiDotNet.1.9.16\build\net20\NurApiDotNet.targets')" />
+  <Import Project="..\packages\NurApi.1.9.26\build\net20\NurApi.targets" Condition="Exists('..\packages\NurApi.1.9.26\build\net20\NurApi.targets')" />
+  <Import Project="..\packages\DevExpress.Reporting.Core.21.1.5\build\DevExpress.Reporting.Core.targets" Condition="Exists('..\packages\DevExpress.Reporting.Core.21.1.5\build\DevExpress.Reporting.Core.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

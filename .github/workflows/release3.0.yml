@@ -1,0 +1,39 @@
+name: Caretag Release 3.0
+
+on: [workflow_dispatch]
+
+jobs:
+  build-installers:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Setup MSBuild
+        uses: microsoft/setup-msbuild@v1.0.2
+
+      - name: Setup NuGet
+        uses: nuget/setup-nuget@v1
+
+      - name: Restore NuGet packages
+        run:  nuget restore Caretag.sln
+
+      - name: build
+        run:  MSBuild.exe Caretag.sln /t:Rebuild /p:"Configuration=Debug;Platform=Any CPU"
+
+      - name: Building Technical Station Installer
+        run: |
+          "%programfiles(x86)%\Inno Setup 6\iscc.exe" ".conf/setup/TechnicalStation/InnoSetup.iss"
+        shell: cmd
+        
+      - name: Copy Technical Station installer
+        run: cp .conf/setup/output/technical3-setup.exe .conf/setup/TechnicalStation/TechnicalStationChoco/tools/technical3-setup.exe
+
+      - name: Choco pack Technical Station
+        uses: crazy-max/ghaction-chocolatey@v2
+        with:
+          args: pack .conf/setup/TechnicalStation/TechnicalStationChoco/technical3-station.nuspec --version 3.0.5.5
+
+      - name: Choco push Technical Station
+        uses: crazy-max/ghaction-chocolatey@v2
+        with:
+          args: push --source https://f.feedz.io/caretag/caretag-classic/nuget -ApiKey T-QD3ovD5krR1ea1VfNhqoqEcuatMyPnEjK4 technical3-station.3.0.5.5.nupkg

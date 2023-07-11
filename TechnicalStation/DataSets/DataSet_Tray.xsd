@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet_Tray" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Caretag_SurgicalConnectionStringSQL" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Caretag_SurgicalConnectionStringSQL (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.TechnicalStation.Settings.GlobalReference.Default.Caretag_SurgicalConnectionStringSQL" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Trays_In_DatabaseTableAdapter" GeneratorDataComponentClassName="Trays_In_DatabaseTableAdapter" Name="Trays_In_Database" UserDataComponentName="Trays_In_DatabaseTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Caretag_SurgicalConnectionStringSQL (Settings)" DbObjectName="Caretag_Surgical.dbo.Tray_RFID" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        Tray_RFID.*
+FROM            Tray_RFID</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Date_Changed" DataSetColumn="Date_Changed" />
+              <Mapping SourceColumn="EPC_Nr" DataSetColumn="EPC_Nr" />
+              <Mapping SourceColumn="Tray_Contents" DataSetColumn="Tray_Contents" />
+              <Mapping SourceColumn="Tray_LastSeen_Place" DataSetColumn="Tray_LastSeen_Place" />
+              <Mapping SourceColumn="Tray_LastSeen_Date" DataSetColumn="Tray_LastSeen_Date" />
+              <Mapping SourceColumn="Tray_ID" DataSetColumn="Tray_ID" />
+              <Mapping SourceColumn="SEQ_Nr" DataSetColumn="SEQ_Nr" />
+              <Mapping SourceColumn="Description_ID" DataSetColumn="Description_ID" />
+              <Mapping SourceColumn="Description_Text" DataSetColumn="Description_Text" />
+              <Mapping SourceColumn="Tray_InUse" DataSetColumn="Tray_InUse" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet_Tray" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet_Tray" msprop:Generator_UserDSName="DataSet_Tray">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Trays_In_Database" msprop:Generator_TableClassName="Trays_In_DatabaseDataTable" msprop:Generator_TableVarName="tableTrays_In_Database" msprop:Generator_TablePropName="Trays_In_Database" msprop:Generator_RowDeletingName="Trays_In_DatabaseRowDeleting" msprop:Generator_RowChangingName="Trays_In_DatabaseRowChanging" msprop:Generator_RowEvHandlerName="Trays_In_DatabaseRowChangeEventHandler" msprop:Generator_RowDeletedName="Trays_In_DatabaseRowDeleted" msprop:Generator_UserTableName="Trays_In_Database" msprop:Generator_RowChangedName="Trays_In_DatabaseRowChanged" msprop:Generator_RowEvArgName="Trays_In_DatabaseRowChangeEvent" msprop:Generator_RowClassName="Trays_In_DatabaseRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Date_Changed" msprop:Generator_ColumnVarNameInTable="columnDate_Changed" msprop:Generator_ColumnPropNameInRow="Date_Changed" msprop:Generator_ColumnPropNameInTable="Date_ChangedColumn" msprop:Generator_UserColumnName="Date_Changed" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="EPC_Nr" msprop:Generator_ColumnVarNameInTable="columnEPC_Nr" msprop:Generator_ColumnPropNameInRow="EPC_Nr" msprop:Generator_ColumnPropNameInTable="EPC_NrColumn" msprop:Generator_UserColumnName="EPC_Nr" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Tray_Contents" msprop:Generator_ColumnVarNameInTable="columnTray_Contents" msprop:Generator_ColumnPropNameInRow="Tray_Contents" msprop:Generator_ColumnPropNameInTable="Tray_ContentsColumn" msprop:Generator_UserColumnName="Tray_Contents" type="xs:int" minOccurs="0" />
+              <xs:element name="Tray_LastSeen_Place" msprop:Generator_ColumnVarNameInTable="columnTray_LastSeen_Place" msprop:Generator_ColumnPropNameInRow="Tray_LastSeen_Place" msprop:Generator_ColumnPropNameInTable="Tray_LastSeen_PlaceColumn" msprop:Generator_UserColumnName="Tray_LastSeen_Place" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Tray_LastSeen_Date" msprop:Generator_ColumnVarNameInTable="columnTray_LastSeen_Date" msprop:Generator_ColumnPropNameInRow="Tray_LastSeen_Date" msprop:Generator_ColumnPropNameInTable="Tray_LastSeen_DateColumn" msprop:Generator_UserColumnName="Tray_LastSeen_Date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Tray_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnTray_ID" msprop:Generator_ColumnPropNameInRow="Tray_ID" msprop:Generator_ColumnPropNameInTable="Tray_IDColumn" msprop:Generator_UserColumnName="Tray_ID" type="xs:long" />
+              <xs:element name="SEQ_Nr" msprop:Generator_ColumnVarNameInTable="columnSEQ_Nr" msprop:Generator_ColumnPropNameInRow="SEQ_Nr" msprop:Generator_ColumnPropNameInTable="SEQ_NrColumn" msprop:Generator_UserColumnName="SEQ_Nr" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Description_ID" msprop:Generator_ColumnVarNameInTable="columnDescription_ID" msprop:Generator_ColumnPropNameInRow="Description_ID" msprop:Generator_ColumnPropNameInTable="Description_IDColumn" msprop:Generator_UserColumnName="Description_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="Description_Text" msprop:Generator_ColumnVarNameInTable="columnDescription_Text" msprop:Generator_ColumnPropNameInRow="Description_Text" msprop:Generator_ColumnPropNameInTable="Description_TextColumn" msprop:Generator_UserColumnName="Description_Text" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Tray_InUse" msprop:Generator_ColumnVarNameInTable="columnTray_InUse" msprop:Generator_ColumnPropNameInRow="Tray_InUse" msprop:Generator_ColumnPropNameInTable="Tray_InUseColumn" msprop:Generator_UserColumnName="Tray_InUse" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

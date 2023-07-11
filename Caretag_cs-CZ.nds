@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<desktop lang="cs-CZ" column="TInfoColumn" row="CheckBoxTrayLocked.Text">
+  <project>
+  </project>
+  <column class="TInfoColumn" width="109"/>
+  <column class="TContextColumn" width="546"/>
+  <column class="TOriginalColumn" width="546"/>
+  <column class="TTranslationColumn" width="546" id="cs-CZ"/>
+  <column class="TTranslationStateColumn" width="136"/>
+  <report/>
+</desktop>

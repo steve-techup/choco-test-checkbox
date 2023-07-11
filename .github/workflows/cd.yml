@@ -1,0 +1,100 @@
+name: Caretag Installers
+
+on: [workflow_dispatch]
+
+jobs:
+  build-installers:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup MSBuild
+        uses: microsoft/setup-msbuild@v1.0.2
+
+      - name: Setup NuGet
+        uses: nuget/setup-nuget@v1
+
+      - name: Restore NuGet packages
+        run:  nuget restore Caretag.sln
+
+      - name: Inject Git Version for Admin
+        run: |
+          powershell -ExecutionPolicy ByPass -File  "AdminStation/BuildScripts/InjectGitVersion.ps1" "AdminStation"
+        shell: cmd
+
+      - name: Inject Git Version for Technical Station
+        run: |
+          powershell -ExecutionPolicy ByPass -File  "TechnicalStation/BuildScripts/InjectGitVersion.ps1" "TechnicalStation"
+        shell: cmd
+
+      - name: Inject Git Version for Packing Station
+        run: |
+          powershell -ExecutionPolicy ByPass -File  "PackingStation/BuildScripts/InjectGitVersion.ps1" "PackingStation"
+        shell: cmd
+
+      - name: Inject Git Version for Checkbox
+        run: |
+          powershell -ExecutionPolicy ByPass -File  "CheckboxStation/BuildScripts/InjectGitVersion.ps1" "CheckboxStation"
+        shell: cmd
+
+      - name: Inject Git Version for Service Station
+        run: |
+          powershell -ExecutionPolicy ByPass -File  "ServiceStation/BuildScripts/InjectGitVersion.ps1" "ServiceStation"
+        shell: cmd
+
+      - name: build
+        run:  MSBuild.exe Caretag.sln /t:Rebuild /p:"Configuration=Debug;Platform=Any CPU"
+
+      - name: Building Admin Station Installer
+        run: |
+          "%programfiles(x86)%\Inno Setup 6\iscc.exe" ".conf/setup/AdminStation/InnoSetup.iss"
+        shell: cmd
+
+      - name: Upload Admin Station Installer
+        uses: actions/upload-artifact@v2
+        with:
+          name: AdminStationInstaller
+          path: .conf/setup/output/AdminStationInstaller.exe
+
+      - name: Building Technical Station Installer
+        run: |
+          "%programfiles(x86)%\Inno Setup 6\iscc.exe" ".conf/setup/TechnicalStation/InnoSetup.iss"
+        shell: cmd
+
+      - name: Upload Technical Station Installer
+        uses: actions/upload-artifact@v2
+        with:
+          name: TechnicalStationInstaller
+          path: .conf/setup/output/TechnicalStationInstaller.exe
+
+      - name: Building Packing Station Installer
+        run: |
+          "%programfiles(x86)%\Inno Setup 6\iscc.exe" ".conf/setup/PackingStation/InnoSetup.iss"
+        shell: cmd
+
+      - name: Upload Packing Station Installer
+        uses: actions/upload-artifact@v2
+        with:
+          name: PackingStationInstaller
+          path: .conf/setup/output/PackingStationInstaller.exe
+
+      - name: Building Checkbox Installer
+        run: |
+          "%programfiles(x86)%\Inno Setup 6\iscc.exe" ".conf/setup/CheckboxStation/InnoSetup.iss"
+        shell: cmd
+
+      - name: Upload Checkbox Installer
+        uses: actions/upload-artifact@v2
+        with:
+          name: CheckboxInstaller
+          path: .conf/setup/output/CheckboxInstaller.exe
+
+      - name: Building Service Station Installer
+        run: |
+          "%programfiles(x86)%\Inno Setup 6\iscc.exe" ".conf/setup/ServiceStation/InnoSetup.iss"
+        shell: cmd
+      - name: Upload Service Station Installer
+        uses: actions/upload-artifact@v2
+        with:
+          name: ServiceInstaller
+          path: .conf/setup/output/ServiceInstaller.exe

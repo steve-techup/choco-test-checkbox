@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<desktop lang="cs-CZ" column="TInfoColumn" row="settingsToolStripMenuItem.Text">
+  <project>
+  </project>
+  <node>Caretag.sln</node>
+  <node>PackingStation\PackingStation.csproj</node>
+  <column class="TInfoColumn" width="79"/>
+  <column class="TContextColumn" width="195"/>
+  <column class="TOriginalColumn" width="471"/>
+  <column class="TTranslationColumn" width="361" id="cs-CZ"/>
+  <column class="TTranslationStateColumn" width="256"/>
+  <view item="TResXNode" view="TWindowsFormsOriginalView" index="1"/>
+  <exchange>
+    <value class="TExchangeItem" filename="C:\Git\Caretag\Caretag_Soluling_cs-CZ.ntp">
+      <filter translationstatuses="[tsNotTranslated,tsBestGuess,tsAutoTranslated,tsForReview,tsComplete]"/>
+      <languages>
+        <language id="cs-CZ"/>
+      </languages>
+    </value>
+  </exchange>
+  <report/>
+</desktop>

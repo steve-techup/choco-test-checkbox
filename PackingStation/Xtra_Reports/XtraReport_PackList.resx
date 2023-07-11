@@ -1,0 +1,588 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="DevExpress.Data.v22.1" name="DevExpress.Data.v22.1, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="XrLabel2.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v22.1">
+    <value>68.37505, 3.000005</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="XrLabel2.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>138.5417, 18</value>
+  </data>
+  <data name="XrLabel2.Text" xml:space="preserve">
+    <value>XrLabel2</value>
+  </data>
+  <data name="XrLabel2.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v22.1">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="XrLabel7.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v22.1">
+    <value>0, 3.000005</value>
+  </data>
+  <data name="XrLabel7.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>68.37505, 18</value>
+  </data>
+  <data name="XrLabel7.Text" xml:space="preserve">
+    <value>XrLabel7</value>
+  </data>
+  <data name="XrLabel7.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v22.1">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="XrLabel8.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v22.1">
+    <value>206.9167, 3.000005</value>
+  </data>
+  <data name="XrLabel8.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>332.5727, 18</value>
+  </data>
+  <data name="XrLabel8.Text" xml:space="preserve">
+    <value>XrLabel8</value>
+  </data>
+  <data name="XrLabel8.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v22.1">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="XrLabel9.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v22.1">
+    <value>539.4893, 3.000005</value>
+  </data>
+  <data name="XrLabel9.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>403.2456, 18</value>
+  </data>
+  <data name="XrLabel9.Text" xml:space="preserve">
+    <value>[D]</value>
+  </data>
+  <data name="XrLabel9.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v22.1">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="XrLabel10.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v22.1">
+    <value>942.7349, 3.000005</value>
+  </data>
+  <data name="XrLabel10.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>120.2651, 18</value>
+  </data>
+  <data name="XrLabel10.Text" xml:space="preserve">
+    <value>XrLabel10</value>
+  </data>
+  <data name="XrLabel10.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v22.1">
+    <value>MiddleLeft</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Detail.HeightF" type="System.Single, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="Detail.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v22.1">
+    <value>TopLeft</value>
+  </data>
+  <data name="XrLabel13.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v22.1">
+    <value>68.37505, 11.99999</value>
+  </data>
+  <data name="XrLabel13.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>138.5417, 18</value>
+  </data>
+  <data name="XrLabel13.Text" xml:space="preserve">
+    <value>Description ID</value>
+  </data>
+  <data name="XrLabel3.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v22.1">
+    <value>4.375013, 11.99999</value>
+  </data>
+  <data name="XrLabel3.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>64.00003, 18</value>
+  </data>
+  <data name="XrLabel3.Text" xml:space="preserve">
+    <value>Number</value>
+  </data>
+  <data name="XrLabel4.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v22.1">
+    <value>206.9167, 12</value>
+  </data>
+  <data name="XrLabel4.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>251.8223, 18</value>
+  </data>
+  <data name="XrLabel4.Text" xml:space="preserve">
+    <value>Description Name</value>
+  </data>
+  <data name="XrLine1.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v22.1">
+    <value>0, 0</value>
+  </data>
+  <data name="XrLine1.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>1063, 12</value>
+  </data>
+  <data name="XrLine2.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v22.1">
+    <value>0, 29.91667</value>
+  </data>
+  <data name="XrLine2.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>1063, 6.458313</value>
+  </data>
+  <data name="GroupHeaderBand2.HeightF" type="System.Single, mscorlib">
+    <value>36.37498</value>
+  </data>
+  <data name="XrLabel20.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt, style=Bold</value>
+  </data>
+  <data name="XrLabel20.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v22.1">
+    <value>382.0679, 6.00001</value>
+  </data>
+  <data name="XrLabel20.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>78.03085, 23</value>
+  </data>
+  <data name="XrLabel20.Text" xml:space="preserve">
+    <value>Valid Until :</value>
+  </data>
+  <data name="XrLabel20.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v22.1">
+    <value>MiddleRight</value>
+  </data>
+  <data name="XrLabel21.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v22.1">
+    <value>460.0987, 6.00001</value>
+  </data>
+  <data name="XrLabel21.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>243.75, 23</value>
+  </data>
+  <data name="XrLabel21.Text" xml:space="preserve">
+    <value>XrLabel21</value>
+  </data>
+  <data name="XrLabel21.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v22.1">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="XrLabel1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt, style=Bold</value>
+  </data>
+  <data name="XrLabel1.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v22.1">
+    <value>4.375013, 6.00001</value>
+  </data>
+  <data name="XrLabel1.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>56.25, 23</value>
+  </data>
+  <data name="XrLabel1.Text" xml:space="preserve">
+    <value>Printet :</value>
+  </data>
+  <data name="XrLabel1.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v22.1">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="XrPageInfo1.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v22.1">
+    <value>60.62501, 6.00001</value>
+  </data>
+  <data name="XrPageInfo1.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>263, 23</value>
+  </data>
+  <data name="XrPageInfo1.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v22.1">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="XrPageInfo1.TextFormatString" xml:space="preserve">
+    <value>{0:yyyy MMM dd    HH:mm:ss}</value>
+  </data>
+  <data name="XrPageInfo2.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v22.1">
+    <value>942.735, 6.00001</value>
+  </data>
+  <data name="XrPageInfo2.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>104.2649, 23</value>
+  </data>
+  <data name="XrPageInfo2.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v22.1">
+    <value>MiddleRight</value>
+  </data>
+  <data name="XrPageInfo2.TextFormatString" xml:space="preserve">
+    <value>Page {0} of {1}</value>
+  </data>
+  <data name="PageFooterBand1.HeightF" type="System.Single, mscorlib">
+    <value>42.54163</value>
+  </data>
+  <data name="XrLabel_CostCenter.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt</value>
+  </data>
+  <data name="XrLabel_CostCenter.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v22.1">
+    <value>126.0886, 130.6651</value>
+  </data>
+  <data name="XrLabel_CostCenter.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>936.9114, 22.99999</value>
+  </data>
+  <data name="XrLabel_CostCenter.Text" xml:space="preserve">
+    <value>XrLabel_CostCenter</value>
+  </data>
+  <data name="XrLabel_CostCenter.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v22.1">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="XrLabel18.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="XrLabel18.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v22.1">
+    <value>3.20193, 130.6651</value>
+  </data>
+  <data name="XrLabel18.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>116.9567, 22.99999</value>
+  </data>
+  <data name="XrLabel18.Text" xml:space="preserve">
+    <value>Cost Center :</value>
+  </data>
+  <data name="XrLabel18.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v22.1">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="XrLabelExtra.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt</value>
+  </data>
+  <data name="XrLabelExtra.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v22.1">
+    <value>126.0886, 155.6575</value>
+  </data>
+  <data name="XrLabelExtra.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>936.9114, 44.30087</value>
+  </data>
+  <data name="XrLabelExtra.Text" xml:space="preserve">
+    <value>XrLabelExtra</value>
+  </data>
+  <data name="XrLabelExtra.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v22.1">
+    <value>TopLeft</value>
+  </data>
+  <data name="XrCheckBox1.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v22.1">
+    <value>189.7499, 60.37499</value>
+  </data>
+  <data name="XrCheckBox1.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>35.25006, 23</value>
+  </data>
+  <data name="XrCheckBox1.Text" xml:space="preserve">
+    <value>View_Tray_PackList.Hide_Tray</value>
+  </data>
+  <data name="XrCheckBox1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="XrLabel_Hidden.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 14.25pt, style=Bold</value>
+  </data>
+  <data name="XrLabel_Hidden.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>Red</value>
+  </data>
+  <data name="XrLabel_Hidden.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v22.1">
+    <value>45.41664, 60.37499</value>
+  </data>
+  <data name="XrLabel_Hidden.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>126.0417, 39.58334</value>
+  </data>
+  <data name="XrLabel_Hidden.Text" xml:space="preserve">
+    <value>Is Hidden</value>
+  </data>
+  <data name="XrLabel_Hidden.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v22.1">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="XrLabelDescription.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v22.1">
+    <value>236.0418, 60.37499</value>
+  </data>
+  <data name="XrLabelDescription.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>816.5415, 52.08334</value>
+  </data>
+  <data name="XrLabelDescription.Text" xml:space="preserve">
+    <value>XrLabelDescription</value>
+  </data>
+  <data name="XrLabel14.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 24pt</value>
+  </data>
+  <data name="XrLabel14.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v22.1">
+    <value>236.2501, 6.00001</value>
+  </data>
+  <data name="XrLabel14.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>816.7499, 43</value>
+  </data>
+  <data name="XrLabel14.Text" xml:space="preserve">
+    <value>XrLabel14</value>
+  </data>
+  <data name="XrLabel11.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 24pt, style=Bold</value>
+  </data>
+  <data name="XrLabel11.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v22.1">
+    <value>6.00001, 6.00001</value>
+  </data>
+  <data name="XrLabel11.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>224.4583, 43</value>
+  </data>
+  <data name="XrLabel11.Text" xml:space="preserve">
+    <value>PackList for :</value>
+  </data>
+  <data name="ReportHeaderBand1.HeightF" type="System.Single, mscorlib">
+    <value>209.9583</value>
+  </data>
+  <data name="XrPageInfo4.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v22.1">
+    <value>494.2499, 27</value>
+  </data>
+  <data name="XrPageInfo4.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>568.75, 23</value>
+  </data>
+  <data name="XrPageInfo4.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v22.1">
+    <value>MiddleRight</value>
+  </data>
+  <data name="XrPageInfo3.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v22.1">
+    <value>0, 27</value>
+  </data>
+  <data name="XrPageInfo3.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>279.1667, 23</value>
+  </data>
+  <data name="XrPageInfo3.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v22.1">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="XrPageInfo3.TextFormatString" xml:space="preserve">
+    <value>{0:yyyy-MMM-dd HH:mm}</value>
+  </data>
+  <data name="TopMarginBand1.HeightF" type="System.Single, mscorlib">
+    <value>60</value>
+  </data>
+  <data name="BottomMarginBand1.HeightF" type="System.Single, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="XrLabel17.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="XrLabel17.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v22.1">
+    <value>45.41664, 43.83831</value>
+  </data>
+  <data name="XrLabel17.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>157.5817, 21.12</value>
+  </data>
+  <data name="XrLabel17.Text" xml:space="preserve">
+    <value>Department Name :</value>
+  </data>
+  <data name="XrLabel17.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v22.1">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="XrLabel16.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt</value>
+  </data>
+  <data name="XrLabel16.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v22.1">
+    <value>206.5, 41.9583</value>
+  </data>
+  <data name="XrLabel16.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>840.4999, 23</value>
+  </data>
+  <data name="XrLabel16.Text" xml:space="preserve">
+    <value>XrLabel16</value>
+  </data>
+  <data name="XrLabel16.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v22.1">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="XrLabel15.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="XrLabel15.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v22.1">
+    <value>206.7083, 17.79664</value>
+  </data>
+  <data name="XrLabel15.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>198.9891, 21.12</value>
+  </data>
+  <data name="XrLabel15.Text" xml:space="preserve">
+    <value>Number of Instruments :</value>
+  </data>
+  <data name="XrLabel15.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v22.1">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="XrLine3.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v22.1">
+    <value>0, 0</value>
+  </data>
+  <data name="XrLine3.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>1063, 11.29169</value>
+  </data>
+  <data name="XrLabel6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt</value>
+  </data>
+  <data name="XrLabel6.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v22.1">
+    <value>405.6974, 17.79166</value>
+  </data>
+  <data name="XrLabel6.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>121.5001, 21.125</value>
+  </data>
+  <data name="XrLabel6.Text" xml:space="preserve">
+    <value>XrLabel6</value>
+  </data>
+  <data name="XrLabel6.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v22.1">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="XrLabel12.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="XrLabel12.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v22.1">
+    <value>553.5109, 17.79665</value>
+  </data>
+  <data name="XrLabel12.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>184.665, 21.12</value>
+  </data>
+  <data name="XrLabel12.Text" xml:space="preserve">
+    <value>Types of Instruments :</value>
+  </data>
+  <data name="XrLabel12.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v22.1">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="XrLabel5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt</value>
+  </data>
+  <data name="XrLabel5.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v22.1">
+    <value>738.1759, 17.79665</value>
+  </data>
+  <data name="XrLabel5.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>103.7917, 20.41168</value>
+  </data>
+  <data name="XrLabel5.Text" xml:space="preserve">
+    <value>XrLabel5</value>
+  </data>
+  <data name="XrLabel5.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v22.1">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="GroupFooter1.HeightF" type="System.Single, mscorlib">
+    <value>64.95833</value>
+  </data>
+  <data name="Parameter1.Description" xml:space="preserve">
+    <value>Parameter1</value>
+  </data>
+  <metadata name="DataSet_Tray1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="View_Tray_PackListTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 56</value>
+  </metadata>
+  <data name="XrLine4.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v22.1">
+    <value>132.5417, 87.91666</value>
+  </data>
+  <data name="XrLine4.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>797.9165, 2.083332</value>
+  </data>
+  <data name="XrLabel19.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 12pt, style=Italic</value>
+  </data>
+  <data name="XrLabel19.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v22.1">
+    <value>132.5417, 90.00002</value>
+  </data>
+  <data name="XrLabel19.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>305.2084, 22.99999</value>
+  </data>
+  <data name="XrLabel19.Text" xml:space="preserve">
+    <value>Signature</value>
+  </data>
+  <data name="ReportFooter.HeightF" type="System.Single, mscorlib">
+    <value>113</value>
+  </data>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>de-DE</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.Landscape" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.Margins" type="System.Drawing.Printing.Margins, System.Drawing">
+    <value>45, 61, 60, 39</value>
+  </data>
+  <data name="$this.PageHeight" type="System.Int32, mscorlib">
+    <value>827</value>
+  </data>
+  <data name="$this.PageWidth" type="System.Int32, mscorlib">
+    <value>1169</value>
+  </data>
+  <data name="$this.PaperKind" type="System.Drawing.Printing.PaperKind, System.Drawing">
+    <value>A4</value>
+  </data>
+</root>

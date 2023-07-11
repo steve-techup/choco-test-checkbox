@@ -1,0 +1,529 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="settingsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Nastavení</value>
+  </data>
+  <data name="TotalNumber.Text" xml:space="preserve">
+    <value>Štítek2</value>
+  </data>
+  <data name="tsslStatus.Text" xml:space="preserve">
+    <value>Připraveno...</value>
+  </data>
+  <data name="tsslReadPause.Text" xml:space="preserve">
+    <value>Pauza</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Balicí stanice</value>
+  </data>
+  <data name="LabelPackedInstr.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="Label_Taken_ID.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="chooseTaskPage.Text" xml:space="preserve">
+    <value>Zvolte zadání</value>
+  </data>
+  <data name="scanTrayPage.Text" xml:space="preserve">
+    <value>Skenovat síto</value>
+  </data>
+  <data name="selectTrayTypeBackButton.Text" xml:space="preserve">
+    <value>Zpět</value>
+  </data>
+  <data name="groupBox4.Text" xml:space="preserve">
+    <value>Vyberte typ síta</value>
+  </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>Všeobecné informace</value>
+  </data>
+  <data name="selectTrayTypePage.Text" xml:space="preserve">
+    <value>Vyberte typ síta</value>
+  </data>
+  <data name="ButtonPackingNext.Text" xml:space="preserve">
+    <value>Další</value>
+  </data>
+  <data name="cancelPackingPackTrayPage.Text" xml:space="preserve">
+    <value>Zrušit</value>
+  </data>
+  <data name="packTrayBackButton.Text" xml:space="preserve">
+    <value>Zpět</value>
+  </data>
+  <data name="groupBox6.Text" xml:space="preserve">
+    <value>Všeobecné informace</value>
+  </data>
+  <data name="groupBox5.Text" xml:space="preserve">
+    <value>Zabalit síto</value>
+  </data>
+  <data name="packTrayPage.Text" xml:space="preserve">
+    <value>Zabalit síto</value>
+  </data>
+  <data name="nextContainerPageButton.Text" xml:space="preserve">
+    <value>Další</value>
+  </data>
+  <data name="cancelPackingContainerPageButton.Text" xml:space="preserve">
+    <value>Zrušit</value>
+  </data>
+  <data name="containerPageBackButton.Text" xml:space="preserve">
+    <value>Zpět</value>
+  </data>
+  <data name="containerGroupbox.Text" xml:space="preserve">
+    <value>Zabalit kontejner</value>
+  </data>
+  <data name="groupBox7.Text" xml:space="preserve">
+    <value>Všeobecné informace</value>
+  </data>
+  <data name="packContainerPage.Text" xml:space="preserve">
+    <value>Zabalit kontejner</value>
+  </data>
+  <data name="costCenterNextButton.Text" xml:space="preserve">
+    <value>Další</value>
+  </data>
+  <data name="cancelPackingCostCenterPageButton.Text" xml:space="preserve">
+    <value>Zrušit</value>
+  </data>
+  <data name="backCostCenterButton.Text" xml:space="preserve">
+    <value>Zpět</value>
+  </data>
+  <data name="groupBox8.Text" xml:space="preserve">
+    <value>Nákladové středisko</value>
+  </data>
+  <data name="groupBox9.Text" xml:space="preserve">
+    <value>Všeobecné informace</value>
+  </data>
+  <data name="costCenterPage.Text" xml:space="preserve">
+    <value>Nákladové středisko</value>
+  </data>
+  <data name="saveButton.Text" xml:space="preserve">
+    <value>Uložit</value>
+  </data>
+  <data name="cancelPackingExtraInfoPageButton.Text" xml:space="preserve">
+    <value>Zrušit</value>
+  </data>
+  <data name="backExtraInfoPageButton.Text" xml:space="preserve">
+    <value>Zpět</value>
+  </data>
+  <data name="groupBox15.Text" xml:space="preserve">
+    <value>Doplňující informace</value>
+  </data>
+  <data name="groupBox16.Text" xml:space="preserve">
+    <value>Všeobecné informace</value>
+  </data>
+  <data name="extraInfoTabPage.Text" xml:space="preserve">
+    <value>Zvláštní informace</value>
+  </data>
+  <data name="reportAndFinalizePage.Text" xml:space="preserve">
+    <value>Report a dokončit</value>
+  </data>
+  <data name="instrumentLookupPage.Text" xml:space="preserve">
+    <value>Vyhledávání nástroje</value>
+  </data>
+  <data name="viewPackedTrays.Text" xml:space="preserve">
+    <value>viewPackedTrays</value>
+  </data>
+  <data name="packedTrayReportPage.Text" xml:space="preserve">
+    <value>Report o zabalených sítech</value>
+  </data>
+  <data name="logoutButton.Text" xml:space="preserve">
+    <value>Odhlásit se</value>
+  </data>
+  <data name="groupBox17.Text" xml:space="preserve">
+    <value>Nabídka</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Kliknutím na jedno z tlačítek v nabídce vyberte níže uvedené zadání. </value>
+  </data>
+  <assembly alias="DevExpress.Data.v22.1" name="DevExpress.Data.v22.1, Version=22.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+  <data name="viewPackedTraysMenuButton.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v22.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjIyLjEsIFZlcnNpb249MjIuMS43LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURldkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAMoGAAAC77u/PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgdmlld0JveD0iMCAwIDExMS41NiAxMjIuODgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgaWQ9IsOacm92ZcWIXzEiPg0KICA8ZGVmcz4NCiAgICA8c3R5bGU+LmNscy0xe2ZpbGwtcnVsZTpldmVub2RkO308L3N0eWxlPg0KICA8L2RlZnM+DQogIDxwYXRoIGQ9Ik03OS44Niw2NS42N2EyNSwyNSwwLDAsMSwyMC44OSwzOC42MmwxMC44MSwxMS43OC03LjQ2LDYuODFMOTMuNjgsMTExLjQyQTI1LDI1LDAsMSwxLDc5Ljg2LDY1LjY3Wk0xOSw2NS45M2EyLjc1LDIuNzUsMCwwLDEtMi42LTIuODRBMi43MSwyLjcxLDAsMCwxLDE5LDYwLjI1SDUyLjYxYTIuNzYsMi43NiwwLDAsMSwyLjYsMi44NCwyLjcxLDIuNzEsMCwwLDEtMi42LDIuODRaTTgzLjM2LDE3LjI3aDkuMzJhNi42OSw2LjY5LDAsMCwxLDYuNjYsNi42NXYzMC45Yy0uMiwyLjA5LTUuMzEsMi4xMS01Ljc1LDBWMjMuOTJhLjkzLjkzLDAsMCwwLS4yNy0uNjcuOTEuOTEsMCwwLDAtLjY3LS4yN0g4My4zMlY1NC44MmMtLjQ5LDEuODktNC43NSwyLjE4LTUuNzEsMFY2LjY2QTEsMSwwLDAsMCw3Ny4zNCw2YS45My45MywwLDAsMC0uNjctLjI3aC03MEEuOTMuOTMsMCwwLDAsNiw2YTEsMSwwLDAsMC0uMjcuNjhWODUuNzlhMSwxLDAsMCwwLC4yNy42OC45My45MywwLDAsMCwuNjcuMjdINDQuNzRjMi44OC4yOSwzLDUuMjcsMCw1LjcxSDIxLjY2djEwLjYxYS45Mi45MiwwLDAsMCwuOTQuOTRINDQuNzRjMi4wOS4yNCwyLjc2LDUsMCw1LjcxSDIyLjY0YTYuNTQsNi41NCwwLDAsMS00LjctMiw2LjYzLDYuNjMsMCwwLDEtMi00LjdWOTIuNDVINi42NkE2LjY5LDYuNjksMCwwLDEsMCw4NS43OVY2LjY2QTYuNTQsNi41NCwwLDAsMSwyLDJhNi42MSw2LjYxLDAsMCwxLDQuNy0yaDcwYTYuNTQsNi41NCwwLDAsMSw0LjcsMiw2LjY1LDYuNjUsMCwwLDEsMiw0LjdWMTcuMjdaTTE4LjkzLDI2LjQ0YTIuNzYsMi43NiwwLDAsMS0yLjYtMi44NCwyLjcxLDIuNzEsMCwwLDEsMi42LTIuODRINjMuODZhMi43NCwyLjc0LDAsMCwxLDIuNiwyLjg0LDIuNzEsMi43MSwwLDAsMS0yLjYsMi44NFptMCwxOS43NGEyLjc1LDIuNzUsMCwwLDEtMi42LTIuODMsMi43MSwyLjcxLDAsMCwxLDIuNi0yLjg0SDYzLjg2YTIuNzQsMi43NCwwLDAsMSwyLjYsMi44NCwyLjcsMi43LDAsMCwxLTIuNiwyLjgzWm01Ni42OCw0My4xYy0uNDEtLjY1LTEuMTktMS41NS0xLjE5LTIuMzJhMS4yNiwxLjI2LDAsMCwxLC44NC0xLjEzYzAtLjY1LS4wNy0xLjMxLS4wNy0yLDAtLjM5LDAtLjc4LDAtMS4xNmEyLjUsMi41LDAsMCwxLC4xMy0uNTksNC4xLDQuMSwwLDAsMSwxLjg1LTIuMzQsNC42LDQuNiwwLDAsMSwxLS40OGMuNjMtLjIzLjMzLTEuMjQsMS0xLjI1YTkuMTYsOS4xNiwwLDAsMSw1LjM1LDIuNTEsMy43OCwzLjc4LDAsMCwxLDEuMDYsMi41NGwtLjA2LDIuODVhLjkzLjkzLDAsMCwxLC42OC41OWMuMjIuODktLjcxLDItMS4xNCwyLjczcy0xLjkzLDIuNDYtMS45MywyLjQ4YS41OC41OCwwLDAsMCwuMTMuMzNjMi4zOCwzLjI2LDkuMzUuNzQsOS4zNSw3LjIzSDY4YzAtNi40OSw3LTQsOS4zNS03LjIzYS43Mi43MiwwLDAsMCwuMTctLjM0cy0xLjc2LTIuMi0xLjkyLTIuNDVabTQuMjctMTguNEExOS44NiwxOS44NiwwLDEsMSw2MCw5MC43NCwxOS44NiwxOS44NiwwLDAsMSw3OS44OCw3MC44OFoiIGNsYXNzPSJjbHMtMSIgLz4NCjwvc3ZnPgs=</value>
+  </data>
+  <data name="viewPackedTraysMenuButton.Text" xml:space="preserve">
+    <value>Protokol o zabalených sítech</value>
+  </data>
+  <data name="instrumentLookupMenuButton.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v22.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjIyLjEsIFZlcnNpb249MjIuMS43
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAALwGAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAxMjIuODggMTExLjIyIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3
+        LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsi
+        IHhtbDpzcGFjZT0icHJlc2VydmUiIGlkPSJMYXllcl8xIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6
+        bmV3IDAgMCAxMjIuODggMTExLjIyIj4NCiAgPGc+DQogICAgPHBhdGggZD0iTTExOS4xLDMuNTJsMC4x
+        OCwwLjE4YzIuNCwyLjQsMy42LDUuNTYsMy42LDguNzJjMCwzLjE2LTEuMiw2LjMyLTMuNiw4LjcybC01
+        Mi4yLDUyLjJjLTAuNCwwLjQtMC45NywwLjUxLTEuNDcsMC4zNCBsLTI0LTYuNzdjLTAuNzUtMC4yMS0x
+        LjE5LTAuOTktMC45OC0xLjc0YzAuMDctMC4yNCwwLjE5LTAuNDUsMC4zNi0wLjYybDYxLjAzLTYxLjAz
+        YzIuMzUtMi4zNSw1LjQ0LTMuNTIsOC41NC0zLjUyIEMxMTMuNjUsMCwxMTYuNzUsMS4xOCwxMTkuMSwz
+        LjUyTDExOS4xLDMuNTJ6IE01OS41NCw1OC4zNGMtMC43NS0wLjE5LTEuMi0wLjk2LTEuMDEtMS43MmMw
+        LjE5LTAuNzUsMC45Ni0xLjIsMS43Mi0xLjAxbDkuMjYsMi40IGMwLjc1LDAuMTksMS4yLDAuOTYsMS4w
+        MSwxLjcyYy0wLjE5LDAuNzUtMC45NiwxLjItMS43MiwxLjAxTDU5LjU0LDU4LjM0TDU5LjU0LDU4LjM0
+        eiBNNjQuOTYsNTIuOTJjLTAuNzUtMC4yLTEuMi0wLjk2LTEuMDEtMS43MiBjMC4yLTAuNzUsMC45Ni0x
+        LjIsMS43Mi0xLjAxbDkuMjYsMi40YzAuNzUsMC4yLDEuMiwwLjk2LDEuMDEsMS43MmMtMC4xOSwwLjc1
+        LTAuOTYsMS4yMS0xLjcyLDEuMDFMNjQuOTYsNTIuOTJMNjQuOTYsNTIuOTJ6IE03MC4zNyw0Ny41Yy0w
+        Ljc1LTAuMi0xLjItMC45Ni0xLjAxLTEuNzJjMC4yLTAuNzUsMC45Ni0xLjIsMS43Mi0xLjAxbDkuMjYs
+        Mi40YzAuNzUsMC4yLDEuMiwwLjk2LDEuMDEsMS43MiBjLTAuMiwwLjc1LTAuOTYsMS4yLTEuNzIsMS4w
+        MUw3MC4zNyw0Ny41TDcwLjM3LDQ3LjV6IE03NS43OSw0Mi4wOGMtMC43NS0wLjE5LTEuMi0wLjk2LTEu
+        MDEtMS43MmMwLjE5LTAuNzUsMC45Ni0xLjIsMS43Mi0xLjAxIGw5LjI2LDIuNGMwLjc1LDAuMTksMS4y
+        LDAuOTYsMS4wMSwxLjcyYy0wLjIsMC43NS0wLjk2LDEuMi0xLjcyLDEuMDFMNzUuNzksNDIuMDhMNzUu
+        NzksNDIuMDh6IE04MS4yMSwzNi42NyBjLTAuNzUtMC4xOS0xLjItMC45Ni0xLjAxLTEuNzJjMC4xOS0w
+        Ljc1LDAuOTYtMS4yLDEuNzItMS4wMWw5LjI2LDIuNGMwLjc1LDAuMTksMS4yLDAuOTYsMS4wMSwxLjcy
+        IGMtMC4xOSwwLjc1LTAuOTYsMS4yLTEuNzIsMS4wMUw4MS4yMSwzNi42N0w4MS4yMSwzNi42N3ogTTM4
+        LjAxLDcyLjY3bDguNjIsMi40NUwyMi4yOSw5OS40N2w2LjA0LTAuNTNsMjIuNi0yMi42bDguNDEsMi4z
+        OSBsLTI0LjE5LDI0LjE5Yy02LjU2LDcuOS0xOS40Nyw5LjI2LTM1LjE1LDcuNzdMMzguMDEsNzIuNjdM
+        MzguMDEsNzIuNjd6IE0xMTcuMjgsNS43bC0wLjE4LTAuMThjLTEuOC0xLjgtNC4xNy0yLjctNi41NC0y
+        LjcgYy0yLjM3LDAtNC43NCwwLjktNi41NCwyLjdMNDQuNyw2NC44NWwyMC45Nyw1LjkxbDUxLjYxLTUx
+        LjYxYzEuODUtMS44NSwyLjc3LTQuMjgsMi43Ny02LjcyQzEyMC4wNSw5Ljk5LDExOS4xMyw3LjU1LDEx
+        Ny4yOCw1LjcgTDExNy4yOCw1Ljd6IiAvPg0KICA8L2c+DQo8L3N2Zz4L
+</value>
+  </data>
+  <data name="instrumentLookupMenuButton.Text" xml:space="preserve">
+    <value>Vyhledávání nástroje</value>
+  </data>
+  <data name="packTrayMenuButton.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v22.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+      <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjIyLjEsIFZlcnNpb249MjIuMS43
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAACADAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHdpZHRoPSIxMjIuODgzcHgiIGhlaWdodD0iMTA0LjI5M3B4IiB2aWV3Qm94PSIwIDAgMTIyLjg4MyAx
+        MDQuMjkzIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1s
+        bnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIGVuYWJsZS1iYWNrZ3JvdW5kPSJu
+        ZXcgMCAwIDEyMi44ODMgMTA0LjI5MyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgaWQ9IkxheWVyXzEiPg0K
+        ICA8Zz4NCiAgICA8cGF0aCBkPSJNNC44NzgsMTA0LjI5M2gxMTMuMTI1YzIuNjgyLDAsNC44NzktMi4y
+        MTEsNC44NzktNC45MTRsLTAuMTE1LTM4Ljg0IGMtMC4wMDYtMi42NDUtMC4zODctNC4wMTItMS4zMzgt
+        Ni40OTJMMTAyLjM3OSw0LjM4QzEwMS41MTYsMi4xMzIsMTAwLjQwOCwwLDk3Ljk5OCwwSDI1LjcyOWMt
+        Mi40MSwwLTMuNDg4LDIuMTQ0LTQuMzgsNC4zOCBMMS4yMiw1NC44NjVjLTAuOTY2LDIuNDI0LTEuMDYz
+        LDMuODA5LTEuMDcyLDYuNDM4TDAsOTkuMzc5QzAsMTAyLjA4MiwyLjE5OCwxMDQuMjkzLDQuODc4LDEw
+        NC4yOTNMNC44NzgsMTA0LjI5M3ogTTEwNy40OTYsNTcuNTE4SDgyLjExMWwtNy43NTgsMTUuNjE3SDQ4
+        LjYzM2wtNy44NjItMTUuNjE3SDE1LjE5NWwxNy45MjItNDEuOTQzaDU3LjE4NEwxMDcuNDk2LDU3LjUx
+        OEwxMDcuNDk2LDU3LjUxOHoiIGNsaXAtcnVsZT0iZXZlbk9kZCIgZmlsbC1ydWxlPSJldmVuT2RkIiAv
+        Pg0KICA8L2c+DQo8L3N2Zz4L
+    </value>
+  </data>
+  <data name="packTrayMenuButton.Text" xml:space="preserve">
+    <value>Zabalit síto</value>
+  </data>
+  <data name="groupBox18.Text" xml:space="preserve">
+    <value>Všeobecné informace</value>
+  </data>
+  <data name="scanTrayBackButton.Text" xml:space="preserve">
+    <value>Zpět</value>
+  </data>
+  <data name="scanTrayTabDescription.Text" xml:space="preserve">
+    <value>Pro spuštění úlohy klikněte na tlačítko "Skenovat síto". Umístěte RFID tag síta na čtečku. Po rozpoznání síta bude systém automaticky pokračovat. </value>
+  </data>
+  <data name="groupBox3.Text" xml:space="preserve">
+    <value>Skenovat síto</value>
+  </data>
+  <data name="buttonScanTray.Text" xml:space="preserve">
+    <value>Skenovat síto</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Všeobecné informace</value>
+  </data>
+  <data name="startPackingButton.Text" xml:space="preserve">
+    <value>Spustit balení</value>
+  </data>
+  <data name="Label_Tray.Text" xml:space="preserve">
+    <value>Popis:</value>
+  </data>
+  <data name="selectTrayTypeDescription.Text" xml:space="preserve">
+    <value>V rozbalovacím seznamu níže vyberte typ síta a po dokončení klikněte na tlačítko "Spustit balení".</value>
+  </data>
+  <data name="exportTrayButton.Text" xml:space="preserve">
+    <value>Exportovat do Excelu</value>
+  </data>
+  <data name="totalInstrumentsLabel.Text" xml:space="preserve">
+    <value>Celkem:</value>
+  </data>
+  <data name="trayNameLabel.Text" xml:space="preserve">
+    <value>[Název síta]</value>
+  </data>
+  <data name="trayLockedCheckbox.Text" xml:space="preserve">
+    <value>Uzamčeno</value>
+  </data>
+  <data name="scanContainerButton.Text" xml:space="preserve">
+    <value>Skenovat kontejner</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Pro naskenování kontejneru klikněte níže</value>
+  </data>
+  <data name="groupBox13.Text" xml:space="preserve">
+    <value>Komentář (nepovinný)</value>
+  </data>
+  <data name="groupBox12.Text" xml:space="preserve">
+    <value>Nákladová položka</value>
+  </data>
+  <data name="groupBox11.Text" xml:space="preserve">
+    <value>Nákladové středisko</value>
+  </data>
+  <data name="groupBox10.Text" xml:space="preserve">
+    <value>Nákladové středisko pro síto</value>
+  </data>
+  <data name="noCostCenterRadioButton.Text" xml:space="preserve">
+    <value>Žádné nákladové středisko</value>
+  </data>
+  <data name="chooseCostCenterRadioButton.Text" xml:space="preserve">
+    <value>Vyberte nákladové středisko</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Sterilizační indikátor č. šarže</value>
+  </data>
+  <data name="groupBox14.Text" xml:space="preserve">
+    <value>Dokončit balení</value>
+  </data>
+  <data name="reportFinishButton.Text" xml:space="preserve">
+    <value>Ukončit</value>
+  </data>
+  <data name="Property.HeaderText" xml:space="preserve">
+    <value>Majetek</value>
+  </data>
+  <data name="Value.HeaderText" xml:space="preserve">
+    <value>Hodnota</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Štítky k tisku</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Balení je dokončeno</value>
+  </data>
+  <data name="groupBox19.Text" xml:space="preserve">
+    <value>Všeobecné informace</value>
+  </data>
+  <data name="instrumentLookupBackToMenuButton.Text" xml:space="preserve">
+    <value>Zpět</value>
+  </data>
+  <data name="groupBox20.Text" xml:space="preserve">
+    <value>Vyhledávání nástroje</value>
+  </data>
+  <data name="instrumentNameAndIDLabel.Text" xml:space="preserve">
+    <value>[název a ID nástroje]</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>Balicí seznamy obsahující nástroj</value>
+  </data>
+  <data name="NameColumn.HeaderText" xml:space="preserve">
+    <value>Název</value>
+  </data>
+  <data name="DescriptionColumn.HeaderText" xml:space="preserve">
+    <value>Popis</value>
+  </data>
+  <data name="ChangedColumn.HeaderText" xml:space="preserve">
+    <value>Změněno</value>
+  </data>
+  <data name="HiddenColumn.HeaderText" xml:space="preserve">
+    <value>Skryto</value>
+  </data>
+  <data name="DeletedColumn.HeaderText" xml:space="preserve">
+    <value>Smazáno</value>
+  </data>
+  <data name="DescriptionIDColumn.HeaderText" xml:space="preserve">
+    <value>Popis_ID</value>
+  </data>
+  <data name="TrayLockColumn.HeaderText" xml:space="preserve">
+    <value>TrayLock</value>
+  </data>
+  <data name="CostIDColumn.HeaderText" xml:space="preserve">
+    <value>CostID</value>
+  </data>
+  <data name="SpecialTextColumn.HeaderText" xml:space="preserve">
+    <value>SpecialText</value>
+  </data>
+  <data name="scanInstrumentButton.Text" xml:space="preserve">
+    <value>Skenovat nástroj</value>
+  </data>
+  <data name="groupBox21.Text" xml:space="preserve">
+    <value>Všeobecné informace</value>
+  </data>
+  <data name="viewPackedTraysBackToMenuButton.Text" xml:space="preserve">
+    <value>Zpět</value>
+  </data>
+  <data name="groupBox22.Text" xml:space="preserve">
+    <value>Protokol o zabalených sítech</value>
+  </data>
+  <data name="packingLogViewDetailsButton.Text" xml:space="preserve">
+    <value>Zobrazit podrobnosti</value>
+  </data>
+  <data name="id.Caption" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="timestamp.Caption" xml:space="preserve">
+    <value>Časová značka</value>
+  </data>
+  <data name="trayDescription.Caption" xml:space="preserve">
+    <value>Popis síta</value>
+  </data>
+  <data name="lotNumber.Caption" xml:space="preserve">
+    <value>Steri číslo šarže</value>
+  </data>
+  <data name="packedLocked.Caption" xml:space="preserve">
+    <value>Zabaleno Uzamčeno</value>
+  </data>
+  <data name="totalInstruments.Caption" xml:space="preserve">
+    <value>Nástroje celkem</value>
+  </data>
+  <data name="totalInstrumentTypes.Caption" xml:space="preserve">
+    <value>Typy nástrojů celkem</value>
+  </data>
+  <data name="totalPackedManually.Caption" xml:space="preserve">
+    <value>Ručně zabaleno celkem</value>
+  </data>
+  <data name="packedByUser.Caption" xml:space="preserve">
+    <value>Baleno uživatelem</value>
+  </data>
+  <data name="detailsColumn.Caption" xml:space="preserve">
+    <value>Podrobnosti</value>
+  </data>
+  <data name="groupBox23.Text" xml:space="preserve">
+    <value>Všeobecné informace</value>
+  </data>
+  <data name="trayReportBackButton.Text" xml:space="preserve">
+    <value>Zpět</value>
+  </data>
+  <data name="groupBox24.Text" xml:space="preserve">
+    <value>Report o sítu</value>
+  </data>
+  <data name="trayReportPrintButton.Text" xml:space="preserve">
+    <value>Tisknout</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Majetek</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn2.HeaderText" xml:space="preserve">
+    <value>Hodnota</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>Štítky k tisku</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Stávající balení</value>
+  </data>
+  <data name="groupBox25.Text" xml:space="preserve">
+    <value>Obsah síta</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn3.HeaderText" xml:space="preserve">
+    <value>Název nástroje</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn4.HeaderText" xml:space="preserve">
+    <value>Množství</value>
+  </data>
+  <data name="$this.ToolTip" xml:space="preserve">
+    <value>Zpomalte text programu!</value>
+  </data>
+</root>
