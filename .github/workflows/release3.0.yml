@@ -28,6 +28,10 @@ jobs:
       #- name: Restore NuGet packages
       #  run:  nuget restore
 
+      - name: Remove github NuGet source
+        run: dotnet nuget remove  source github --configfile NuGet.Config
+  
+
       - name: Auth NuGet
         run: dotnet nuget add source https://nuget.pkg.github.com/caretag/index.json --name github1 --username steve_techup --password ${{ secrets.GITHUB_TOKEN }} --configfile NuGet.Config
   
