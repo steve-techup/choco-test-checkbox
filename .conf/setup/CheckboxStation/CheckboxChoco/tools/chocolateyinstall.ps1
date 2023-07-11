@@ -9,19 +9,22 @@
 $pp = Get-PackageParameters
 
 # prompts to users to ask questions during installation.
-if (!$pp['stationName']) { $pp['stationName'] = Read-Host 'Station name?' }
+if (!$pp['stationName']) { $pp['stationName'] = Read-Host 'Station ID?' }
 # set a default if not passed
 if (!$pp['stationName']) { $pp['stationName'] = 'Default Station' }
-if (!$pp['connectStr']) { $pp['connectStr'] = Read-Host 'SQL Server Connection String?' }
+if (!$pp['ApiUrl']) { $pp['ApiUrl'] = Read-Host 'API URL?' }
 # set a default if not passed
-if (!$pp['connectStr']) { $pp['connectStr'] = 'CONNECTION STRING NOT SET!' }
+if (!$pp['apiUrl']) { $pp['apiUrl'] = 'API URL NOT SET!' }
+if (!$pp['elasticUrl']) { $pp['elasticUrl'] = Read-Host 'Elastic URL?' }
+# set a default if not passed
+if (!$pp['elasticUrl']) { $pp['elasticUrl'] = 'Elastic URL NOT SET!' }
 
 $ErrorActionPreference = 'Stop'; # stop on all errors
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 # Internal packages (organizations) or software that has redistribution rights (community repo)
 # - Use `Install-ChocolateyInstallPackage` instead of `Install-ChocolateyPackage`
 #   and put the binaries directly into the tools folder (we call it embedding)
-$fileLocation = Join-Path $toolsDir 'CheckboxInstaller.exe'
+$fileLocation = Join-Path $toolsDir 'checkbox3-setup'
 # If embedding binaries increase total nupkg size to over 1GB, use share location or download from urls
 #$fileLocation = '\\SHARE_LOCATION\to\INSTALLER_FILE'
 # Community Repo: Use official urls for non-redist binaries or redist where total package size is over 200MB
@@ -43,7 +46,7 @@ $packageArgs = @{
   # OTHERS
   # Uncomment matching EXE type (sorted by most to least common)
   #silentArgs   = '/S'           # NSIS
-  silentArgs   = "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- /connectStr=""{0}"" /stationName=""{1}""" -f $pp['connectStr'], $pp['stationName'] # Inno Setup
+  silentArgs   = "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- /apiUrl=""{0}"" /stationName=""{1}"" /elasticUrl=""{2}""" -f $pp['apiUrl'], $pp['stationName'], $pp['elasticUrl'] # Inno Setup
   #silentArgs   = '/s'           # InstallShield
   #silentArgs   = '/s /v"/qn"'   # InstallShield with MSI
   #silentArgs   = '/s'           # Wise InstallMaster

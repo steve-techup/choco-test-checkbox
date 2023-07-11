@@ -1,6 +1,14 @@
 name: Caretag Release 3.0
 
-on: [workflow_dispatch]
+on:
+  push:
+    tags:
+      - '[0-9]+.[0-9]+.[0-9]+'
+      - '[0-9]+.[0-9]+.[0-9]+-RC[0-9]+'
+
+# Required for "Upload Packing Station installer to release"
+permissions:
+  contents: write
 
 jobs:
   build-installers:
@@ -17,23 +25,44 @@ jobs:
       - name: Restore NuGet packages
         run:  nuget restore Caretag.sln
 
-      - name: build
+      - name: Inject Git Version for Checkbox Station
+        run: |
+          powershell -ExecutionPolicy ByPass -File  "Common/Main/BuildScripts/InjectGitVersion.ps1" "CheckboxStation"
+        shell: cmd
+
+      #- name: Inject Git Version for Technical Station
+      #  run: |
+      #    powershell -ExecutionPolicy ByPass -File  "Common/Main/BuildScripts/InjectGitVersion.ps1" "TechnicalStation"
+      #  shell: cmd
+
+      - name: Build Solution
         run:  MSBuild.exe Caretag.sln /t:Rebuild /p:"Configuration=Debug;Platform=Any CPU"
 
-      - name: Building Technical Station Installer
+      - name: Building Checkbox Station Station Installer
         run: |
-          "%programfiles(x86)%\Inno Setup 6\iscc.exe" ".conf/setup/TechnicalStation/InnoSetup.iss"
+          "%programfiles(x86)%\Inno Setup 6\iscc.exe" ".conf/setup/CheckboxStation/InnoSetup.iss"
         shell: cmd
         
-      - name: Copy Technical Station installer
-        run: cp .conf/setup/output/technical3-setup.exe .conf/setup/TechnicalStation/TechnicalStationChoco/tools/technical3-setup.exe
+      - name: Copy Checkbox Station installer
+        run: cp .conf/setup/output/checkbox3-setup.exe .conf/setup/CheckboxStation/CheckboxStationChoco/tools/checkbox3-setup.exe
 
-      - name: Choco pack Technical Station
+      - name: Upload Checkbox Station installer to release ${{ github.ref_name}}
+        uses: svenstaro/upload-release-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          file: .conf/setup/_output/checkbox3-setup.exe
+          asset_name: checkbox3-setup.exe
+          tag: ${{ github.ref }}
+          overwrite: true
+
+
+      - name: Choco pack Checkbox Station
         uses: crazy-max/ghaction-chocolatey@v2
         with:
-          args: pack .conf/setup/TechnicalStation/TechnicalStationChoco/technical3-station.nuspec --version 3.0.5.5
+          args: pack .conf/setup/CheckboxStation/CheckboxStationChoco/checkbox-station-3.nuspec --version ${{ github.ref_name }}
 
       - name: Choco push Technical Station
         uses: crazy-max/ghaction-chocolatey@v2
         with:
-          args: push --source https://f.feedz.io/caretag/caretag-classic/nuget -ApiKey T-QD3ovD5krR1ea1VfNhqoqEcuatMyPnEjK4 technical3-station.3.0.5.5.nupkg
+          args: push --source https://f.feedz.io/techup/techup-nuget/nuget -ApiKey T-sCScU7h5FmBg9IWnESIapd5RA0mwXFnlc packing-station-3.${{github.ref_name}}.nupkg

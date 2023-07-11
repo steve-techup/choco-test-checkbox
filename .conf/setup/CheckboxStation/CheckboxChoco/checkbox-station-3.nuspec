@@ -49,14 +49,15 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <tags>checkbox</tags>
     <summary>The Checkbox validates packing lists</summary>
     <description>
-    The Checkbox validates packing lists
+		The Checkbox validates packing lists
 
-    * `/connectStr:` - SQL Server Connection string
-    * `/stationName:` - The name of the station
-    
-    To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
-    To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
-  </description>
+		* `/apiUrl:` - Caretag API URL
+		* `/stationName:` - The name of the station
+		* `/elasticUrl:` - Elastic instance URL
+
+		To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
+		To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
+	</description>
     <!-- <releaseNotes>__REPLACE_OR_REMOVE__MarkDown_Okay</releaseNotes> -->
     <!-- =============================== -->
 

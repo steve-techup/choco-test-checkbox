@@ -25,10 +25,15 @@ begin
   
   // Set initial status of next button. 
   // Should be disabled when page is first loaded, but should be enabled if user clicked back.
-  if CurPageID = DBConnectPage.ID then
-    WizardForm.NextButton.Enabled := bIsNextEnabled; 
-  if CurPageID = StationNamePage.ID then
-    WizardForm.NextButton.Enabled := StationNamePageINE; 
+  if CurPageID = StationIDPage.ID then
+    WizardForm.NextButton.Enabled := StationIDPageINE; 
+
+  if CurPageID = ApiUrlPage.ID then
+    WizardForm.NextButton.Enabled := ApiUrlPageINE; 
+
+  if CurPageID = ElasticUrlPage.ID then
+    WizardForm.NextButton.Enabled := ElasticUrlPageINE; 
+
   if WizardSilent then 
   begin
     if CurPageID = wpReady then
@@ -60,20 +65,21 @@ procedure CurStepChanged(CurStep: TSetupStep);
 begin
   if CurStep=ssPostInstall then
   begin
-    //Run_Database_Changes();
-    DBConnectPage_SaveDatabaseSettings();
-    StationNamePage_SaveStationNameInSettings();
+    StationIDPage_SaveStationIDInSettings();
+    ApiUrlPage_SaveApiUrlInSettings();
+    ElasticUrlPage_SaveApiUrlInSettings();
     PerformCleanUp();
   end;
 end;
 
 procedure InitializeWizard();
 var
- DBConnectPageID: Integer;
- StationNamePageID: Integer;
-
+ StationIDPageID: Integer;   
+ ApiUrlPageID: Integer;
+ ElasticUrlPageID: Integer;
 begin
-  DBConnectPageID := DBConnectPage_CreatePage(wpLicense);
-  StationNamePageID := StationNamePage_CreatePage(DBConnectPageID);
+  StationIDPageID := StationIDPage_CreatePage();   
+  ApiUrlPageID := ApiUrlPage_CreatePage();
+  ElasticUrlPageID := ElasticUrlPage_CreatePage();
 end;
 

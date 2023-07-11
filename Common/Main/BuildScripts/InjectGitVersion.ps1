@@ -24,8 +24,8 @@ catch
 }
 
 # Define file variables
-$assemblyFile = $args[0] + "\AssemblyInfo.cs";
-$templateFile = $args[0] + "\AssemblyInfo_Template.cs";
+$assemblyFile = $args[0] + "\Properties\AssemblyInfo.cs";
+$templateFile =  $args[0] + "\Properties\AssemblyInfo_Template.cs";
 
 # Read template file, overwrite place holders with git version info
 $newAssemblyContent = Get-Content $templateFile |

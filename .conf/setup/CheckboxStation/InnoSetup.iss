@@ -6,12 +6,14 @@
 ;Space needed 214Mb + 15% overhead
 ExtraDiskSpaceRequired=243000000
 
-#include "..\common\InnoSetup.Global.CleanUp.iss"
-#include "..\common\InnoSetup.JSONRoutines.iss"
-#include "..\common\InnoSetup.Global.iss"
-#include "..\common\InnoSetup.DatabaseConnection.iss"
-#include "..\common\InnoSetup.StationName.iss"
-#include "..\common\InnoSetup.Global.Events.iss"
+
+#include "..\_common\InnoSetup.Global.CleanUp.iss"
+#include "..\_common\InnoSetup.JSONRoutines.iss"
+#include "..\_common\InnoSetup.Global.iss"
+#include "..\_common\InnoSetup.StationName.iss"    
+#include "..\_common\InnoSetup.ApiUrl.iss"
+#include "..\_common\InnoSetup.ElasticUrl.iss"
+#include "..\_common\InnoSetup.Global.Events.iss"
 
 
 [Setup]
@@ -21,7 +23,7 @@ ExtraDiskSpaceRequired=243000000
 
 ; Finish with a single }
 AppId={{E7AD725B-2D77-434D-BC8E-94C3FAC6D605}
-OutputBaseFilename=CheckboxInstaller
+OutputBaseFilename=checkbox3-setup
 
 [Files]
 Source: "..\..\..\CheckboxStation\bin\Debug\*"; DestDir: "{app}"; Permissions: users-modify; Flags: ignoreversion recursesubdirs

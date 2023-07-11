@@ -13,7 +13,7 @@
 $ErrorActionPreference = 'Stop'; # stop on all errors
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
-  softwareName  = 'TechnicalStationInstaller*'  #part or all of the Display Name as you see it in Programs and Features. It should be enough to be unique
+  softwareName  = 'CheckboxStationInstaller*'  #part or all of the Display Name as you see it in Programs and Features. It should be enough to be unique
   fileType      = 'EXE' #only one of these: MSI or EXE (ignore MSU for now)
   # MSI
   silentArgs    = "/qn /norestart"
