@@ -32,7 +32,7 @@ jobs:
         run: dotnet nuget remove  source github --configfile NuGet.Config
   
       - name: Auth NuGet
-        run: dotnet nuget add source https://nuget.pkg.github.com/caretag/index.json --name github1 --username steve_techup --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text  --configfile NuGet.Config
+        run: dotnet nuget add source https://nuget.pkg.github.com/caretag/index.json --name github1 --username steve_techup --password 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 --store-password-in-clear-text  --configfile NuGet.Config
   
       - name: Echo token  
         run: |
@@ -40,7 +40,7 @@ jobs:
         shell: cmd
 
       - name: Restore NuGet Packages
-        run: dotnet restore Caretag.sln --configfile NuGet.Config
+        run: dotnet restore Caretag.sln
 
       - name: Inject Git Version for Checkbox Station
         run: |
