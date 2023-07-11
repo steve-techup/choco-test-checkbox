@@ -19,14 +19,20 @@ jobs:
       - name: Setup MSBuild
         uses: microsoft/setup-msbuild@v1.0.2
 
-      - name: Setup NuGet
-        uses: nuget/setup-nuget@v1 
-        env:
-            NUGET_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #- name: Setup NuGet
+      #  uses: nuget/setup-nuget@v1 
+      #  env:
+      #      NUGET_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 
-      - name: Restore NuGet packages
-        run:  nuget restore
+      #- name: Restore NuGet packages
+      #  run:  nuget restore
+
+      - name: Auth NuGet
+        run: dotnet nuget add source https://nuget.pkg.github.com/caretag/index.json --name github1 --username steve_techup --password ${{ secrets.GITHUB_TOKEN }} --configfile NuGet.Config
+  
+      - name: Restore NuGet Packages
+        run: dotnet restore Caretag.sln
 
       - name: Inject Git Version for Checkbox Station
         run: |
