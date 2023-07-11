@@ -22,7 +22,7 @@ jobs:
       - name: Setup NuGet
         uses: nuget/setup-nuget@v1 
         env:
-            NUGET_AUTH_TOKEN: ${{ secrets.pat }}
+            NUGET_AUTH_TOKEN: ${{ secrets.pattest }}
 
 
       - name: Restore NuGet packages
