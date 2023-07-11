@@ -23,7 +23,7 @@ jobs:
         uses: nuget/setup-nuget@v1
 
       - name: Restore NuGet packages
-        run:  nuget restore Caretag.sln
+        run:  nuget restore Caretag.sln /p:RestoreConfigFile=NuGet.config
 
       - name: Inject Git Version for Checkbox Station
         run: |
