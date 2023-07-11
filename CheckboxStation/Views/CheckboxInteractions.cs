@@ -11,7 +11,8 @@ namespace CheckboxStation.Views
         public Interaction<Unit, NewOperationViewModel> NewOperation { get; } = new(RxApp.MainThreadScheduler);
 
         public Interaction<CheckInViewModel, Unit> CheckIn { get; } = new(RxApp.MainThreadScheduler);
-        //public Interaction<>
+        public Interaction<CheckboxViewModel, Unit> ChooseOperation { get; } = new(RxApp.MainThreadScheduler);
+        public Interaction<CheckboxViewModel, Unit> ConfirmCheckIn { get; } = new(RxApp.MainThreadScheduler);
 
         public virtual void Setup()
         {
@@ -29,7 +30,19 @@ namespace CheckboxStation.Views
                 interaction.SetOutput(Unit.Default);
             });
 
+            ChooseOperation.RegisterHandler(interaction =>
+            {
+                var chooseOperationForm = new ChooseOperationForm(interaction.Input);
+                chooseOperationForm.ShowDialog();
+                interaction.SetOutput(Unit.Default);
+            });
 
+            ConfirmCheckIn.RegisterHandler(interaction =>
+            {
+                var confirmCheckIn = new ConfirmCheckIn(interaction.Input);
+                confirmCheckIn.ShowDialog();
+                interaction.SetOutput(Unit.Default);
+            });
         }
     }
 }

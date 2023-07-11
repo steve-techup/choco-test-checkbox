@@ -9,7 +9,7 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>TechnicalStation</RootNamespace>
     <AssemblyName>Technical_Station</AssemblyName>
-    <ApplicationIcon>Resources\Knowledge Hub_TransP.ico</ApplicationIcon>
+    <ApplicationIcon>Resources\CaretagApplicationIcon.ico</ApplicationIcon>
     <StartupObject>TechnicalStation.Program</StartupObject>
     <ManifestCertificateThumbprint>652ADE1393A7055E61D379683EFF224516CBF913</ManifestCertificateThumbprint>
     <ManifestKeyFile>CaretagCodeSigningCA.pfx</ManifestKeyFile>
@@ -158,12 +158,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Configuration\TechnicalStationAppSettings.cs" />
+    <Compile Include="Configuration\TechnicalStationConfig.cs" />
     <Compile Include="Forms\ProgramInstrument.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\ProgramInstrument.Designer.cs">
       <DependentUpon>ProgramInstrument.cs</DependentUpon>
     </Compile>
+    <Compile Include="Infrastructure\ApiErrorDetails.cs" />
+    <Compile Include="Infrastructure\AssetDetailsItem.cs" />
     <Compile Include="Infrastructure\DiExtensions.cs" />
     <Compile Include="ApplicationEvents.cs" />
     <Compile Include="DataSets\DataSet_Tray.Designer.cs">
@@ -196,7 +199,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\ApiWrapper.cs" />
+    <Compile Include="Services\ClassicWrapper.cs" />
     <Compile Include="Services\EPCService.cs" />
+    <Compile Include="Services\IDataRepository.cs" />
     <Compile Include="WinFormStrings.de-DE.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -231,6 +237,9 @@
     <Compile Include="XtraReport\XtraReport_ToDay.cs">
       <SubType>Component</SubType>
     </Compile>
+    <EmbeddedResource Include="Forms\ProgramInstrument.cs-CZ.resx">
+      <DependentUpon>ProgramInstrument.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\ProgramInstrument.resx">
       <DependentUpon>ProgramInstrument.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -242,6 +251,9 @@
       <CustomToolNamespace>TechnicalStation.My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormStrings.cs-CZ.resx">
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="WinFormStrings.de-DE.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -413,6 +425,10 @@
       <Project>{f57d2810-bec8-490d-bfdd-3cc3980f938c}</Project>
       <Name>RFIDAbstractionLayer</Name>
     </ProjectReference>
+    <ProjectReference Include="..\OnScreenKeyboard\OnScreenKeyboard.csproj">
+      <Project>{56d092c2-daa7-4bae-812b-bfb42d53c090}</Project>
+      <Name>OnScreenKeyboard</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <UsingTask TaskName="SmartAssembly.MSBuild.Tasks.Build" AssemblyName="SmartAssembly.MSBuild.Tasks, Version=7.0.0.0, Culture=neutral,     PublicKeyToken=7f465a1c156d4d57" />
@@ -434,6 +450,9 @@
     <JsonFiles Include="$(ProjectDir)\*.json" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Caretag.Contracts">
+      <Version>1.0.81</Version>
+    </PackageReference>
     <PackageReference Include="DevExpress.ExpressApp.PivotGrid">
       <Version>22.1.7</Version>
     </PackageReference>
@@ -454,20 +473,14 @@
     <PackageReference Include="Microsoft.Extensions.Hosting">
       <Version>7.0.0</Version>
     </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Logging">
+      <Version>7.0.0</Version>
+    </PackageReference>
     <PackageReference Include="NurApi">
       <Version>1.9.28</Version>
     </PackageReference>
     <PackageReference Include="NurApiDotNet">
       <Version>1.9.17</Version>
-    </PackageReference>
-    <PackageReference Include="Serilog.Settings.Configuration">
-      <Version>3.4.0</Version>
-    </PackageReference>
-    <PackageReference Include="Serilog.Sinks.Console">
-      <Version>4.1.0</Version>
-    </PackageReference>
-    <PackageReference Include="Serilog.Sinks.File">
-      <Version>5.0.0</Version>
     </PackageReference>
     <PackageReference Include="Z.EntityFramework.Plus.EF6">
       <Version>7.18.3</Version>
@@ -475,6 +488,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\beep_ok.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CaretagApplicationIcon.ico" />
+    <None Include="Resources\CaretagApplicationIcon.ico" />
   </ItemGroup>
   <Target Name="CopyJsonFiles" AfterTargets="Build">
     <Message Text="Executing CopyJsonFiles task" Importance="High" />

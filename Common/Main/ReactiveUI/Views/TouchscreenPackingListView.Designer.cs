@@ -32,6 +32,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.DataGridViewInstruments = new System.Windows.Forms.DataGridView();
             this.manualImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.AssetTypeId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.quantityManuallyPackedColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.QuantityRenderedColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.InstrumentDescriptionColumnt = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -54,6 +55,7 @@
             this.DataGridViewInstruments.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DataGridViewInstruments.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.manualImageColumn,
+            this.AssetTypeId,
             this.quantityManuallyPackedColumn,
             this.QuantityRenderedColumn,
             this.InstrumentDescriptionColumnt,
@@ -66,7 +68,7 @@
             this.CanPackManually});
             this.DataGridViewInstruments.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DataGridViewInstruments.Location = new System.Drawing.Point(0, 0);
-            this.DataGridViewInstruments.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.DataGridViewInstruments.Margin = new System.Windows.Forms.Padding(2);
             this.DataGridViewInstruments.MultiSelect = false;
             this.DataGridViewInstruments.Name = "DataGridViewInstruments";
             this.DataGridViewInstruments.RowHeadersVisible = false;
@@ -75,7 +77,7 @@
             this.DataGridViewInstruments.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DataGridViewInstruments.ShowEditingIcon = false;
             this.DataGridViewInstruments.ShowRowErrors = false;
-            this.DataGridViewInstruments.Size = new System.Drawing.Size(636, 438);
+            this.DataGridViewInstruments.Size = new System.Drawing.Size(477, 356);
             this.DataGridViewInstruments.TabIndex = 89;
             this.DataGridViewInstruments.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridViewInstruments_CellClick);
             this.DataGridViewInstruments.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridViewInstruments_CellContentClick);
@@ -89,16 +91,23 @@
             // 
             // manualImageColumn
             // 
-            this.manualImageColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.manualImageColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.manualImageColumn.DataPropertyName = "ManualImageColumnValue";
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.manualImageColumn.DefaultCellStyle = dataGridViewCellStyle2;
-            this.manualImageColumn.HeaderText = "Manual";
+            this.manualImageColumn.HeaderText = "";
             this.manualImageColumn.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.manualImageColumn.MinimumWidth = 6;
+            this.manualImageColumn.MinimumWidth = 40;
             this.manualImageColumn.Name = "manualImageColumn";
             this.manualImageColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.manualImageColumn.Width = 57;
+            this.manualImageColumn.Width = 40;
+            // 
+            // AssetTypeId
+            // 
+            this.AssetTypeId.DataPropertyName = "AssetTypeId";
+            this.AssetTypeId.HeaderText = "AssetTypeId";
+            this.AssetTypeId.Name = "AssetTypeId";
+            this.AssetTypeId.Visible = false;
             // 
             // quantityManuallyPackedColumn
             // 
@@ -116,7 +125,6 @@
             this.QuantityRenderedColumn.MinimumWidth = 6;
             this.QuantityRenderedColumn.Name = "QuantityRenderedColumn";
             this.QuantityRenderedColumn.ReadOnly = true;
-            this.QuantityRenderedColumn.Width = 125;
             // 
             // InstrumentDescriptionColumnt
             // 
@@ -135,16 +143,17 @@
             this.DescriptionIdColumn.MinimumWidth = 6;
             this.DescriptionIdColumn.Name = "DescriptionIdColumn";
             this.DescriptionIdColumn.ReadOnly = true;
-            this.DescriptionIdColumn.Width = 118;
+            this.DescriptionIdColumn.Width = 97;
             // 
             // InstrumentVendorColumn
             // 
+            this.InstrumentVendorColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.InstrumentVendorColumn.DataPropertyName = "InstrumentVendor";
-            this.InstrumentVendorColumn.HeaderText = "Vendor";
+            this.InstrumentVendorColumn.HeaderText = "Brand";
             this.InstrumentVendorColumn.MinimumWidth = 6;
             this.InstrumentVendorColumn.Name = "InstrumentVendorColumn";
             this.InstrumentVendorColumn.ReadOnly = true;
-            this.InstrumentVendorColumn.Width = 200;
+            this.InstrumentVendorColumn.Width = 60;
             // 
             // StatusColumn
             // 
@@ -163,7 +172,7 @@
             this.QuantityColumn.Name = "QuantityColumn";
             this.QuantityColumn.ReadOnly = true;
             this.QuantityColumn.Visible = false;
-            this.QuantityColumn.Width = 144;
+            this.QuantityColumn.Width = 119;
             // 
             // PackedInTrayColumn
             // 
@@ -195,12 +204,12 @@
             // 
             // TouchscreenPackingListView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.DataGridViewInstruments);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "TouchscreenPackingListView";
-            this.Size = new System.Drawing.Size(636, 438);
+            this.Size = new System.Drawing.Size(477, 356);
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewInstruments)).EndInit();
             this.ResumeLayout(false);
 
@@ -210,6 +219,7 @@
 
         private System.Windows.Forms.DataGridView DataGridViewInstruments;
         private System.Windows.Forms.DataGridViewImageColumn manualImageColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn AssetTypeId;
         private System.Windows.Forms.DataGridViewTextBoxColumn quantityManuallyPackedColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn QuantityRenderedColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn InstrumentDescriptionColumnt;

@@ -108,6 +108,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "NewOperationForm";
             this.ShowInTaskbar = false;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.NewOperationForm_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.NewOperationForm_FormClosed);
             this.Panel1.ResumeLayout(false);
             this.Panel1.PerformLayout();
             this.ResumeLayout(false);

@@ -210,16 +210,6 @@ namespace PackingStation.My.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon Knowledge_Hub_TransP {
-            get {
-                object obj = ResourceManager.GetObject("Knowledge_Hub_TransP", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
         /// </summary>
         internal static DevExpress.Utils.Svg.SvgImage logout_line_icon {

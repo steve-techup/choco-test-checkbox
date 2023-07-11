@@ -2,19 +2,19 @@
 using System.Resources;
 using Caretag_Class.ReactiveUI.Services;
 using Main.Repositories.UnitOfWork;
-using Serilog;
+using Microsoft.Extensions.Logging;
 using Surgical_Admin.Interactions;
 
 namespace Main.ReactiveUI.Interactions
 {
     public class CommonInteractionsFactory
     {
-        private readonly ILogger _logger;
+        private readonly ILogger<CommonInteractions> _logger;
         private readonly ResourceManager _resourceManager;
         private readonly LoginUnitOfWorkFactory _loginUnitOfWorkFactory;
         private readonly ReactiveCommandService _reactiveCommandService;
 
-        public CommonInteractionsFactory(ILogger logger, ResourceManager resourceManager, 
+        public CommonInteractionsFactory(ILogger<CommonInteractions> logger, ResourceManager resourceManager,
             LoginUnitOfWorkFactory loginUnitOfWorkFactory)
         {
             _logger = logger;

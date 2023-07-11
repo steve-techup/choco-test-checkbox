@@ -1,7 +1,10 @@
 ﻿using System;
+using System.Linq;
 using System.Windows.Forms;
 using CheckboxStation.ViewModels;
 using DynamicData.Binding;
+using Main.Extensions;
+using OnScreenKeyboard;
 using ReactiveUI;
 
 namespace CheckboxStation.Views
@@ -37,6 +40,25 @@ namespace CheckboxStation.Views
                 if (!showForm)
                     Close();
             });
+
+            foreach (var control in ControlExtensions.GetAllControlsRecusrvive<TextBox>(this).Where(c => !c.ReadOnly))
+            {
+                OskUiController.Instance.AddControl(control);
+            }
+        }
+
+        private void NewOperationForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (OSK.Instance.IsRunning)
+                OSK.Instance.HideKeyboard();
+        }
+
+        private void NewOperationForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            foreach (var control in ControlExtensions.GetAllControlsRecusrvive<TextBox>(this).Where(c => !c.ReadOnly))
+            {
+                OskUiController.Instance.DeleteControl(control);
+            }
         }
     }
 }

@@ -5,24 +5,24 @@ using System.Linq;
 using Caretag_Class.Model;
 using Caretag_Class.Model.Service;
 using CheckboxStation.Configuration;
-using Serilog;
+using Microsoft.Extensions.Logging;
 
 namespace CheckboxStation.Services
 {
     public class InstrumentService
     {
         private readonly CaretagModel _dbModel;
-        private readonly ILogger _logger;
+        private readonly ILogger<InstrumentService> _logger;
 
         public InstrumentService()
         {}
 
         public InstrumentService(CaretagModel dbModel,
-            ILogger logger)
+            ILogger<InstrumentService> logger)
         {
             _dbModel = dbModel;
             _logger = logger;
-            _dbModel.Database.Log = s => _logger.Debug(s);
+            _dbModel.Database.Log = s => _logger.LogDebug(s);
         }
         
         public virtual List<Instrument_RFID> GetByTagsWithOperationAndDescriptionAndPopulateServiceRequests(List<string> tags)

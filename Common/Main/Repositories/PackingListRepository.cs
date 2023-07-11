@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
+using System.Threading.Tasks;
 using Caretag_Class.Model;
 using DynamicData;
 
@@ -135,12 +136,16 @@ namespace Caretag_Class.Repositories
                  }).ToList();
         }
 
-        public virtual List<Tray_PackList> GetUnpackedPacklistItems(Tray_Description tray, string trayEpcNr)
+        public virtual async Task<List<Tray_PackList>> GetUnpackedPacklistItems(Tray_Description tray, string trayEpcNr)
         {
-            var packedInstruments = _model.Tray_Packed.Where(tp => tp.Tray_EPC_Nr == trayEpcNr).Select(tp => tp.Description_ID).Distinct().ToList();
-            var result = _model.Tray_PackList.Where(pl => pl.Tray_Descrip_ID == tray.Description_ID && !packedInstruments.Contains(pl.Instrument_Descrip_ID))
+            var packedInstruments = await _model.Tray_Packed.Where(tp => tp.Tray_EPC_Nr == trayEpcNr) 
+                                                            .Select(tp => tp.Description_ID)
+                                                            .Distinct()
+                                                            .ToListAsync();
+
+            var result = await _model.Tray_PackList.Where(pl => pl.Tray_Descrip_ID == tray.Description_ID && !packedInstruments.Contains(pl.Instrument_Descrip_ID))
                                              .Include(pl => pl.InstrumentDescription)
-                                             .ToList();
+                                             .ToListAsync();
 
 
             return result;

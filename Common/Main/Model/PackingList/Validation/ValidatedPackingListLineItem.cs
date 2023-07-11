@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using Caretag_Class.Model;
 
 namespace Main.Model.PackingList.Validation
@@ -22,6 +25,8 @@ namespace Main.Model.PackingList.Validation
         public List<Instrument_RFID> Instruments { get; set; }
         public string? DescriptionId { get; set; }
         public string Description { get; set; }
+        public List<int> AssetIds { get; set; }
+        public int AssetTypeId { get; set; }
 
         [ForeignKey("DescriptionId")]
         public virtual Instrument_Description? InstrumentDescription { get; set; }

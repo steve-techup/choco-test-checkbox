@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OnScreenKeyboard;
+using System;
 using System.Windows.Forms;
 
 namespace UIControls.WinForms.Controls
@@ -9,7 +10,7 @@ namespace UIControls.WinForms.Controls
     /// </summary>
     public partial class BtnOSK : UserControl
     {
-        private readonly OnScreenKeyboard _osk = new();
+        //private readonly OnScreenKeyboard _osk = new();
         private bool _oskIsRunning;
         private Timer _isRunningTimer;
 
@@ -34,7 +35,7 @@ namespace UIControls.WinForms.Controls
         private void IsRunningTimerOnTick(object sender, EventArgs e)
         {
             // Poll once for efficency
-            bool isRunning = _osk.IsRunning;
+            bool isRunning = OSK.Instance.IsRunning;
             // Only update UI, if the value has changed
             if (isRunning != _oskIsRunning)
             {
@@ -59,7 +60,7 @@ namespace UIControls.WinForms.Controls
 
         private void BtnOnScreenKeyboard_Click_1(object sender, EventArgs e)
         {
-            UpdateImg(_osk.ToggleKeyboard());
+            UpdateImg(OSK.Instance.ToggleKeyboard());
 
         }
     }

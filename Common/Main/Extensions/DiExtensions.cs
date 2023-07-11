@@ -21,6 +21,9 @@ using ReactiveUI;
 using RFIDAbstractionLayer;
 using Serilog;
 using Surgical_Admin.Interactions;
+using Microsoft.Extensions.Logging;
+using Main.ReactiveUI.ViewModels;
+using Main.ReactiveUI.Views;
 
 namespace Caretag_Class.Extensions
 {
@@ -29,7 +32,6 @@ namespace Caretag_Class.Extensions
         public static IServiceCollection AddCore(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddSingleton(configuration.Get<AppSettingsBase>());
-            services.AddSingleton<ILogger>(new LoggerConfiguration().ReadFrom.Configuration(configuration).CreateLogger());
             services.AddSingleton<ConfigurationWriter>();
             services.AddSingleton<EventReporter>();
             services.AddSingleton<IPortCache, AppsettingsPortCache>();
@@ -37,7 +39,7 @@ namespace Caretag_Class.Extensions
             services.AddSingleton<LoginUnitOfWorkFactory>();
             services.AddSingleton<ExcelExportService>();
             services.AddSingleton<ReactiveCommandService>();
-            services.AddSingleton(s => new CommonInteractionsFactory(s.GetRequiredService<ILogger>(),
+            services.AddSingleton(s => new CommonInteractionsFactory(s.GetRequiredService<ILogger<CommonInteractions>>(),
                 new ResourceManager("Main.WinFormStrings", typeof(DiExtensions).Assembly),
                 s.GetRequiredService<LoginUnitOfWorkFactory>()));
             services.AddSingleton<PackingListRepository>();
@@ -73,7 +75,7 @@ namespace Caretag_Class.Extensions
 
             if (applySqlMigrations)
             {
-                var logger = host.Services.GetRequiredService<ILogger>();
+                var logger = host.Services.GetRequiredService<Microsoft.Extensions.Logging.ILogger>();
                 try
                 {
                     Database.SetInitializer(new MigrateDatabaseToLatestVersion<CaretagModel, Migrations.Configuration>(true));
@@ -83,7 +85,7 @@ namespace Caretag_Class.Extensions
                 }
                 catch (Exception e)
                 {
-                    logger.Fatal(e, e.Message);
+                    logger.LogCritical(e, e.Message);
                     throw;
                 }
             }
@@ -100,5 +102,13 @@ namespace Caretag_Class.Extensions
         {
             return services.AddSingleton<VerboseLogger>();
         }
+
+        public static IServiceCollection AddApiLogin(this IServiceCollection services)
+        {
+            return services.AddSingleton<ApiLoginViewModel>()
+                           .AddSingleton<ApiLogin>()
+                           .AddSingleton<LoginService>();
+        }
+
     }
 }

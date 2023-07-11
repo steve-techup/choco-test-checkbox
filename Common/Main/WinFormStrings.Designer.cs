@@ -71,6 +71,51 @@ namespace Caretag_Class.My.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to All.
+        /// </summary>
+        internal static string DialogButtonAll {
+            get {
+                return ResourceManager.GetString("DialogButtonAll", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cancel.
+        /// </summary>
+        internal static string DialogButtonCancel {
+            get {
+                return ResourceManager.GetString("DialogButtonCancel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No.
+        /// </summary>
+        internal static string DialogButtonNo {
+            get {
+                return ResourceManager.GetString("DialogButtonNo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ok.
+        /// </summary>
+        internal static string DialogButtonOk {
+            get {
+                return ResourceManager.GetString("DialogButtonOk", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Yes.
+        /// </summary>
+        internal static string DialogButtonYes {
+            get {
+                return ResourceManager.GetString("DialogButtonYes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to File To Import does NOT Exits Or EMPTY !!!.
         /// </summary>
         internal static string File_To_Import_does_NOT_Exits_Or_EMPTY____ {

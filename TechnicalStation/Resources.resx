@@ -136,9 +136,6 @@
   <data name="GareTag_Logo_Transfer1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\GareTag_Logo_Transfer.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Knowledge_Hub_TransP" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Knowledge Hub_TransP.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="TagSymbol_Trans" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\TagSymbol_Trans.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -162,5 +159,8 @@
   </data>
   <data name="beep_ok" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\beep_ok.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CaretagApplicationIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\CaretagApplicationIcon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

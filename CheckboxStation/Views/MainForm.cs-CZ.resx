@@ -60,45 +60,45 @@
             : and then encoded with base64 encoding.
     -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
         <xsd:choice maxOccurs="unbounded">
           <xsd:element name="metadata">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
               </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string"/>
-              <xsd:attribute name="type" type="xsd:string"/>
-              <xsd:attribute name="mimetype" type="xsd:string"/>
-              <xsd:attribute ref="xml:space"/>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="assembly">
             <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string"/>
-              <xsd:attribute name="name" type="xsd:string"/>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="data">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
-              <xsd:attribute ref="xml:space"/>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required"/>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
             </xsd:complexType>
           </xsd:element>
         </xsd:choice>
@@ -117,7 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
   <data name="_TopTitle.Text" xml:space="preserve">
     <value>Stanice CheckBox</value>
   </data>
@@ -134,7 +133,7 @@
     <value>Stav</value>
   </data>
   <data name="expectedLabel.Text" xml:space="preserve">
-    <value>Očekávané:</value>
+    <value>Očekáváno:</value>
   </data>
   <data name="expectedDataLabel.Text" xml:space="preserve">
     <value>N/A</value>
@@ -155,10 +154,10 @@
     <value>[počet tagů]</value>
   </data>
   <data name="checkinButton.Text" xml:space="preserve">
-    <value>Zaregistrovat</value>
+    <value>Vstupní kontrola</value>
   </data>
   <data name="checkoutButton.Text" xml:space="preserve">
-    <value>Odhlásit</value>
+    <value>Výstupní kontrola</value>
   </data>
   <data name="trayLabel.Text" xml:space="preserve">
     <value>Síto: </value>
@@ -167,7 +166,7 @@
     <value>N/A</value>
   </data>
   <data name="scanButton.Text" xml:space="preserve">
-    <value>Skenovat</value>
+    <value>Skenovat znovu</value>
   </data>
   <data name="scanExtraButton.Text" xml:space="preserve">
     <value>Skenovat zvlášť</value>
@@ -268,6 +267,7 @@
   <data name="lifeCyclePage.Text" xml:space="preserve">
     <value>Životní cyklus</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="tabs.ItemSize" type="System.Drawing.Size, System.Drawing">
     <value>10, 40</value>
   </data>
@@ -276,5 +276,23 @@
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>CheckBox</value>
+  </data>
+  <data name="OperatingRoom.HeaderText" xml:space="preserve">
+    <value>Operační sál</value>
+  </data>
+  <data name="OperationId.HeaderText" xml:space="preserve">
+    <value>ID operace</value>
+  </data>
+  <data name="operationFinishButton.Text1" xml:space="preserve">
+    <value>Dokončení</value>
+  </data>
+  <data name="reportButton.Text" xml:space="preserve">
+    <value>Nahlásit</value>
+  </data>
+  <data name="currentOperationLabel.Text" xml:space="preserve">
+    <value>ID operace:</value>
+  </data>
+  <data name="finishButton.Text" xml:space="preserve">
+    <value>Dokončení</value>
   </data>
 </root>

@@ -17,7 +17,8 @@ using Microsoft.Extensions.DependencyInjection;
 using ReactiveUI;
 using RFIDAbstractionLayer;
 using Splat;
-using Splat.Serilog;
+using Main.Extensions;
+using OnScreenKeyboard.DiExtensions;
 
 namespace CheckboxStation
 {
@@ -41,19 +42,25 @@ namespace CheckboxStation
                     .ConfigureAppConfiguration((context, builder)
                         => builder.AddConfiguration()
                     )
+                    .AddLogging()
                     .ConfigureServices((context, services)
                         => services
                             .AddCore(context.Configuration)
                             .AddVerboseLogging()
                             .AddCheckboxStation(context.Configuration)
                             .AddRfIdReader(context.Configuration.Get<AppSettingsBase>().RFID)
-                            .AddForms<MainForm>()
-                            .AddDatabaseSingleton(context.Configuration))
-                    .Build()
-                    .InitializeDatabase();
+                            .AddOnScreenKeyboard(context.Configuration.Get<AppSettingsBase>().OnScreenKeyboardConfig, context.Configuration.Get<AppSettingsBase>().UILanguage)
+                            .AddForms<MainForm>())
+                    .Build();
 
                 Kernel = host.Services;
-                Locator.CurrentMutable.UseSerilogFullLogger(Kernel.GetRequiredService<Serilog.ILogger>());
+
+                if (!Kernel.GetRequiredService<AppSettingsBase>().UseApi)
+                {
+                    host.InitializeDatabase();
+                }
+
+                //Locator.CurrentMutable.UseSerilogFullLogger(Kernel.GetRequiredService<Serilog.ILogger>());
 
                 RxApp.DefaultExceptionHandler = Kernel.GetRequiredService<DefaultExceptionHandler>();
 

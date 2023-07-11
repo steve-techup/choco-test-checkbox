@@ -1,21 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.Entity;
-using System.Data.SqlClient;
-using System.Globalization;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using Caretag.Contracts.Api.v1;
+using Caretag.Contracts.Core;
 using Caretag_Class;
 using Caretag_Class.Configuration;
 using Caretag_Class.EventReporting;
 using Caretag_Class.Exceptions;
 using Caretag_Class.Model;
-using Caretag_Class.Model.Service;
+using CheckboxStation.Services.Bridge;
+using CheckboxStation.ViewModels;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 using RFIDAbstractionLayer;
 using RFIDAbstractionLayer.Readers;
-using Serilog;
+using System;
+using System.Collections.Generic;
+using System.Data.Entity;
+using System.Globalization;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace CheckboxStation.Services
 {
@@ -24,54 +26,113 @@ namespace CheckboxStation.Services
         private readonly CaretagModel _model;
         private readonly RFIDReaderCollection _rfidReaderCollection;
         private readonly EventReporter _eventReporter;
-        private readonly ILogger _logger;
+        private readonly ILogger<CheckboxViewModel> _logger;
         private readonly string CaretagEPCPrefix;
+        private readonly AppSettingsBase _appSettings;
+        private List<Operation> _operations;
+        private readonly ISettingsApi _settingsApi;
+        private readonly IScanService _scanService;
 
 
         public CheckboxService()
         {
         }
 
-        public CheckboxService(CaretagModel model, RFIDReaderCollection rfidReaderCollection, EventReporter eventReporter, ILogger logger)
+        public CheckboxService(
+            RFIDReaderCollection rfidReaderCollection, 
+            EventReporter eventReporter, 
+            ILogger<CheckboxViewModel> logger, 
+            AppSettingsBase appSettings,
+            ISettingsApi settingsApi,
+            IScanService scanService,
+            CaretagModel model = null)
         {
             _model = model;
             _rfidReaderCollection = rfidReaderCollection;
             _eventReporter = eventReporter;
             _logger = logger;
+            _operations = new List<Operation>();
+            _appSettings = appSettings;
+            _settingsApi = settingsApi;
+            _scanService = scanService;
 
-            CaretagEPCPrefix = model.EPC_Number_Serie.FirstOrDefault()?.Owner_Serie;
-            _model.Database.Log = s => _logger.Debug(s);
+            if (!appSettings.UseApi)
+            {
+                CaretagEPCPrefix = model.EPC_Number_Serie.FirstOrDefault()?.Owner_Serie;
+                _model.Database.Log = s => _logger.LogDebug(s);
+            }
         }
 
         public virtual bool StartupShowSplash()
         {
             var formWelcome = new SplashScreen(Program.Kernel.GetRequiredService<AppSettingsBase>().StationUniqueID, "Checkbox Station");
-            formWelcome.Icon = Properties.Resources.Knowledge_Hub_TransP;
+            formWelcome.Icon = Properties.Resources.CaretagApplicationIcon;
             Application.CurrentCulture = new CultureInfo("en-US");
 
 
             formWelcome.Show();
 
-            try
-            {
-                var connectionString = new SqlConnectionStringBuilder(Program.Kernel.GetRequiredService<AppSettingsBase>().ConnectionStrings.SQLServer);
-                formWelcome.Message = WinFormStrings.MainForm_StartupShowSplash_Connecting_to_SQL_server__ + connectionString.DataSource;
+            //try
+            //{
+            //    var connectionString = new SqlConnectionStringBuilder(Program.Kernel.GetRequiredService<AppSettingsBase>().ConnectionStrings.SQLServer);
+            //    formWelcome.Message = WinFormStrings.MainForm_StartupShowSplash_Connecting_to_SQL_server__ + connectionString.DataSource;
 
-                Program.Kernel.GetRequiredService<CaretagModel>().Database.Exists();
-            }
-            catch (Exception ex)
-            {
-                _eventReporter.ReportError(ex, "An error occurred when trying to connect to the database. ",
-                    "An error occurred when trying to connect to the database.", "Checkbox-2", true, true);
+            //    Program.Kernel.GetRequiredService<CaretagModel>().Database.Exists();
+            //}
+            //catch (Exception ex)
+            //{
+            //    _eventReporter.ReportError(ex, "An error occurred when trying to connect to the database. ",
+            //        "An error occurred when trying to connect to the database.", "Checkbox-2", true, true);
 
-                formWelcome.Close();
-                return false;
-            }
+            //    formWelcome.Close();
+            //    return false;
+            //}
 
             try
             {
                 formWelcome.Message = WinFormStrings.MainForm_StartupShowSplash_Searching_for_RFID_reader____;
-                _rfidReaderCollection.ConnectAll();
+
+                RfIdConfig config = null;
+
+                if (_appSettings.UseApi)
+                {
+                    Task.Run(async () =>
+                    {
+                        await _settingsApi.GetAppInstanceSettings().MatchAsync(
+                           appInstanceResponse => {
+
+                               var appInstanceRfidConfig = appInstanceResponse?.Settings?.CheckboxSetting?.Rfid;
+
+                               if (appInstanceRfidConfig != null)
+                               {
+
+                                   config = new RfIdConfig
+                                   {
+                                       ReaderIpAddress = appInstanceRfidConfig.ReaderIpAddress,
+                                       CachedPorts = appInstanceRfidConfig.CachedPorts?.ToList()
+                                   };
+
+                                   config.ReaderType = appInstanceRfidConfig.ReaderType switch
+                                   {
+                                       Caretag.Contracts.Enums.ReaderType.SimulationOnly => ReaderType.Simulator,
+                                       Caretag.Contracts.Enums.ReaderType.NordicIdOnly => ReaderType.NordicIdOrCAEN,
+                                       Caretag.Contracts.Enums.ReaderType.CaenOnly => ReaderType.NordicIdOrCAEN,
+                                       Caretag.Contracts.Enums.ReaderType.ImpinjOnly => ReaderType.Impinj,
+                                       _ => ReaderType.Simulator
+                                   };
+                               }
+
+                               return Task.CompletedTask;
+                           }, erorResponse => { return Task.CompletedTask; });
+                    }).Wait();
+                }
+
+                if (config == null)
+                {
+                    config = _appSettings.RFID;
+                }
+
+                _rfidReaderCollection.ConnectAll(config);
 
             }
             catch (Exception ex)
@@ -106,8 +167,15 @@ namespace CheckboxStation.Services
 
         public virtual void NewOperation(Operation operation)
         {
-            _model.Operation.Add(operation);
-            _model.SaveChanges();
+            if (!_appSettings.UseApi)
+            {
+                _model.Operation.Add(operation);
+                _model.SaveChanges();
+            }
+            else
+            {
+                _operations.Add(operation);
+            }
         }
 
         public virtual void Update<T>(T obj)
@@ -130,8 +198,15 @@ namespace CheckboxStation.Services
 
         public virtual List<Operation> GetOperations(DateTime from, DateTime to, bool showFinishedOperations)
         {
-            return _model.Operation.Where(o => o.Timestamp >= from && o.Timestamp <= to && (o.State != OperationState.FINISHED.ToString() || showFinishedOperations))
-               .Include(o => o.OperationInstruments).ToList();
+            if (!_appSettings.UseApi)
+            {
+                return _model.Operation.Where(o => o.Timestamp >= from && o.Timestamp <= to && (o.State != OperationState.FINISHED.ToString() || showFinishedOperations))
+                   .Include(o => o.OperationInstruments).ToList();
+            }
+            else
+            {
+                return _operations;
+            }
         }
 
         public virtual List<IGrouping<string, Instrument_RFID>> GetInstrumentsForOperation(Operation operation)

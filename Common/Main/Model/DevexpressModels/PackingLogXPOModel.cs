@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
+using System.ComponentModel.DataAnnotations.Schema;
 using Caretag_Class.Model;
 using DevExpress.Xpo;
 using Main.Annotations;
@@ -97,5 +98,7 @@ namespace Main.Model.DevexpressModels
         [Association]
         public XPCollection<PackingLogLineXPOModel> PackingLogLines => GetCollection<PackingLogLineXPOModel>(nameof(PackingLogLines));
         
+        [ForeignKey("PackedByUserId")]
+        public TblPassword PackedByUser { get; set; }
     }
 }

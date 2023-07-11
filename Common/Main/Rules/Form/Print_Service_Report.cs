@@ -10,16 +10,16 @@ using System.Windows.Forms;
 using Caretag_Class;
 using DevExpress.XtraReports.UI;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 using Microsoft.VisualBasic;
 using Microsoft.VisualBasic.CompilerServices;
 using RulesStation;
-using Serilog;
 
 namespace Caretag_Class.Rules.Form
 {
     public partial class Print_Service_Report
     {
-        public Print_Service_Report(ILogger logger,string descriptionText, string maintenanceText, List<string> maintenanceList, bool showCancel)
+        public Print_Service_Report(ILogger<Print_Service_Report> logger, string descriptionText, string maintenanceText, List<string> maintenanceList, bool showCancel)
         {
             InitializeComponent();
             _Button_Save.Name = "Button_Save";
@@ -56,7 +56,7 @@ namespace Caretag_Class.Rules.Form
         public int The_Vendor_ID = 0;
         public DateTime The_Service_Time;
         public bool Specific_One = false;
-        private ILogger Logger;
+        private ILogger<Print_Service_Report> Logger;
         private ResourceManager Local_RM = new ResourceManager("RulesStation.WinFormStrings", typeof(Print_Service_Report).Assembly);
 
         public bool CancelService { get; set; }
@@ -97,7 +97,7 @@ namespace Caretag_Class.Rules.Form
             }
             catch (Exception ex)
             {
-                Logger.Error(ex, "Error Code: {@ErrorCode} , An error occurred while loading the form", "rules56");
+                Logger.LogError(ex, "Error Code: {@ErrorCode} , An error occurred while loading the form", "rules56");
                 var Message = Local_RM.GetString("Please restart the application and if this does not solve the problem, contact Caretag Support and report the Error Code");
                 MessageBox.Show(Local_RM.GetString("An error occurred while loading the form.") + Message, "Error Code: rules56", MessageBoxButtons.OK, MessageBoxIcon.Hand);
             }
@@ -198,7 +198,7 @@ namespace Caretag_Class.Rules.Form
             }
             catch (Exception ex)
             {
-                Logger.Error(ex, "Error Code: {@ErrorCode} , An error occurred while loading the CSSD information", "rules57");
+                Logger.LogError(ex, "Error Code: {@ErrorCode} , An error occurred while loading the CSSD information", "rules57");
                 var Message = Local_RM.GetString("Please restart the application and if this does not solve the problem, contact Caretag Support and report the Error Code");
                 MessageBox.Show(Local_RM.GetString("An error occurred while loading the CSSD information.") + Message, "Error Code: rules57", MessageBoxButtons.OK, MessageBoxIcon.Hand);
                 Load_CSSD_InfoRet = false;
@@ -219,7 +219,7 @@ namespace Caretag_Class.Rules.Form
 
                 if (ComboBoxServiceVendor.SelectedIndex == 0)
                 {
-                    CancelService= true;
+                    CancelService = true;
                 }
 
                 try
@@ -228,12 +228,12 @@ namespace Caretag_Class.Rules.Form
                 }
                 catch (Exception ex)
                 {
-                    Logger.Error(ex, "Error Code: {@ErrorCode} , An error occurred while trying to stop the process", "rules58");
+                    Logger.LogError(ex, "Error Code: {@ErrorCode} , An error occurred while trying to stop the process", "rules58");
                 }
             }
             catch (Exception ex)
             {
-                Logger.Error(ex, "Error Code: {@ErrorCode} , An error occurred while trying to save the information", "rules59");
+                Logger.LogError(ex, "Error Code: {@ErrorCode} , An error occurred while trying to save the information", "rules59");
                 var Message = Local_RM.GetString("Please restart the application and if this does not solve the problem, contact Caretag Support and report the Error Code");
                 MessageBox.Show(Local_RM.GetString("An error occurred while trying to save the information.") + Message, "Error Code: rules59", MessageBoxButtons.OK, MessageBoxIcon.Hand);
             }
@@ -289,12 +289,12 @@ namespace Caretag_Class.Rules.Form
                 }
                 catch (Exception ex)
                 {
-                    Logger.Error(ex, "Error Code: {@ErrorCode} , An error occurred while checking the database information", "rules60");
+                    Logger.LogError(ex, "Error Code: {@ErrorCode} , An error occurred while checking the database information", "rules60");
                 }
             }
             catch (Exception ex)
             {
-                Logger.Error(ex, "Error Code: {@ErrorCode} , An error occurred while changing the selected index", "rules61");
+                Logger.LogError(ex, "Error Code: {@ErrorCode} , An error occurred while changing the selected index", "rules61");
                 var Message = Local_RM.GetString("Please restart the application and if this does not solve the problem, contact Caretag Support and report the Error Code");
                 MessageBox.Show(Local_RM.GetString("An error occurred while changing the selected index.") + Message, "Error Code: rules61", MessageBoxButtons.OK, MessageBoxIcon.Hand);
             }
@@ -391,7 +391,7 @@ namespace Caretag_Class.Rules.Form
             }
             catch (Exception ex)
             {
-                Logger.Error(ex, "Error Code: {@ErrorCode} , An error occurred while getting the vendor service information", "rules62");
+                Logger.LogError(ex, "Error Code: {@ErrorCode} , An error occurred while getting the vendor service information", "rules62");
                 var Message = Local_RM.GetString("Please restart the application and if this does not solve the problem, contact Caretag Support and report the Error Code");
                 MessageBox.Show(Local_RM.GetString("An error occurred while getting the vendor service information.") + Message, "Error Code: rules62", MessageBoxButtons.OK, MessageBoxIcon.Hand);
             }
@@ -441,7 +441,7 @@ namespace Caretag_Class.Rules.Form
 
             catch (Exception ex)
             {
-                Logger.Error(ex, "Error Code: {@ErrorCode} , An error occurred while getting the vendor information", "rules63");
+                Logger.LogError(ex, "Error Code: {@ErrorCode} , An error occurred while getting the vendor information", "rules63");
                 var Message = Local_RM.GetString("Please restart the application and if this does not solve the problem, contact Caretag Support and report the Error Code");
                 MessageBox.Show(Local_RM.GetString("An error occurred while getting the vendor information.") + Message, "Error Code: rules63", MessageBoxButtons.OK, MessageBoxIcon.Hand);
             }
@@ -474,7 +474,7 @@ namespace Caretag_Class.Rules.Form
             }
             catch (Exception ex)
             {
-                Logger.Error(ex, "Error Code: {@ErrorCode} , An error occurred while trying to retrieve the vendor information from the database", "rules64");
+                Logger.LogError(ex, "Error Code: {@ErrorCode} , An error occurred while trying to retrieve the vendor information from the database", "rules64");
                 var Message = Local_RM.GetString("Please restart the application and if this does not solve the problem, contact Caretag Support and report the Error Code");
                 MessageBox.Show(Local_RM.GetString("An error occurred while trying to retrieve the vendor information from the database.") + Message, "Error Code: rules64", MessageBoxButtons.OK, MessageBoxIcon.Hand);
             }
@@ -532,7 +532,7 @@ WHERE        (dbo.Instrument_Maintenance_RFID.Sendt_To_Service = 'True') AND (db
             }
             catch (Exception ex)
             {
-                Logger.Error(ex, "Error Code: {@ErrorCode} , An error occurred while trying to print the report", "rules65");
+                Logger.LogError(ex, "Error Code: {@ErrorCode} , An error occurred while trying to print the report", "rules65");
                 var Message = Local_RM.GetString("Please restart the application and if this does not solve the problem, contact Caretag Support and report the Error Code");
                 MessageBox.Show(Local_RM.GetString("An error occurred while trying to print the report.") + Message, "Error Code: rules65", MessageBoxButtons.OK, MessageBoxIcon.Hand);
             }
@@ -544,7 +544,7 @@ WHERE        (dbo.Instrument_Maintenance_RFID.Sendt_To_Service = 'True') AND (db
             }
             catch (Exception ex)
             {
-                Logger.Error(ex, "Error Code: {@ErrorCode} , An error occurred while trying to load the logo", "rules66");
+                Logger.LogError(ex, "Error Code: {@ErrorCode} , An error occurred while trying to load the logo", "rules66");
                 var Message = Local_RM.GetString("Please restart the application and if this does not solve the problem, contact Caretag Support and report the Error Code");
                 MessageBox.Show(Local_RM.GetString("An error occurred while trying to load the logo.") + Message, "Error Code: rules66", MessageBoxButtons.OK, MessageBoxIcon.Hand);
                 // Okay !

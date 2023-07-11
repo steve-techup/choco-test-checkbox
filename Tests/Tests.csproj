@@ -34,7 +34,14 @@
   <ItemGroup>
     <ProjectReference Include="..\CheckboxStation\CheckboxStation.csproj" />
     <ProjectReference Include="..\Common\Main\Main.csproj" />
+    <ProjectReference Include="..\Common\RFIDAbstractionLayer\RFIDAbstractionLayer.csproj" />
     <ProjectReference Include="..\TechnicalStation\TechnicalStation.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="RFIDAbstractionLayer">
+      <HintPath>..\Common\RFIDAbstractionLayer\bin\Debug\RFIDAbstractionLayer.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

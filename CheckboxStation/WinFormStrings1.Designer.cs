@@ -70,11 +70,56 @@ namespace CheckboxStation {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Are you sure that you want to finish the check-in session?.
+        /// </summary>
+        internal static string Are_you_sure_that_you_want_to_finish_the_check_in_session_ {
+            get {
+                return ResourceManager.GetString("Are you sure that you want to finish the check-in session?", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Brand.
+        /// </summary>
+        internal static string BrandColumnHeaderText {
+            get {
+                return ResourceManager.GetString("BrandColumnHeaderText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Check in.
         /// </summary>
         internal static string Check_in {
             get {
                 return ResourceManager.GetString("Check in", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Some of the instruments you scanned are already checked in in another session that has not been completed..
+        /// </summary>
+        internal static string CheckInAssetAlreadyCheckedInInAnotherSession {
+            get {
+                return ResourceManager.GetString("CheckInAssetAlreadyCheckedInInAnotherSession", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check in failed.
+        /// </summary>
+        internal static string CheckInFailed {
+            get {
+                return ResourceManager.GetString("CheckInFailed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check out failed.
+        /// </summary>
+        internal static string CheckOutFailed {
+            get {
+                return ResourceManager.GetString("CheckOutFailed", resourceCulture);
             }
         }
         
@@ -107,11 +152,47 @@ namespace CheckboxStation {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Description.
+        /// </summary>
+        internal static string DescriptionCoulmnHeaderText {
+            get {
+                return ResourceManager.GetString("DescriptionCoulmnHeaderText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Description ID.
+        /// </summary>
+        internal static string DescriptionIdCoulmnHeaderText {
+            get {
+                return ResourceManager.GetString("DescriptionIdCoulmnHeaderText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Finish check in.
+        /// </summary>
+        internal static string Finish_check_in {
+            get {
+                return ResourceManager.GetString("Finish check in", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Finish operation.
         /// </summary>
         internal static string Finish_operation {
             get {
                 return ResourceManager.GetString("Finish operation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Finish check in failed.
+        /// </summary>
+        internal static string FinishCheckInFailed {
+            get {
+                return ResourceManager.GetString("FinishCheckInFailed", resourceCulture);
             }
         }
         
@@ -272,11 +353,48 @@ namespace CheckboxStation {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Quantity.
+        /// </summary>
+        internal static string QuantityColumnHeaderText {
+            get {
+                return ResourceManager.GetString("QuantityColumnHeaderText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The report file has been successfully generated (session {0}, in {0} folder).
+        ///If it has access, it will be also shared by email..
+        /// </summary>
+        internal static string ReportConfirmationDialogMessage {
+            get {
+                return ResourceManager.GetString("ReportConfirmationDialogMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Report Generated.
+        /// </summary>
+        internal static string ReportConfirmationDialogTitle {
+            get {
+                return ResourceManager.GetString("ReportConfirmationDialogTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Success.
         /// </summary>
         internal static string Success {
             get {
                 return ResourceManager.GetString("Success", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Verification.
+        /// </summary>
+        internal static string Verification {
+            get {
+                return ResourceManager.GetString("Verification", resourceCulture);
             }
         }
     }

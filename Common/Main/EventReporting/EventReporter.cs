@@ -1,7 +1,7 @@
-﻿using System;
+﻿using Microsoft.Extensions.Logging;
+using System;
 using System.Resources;
 using System.Windows.Forms;
-using Serilog;
 
 namespace Caretag_Class.EventReporting
 {
@@ -10,7 +10,7 @@ namespace Caretag_Class.EventReporting
     /// </summary>
     public class EventReporter
     {
-        private readonly ILogger _logger;
+        private readonly ILogger<EventReporter> _logger;
         private readonly ResourceManager _resourceManager;
 
         private string getLocalized(string str)
@@ -20,7 +20,7 @@ namespace Caretag_Class.EventReporting
             return string.IsNullOrWhiteSpace(locstr) ? "[Missing localization] " + str : locstr;
         }
 
-        public EventReporter(ILogger logger, ResourceManager resourceManager)
+        public EventReporter(ILogger<EventReporter> logger, ResourceManager resourceManager)
         {
             _logger = logger;
             _resourceManager = resourceManager;
@@ -28,49 +28,49 @@ namespace Caretag_Class.EventReporting
 
         public void ReportError(Exception ex, string userErrorMessage, string logMessage, string errorCode, bool addRestartMessage = false, bool addContactMessage = false)
         {
-            report((m, c) => _logger.Error(ex, m, c), userErrorMessage, errorCode, logMessage, ReportLevel.Error, addContactMessage, addRestartMessage);
+            report((m, c) => _logger.LogError(ex, m, c), userErrorMessage, errorCode, logMessage, ReportLevel.Error, addContactMessage, addRestartMessage);
         }
         public void ReportError(string userErrorMessage, string logMessage, string errorCode, bool addRestartMessage = false, bool addContactMessage = false)
         {
-            report((m, c) => _logger.Error(m, c), userErrorMessage, errorCode, logMessage, ReportLevel.Error, addContactMessage, addRestartMessage);
+            report((m, c) => _logger.LogError(m, c), userErrorMessage, errorCode, logMessage, ReportLevel.Error, addContactMessage, addRestartMessage);
         }
 
         public void ReportWarning(Exception ex, string userErrorMessage, string logMessage, string errorCode, bool addRestartMessage = false, bool addContactMessage = false)
         {
-            report((m, c) => _logger.Warning(ex, m, c), userErrorMessage, errorCode, logMessage, ReportLevel.Warning, addContactMessage, addRestartMessage);
+            report((m, c) => _logger.LogWarning(ex, m, c), userErrorMessage, errorCode, logMessage, ReportLevel.Warning, addContactMessage, addRestartMessage);
         }
         public void ReportWarning(string userErrorMessage, string logMessage, string errorCode, bool addRestartMessage = false, bool addContactMessage = false)
         {
-            report((m, c) => _logger.Warning(m, c), userErrorMessage, errorCode, logMessage, ReportLevel.Warning, addContactMessage, addRestartMessage);
+            report((m, c) => _logger.LogWarning(m, c), userErrorMessage, errorCode, logMessage, ReportLevel.Warning, addContactMessage, addRestartMessage);
         }
         public void ReportFatal(Exception ex, string userErrorMessage, string logMessage, string errorCode, bool addRestartMessage = false, bool addContactMessage = false)
         {
-            report((m, c) => _logger.Fatal(ex, m, c), userErrorMessage, errorCode, logMessage, ReportLevel.Fatal, addContactMessage, addRestartMessage);
+            report((m, c) => _logger.LogCritical(ex, m, c), userErrorMessage, errorCode, logMessage, ReportLevel.Fatal, addContactMessage, addRestartMessage);
         }
         public void ReportFatal(string userErrorMessage, string logMessage, string errorCode, bool addRestartMessage = false, bool addContactMessage = false)
         {
-            report((m, c) => _logger.Fatal(m, c), userErrorMessage, errorCode, logMessage, ReportLevel.Fatal, addContactMessage, addRestartMessage);
+            report((m, c) => _logger.LogCritical(m, c), userErrorMessage, errorCode, logMessage, ReportLevel.Fatal, addContactMessage, addRestartMessage);
         }
         public void ReportDebug(Exception ex, string userErrorMessage, string logMessage, string errorCode, bool addRestartMessage = false, bool addContactMessage = false)
         {
-            report((m, c) => _logger.Debug(ex, m, c), userErrorMessage, errorCode, logMessage, ReportLevel.Debug, addContactMessage, addRestartMessage);
+            report((m, c) => _logger.LogDebug(ex, m, c), userErrorMessage, errorCode, logMessage, ReportLevel.Debug, addContactMessage, addRestartMessage);
         }
         public void ReportDebug(string userErrorMessage, string logMessage, string errorCode, bool addRestartMessage = false, bool addContactMessage = false)
         {
-            report((m, c) => _logger.Debug(m, c), userErrorMessage, errorCode, logMessage, ReportLevel.Debug, addContactMessage, addRestartMessage);
+            report((m, c) => _logger.LogDebug(m, c), userErrorMessage, errorCode, logMessage, ReportLevel.Debug, addContactMessage, addRestartMessage);
         }
         public void ReportInformation(Exception ex, string userErrorMessage, string logMessage, string errorCode, bool addRestartMessage = false, bool addContactMessage = false)
         {
-            report((m, c) => _logger.Information(ex, m, c), userErrorMessage, errorCode, logMessage, ReportLevel.Information, addContactMessage, addRestartMessage);
+            report((m, c) => _logger.LogInformation(ex, m, c), userErrorMessage, errorCode, logMessage, ReportLevel.Information, addContactMessage, addRestartMessage);
         }
         public void ReportInformation(string userErrorMessage, string logMessage, string errorCode, bool addRestartMessage = false, bool addContactMessage = false)
         {
-            report((m, c) => _logger.Information(m, c), userErrorMessage, errorCode, logMessage, ReportLevel.Information, addContactMessage, addRestartMessage);
+            report((m, c) => _logger.LogInformation(m, c), userErrorMessage, errorCode, logMessage, ReportLevel.Information, addContactMessage, addRestartMessage);
         }
 
         private void report(Action<string, string> logAction, string userErrorMessage, string errorCode, string logMessage, ReportLevel reportLevel, bool addContactMessage, bool addRestartMessage)
         {
-            logAction(getLocalized(logMessage )+ ", " + getLocalized("error code:") + " {errorCode}", errorCode);
+            logAction(getLocalized(logMessage) + ", " + getLocalized("error code:") + " {errorCode}", errorCode);
 
             userErrorMessage = getLocalized(userErrorMessage);
 
@@ -78,7 +78,7 @@ namespace Caretag_Class.EventReporting
                 userErrorMessage += "\n" + getLocalized("Please restart the application.");
 
             if (addContactMessage)
-                userErrorMessage += "\n"+ getLocalized(
+                userErrorMessage += "\n" + getLocalized(
                     "If this does not solve the problem, contact Caretag support and report the error code.");
 
             userErrorMessage += "\n" + getLocalized("Error code :") + errorCode;
@@ -101,4 +101,3 @@ namespace Caretag_Class.EventReporting
         }
     }
 }
- 

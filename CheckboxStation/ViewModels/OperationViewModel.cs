@@ -78,5 +78,16 @@ namespace CheckboxStation.ViewModels
                 this.RaiseAndSetIfChanged(ref _timestamp, value);
             }
         }
+
+        private Guid? _sessionId;
+        public Guid? SessionId
+        {
+            get => _sessionId;
+            set
+            {
+                _sessionId = value;
+                this.RaiseAndSetIfChanged(ref _sessionId, value);
+            }
+        }
     }
 }

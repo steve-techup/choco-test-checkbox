@@ -28,6 +28,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceAndMaintenanceStatio
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "Tests\Tests.csproj", "{7E59992A-4C7E-413F-ADF1-CEA58639E25A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnScreenKeyboard", "OnScreenKeyboard\OnScreenKeyboard.csproj", "{56D092C2-DAA7-4BAE-812B-BFB42D53C090}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -132,6 +134,14 @@ Global
 		{7E59992A-4C7E-413F-ADF1-CEA58639E25A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7E59992A-4C7E-413F-ADF1-CEA58639E25A}.Release|x86.ActiveCfg = Release|Any CPU
 		{7E59992A-4C7E-413F-ADF1-CEA58639E25A}.Release|x86.Build.0 = Release|Any CPU
+		{56D092C2-DAA7-4BAE-812B-BFB42D53C090}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56D092C2-DAA7-4BAE-812B-BFB42D53C090}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56D092C2-DAA7-4BAE-812B-BFB42D53C090}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{56D092C2-DAA7-4BAE-812B-BFB42D53C090}.Debug|x86.Build.0 = Debug|Any CPU
+		{56D092C2-DAA7-4BAE-812B-BFB42D53C090}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56D092C2-DAA7-4BAE-812B-BFB42D53C090}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56D092C2-DAA7-4BAE-812B-BFB42D53C090}.Release|x86.ActiveCfg = Release|Any CPU
+		{56D092C2-DAA7-4BAE-812B-BFB42D53C090}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -142,6 +152,7 @@ Global
 		{2A146797-7702-4800-8DD1-0AE43DC8FF92} = {7F5FA449-C047-47EC-B104-61FD3754F8AC}
 		{AC451DDC-EFBA-4F7A-AA01-37F64ECEED74} = {7F5FA449-C047-47EC-B104-61FD3754F8AC}
 		{3323D254-444A-4045-82BE-D8E1841775D7} = {7F5FA449-C047-47EC-B104-61FD3754F8AC}
+		{56D092C2-DAA7-4BAE-812B-BFB42D53C090} = {7F5FA449-C047-47EC-B104-61FD3754F8AC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0DCD68AB-C858-4D8E-B389-F720C6B99665}

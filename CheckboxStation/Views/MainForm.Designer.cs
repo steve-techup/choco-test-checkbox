@@ -33,6 +33,8 @@ namespace CheckboxStation.Views
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this._TopTitle = new System.Windows.Forms.Label();
@@ -46,16 +48,15 @@ namespace CheckboxStation.Views
             this.reportButton = new System.Windows.Forms.Button();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.expectedLabel = new System.Windows.Forms.Label();
-            this.expectedDataLabel = new System.Windows.Forms.Label();
-            this.instrumentTotalCountDataLabel = new System.Windows.Forms.Label();
             this.totalLabel = new System.Windows.Forms.Label();
+            this.instrumentTotalCountDataLabel = new System.Windows.Forms.Label();
+            this.expectedDataLabel = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tagCountTablePanel = new System.Windows.Forms.TableLayoutPanel();
             this.scanInProgressLabel = new System.Windows.Forms.Label();
             this.flowLayoutPanel6 = new System.Windows.Forms.FlowLayoutPanel();
             this.scannedLabel = new System.Windows.Forms.Label();
             this.scannedDataLabel = new System.Windows.Forms.Label();
-            this.assetScanGridView = new Caretag_Class.ReactiveUI.Views.TouchscreenPackingListView();
             this.progressBar = new System.Windows.Forms.ProgressBar();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
@@ -64,17 +65,26 @@ namespace CheckboxStation.Views
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.trayLabel = new System.Windows.Forms.Label();
             this.trayDataLabel = new System.Windows.Forms.Label();
+            this.currentOperationText = new System.Windows.Forms.Label();
             this.scanExtraButton = new System.Windows.Forms.Button();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.packingListStatusLabel = new System.Windows.Forms.Label();
             this.packingListIcon = new System.Windows.Forms.PictureBox();
             this.scanButton = new System.Windows.Forms.Button();
+            this.finishButton = new System.Windows.Forms.Button();
             this.operationPage = new System.Windows.Forms.TabPage();
+            this.operationsGridView = new System.Windows.Forms.DataGridView();
+            this.OperationId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.OperatingRoom = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.State = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.operationsFilterPanel = new System.Windows.Forms.Panel();
             this.showFinishedCheckbox = new System.Windows.Forms.CheckBox();
+            this.operationStartButton = new System.Windows.Forms.Button();
             this.toLabel = new System.Windows.Forms.Label();
+            this.operationFinishButton = new System.Windows.Forms.Button();
             this.fromLabel = new System.Windows.Forms.Label();
-            this.toDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.fromDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.toDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.operationStatusGroupBox = new System.Windows.Forms.GroupBox();
             this.operatingRoomDataLabel = new System.Windows.Forms.Label();
             this.operatingRoomLabel = new System.Windows.Forms.Label();
@@ -88,9 +98,6 @@ namespace CheckboxStation.Views
             this.stateDataLabel = new System.Windows.Forms.Label();
             this.stateLabel = new System.Windows.Forms.Label();
             this.newOperationButton = new System.Windows.Forms.Button();
-            this.operationFinishButton = new System.Windows.Forms.Button();
-            this.operationStartButton = new System.Windows.Forms.Button();
-            this.operationsListBox = new System.Windows.Forms.ListBox();
             this.lifeCyclePage = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -111,6 +118,7 @@ namespace CheckboxStation.Views
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.lblInstrumentsLifecycle = new System.Windows.Forms.Label();
             this.lifecycleTotalInstrumentsDataLabel = new System.Windows.Forms.Label();
+            this.assetScanGridView = new Caretag_Class.ReactiveUI.Views.TouchscreenPackingListView();
             this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.Panel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -127,6 +135,8 @@ namespace CheckboxStation.Views
             this.flowLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.packingListIcon)).BeginInit();
             this.operationPage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.operationsGridView)).BeginInit();
+            this.operationsFilterPanel.SuspendLayout();
             this.operationStatusGroupBox.SuspendLayout();
             this.lifeCyclePage.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
@@ -199,7 +209,8 @@ namespace CheckboxStation.Views
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.scanExtraButton, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.flowLayoutPanel2, 2, 2);
-            this.tableLayoutPanel1.Controls.Add(this.scanButton, 4, 2);
+            this.tableLayoutPanel1.Controls.Add(this.scanButton, 5, 2);
+            this.tableLayoutPanel1.Controls.Add(this.finishButton, 4, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             // 
             // reportButton
@@ -212,9 +223,9 @@ namespace CheckboxStation.Views
             // 
             resources.ApplyResources(this.tableLayoutPanel6, "tableLayoutPanel6");
             this.tableLayoutPanel6.Controls.Add(this.expectedLabel, 0, 1);
-            this.tableLayoutPanel6.Controls.Add(this.expectedDataLabel, 1, 1);
-            this.tableLayoutPanel6.Controls.Add(this.instrumentTotalCountDataLabel, 1, 0);
             this.tableLayoutPanel6.Controls.Add(this.totalLabel, 0, 0);
+            this.tableLayoutPanel6.Controls.Add(this.instrumentTotalCountDataLabel, 1, 0);
+            this.tableLayoutPanel6.Controls.Add(this.expectedDataLabel, 1, 1);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             // 
             // expectedLabel
@@ -222,24 +233,24 @@ namespace CheckboxStation.Views
             resources.ApplyResources(this.expectedLabel, "expectedLabel");
             this.expectedLabel.Name = "expectedLabel";
             // 
-            // expectedDataLabel
+            // totalLabel
             // 
-            resources.ApplyResources(this.expectedDataLabel, "expectedDataLabel");
-            this.expectedDataLabel.Name = "expectedDataLabel";
+            resources.ApplyResources(this.totalLabel, "totalLabel");
+            this.totalLabel.Name = "totalLabel";
             // 
             // instrumentTotalCountDataLabel
             // 
             resources.ApplyResources(this.instrumentTotalCountDataLabel, "instrumentTotalCountDataLabel");
             this.instrumentTotalCountDataLabel.Name = "instrumentTotalCountDataLabel";
             // 
-            // totalLabel
+            // expectedDataLabel
             // 
-            resources.ApplyResources(this.totalLabel, "totalLabel");
-            this.totalLabel.Name = "totalLabel";
+            resources.ApplyResources(this.expectedDataLabel, "expectedDataLabel");
+            this.expectedDataLabel.Name = "expectedDataLabel";
             // 
             // panel2
             // 
-            this.tableLayoutPanel1.SetColumnSpan(this.panel2, 5);
+            this.tableLayoutPanel1.SetColumnSpan(this.panel2, 6);
             this.panel2.Controls.Add(this.tagCountTablePanel);
             this.panel2.Controls.Add(this.assetScanGridView);
             this.panel2.Controls.Add(this.progressBar);
@@ -275,12 +286,6 @@ namespace CheckboxStation.Views
             resources.ApplyResources(this.scannedDataLabel, "scannedDataLabel");
             this.scannedDataLabel.Name = "scannedDataLabel";
             // 
-            // assetScanGridView
-            // 
-            resources.ApplyResources(this.assetScanGridView, "assetScanGridView");
-            this.assetScanGridView.Name = "assetScanGridView";
-            this.assetScanGridView.ViewModel = null;
-            // 
             // progressBar
             // 
             resources.ApplyResources(this.progressBar, "progressBar");
@@ -290,7 +295,7 @@ namespace CheckboxStation.Views
             // tableLayoutPanel2
             // 
             resources.ApplyResources(this.tableLayoutPanel2, "tableLayoutPanel2");
-            this.tableLayoutPanel1.SetColumnSpan(this.tableLayoutPanel2, 5);
+            this.tableLayoutPanel1.SetColumnSpan(this.tableLayoutPanel2, 6);
             this.tableLayoutPanel2.Controls.Add(this.flowLayoutPanel4, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.flowLayoutPanel1, 0, 0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -319,6 +324,7 @@ namespace CheckboxStation.Views
             resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
             this.flowLayoutPanel1.Controls.Add(this.trayLabel);
             this.flowLayoutPanel1.Controls.Add(this.trayDataLabel);
+            this.flowLayoutPanel1.Controls.Add(this.currentOperationText);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             // 
             // trayLabel
@@ -332,6 +338,11 @@ namespace CheckboxStation.Views
             this.trayDataLabel.Name = "trayDataLabel";
             this.trayDataLabel.LocationChanged += new System.EventHandler(this.trayDataLabel_LocationChanged);
             this.trayDataLabel.TextChanged += new System.EventHandler(this.trayDataLabel_LocationChanged);
+            // 
+            // currentOperationText
+            // 
+            resources.ApplyResources(this.currentOperationText, "currentOperationText");
+            this.currentOperationText.Name = "currentOperationText";
             // 
             // scanExtraButton
             // 
@@ -364,21 +375,97 @@ namespace CheckboxStation.Views
             this.scanButton.UseVisualStyleBackColor = true;
             this.scanButton.Click += new System.EventHandler(this.scanButton_Click);
             // 
+            // finishButton
+            // 
+            resources.ApplyResources(this.finishButton, "finishButton");
+            this.finishButton.Name = "finishButton";
+            this.finishButton.UseVisualStyleBackColor = true;
+            // 
             // operationPage
             // 
-            this.operationPage.Controls.Add(this.showFinishedCheckbox);
-            this.operationPage.Controls.Add(this.toLabel);
-            this.operationPage.Controls.Add(this.fromLabel);
-            this.operationPage.Controls.Add(this.toDateTimePicker);
-            this.operationPage.Controls.Add(this.fromDateTimePicker);
+            this.operationPage.Controls.Add(this.operationsGridView);
+            this.operationPage.Controls.Add(this.operationsFilterPanel);
             this.operationPage.Controls.Add(this.operationStatusGroupBox);
             this.operationPage.Controls.Add(this.newOperationButton);
-            this.operationPage.Controls.Add(this.operationFinishButton);
-            this.operationPage.Controls.Add(this.operationStartButton);
-            this.operationPage.Controls.Add(this.operationsListBox);
             resources.ApplyResources(this.operationPage, "operationPage");
             this.operationPage.Name = "operationPage";
             this.operationPage.UseVisualStyleBackColor = true;
+            // 
+            // operationsGridView
+            // 
+            this.operationsGridView.AllowUserToAddRows = false;
+            this.operationsGridView.AllowUserToDeleteRows = false;
+            this.operationsGridView.AllowUserToResizeColumns = false;
+            this.operationsGridView.AllowUserToResizeRows = false;
+            this.operationsGridView.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.operationsGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.operationsGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.operationsGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.OperationId,
+            this.OperatingRoom,
+            this.State});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.operationsGridView.DefaultCellStyle = dataGridViewCellStyle2;
+            resources.ApplyResources(this.operationsGridView, "operationsGridView");
+            this.operationsGridView.MultiSelect = false;
+            this.operationsGridView.Name = "operationsGridView";
+            this.operationsGridView.ReadOnly = true;
+            this.operationsGridView.RowHeadersVisible = false;
+            this.operationsGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.operationsGridView.RowTemplate.Height = 40;
+            this.operationsGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.operationsGridView.ShowCellErrors = false;
+            this.operationsGridView.ShowCellToolTips = false;
+            this.operationsGridView.ShowEditingIcon = false;
+            this.operationsGridView.ShowRowErrors = false;
+            // 
+            // OperationId
+            // 
+            this.OperationId.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.OperationId.DataPropertyName = "OperationId";
+            resources.ApplyResources(this.OperationId, "OperationId");
+            this.OperationId.Name = "OperationId";
+            this.OperationId.ReadOnly = true;
+            // 
+            // OperatingRoom
+            // 
+            this.OperatingRoom.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.OperatingRoom.DataPropertyName = "OperatingRoom";
+            resources.ApplyResources(this.OperatingRoom, "OperatingRoom");
+            this.OperatingRoom.Name = "OperatingRoom";
+            this.OperatingRoom.ReadOnly = true;
+            // 
+            // State
+            // 
+            this.State.DataPropertyName = "State";
+            resources.ApplyResources(this.State, "State");
+            this.State.Name = "State";
+            this.State.ReadOnly = true;
+            // 
+            // operationsFilterPanel
+            // 
+            this.operationsFilterPanel.Controls.Add(this.showFinishedCheckbox);
+            this.operationsFilterPanel.Controls.Add(this.operationStartButton);
+            this.operationsFilterPanel.Controls.Add(this.toLabel);
+            this.operationsFilterPanel.Controls.Add(this.operationFinishButton);
+            this.operationsFilterPanel.Controls.Add(this.fromLabel);
+            this.operationsFilterPanel.Controls.Add(this.fromDateTimePicker);
+            this.operationsFilterPanel.Controls.Add(this.toDateTimePicker);
+            resources.ApplyResources(this.operationsFilterPanel, "operationsFilterPanel");
+            this.operationsFilterPanel.Name = "operationsFilterPanel";
             // 
             // showFinishedCheckbox
             // 
@@ -386,25 +473,37 @@ namespace CheckboxStation.Views
             this.showFinishedCheckbox.Name = "showFinishedCheckbox";
             this.showFinishedCheckbox.UseVisualStyleBackColor = true;
             // 
+            // operationStartButton
+            // 
+            resources.ApplyResources(this.operationStartButton, "operationStartButton");
+            this.operationStartButton.Name = "operationStartButton";
+            this.operationStartButton.UseVisualStyleBackColor = true;
+            // 
             // toLabel
             // 
             resources.ApplyResources(this.toLabel, "toLabel");
             this.toLabel.Name = "toLabel";
+            // 
+            // operationFinishButton
+            // 
+            resources.ApplyResources(this.operationFinishButton, "operationFinishButton");
+            this.operationFinishButton.Name = "operationFinishButton";
+            this.operationFinishButton.UseVisualStyleBackColor = true;
             // 
             // fromLabel
             // 
             resources.ApplyResources(this.fromLabel, "fromLabel");
             this.fromLabel.Name = "fromLabel";
             // 
-            // toDateTimePicker
-            // 
-            resources.ApplyResources(this.toDateTimePicker, "toDateTimePicker");
-            this.toDateTimePicker.Name = "toDateTimePicker";
-            // 
             // fromDateTimePicker
             // 
             resources.ApplyResources(this.fromDateTimePicker, "fromDateTimePicker");
             this.fromDateTimePicker.Name = "fromDateTimePicker";
+            // 
+            // toDateTimePicker
+            // 
+            resources.ApplyResources(this.toDateTimePicker, "toDateTimePicker");
+            this.toDateTimePicker.Name = "toDateTimePicker";
             // 
             // operationStatusGroupBox
             // 
@@ -484,24 +583,6 @@ namespace CheckboxStation.Views
             resources.ApplyResources(this.newOperationButton, "newOperationButton");
             this.newOperationButton.Name = "newOperationButton";
             this.newOperationButton.UseVisualStyleBackColor = true;
-            // 
-            // operationFinishButton
-            // 
-            resources.ApplyResources(this.operationFinishButton, "operationFinishButton");
-            this.operationFinishButton.Name = "operationFinishButton";
-            this.operationFinishButton.UseVisualStyleBackColor = true;
-            // 
-            // operationStartButton
-            // 
-            resources.ApplyResources(this.operationStartButton, "operationStartButton");
-            this.operationStartButton.Name = "operationStartButton";
-            this.operationStartButton.UseVisualStyleBackColor = true;
-            // 
-            // operationsListBox
-            // 
-            this.operationsListBox.FormattingEnabled = true;
-            resources.ApplyResources(this.operationsListBox, "operationsListBox");
-            this.operationsListBox.Name = "operationsListBox";
             // 
             // lifeCyclePage
             // 
@@ -637,6 +718,12 @@ namespace CheckboxStation.Views
             resources.ApplyResources(this.lifecycleTotalInstrumentsDataLabel, "lifecycleTotalInstrumentsDataLabel");
             this.lifecycleTotalInstrumentsDataLabel.Name = "lifecycleTotalInstrumentsDataLabel";
             // 
+            // assetScanGridView
+            // 
+            resources.ApplyResources(this.assetScanGridView, "assetScanGridView");
+            this.assetScanGridView.Name = "assetScanGridView";
+            this.assetScanGridView.ViewModel = null;
+            // 
             // dataGridViewCheckBoxColumn1
             // 
             this.dataGridViewCheckBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
@@ -652,6 +739,8 @@ namespace CheckboxStation.Views
             this.Controls.Add(this.tabs);
             this.Controls.Add(this.Panel1);
             this.Name = "MainForm";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainForm_FormClosed);
             this.Panel1.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
@@ -669,13 +758,16 @@ namespace CheckboxStation.Views
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             this.flowLayoutPanel4.ResumeLayout(false);
+            this.flowLayoutPanel4.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.flowLayoutPanel2.ResumeLayout(false);
             this.flowLayoutPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.packingListIcon)).EndInit();
             this.operationPage.ResumeLayout(false);
-            this.operationPage.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.operationsGridView)).EndInit();
+            this.operationsFilterPanel.ResumeLayout(false);
+            this.operationsFilterPanel.PerformLayout();
             this.operationStatusGroupBox.ResumeLayout(false);
             this.operationStatusGroupBox.PerformLayout();
             this.lifeCyclePage.ResumeLayout(false);
@@ -718,11 +810,9 @@ namespace CheckboxStation.Views
         private System.Windows.Forms.Button newOperationButton;
         private System.Windows.Forms.Button operationFinishButton;
         private System.Windows.Forms.Button operationStartButton;
-        private System.Windows.Forms.ListBox operationsListBox;
         private System.Windows.Forms.Label instrumentsCheckedOutDataLabel;
         private System.Windows.Forms.Label instrumentsCheckedInDataLabel;
         private System.Windows.Forms.Label totalInstrumentsDataLabel;
-        private System.Windows.Forms.Button scanButton;
         private System.Windows.Forms.Label operatingRoomDataLabel;
         private System.Windows.Forms.Label operatingRoomLabel;
         private System.Windows.Forms.ColumnHeader type;
@@ -743,21 +833,12 @@ namespace CheckboxStation.Views
         private TableLayoutPanel tableLayoutPanel3;
         private TableLayoutPanel tableLayoutPanel4;
         private Panel panel3;
-        private TableLayoutPanel tableLayoutPanel6;
-        private Label expectedLabel;
-        private Label expectedDataLabel;
-        private Label instrumentTotalCountDataLabel;
-        private Label totalLabel;
         private FlowLayoutPanel flowLayoutPanel4;
         private Button checkinButton;
         private Button checkoutButton;
         private FlowLayoutPanel flowLayoutPanel1;
         private Label trayLabel;
         private Label trayDataLabel;
-        private Button scanExtraButton;
-        private FlowLayoutPanel flowLayoutPanel2;
-        private PictureBox packingListIcon;
-        private Label packingListStatusLabel;
         private Button btnScanLifecycleInstruments;
         private ProgressBar lifecycleScanProgressBar;
         private ListView lvInstrumentsLifecycle;
@@ -777,7 +858,24 @@ namespace CheckboxStation.Views
         private Label scannedLabel;
         private Label scannedDataLabel;
         private Caretag_Class.ReactiveUI.Views.TouchscreenPackingListView assetScanGridView;
+        private Panel operationsFilterPanel;
         private Button reportButton;
+        private TableLayoutPanel tableLayoutPanel6;
+        private Label expectedLabel;
+        private Label expectedDataLabel;
+        private Label instrumentTotalCountDataLabel;
+        private Label totalLabel;
+        private Button scanExtraButton;
+        private FlowLayoutPanel flowLayoutPanel2;
+        private Label packingListStatusLabel;
+        private PictureBox packingListIcon;
+        private Button scanButton;
+        private Button finishButton;
+        private DataGridView operationsGridView;
+        private Label currentOperationText;
+        private DataGridViewTextBoxColumn OperationId;
+        private DataGridViewTextBoxColumn OperatingRoom;
+        private DataGridViewTextBoxColumn State;
     }
 }
 

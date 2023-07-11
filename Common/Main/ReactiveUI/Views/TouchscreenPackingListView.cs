@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Caretag_Class.ReactiveUI.ViewModels;
 using Caretag_Class.Util.UI;
+using Main.Model.Assets;
 using ReactiveUI;
 using static Caretag_Class.ReactiveUI.ViewModels.TouchscreenPackingListViewModel;
 
@@ -53,8 +54,8 @@ public partial class TouchscreenPackingListView : UserControl, IViewFor<Touchscr
                 switch (mode)
                 {
                     case Mode.Checkbox:
-                        DataGridViewInstruments.Columns[StatusColumnName].Visible = true;
-                        DataGridViewInstruments.Columns[VendorColumnName].Visible = false;
+                        DataGridViewInstruments.Columns[StatusColumnName].Visible = false;
+                        DataGridViewInstruments.Columns[VendorColumnName].Visible = true;
                         DataGridViewInstruments.SelectionMode = DataGridViewSelectionMode.CellSelect;
                         break;
                     case Mode.Standard:
@@ -62,7 +63,35 @@ public partial class TouchscreenPackingListView : UserControl, IViewFor<Touchscr
                         DataGridViewInstruments.Columns[VendorColumnName].Visible = true;
                         break;
                 }
-            });
+            }); 
+            
+            ViewModel.WhenAnyValue(vm => vm.DescriptionIdColumnHeaderText)
+                     .Where(headerText => !string.IsNullOrEmpty(headerText))
+                     .Subscribe(headerText =>
+                     {
+                          DataGridViewInstruments.Columns["DescriptionIdColumn"].HeaderText = headerText;
+                     });
+
+            ViewModel.WhenAnyValue(vm => vm.DescriptionColumnHeaderText)
+                     .Where(headerText => !string.IsNullOrEmpty(headerText))
+                     .Subscribe(headerText =>
+                     {
+                         DataGridViewInstruments.Columns["InstrumentDescriptionColumnt"].HeaderText = headerText;
+                     });
+
+            ViewModel.WhenAnyValue(vm => vm.BrandColumnHeaderText)
+                     .Where(headerText => !string.IsNullOrEmpty(headerText))
+                     .Subscribe(headerText =>
+                     {
+                         DataGridViewInstruments.Columns["InstrumentVendorColumn"].HeaderText = headerText;
+                     });
+
+            ViewModel.WhenAnyValue(vm => vm.QuantityColumnHeaderText)
+                     .Where(headerText => !string.IsNullOrEmpty(headerText))
+                     .Subscribe(headerText =>
+                     {
+                         DataGridViewInstruments.Columns["QuantityRenderedColumn"].HeaderText = headerText;
+                     });
         });
 
     }
@@ -124,6 +153,12 @@ public partial class TouchscreenPackingListView : UserControl, IViewFor<Touchscr
             if (numberDialogViewModel.ShowDialog == false)
             {
                 packingListRowViewModel.QuantityPackedManually = numberDialogViewModel.Number;
+                ViewModel.AddManually(new ManuallyAddedAsset
+                {
+                    AssetIds  = packingListRowViewModel.AssetIds,
+                    Quantity = numberDialogViewModel.Number,
+                    AssetTypeId = packingListRowViewModel.AssetTypeId
+                });
             }
             
             ViewModel.PackingListRowsCollection.ResetItem(

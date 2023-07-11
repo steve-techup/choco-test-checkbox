@@ -29,7 +29,9 @@ using Surgical_Admin.Interactions;
 using Xunit;
 using Tests.CheckboxStation;
 using Xunit.Abstractions;
-
+using CheckboxStation.Services.Bridge;
+using CheckboxStation.Configuration;
+using Caretag_Class.Configuration;
 
 namespace Tests.CheckboxStation
 {
@@ -87,6 +89,7 @@ namespace Tests.CheckboxStation
 
             var op = _fixture.Create<Mock<OperationViewModel>>();
             var viewModel = _fixture.Create<CheckboxViewModel>();
+            viewModel.Features.VerificationEnabled = false;
             viewModel.Scheduler = scheduler;
             viewModel.SelectedOperation = op.Object;
             return viewModel;
@@ -131,24 +134,24 @@ namespace Tests.CheckboxStation
                     }
             }).ToList();
 
-            var packingListValidatorMock = new Mock<PackingListValidationService>();
-            packingListValidatorMock.Setup(p => p.Save(It.IsAny<ValidatedPackingList>()));
+            var bridgeMock = new Mock<IScanService>();
+            bridgeMock.Setup(p => p.SaveValidatedPackingList(It.IsAny<ValidatedPackingList>()));
             
-            packingListValidatorMock.Setup(p => p.ValidatePackingList(tags, It.IsAny<ValidatedPackingList?>()))
+            bridgeMock.Setup(p => p.ValidatePackingList(tags, It.IsAny<ValidatedPackingList?>()))
                 .Returns<List<string>, ValidatedPackingList>((t, old) =>
                 {
                     
                     if (old == null)
                     {
-                        return new ValidatedPackingList
+                        return Task.FromResult(new ValidatedPackingList
                         {
                             Result = ValidatedPackingList.PackingListState.NoTray,
                             Lines = lineItems
-                        };
+                        });
                     }
                     else
                     {
-                        return new ValidatedPackingList
+                        return Task.FromResult(new ValidatedPackingList
                         {
                             Result = ValidatedPackingList.PackingListState.NoTray,
                             Lines = lineItems.Select(item => new ValidatedPackingListLineItem
@@ -168,14 +171,21 @@ namespace Tests.CheckboxStation
                                     }).ToList()
                                 }).ToList()
                             }).ToList()
-                        };
+                        });
                     }
                 });
 
+            bridgeMock.Setup(i => i.GetInstruments(It.IsAny<List<string>>())).ReturnsAsync(() => tags.Select(t => new Instrument_RFID()
+            {
+                EPC_Nr = t,
+                OperationInstruments = new List<OperationInstrument>(),
+                Description_Text = _fixture.Create<string>()
+            }).ToList());
 
 
-            _fixture.Register(() => packingListValidatorMock.Object);
-            _fixture.Register(() => packingListValidatorMock);
+
+            _fixture.Register(() => bridgeMock.Object);
+            _fixture.Register(() => bridgeMock);
 
             var instrumentServiceMock = new Mock<InstrumentService>();
             instrumentServiceMock.Setup(i => i.GetByTagsWithOperationAndDescriptionAndPopulateServiceRequests(It.IsAny<List<string>>())).Returns(() => tags.Select(t => new Instrument_RFID()
@@ -201,8 +211,11 @@ namespace Tests.CheckboxStation
             _fixture.Register(() => checkInService.Object);
             _fixture.Register(() => checkInService);
             SetupReaderCollectionWithInstrumentsScanned(GetTags(1));
-            var packingListValidator =  _fixture.Create<Mock<PackingListValidationService>>();
-            
+
+            var bridgeValidator = _fixture.Create<Mock<IScanService>>();
+            _fixture.Register(() => bridgeValidator.Object);
+            _fixture.Register(() => bridgeValidator);
+
 
             new TestScheduler().With(s =>
             {
@@ -211,7 +224,7 @@ namespace Tests.CheckboxStation
 
                 viewModel.CheckIn.Execute().Subscribe(_ =>
                 {
-                    packingListValidator.Verify(p => p.ValidatePackingList(It.IsAny<List<string>>(), null), Times.Once);
+                    bridgeValidator.Verify(p => p.ValidatePackingList(It.IsAny<List<string>>(), null), Times.Once);
 
                 });
                 s.Start();
@@ -226,7 +239,10 @@ namespace Tests.CheckboxStation
         {
             var tags = GetTags(instrumentCount);
             SetupReaderCollectionWithInstrumentsScanned(tags, true);
-            var packingListValidator = _fixture.Create<Mock<PackingListValidationService>>();
+
+            var bridgeValidator = _fixture.Create<Mock<IScanService>>();
+            _fixture.Register(() => bridgeValidator.Object);
+            _fixture.Register(() => bridgeValidator);
 
             var checkStateService = new Mock<CheckStateService>();
             _fixture.Register(() => checkStateService.Object);
@@ -238,7 +254,7 @@ namespace Tests.CheckboxStation
                 viewModel.SelectedOperation = null;
                 viewModel.CheckOut.Execute().Subscribe(_ =>
                 {
-                    packingListValidator.Verify(p => p.ValidatePackingList(It.IsAny<List<string>>(), null), Times.Once);
+                    bridgeValidator.Verify(p => p.ValidatePackingList(It.IsAny<List<string>>(), null), Times.Once);
                     
                     // verify that checkStateService.CheckInstrumentsOut was called once
                     checkStateService.Verify(s => s.CheckInstrumentsOut(It.IsAny<IEnumerable<Instrument_RFID>>()), Times.Once);
@@ -257,6 +273,14 @@ namespace Tests.CheckboxStation
         {
             new TestScheduler().With(s =>
             {
+                var appSettings = _fixture.Create<AppSettingsBase>();
+                appSettings.UseApi = false;
+                _fixture.Inject(appSettings);
+
+                var checkboxSettings = _fixture.Create<CheckboxStationAppSettings>();
+                checkboxSettings.Features.VerificationEnabled = false;
+                _fixture.Inject(checkboxSettings);
+
                 SetupReaderCollectionWithInstrumentsScanned(GetTags(instrumentCount));
                 var viewModel = SetupWithSelectedOperation(true,s);
                 
@@ -284,6 +308,14 @@ namespace Tests.CheckboxStation
         {
             new TestScheduler().With(s =>
             {
+                var appSettings = _fixture.Create<AppSettingsBase>();
+                appSettings.UseApi = false;
+                _fixture.Inject(appSettings);
+
+                var checkboxSettings = _fixture.Create<CheckboxStationAppSettings>();
+                checkboxSettings.Features.VerificationEnabled = false;
+                _fixture.Inject(checkboxSettings);
+
                 SetupReaderCollectionWithInstrumentsScanned(GetTags(instrumentCount));
                 var viewModel = SetupWithSelectedOperation(false, s);
 
@@ -295,13 +327,14 @@ namespace Tests.CheckboxStation
                     _testOutputHelper.WriteLine("In Subscribe");
                     Assert.Equal(ValidatedPackingList.PackingListState.NoTray, viewModel.ValidatedPackingList.Result);
                     Assert.Equal(instrumentCount, viewModel.ValidatedPackingList.Lines.Count);
-                    
-                    _fixture.Create<Mock<PackingListValidationService>>()
-                        .Verify(p => p.Save(It.IsAny<ValidatedPackingList>()), Times.Exactly(1));
 
-                    var scanEventServiceMock = _fixture.Create<Mock<ScanEventService>>();
-                    scanEventServiceMock.Verify();
-                    scanEventServiceMock.Verify(x => x.Save(It.IsAny<List<string>>()), Times.Exactly(1));
+                    var bridgeMock = _fixture.Create<Mock<IScanService>>();
+                    _fixture.Register(() => bridgeMock.Object);
+                    _fixture.Register(() => bridgeMock);
+
+                    bridgeMock.Verify();
+                    bridgeMock.Verify(p => p.SaveValidatedPackingList(It.IsAny<ValidatedPackingList>()), Times.Exactly(1));
+                    bridgeMock.Verify(x => x.SaveScanLog(It.IsAny<List<string>>()), Times.Exactly(1));
                 });
 
                 s.Start();
@@ -318,6 +351,14 @@ namespace Tests.CheckboxStation
         {
             new TestScheduler().With(s =>
             {
+                var appSettings = _fixture.Create<AppSettingsBase>();
+                appSettings.UseApi = false;
+                _fixture.Inject(appSettings);
+
+                var checkboxSettings = _fixture.Create<CheckboxStationAppSettings>();
+                checkboxSettings.Features.VerificationEnabled = false;
+                _fixture.Inject(checkboxSettings);
+
                 SetupReaderCollectionWithInstrumentsScanned(GetTags(instrumentCount));
                 var viewModel = SetupWithSelectedOperation(true, s);
 
@@ -331,11 +372,9 @@ namespace Tests.CheckboxStation
                     Assert.Equal(instrumentCount, viewModel.ValidatedPackingList.Tags.Count); 
                     Assert.Equal(instrumentCount, viewModel.ValidatedPackingList.Lines.Count);
 
-                    _fixture.Create<Mock<PackingListValidationService>>()
-                        .Verify(p => p.Save(It.IsAny<ValidatedPackingList>()), Times.Once);
-
-                    var scanEventServiceMock = _fixture.Create<Mock<ScanEventService>>();
-                    scanEventServiceMock.Verify(x => x.Save(It.IsAny<List<string>>()), Times.Once);
+                    var bridgeMock = _fixture.Create<Mock<IScanService>>();
+                    bridgeMock.Verify(p => p.SaveValidatedPackingList(It.IsAny<ValidatedPackingList>()), Times.Once);
+                    bridgeMock.Verify(x => x.SaveScanLog(It.IsAny<List<string>>()), Times.Once);
                 });
 
                 s.Start();
@@ -351,10 +390,6 @@ namespace Tests.CheckboxStation
         {
             new TestScheduler().With(s =>
             {
-                var scanEventServiceMock = _fixture.Create<Mock<ScanEventService>>();
-                
-                scanEventServiceMock.Setup(x => x.Save(It.IsAny<List<string>>()));
-                
                 var tags = GetTags(instrumentCount);
                 SetupReaderCollectionWithInstrumentsScanned(tags);
                 var viewModel = SetupWithSelectedOperation(true, s);
@@ -366,7 +401,10 @@ namespace Tests.CheckboxStation
                 {
                     _testOutputHelper.WriteLine("In Subscribe");
 
-                    scanEventServiceMock.Verify(x => x.Save(It.IsAny<List<string>>()), Times.Once);
+                    var bridgeMock = _fixture.Create<Mock<IScanService>>();
+                    _fixture.Register(() => bridgeMock.Object);
+                    _fixture.Register(() => bridgeMock);
+                    bridgeMock.Verify(x => x.SaveScanLog(It.IsAny<List<string>>()), Times.Once);
 
                     Assert.Equal(tags, viewModel.InstrumentLifecycleRfids.Select(i => i.EPC_Nr));
                 });

@@ -60,45 +60,45 @@
             : and then encoded with base64 encoding.
     -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
         <xsd:choice maxOccurs="unbounded">
           <xsd:element name="metadata">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
               </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string"/>
-              <xsd:attribute name="type" type="xsd:string"/>
-              <xsd:attribute name="mimetype" type="xsd:string"/>
-              <xsd:attribute ref="xml:space"/>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="assembly">
             <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string"/>
-              <xsd:attribute name="name" type="xsd:string"/>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="data">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
-              <xsd:attribute ref="xml:space"/>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required"/>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
             </xsd:complexType>
           </xsd:element>
         </xsd:choice>
@@ -191,5 +191,45 @@ Pokud není požadovaná operace viditelná, vytvořte nebo spusťte operaci v t
   </data>
   <data name="More than one tray scanned. \nPacking list NOT validated. \nChecking in: {Instruments.Count} instruments." xml:space="preserve">
     <value>Skenování více než jednoho síta. \nBalicí seznam NENÍ validován. \nChecking in: {Instruments.Count} nástrojů.</value>
+  </data>
+  <data name="BrandColumnHeaderText" xml:space="preserve">
+    <value>Značka</value>
+  </data>
+  <data name="DescriptionCoulmnHeaderText" xml:space="preserve">
+    <value>Popis</value>
+  </data>
+  <data name="DescriptionIdCoulmnHeaderText" xml:space="preserve">
+    <value>Popisné ID</value>
+  </data>
+  <data name="QuantityColumnHeaderText" xml:space="preserve">
+    <value>Množství</value>
+  </data>
+  <data name="Are you sure that you want to finish the check-in session?" xml:space="preserve">
+    <value>Jste si jisti, že chcete dokončit odbavení?</value>
+  </data>
+  <data name="Finish check in" xml:space="preserve">
+    <value>Dokončení přihlášení</value>
+  </data>
+  <data name="Verification" xml:space="preserve">
+    <value>Ověřování</value>
+  </data>
+  <data name="ReportConfirmationDialogMessage" xml:space="preserve">
+    <value>Soubor zprávy byl úspěšně vygenerován (relace {0}, ve složce {0}). 
+Pokud má přístup, bude také sdílen e-mailem.</value>
+  </data>
+  <data name="ReportConfirmationDialogTitle" xml:space="preserve">
+    <value>Vytvořená zpráva</value>
+  </data>
+  <data name="CheckInAssetAlreadyCheckedInInAnotherSession" xml:space="preserve">
+    <value>Některé z naskenovaných přístrojů jsou již zaškrtnuty v jiné relaci, která nebyla dokončena.</value>
+  </data>
+  <data name="CheckInFailed" xml:space="preserve">
+    <value>Přihlášení se nezdařilo</value>
+  </data>
+  <data name="CheckOutFailed" xml:space="preserve">
+    <value>Odhlášení se nezdařilo</value>
+  </data>
+  <data name="FinishCheckInFailed" xml:space="preserve">
+    <value>Dokončení přihlášení se nezdařilo</value>
   </data>
 </root>

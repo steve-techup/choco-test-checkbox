@@ -21,6 +21,7 @@ using DevExpress.Xpo.Logger;
 using Main.ReactiveUI.ViewModels;
 using Main.ReactiveUI.Views;
 using Main.Repositories.UnitOfWork;
+using Microsoft.Extensions.Logging;
 using ReactiveUI;
 using Serilog;
 using Westwind.Utilities;
@@ -30,7 +31,7 @@ namespace Surgical_Admin.Interactions
 {
     public class CommonInteractions
     {
-        private readonly ILogger _logger;
+        private readonly ILogger<CommonInteractions> _logger;
         private readonly ResourceManager _resourceManager;
         private readonly LoginUnitOfWorkFactory _loginUnitOfWorkFactory;
         private IScheduler _scheduler;
@@ -53,11 +54,11 @@ namespace Surgical_Admin.Interactions
             var locstr = _resourceManager.GetString(str);
 
             var missingLoc = Debugger.IsAttached ? "[Missing localization] " : "";
-            
+
             return string.IsNullOrWhiteSpace(locstr) ? missingLoc + str : locstr;
         }
 
-        public CommonInteractions(ILogger logger, ResourceManager resourceManager, LoginUnitOfWorkFactory loginUnitOfWorkFactory, IScheduler scheduler)
+        public CommonInteractions(ILogger<CommonInteractions> logger, ResourceManager resourceManager, LoginUnitOfWorkFactory loginUnitOfWorkFactory, IScheduler scheduler)
         {
             _logger = logger;
             _resourceManager = resourceManager;
@@ -73,6 +74,7 @@ namespace Surgical_Admin.Interactions
         }
 
         public Interaction<Exception, Unit> ExceptionInteraction { get; set; }
+        public Interaction<KeyValuePair<string, Exception>, Unit> ApiExceptionInteraction { get; set; }
 
         public Interaction<CaretagMessageBoxArguments, CaretagMessageBoxResult> Confirm { get; set; }
 
@@ -90,6 +92,7 @@ namespace Surgical_Admin.Interactions
         private void InitializeInteractions()
         {
             ExceptionInteraction = new(_scheduler);
+            ApiExceptionInteraction = new(_scheduler);
             Confirm = new(_scheduler);
             BrowseOpenCSVInteraction = new(_scheduler);
             ErrorReportInteraction = new(_scheduler);
@@ -119,7 +122,7 @@ namespace Surgical_Admin.Interactions
                         Options = interaction.Input.Options
                     });
 
-                    using var dialog= new StandardDialog(vm);
+                    using var dialog = new StandardDialog(vm, _resourceManager);
                     await dialog.ShowDialogAsync();
                     interaction.SetOutput(vm.Result);
                 });
@@ -134,7 +137,22 @@ namespace Surgical_Admin.Interactions
                     Options = CaretagMessageBoxOptions.Ok
                 });
 
-                using var dialog = new StandardDialog(vm);
+                using var dialog = new StandardDialog(vm, _resourceManager);
+                dialog.ShowDialog();
+                interaction.SetOutput(Unit.Default);
+            });
+
+            ApiExceptionInteraction.RegisterHandler(interaction =>
+            {
+                var vm = new StandardDialogViewModel(new CaretagMessageBoxArguments
+                {
+                    Title = interaction.Input.Key,
+                    Message = interaction.Input.Value.Message,
+                    IsWarning = true,
+                    Options = CaretagMessageBoxOptions.Ok
+                });
+
+                using var dialog = new StandardDialog(vm, _resourceManager);
                 dialog.ShowDialog();
                 interaction.SetOutput(Unit.Default);
             });
@@ -157,7 +175,7 @@ namespace Surgical_Admin.Interactions
                 dialog.Filter = interaction.Input;
                 dialog.FilterIndex = 1;
                 dialog.RestoreDirectory = true;
-                
+
                 interaction.SetOutput(dialog.ShowDialog() == DialogResult.OK
                     ? dialog.FileName
                     : null);
@@ -182,43 +200,43 @@ namespace Surgical_Admin.Interactions
                 {
                     case ReportLevel.Error:
                         if (interaction.Input.Exception != null)
-                            _logger.Error(interaction.Input.Exception, interaction.Input.LogMessage);
+                            _logger.LogError(interaction.Input.Exception, interaction.Input.LogMessage);
                         else
-                            _logger.Error(interaction.Input.LogMessage);
+                            _logger.LogError(interaction.Input.LogMessage);
                         title = getLocalized("Error");
                         break;
                     case ReportLevel.Fatal:
                         if (interaction.Input.Exception != null)
-                            _logger.Fatal(interaction.Input.Exception, interaction.Input.LogMessage);
+                            _logger.LogCritical(interaction.Input.Exception, interaction.Input.LogMessage);
                         else
-                            _logger.Fatal(interaction.Input.LogMessage);
+                            _logger.LogCritical(interaction.Input.LogMessage);
                         title = getLocalized("Fatal ");
                         break;
                     case ReportLevel.Information:
                         if (interaction.Input.Exception != null)
-                            _logger.Information(interaction.Input.Exception, interaction.Input.LogMessage);
+                            _logger.LogInformation(interaction.Input.Exception, interaction.Input.LogMessage);
                         else
-                            _logger.Information(interaction.Input.LogMessage);
+                            _logger.LogInformation(interaction.Input.LogMessage);
                         title = getLocalized("Information");
                         break;
                     case ReportLevel.Debug:
                         if (interaction.Input.Exception != null)
-                            _logger.Debug(interaction.Input.Exception, interaction.Input.LogMessage);
+                            _logger.LogDebug(interaction.Input.Exception, interaction.Input.LogMessage);
                         else
-                            _logger.Debug(interaction.Input.LogMessage);
+                            _logger.LogDebug(interaction.Input.LogMessage);
                         title = getLocalized("Debug");
                         break;
                     case ReportLevel.Warning:
                         if (interaction.Input.Exception != null)
-                            _logger.Warning(interaction.Input.Exception, interaction.Input.LogMessage);
+                            _logger.LogWarning(interaction.Input.Exception, interaction.Input.LogMessage);
                         else
-                            _logger.Warning(interaction.Input.LogMessage);
+                            _logger.LogWarning(interaction.Input.LogMessage);
                         title = getLocalized("Warning");
                         break;
                     default:
                         throw new ArgumentOutOfRangeException();
                 }
-                
+
                 var vm = new StandardDialogViewModel(new CaretagMessageBoxArguments
                 {
                     Title = title,
@@ -227,7 +245,7 @@ namespace Surgical_Admin.Interactions
                     Options = CaretagMessageBoxOptions.Ok
                 });
 
-                using var dialog = new StandardDialog(vm);
+                using var dialog = new StandardDialog(vm, _resourceManager);
                 await dialog.ShowDialogAsync();
                 interaction.SetOutput(Unit.Default);
             });

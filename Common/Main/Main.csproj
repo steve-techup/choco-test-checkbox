@@ -101,11 +101,15 @@
     <Compile Include="Configuration\ConfigurationWriter.cs" />
     <Compile Include="EventReporting\EventReporter.cs" />
     <Compile Include="EventReporting\ReportLevel.cs" />
+    <Compile Include="Exceptions\CaretagApiException.cs" />
     <Compile Include="Exceptions\CaretagApplicationException.cs" />
+    <Compile Include="Extensions\ApiErrorResponseExtensions.cs" />
     <Compile Include="Extensions\ConfigurationExtensions.cs" />
+    <Compile Include="Extensions\ControlExtensions.cs" />
     <Compile Include="Extensions\DevExpressExtensions.cs" />
     <Compile Include="Extensions\DiExtensions.cs" />
     <Compile Include="Extensions\EntityFrameworkExtension.cs" />
+    <Compile Include="Extensions\LoggingExtensions.cs" />
     <Compile Include="Extensions\ReactiveUIExtensions.cs" />
     <Compile Include="Extensions\WinformExtensions.cs" />
     <Compile Include="Forms\LoginForm.cs">
@@ -159,6 +163,7 @@
     <Compile Include="Migrations\202303061349012_ValidatedPackingListLineItemInstrument_RFID_PK.designer.cs">
       <DependentUpon>202303061349012_ValidatedPackingListLineItemInstrument_RFID_PK.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\Assets\ManuallyAddedAsset.cs" />
     <Compile Include="Model\DevexpressModels\CostCenterXPOModel.cs" />
     <Compile Include="Model\DevexpressModels\CostItemXPOModel.cs" />
     <Compile Include="Model\DevexpressModels\CostTypeXPOModel.cs" />
@@ -181,6 +186,13 @@
     <Compile Include="ReactiveUI\ViewModelProvidingViewLocator.cs" />
     <Compile Include="ReactiveUI\DefaultExceptionHandler.cs" />
     <Compile Include="ReactiveUI\Interactions\CommonInteractionsFactory.cs" />
+    <Compile Include="ReactiveUI\ViewModels\ApiLoginViewModel.cs" />
+    <Compile Include="ReactiveUI\Views\ApiLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReactiveUI\Views\ApiLogin.Designer.cs">
+      <DependentUpon>ApiLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Services\ExcelExportService.cs" />
     <Compile Include="ReactiveUI\Services\ReactiveCommandService.cs" />
     <Compile Include="ReactiveUI\ViewModels\LoginViewModel.cs" />
@@ -210,6 +222,7 @@
     <Compile Include="Repositories\GenericRepository.cs" />
     <Compile Include="Repositories\UnitOfWork.cs" />
     <Compile Include="Repositories\UnitOfWork\LoginUnitOfWorkFactory.cs" />
+    <Compile Include="Services\LoginService.cs" />
     <Compile Include="Services\TrayLabel.cs" />
     <Compile Include="Services\ZebraPrintService.cs" />
     <Compile Include="UIControls\ExtensionMethods\ImageExtensions.cs" />
@@ -493,6 +506,11 @@
     <Compile Include="SQLUtil.cs" />
     <Compile Include="Util\FormUtil.cs" />
     <Compile Include="Util\StringDistanceCalculator.cs" />
+    <Compile Include="WinFormStrings.cs-CZ.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WinFormStrings.cs-CZ.resx</DependentUpon>
+    </Compile>
     <Compile Include="WinFormStrings.de-DE.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -571,17 +589,51 @@
     <EmbeddedResource Include="Migrations\202303061349012_ValidatedPackingListLineItemInstrument_RFID_PK.resx">
       <DependentUpon>202303061349012_ValidatedPackingListLineItemInstrument_RFID_PK.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ReactiveUI\Views\ApiLogin.cs-CZ.resx">
+      <DependentUpon>ApiLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReactiveUI\Views\ApiLogin.de-DE.resx">
+      <DependentUpon>ApiLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReactiveUI\Views\ApiLogin.resx">
+      <DependentUpon>ApiLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReactiveUI\Views\Login.cs-CZ.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReactiveUI\Views\Login.de-DE.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ReactiveUI\Views\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReactiveUI\Views\StandardDialog.cs-CZ.resx">
+      <DependentUpon>StandardDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReactiveUI\Views\StandardDialog.de-DE.resx">
+      <DependentUpon>StandardDialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ReactiveUI\Views\StandardDialog.resx">
       <DependentUpon>StandardDialog.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ReactiveUI\Views\TouchscreenNumberDialog.cs-CZ.resx">
+      <DependentUpon>TouchscreenNumberDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReactiveUI\Views\TouchscreenNumberDialog.de-DE.resx">
+      <DependentUpon>TouchscreenNumberDialog.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ReactiveUI\Views\TouchscreenNumberDialog.resx">
       <DependentUpon>TouchscreenNumberDialog.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ReactiveUI\Views\TouchscreenPackingListView.cs-CZ.resx">
+      <DependentUpon>TouchscreenPackingListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReactiveUI\Views\TouchscreenPackingListView.de-DE.resx">
+      <DependentUpon>TouchscreenPackingListView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ReactiveUI\Views\TouchscreenPackingListView.resx">
       <DependentUpon>TouchscreenPackingListView.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -608,23 +660,63 @@
     <EmbeddedResource Include="Forms\SplashScreen.resx">
       <DependentUpon>SplashScreen.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UIControls\Winforms\Controls\BtnLogOut.cs-CZ.resx">
+      <DependentUpon>BtnLogOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIControls\Winforms\Controls\BtnLogOut.de-DE.resx">
+      <DependentUpon>BtnLogOut.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UIControls\Winforms\Controls\BtnLogOut.resx">
       <DependentUpon>BtnLogOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIControls\Winforms\Controls\BtnOSK.cs-CZ.resx">
+      <DependentUpon>BtnOSK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIControls\Winforms\Controls\BtnOSK.de-DE.resx">
+      <DependentUpon>BtnOSK.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UIControls\Winforms\Controls\BtnOSK.resx">
       <DependentUpon>BtnOSK.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UIControls\Winforms\Controls\ReaderPowerBar.cs-CZ.resx">
+      <DependentUpon>ReaderPowerBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIControls\Winforms\Controls\ReaderPowerBar.de-DE.resx">
+      <DependentUpon>ReaderPowerBar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UIControls\Winforms\Controls\ReaderPowerBar.resx">
       <DependentUpon>ReaderPowerBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIControls\Winforms\Controls\ThumbnailBox.cs-CZ.resx">
+      <DependentUpon>ThumbnailBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIControls\Winforms\Controls\ThumbnailBox.de-DE.resx">
+      <DependentUpon>ThumbnailBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UIControls\Winforms\Controls\ThumbnailBox.resx">
       <DependentUpon>ThumbnailBox.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UIControls\Winforms\Dialogs\ImagePreviewDlg.cs-CZ.resx">
+      <DependentUpon>ImagePreviewDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIControls\Winforms\Dialogs\ImagePreviewDlg.de-DE.resx">
+      <DependentUpon>ImagePreviewDlg.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UIControls\Winforms\Dialogs\ImagePreviewDlg.resx">
       <DependentUpon>ImagePreviewDlg.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UIControls\Winforms\TestForm.cs-CZ.resx">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIControls\Winforms\TestForm.de-DE.resx">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UIControls\Winforms\TestForm.resx">
       <DependentUpon>TestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormStrings.cs-CZ.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>WinFormStrings.cs-CZ.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="WinFormStrings.de-DE.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -650,6 +742,10 @@
     <None Include="UIControls\Winforms\App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\OnScreenKeyboard\OnScreenKeyboard.csproj">
+      <Project>{56d092c2-daa7-4bae-812b-bfb42d53c090}</Project>
+      <Name>OnScreenKeyboard</Name>
+    </ProjectReference>
     <ProjectReference Include="..\RFIDAbstractionLayer\RFIDAbstractionLayer.csproj">
       <Project>{f57d2810-bec8-490d-bfdd-3cc3980f938c}</Project>
       <Name>RFIDAbstractionLayer</Name>
@@ -658,6 +754,12 @@
   <ItemGroup>
     <PackageReference Include="BitFaster.Caching">
       <Version>2.1.1</Version>
+    </PackageReference>
+    <PackageReference Include="Caretag.Contracts">
+      <Version>1.0.85</Version>
+    </PackageReference>
+    <PackageReference Include="Destructurama.Attributed">
+      <Version>3.0.0</Version>
     </PackageReference>
     <PackageReference Include="DevExpress.Charts.Core">
       <Version>22.1.7</Version>
@@ -697,6 +799,12 @@
     <PackageReference Include="NanoXLSX">
       <Version>2.1.0</Version>
     </PackageReference>
+    <PackageReference Include="Microsoft.Office.Interop.Excel">
+      <Version>15.0.4795.1001</Version>
+    </PackageReference>
+    <PackageReference Include="MiniExcel">
+      <Version>1.29.0</Version>
+    </PackageReference>
     <PackageReference Include="Polly">
       <Version>7.2.3</Version>
     </PackageReference>
@@ -715,8 +823,29 @@
     <PackageReference Include="Scrutor">
       <Version>4.2.0</Version>
     </PackageReference>
+    <PackageReference Include="Serilog.Enrichers.Environment">
+      <Version>2.2.0</Version>
+    </PackageReference>
+    <PackageReference Include="Serilog.Extensions.Hosting">
+      <Version>7.0.0</Version>
+    </PackageReference>
     <PackageReference Include="Serilog.Settings.Configuration">
       <Version>3.4.0</Version>
+    </PackageReference>
+    <PackageReference Include="Serilog.Sinks.Console">
+      <Version>4.1.0</Version>
+    </PackageReference>
+    <PackageReference Include="Serilog.Sinks.Elasticsearch">
+      <Version>9.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Serilog.Sinks.File">
+      <Version>5.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="Westwind.Utilities">
+      <Version>4.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="Zebra.Printer.SDK">
+      <Version>2.15.2634</Version>
     </PackageReference>
     <PackageReference Include="Zebra.Printer.SDK">
       <Version>2.15.2634</Version>
@@ -747,8 +876,14 @@
     <None Include="UIControls\Winforms\Resources\computer-keyboard-wireless-icon.svg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\caretag_sm.png" />
+    <None Include="Resources\caretag_sm.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\CaretagApplicationIcon.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

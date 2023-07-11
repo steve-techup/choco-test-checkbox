@@ -1,12 +1,14 @@
-﻿using Caretag_Class.Configuration;
+﻿using Caretag.Contracts.Api.v1;
+using Caretag.Contracts.Core;
+using Caretag.Contracts.Models.v1.Settings;
+using Caretag_Class.Configuration;
 using CheckboxStation.Configuration;
 using CheckboxStation.Reporting;
 using CsvHelper;
 using DynamicData;
 using DynamicData.Kernel;
 using Microsoft.Extensions.DependencyInjection;
-using Serilog;
-using Serilog.Core;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -22,13 +24,21 @@ namespace CheckboxStation.Services
     {
         private readonly CheckboxStationAppSettings _checkboxSettings;
         private readonly AppSettingsBase _appSettings;
-        private readonly ILogger _logger;
+        private readonly ILogger<ReportingService> _logger;
         private int? _currentSessionNumber = null;
         private CsvHelper.Configuration.CsvConfiguration _csvConfiguration;
-        public ReportingService(CheckboxStationAppSettings checkboxSettings, AppSettingsBase appSettings, ILogger logger)
+        private readonly ISettingsApi _settingsApi;
+
+        private AppInstanceResponse _appInstance = null;
+        public ReportingService(
+            CheckboxStationAppSettings checkboxSettings,
+            AppSettingsBase appSettings,
+            ILogger<ReportingService> logger,
+            ISettingsApi settingsApi)
         {
             _checkboxSettings = checkboxSettings;
             _appSettings = appSettings;
+            _settingsApi = settingsApi;
             _logger = logger;
             _csvConfiguration = new CsvHelper.Configuration.CsvConfiguration(CultureInfo.InvariantCulture)
             {
@@ -51,14 +61,22 @@ namespace CheckboxStation.Services
 
         public async Task GenerateVerificationCsv(List<VerificationReportItem> verificationReportItems, bool incrementSessionNumber = true)
         {
-            if (!string.IsNullOrEmpty(_checkboxSettings.VerificationReportFilePath))
+            if (_appInstance == null)
             {
-                var fileExists = File.Exists(_checkboxSettings.VerificationReportFilePath);
+                await TryGetAppinstance();
+            }
+
+            var reportPath = _appInstance?.Settings?.CheckboxSetting != null ? _appInstance.Settings.CheckboxSetting.VerificationReportFilePath : _checkboxSettings.VerificationReportFilePath;
+
+
+            if (!string.IsNullOrEmpty(reportPath))
+            {
+                var fileExists = File.Exists(reportPath);
                 var existingItems = new List<VerificationReportItem>();
 
                 if (fileExists)
                 {
-                    using (var streamReader = new StreamReader(_checkboxSettings.VerificationReportFilePath))
+                    using (var streamReader = new StreamReader(reportPath))
                     {
                         using (var csvFile = new CsvReader(streamReader, _csvConfiguration))
                         {
@@ -71,7 +89,7 @@ namespace CheckboxStation.Services
                             }
                             catch (Exception ex)
                             {
-                                _logger.Error(ex, "Error while reading CSV verification report");
+                                _logger.LogError(ex, "Error while reading CSV verification report");
                             }
                         }
                     }
@@ -94,13 +112,13 @@ namespace CheckboxStation.Services
 
                 if (!fileExists)
                 {
-                    var directory = Path.GetDirectoryName(_checkboxSettings.VerificationReportFilePath);
+                    var directory = Path.GetDirectoryName(reportPath);
 
                     if (!string.IsNullOrEmpty(directory) && !Directory.Exists(directory))
                         Directory.CreateDirectory(directory);
                 }
 
-                using (var streamWriter = new StreamWriter(_checkboxSettings.VerificationReportFilePath))
+                using (var streamWriter = new StreamWriter(reportPath))
                 {
                     using (var csvWriter = new CsvWriter(streamWriter, _csvConfiguration))
                     {
@@ -110,7 +128,7 @@ namespace CheckboxStation.Services
                         }
                         catch (Exception ex)
                         {
-                            _logger.Error(ex, "Error while writing CSV verification report");
+                            _logger.LogError(ex, "Error while writing CSV verification report");
                         }
                     }
                 }
@@ -120,7 +138,16 @@ namespace CheckboxStation.Services
 
         public async Task SendVerificationReportEmail(List<VerificationReportItem> verificationReportItems)
         {
-            if (!string.IsNullOrEmpty(_checkboxSettings.VerificationReportFilePath) && !string.IsNullOrEmpty(_checkboxSettings.ReportingInVerificationMode))
+            if (_appInstance == null)
+            {
+                await TryGetAppinstance();
+            }
+
+            var reportPath = _appInstance?.Settings?.CheckboxSetting != null ? _appInstance.Settings.CheckboxSetting.VerificationReportFilePath : _checkboxSettings.VerificationReportFilePath;
+            var reportRecipients = _appInstance?.Settings?.CheckboxSetting != null ? _appInstance.Settings.CheckboxSetting.ReportingInVerificationMode : _checkboxSettings.ReportingInVerificationMode;
+            var stationName = _appInstance != null ? _appInstance.Name : _appSettings.StationUniqueID;
+
+            if (!string.IsNullOrEmpty(reportPath) && !string.IsNullOrEmpty(reportRecipients))
             {
                 string trayName = "-";
                 string trayUdi = "-";
@@ -144,7 +171,7 @@ namespace CheckboxStation.Services
                 emailBody.AppendLine($"-\t<b>Packing Set details:</b> {trayName} ({expectedCount} surgical instruments)</br>");
                 emailBody.AppendLine($"-\t<b>Tray UDI:</b> {trayUdi}</br>");
                 emailBody.AppendLine($"-\t<b>Scanned:</b> {scannedCount} instruments</br>");
-                emailBody.AppendLine($"-\t<b>Checkbox: {_appSettings.StationUniqueID}</b></br></br>");
+                emailBody.AppendLine($"-\t<b>Checkbox: {stationName}</b></br></br>");
                 emailBody.AppendLine();
                 emailBody.AppendLine("<b>Find below the details of all surgical instruments </b>(scanned, or part of the packing set definition). All the earlier scanning sessions are attached in a CSV file (Tab delimited).</br></br>");
 
@@ -191,12 +218,12 @@ namespace CheckboxStation.Services
 
                 using (var smptClient = SetupEmailClient())
                 {
-                    var recipients = !string.IsNullOrEmpty(_checkboxSettings.ReportingInVerificationMode) ? _checkboxSettings.ReportingInVerificationMode.Split(';') : new string[0];
+                    var recipients = !string.IsNullOrEmpty(reportRecipients) ? reportRecipients.Split(';') : new string[0];
                     using (MailMessage message = new MailMessage())
                     {
                         try
                         {
-                            message.Attachments.Add(new Attachment(_checkboxSettings.VerificationReportFilePath));
+                            message.Attachments.Add(new Attachment(reportPath));
                             message.From = new MailAddress("petru.faurescu@caretag.eu", "Caretag Checkbox Station");
                             message.To.AddRange(recipients.Select(r => new MailAddress(r)));
                             message.IsBodyHtml = true;
@@ -206,7 +233,7 @@ namespace CheckboxStation.Services
                         }
                         catch (Exception ex)
                         {
-                            _logger.Error(ex, "Error while sending verification report email");
+                            _logger.LogError(ex, "Error while sending verification report email");
                         }
                     }
                 }
@@ -215,7 +242,16 @@ namespace CheckboxStation.Services
         }
         public async Task<Tuple<string, string>> GenerateHtmlReport(List<VerificationReportItem> verificationReportItems)
         {
-            var path = !string.IsNullOrEmpty(_checkboxSettings.VerificationReportFilePath) ? Path.GetDirectoryName(_checkboxSettings.VerificationReportFilePath) : @"Report";
+            if (_appInstance == null)
+            {
+                await TryGetAppinstance();
+            }
+
+
+            var reportPath = _appInstance?.Settings?.CheckboxSetting != null ? _appInstance.Settings.CheckboxSetting.VerificationReportFilePath : _checkboxSettings.VerificationReportFilePath;
+            var stationName = _appInstance != null ? _appInstance.Name : _appSettings.StationUniqueID;
+
+            var path = !string.IsNullOrEmpty(reportPath) ? Path.GetDirectoryName(reportPath) : @"Report";
 
             string trayName = "-";
             string trayUdi = "-";
@@ -292,7 +328,7 @@ namespace CheckboxStation.Services
             emailBody.AppendLine($"<p class=\"info\">-\t<b>Packing Set details:</b> {trayName} ({expectedCount} surgical instruments)</p>");
             emailBody.AppendLine($"<p class=\"info\">-\t<b>Tray UDI:</b> {trayUdi}</p>");
             emailBody.AppendLine($"<p class=\"info\">-\t<b>Scanned:</b> {scannedCount} instruments</p>");
-            emailBody.AppendLine($"<p class=\"info\">-\t<b>Checkbox: {_appSettings.StationUniqueID}</b></br></br></p>");
+            emailBody.AppendLine($"<p class=\"info\">-\t<b>Checkbox: {stationName}</b></br></br></p>");
             emailBody.AppendLine();
             emailBody.AppendLine("<p><b>Find below the details of all surgical instruments </b>(scanned, or part of the packing set definition). All the earlier scanning sessions are attached in a CSV file (Tab delimited).</p>");
 
@@ -342,7 +378,7 @@ namespace CheckboxStation.Services
             if (!Directory.Exists(path))
                 Directory.CreateDirectory(path);
 
-            string filePath = Path.Combine(path, $"{_appSettings.StationUniqueID} {DateTime.Now.ToString("yyyy.MM.dd")} - {sessionNumber}.html");
+            string filePath = Path.Combine(path, $"{stationName} {DateTime.Now.ToString("yyyy.MM.dd")} - {sessionNumber}.html");
 
             try
             {
@@ -351,9 +387,19 @@ namespace CheckboxStation.Services
             }
             catch (Exception ex)
             {
-                _logger.Error(ex, "Error while generating verification HTMLreport");
+                _logger.LogError(ex, "Error while generating verification HTMLreport");
                 throw ex;
             }
+        }
+
+        private async Task TryGetAppinstance()
+        {
+            await _settingsApi.GetAppInstanceSettings().MatchAsync(
+                           appInstanceResponse =>
+                           {
+                               _appInstance = appInstanceResponse;
+                               return Task.CompletedTask;
+                           }, erorResponse => { return Task.CompletedTask; });
         }
     }
 }

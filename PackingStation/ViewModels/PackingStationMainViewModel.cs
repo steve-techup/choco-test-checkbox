@@ -386,7 +386,7 @@ namespace PackingStation.ViewModels
                                                     Quantity = 0,
                                                     CanPackManually = false,
                                                     DescriptionId = instrument.Description_ID,
-                                                    PackedInstruments = new List<Instrument_RFID> { instrument }
+                                                    PackedInstruments = new List<Instrument_RFID> {instrument}
                                                 });
                                         }
                                     }

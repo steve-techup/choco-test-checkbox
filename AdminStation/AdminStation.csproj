@@ -85,6 +85,9 @@
   <PropertyGroup>
     <StartupObject>AdminStation.Program</StartupObject>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>CaretagApplicationIcon.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Accessibility" />
     <Reference Include="Microsoft.CSharp" />
@@ -288,6 +291,7 @@
     </Compile>
     <EmbeddedResource Include="Views\Assets\CostCentersView.resx">
       <DependentUpon>CostCentersView.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Assets\CSVImport.resx">
       <DependentUpon>CSVImport.cs</DependentUpon>
@@ -491,6 +495,9 @@
     <PackageReference Include="MiniExcel">
       <Version>1.30.0</Version>
     </PackageReference>
+    <PackageReference Include="NurApiDotNet">
+      <Version>1.9.17</Version>
+    </PackageReference>
     <PackageReference Include="OctaneSDK">
       <Version>4.1.0</Version>
     </PackageReference>
@@ -539,6 +546,12 @@
   <ItemGroup>
     <None Include="Resources\xlsx-file-icon.svg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CaretagApplicationIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CaretagApplicationIcon.ico" />
+  </ItemGroup>
   <Target Name="CopyJsonFiles" AfterTargets="Build">
     <Message Text="Executing CopyJsonFiles task" Importance="High" />
     <Copy SourceFiles="@(JsonFiles);" DestinationFolder="$(TargetDir)" />
@@ -552,7 +565,7 @@
   </PropertyGroup>
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties Reactor_Enabled="1" Reactor_Commands="" Reactor_Project="" Reactor_Configuration="Release" Reactor_Output="&lt;AssemblyLocation&gt;\&lt;AssemblyFileName&gt;" Reactor_Deploy="0" appsettings_1user_1json__JsonSchema="https://cdn.jsdelivr.net/gh/roadrunner-server/roadrunner@latest/schemas/config/2.0.schema.json" />
+      <UserProperties appsettings_1user_1json__JsonSchema="https://cdn.jsdelivr.net/gh/roadrunner-server/roadrunner@latest/schemas/config/2.0.schema.json" Reactor_Deploy="0" Reactor_Output="&lt;AssemblyLocation&gt;\&lt;AssemblyFileName&gt;" Reactor_Configuration="Release" Reactor_Project="" Reactor_Commands="" Reactor_Enabled="1" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>

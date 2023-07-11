@@ -63,9 +63,9 @@ namespace CheckboxStation.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon Knowledge_Hub_TransP {
+        internal static System.Drawing.Icon CaretagApplicationIcon {
             get {
-                object obj = ResourceManager.GetObject("Knowledge_Hub_TransP", resourceCulture);
+                object obj = ResourceManager.GetObject("CaretagApplicationIcon", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }

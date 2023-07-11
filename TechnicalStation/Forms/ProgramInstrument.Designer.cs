@@ -56,6 +56,8 @@
             this.lotTextBox = new System.Windows.Forms.TextBox();
             this.lotLabel = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.sterilizationCartRadioButton = new System.Windows.Forms.RadioButton();
+            this.trolleyRadioButton = new System.Windows.Forms.RadioButton();
             this.containerRadioButton = new System.Windows.Forms.RadioButton();
             this.trayRadioButton = new System.Windows.Forms.RadioButton();
             this.instrumentRadioButton = new System.Windows.Forms.RadioButton();
@@ -101,8 +103,8 @@
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.LightGray;
-            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
             this.tableLayoutPanel1.Controls.Add(this.TopTitle, 0, 0);
+            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             // 
             // TopTitle
@@ -190,6 +192,7 @@
             resources.ApplyResources(this.instrumentReadGroupBox, "instrumentReadGroupBox");
             this.instrumentReadGroupBox.Name = "instrumentReadGroupBox";
             this.instrumentReadGroupBox.TabStop = false;
+            this.instrumentReadGroupBox.Resize += new System.EventHandler(this.instrumentReadGroupBox_Resize);
             // 
             // programTagAccessPasswordLabel
             // 
@@ -253,6 +256,8 @@
             // 
             resources.ApplyResources(this.productionDateTextBox, "productionDateTextBox");
             this.productionDateTextBox.Name = "productionDateTextBox";
+            this.productionDateTextBox.Enter += new System.EventHandler(this.textBox_Enter);
+            this.productionDateTextBox.Leave += new System.EventHandler(this.textBox_Leave);
             // 
             // extraDataLabel
             // 
@@ -268,6 +273,8 @@
             // 
             resources.ApplyResources(this.lotTextBox, "lotTextBox");
             this.lotTextBox.Name = "lotTextBox";
+            this.lotTextBox.Enter += new System.EventHandler(this.textBox_Enter);
+            this.lotTextBox.Leave += new System.EventHandler(this.textBox_Leave);
             // 
             // lotLabel
             // 
@@ -276,12 +283,28 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.sterilizationCartRadioButton);
+            this.groupBox1.Controls.Add(this.trolleyRadioButton);
             this.groupBox1.Controls.Add(this.containerRadioButton);
             this.groupBox1.Controls.Add(this.trayRadioButton);
             this.groupBox1.Controls.Add(this.instrumentRadioButton);
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
+            // 
+            // sterilizationCartRadioButton
+            // 
+            resources.ApplyResources(this.sterilizationCartRadioButton, "sterilizationCartRadioButton");
+            this.sterilizationCartRadioButton.Name = "sterilizationCartRadioButton";
+            this.sterilizationCartRadioButton.TabStop = true;
+            this.sterilizationCartRadioButton.UseVisualStyleBackColor = true;
+            // 
+            // trolleyRadioButton
+            // 
+            resources.ApplyResources(this.trolleyRadioButton, "trolleyRadioButton");
+            this.trolleyRadioButton.Name = "trolleyRadioButton";
+            this.trolleyRadioButton.TabStop = true;
+            this.trolleyRadioButton.UseVisualStyleBackColor = true;
             // 
             // containerRadioButton
             // 
@@ -350,6 +373,7 @@
             resources.ApplyResources(this.instrumentTypeSearchTextBox, "instrumentTypeSearchTextBox");
             this.instrumentTypeSearchTextBox.Name = "instrumentTypeSearchTextBox";
             this.instrumentTypeSearchTextBox.TextChanged += new System.EventHandler(this.instrumentTypeSearchTextBox_TextChanged);
+            this.instrumentTypeSearchTextBox.Enter += new System.EventHandler(this.textBox_Enter);
             this.instrumentTypeSearchTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.instrumentTypeSearchTextBox_KeyPress);
             this.instrumentTypeSearchTextBox.Leave += new System.EventHandler(this.instrumentTypeSearchTextBox_Leave);
             // 
@@ -485,5 +509,7 @@
         private System.Windows.Forms.Label lotLabel;
         private System.Windows.Forms.Label productiondDateHintLabel;
         private System.Windows.Forms.TextBox productionDateTextBox;
+        private System.Windows.Forms.RadioButton trolleyRadioButton;
+        private System.Windows.Forms.RadioButton sterilizationCartRadioButton;
     }
 }

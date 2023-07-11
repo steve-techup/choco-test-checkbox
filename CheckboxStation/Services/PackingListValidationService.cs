@@ -197,9 +197,9 @@ namespace CheckboxStation.Services
             return result;
         }
 
-        public virtual List<Tray_PackList> GetUnpackedPacklistItems(Tray_Description tray, string trayEpcNr)
+        public virtual async Task<List<Tray_PackList>> GetUnpackedPacklistItems(Tray_Description tray, string trayEpcNr)
         {
-            return _packingListService.GetUnpackedPacklistItems(tray, trayEpcNr);
+            return await _packingListService.GetUnpackedPacklistItems(tray, trayEpcNr);
         }
 
 

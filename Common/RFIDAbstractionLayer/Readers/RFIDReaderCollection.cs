@@ -40,6 +40,11 @@ namespace RFIDAbstractionLayer.Readers
         {
             Readers = _rfidReaderFactory.ConnectAll(_config);
         }
+        public virtual void ConnectAll(RfIdConfig config)
+        {
+            _logger.Information("ConnectAll executed");
+            Readers = _rfidReaderFactory.ConnectAll(config);
+        }
 
         public virtual void DisconnectAll()
         {
@@ -128,6 +133,7 @@ namespace RFIDAbstractionLayer.Readers
 
         public virtual void UnsubscribeAll()
         {
+            _logger.Information("UnsubscribeAll executed");
             Readers.ForEach(reader => reader.UnsubscribeAll());
             Subscribers = 0;
         }

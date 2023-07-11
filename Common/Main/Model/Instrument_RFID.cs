@@ -3,6 +3,7 @@ using Main.Model.PackingList.Validation;
 
 namespace Caretag_Class.Model
 {
+    using Caretag.Contracts.Enums;
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
@@ -53,6 +54,9 @@ namespace Caretag_Class.Model
         public ICollection<ValidatedPackingListLineItem> ValidatedPackingListLineItems { get; set; }
         public DateTime? InstrumentProductionDate { get; set; }
         public string? LotNumber { get; set; }
+
+        public TagType TagType { get; set; }
+        public AssetClassType AssetClassType { get; set; }
 
         public string getDescription()
         {

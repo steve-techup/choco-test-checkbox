@@ -4,6 +4,8 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using Caretag_Class.Model;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Main.Model.PackingList.Validation
 {
@@ -31,6 +33,7 @@ namespace Main.Model.PackingList.Validation
         public DateTime Timestamp { get; set; }
         public string Location { get; set; }
         public int? TrayId { get; set; }
+        public List<Instrument_RFID> InstrumentLifecycleRfids { get; set; }
 
         public virtual PackingListState Result { get; set; }
 

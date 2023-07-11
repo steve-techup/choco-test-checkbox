@@ -61,6 +61,15 @@ namespace TechnicalStation {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Click on &quot;Link Asset&quot; to change the type, or &quot;Restart&quot; to scan a new RFID tag..
+        /// </summary>
+        internal static string ActiveAssetOptions {
+            get {
+                return ResourceManager.GetString("ActiveAssetOptions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to An error occurred when trying to connect to the database.
         /// </summary>
         internal static string An_error_occurred_when_trying_to_connect_to_the_database {
@@ -728,6 +737,33 @@ namespace TechnicalStation {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Login failed! Please check your internet connection..
+        /// </summary>
+        internal static string ApiLoginFailed {
+            get {
+                return ResourceManager.GetString("ApiLoginFailed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AppInstanceId is missing. Please ensure that the configuration contains an AppData section containing the AppInstanceId and restart the application..
+        /// </summary>
+        internal static string AppinstanceIdMissing {
+            get {
+                return ResourceManager.GetString("AppinstanceIdMissing", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Article SKU.
+        /// </summary>
+        internal static string ArticleSKU {
+            get {
+                return ResourceManager.GetString("ArticleSKU", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Asset is already a container..
         /// </summary>
         internal static string AssetIsContainer {
@@ -782,11 +818,29 @@ namespace TechnicalStation {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Cannot change asset type to sterilization cart. If the asset was programmed by mistake, it must be reset..
+        /// </summary>
+        internal static string CannotChangeAssetTypeToSterilizationCart {
+            get {
+                return ResourceManager.GetString("CannotChangeAssetTypeToSterilizationCart", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Cannot change asset type to tray. If the asset was programmed by mistake, it must be reset..
         /// </summary>
         internal static string CannotChangeAssetTypeToTray {
             get {
                 return ResourceManager.GetString("CannotChangeAssetTypeToTray", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cannot change asset type to surgical trolley. If the asset was programmed by mistake, it must be reset..
+        /// </summary>
+        internal static string CannotChangeAssetTypeToTrolley {
+            get {
+                return ResourceManager.GetString("CannotChangeAssetTypeToTrolley", resourceCulture);
             }
         }
         
@@ -944,6 +998,15 @@ namespace TechnicalStation {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Description.
+        /// </summary>
+        internal static string Description {
+            get {
+                return ResourceManager.GetString("Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Dot Net Version ... is NOT Okay.
         /// </summary>
         internal static string Dot_Net_Version_____is_NOT_Okay {
@@ -1025,6 +1088,15 @@ namespace TechnicalStation {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to An error occurred when trying to fetch instument info. Please try again!.
+        /// </summary>
+        internal static string ErrorGettingAssetInfo {
+            get {
+                return ResourceManager.GetString("ErrorGettingAssetInfo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Error resetting tag..
         /// </summary>
         internal static string ErrorResettingTag {
@@ -1089,6 +1161,15 @@ namespace TechnicalStation {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Click on &quot;Restart&quot; to scan a new RFID tag.
+        /// </summary>
+        internal static string InactiveAssetOptions {
+            get {
+                return ResourceManager.GetString("InactiveAssetOptions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Information for ALL Users - Last 30 Days.
         /// </summary>
         internal static string Information_for_ALL_Users___Last_30_Days {
@@ -1112,6 +1193,24 @@ namespace TechnicalStation {
         internal static string InstrumentSaved {
             get {
                 return ResourceManager.GetString("InstrumentSaved", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error while saving instrument. Please try again!.
+        /// </summary>
+        internal static string InstrumentSaveError {
+            get {
+                return ResourceManager.GetString("InstrumentSaveError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to An error occurred while searching for instrument type. Please try again!.
+        /// </summary>
+        internal static string InstrumentTypeSearchError {
+            get {
+                return ResourceManager.GetString("InstrumentTypeSearchError", resourceCulture);
             }
         }
         
@@ -1197,6 +1296,42 @@ namespace TechnicalStation {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Lot no.
+        /// </summary>
+        internal static string LotNo {
+            get {
+                return ResourceManager.GetString("LotNo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Manufacturer.
+        /// </summary>
+        internal static string Manufacturer {
+            get {
+                return ResourceManager.GetString("Manufacturer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Manufacturing date.
+        /// </summary>
+        internal static string ManufacturingDate {
+            get {
+                return ResourceManager.GetString("ManufacturingDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Name.
+        /// </summary>
+        internal static string Name {
+            get {
+                return ResourceManager.GetString("Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to No Service Vendor EXIST !   Please Correct.
         /// </summary>
         internal static string No_Service_Vendor_EXIST_____Please_Correct {
@@ -1251,7 +1386,7 @@ namespace TechnicalStation {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Tag matches GS1 prefix but is not recognized as an instrument or tray or container. Click &apos;next&apos; to set asset type..
+        ///   Looks up a localized string similar to Tag matches GS1 prefix but is not recognized as an instrument or tray or container. Click on &quot;Link Asset&quot; to set asset type, or &quot;Restart&quot; to scan a new RFID tag..
         /// </summary>
         internal static string NotRecognizedPrefix {
             get {
@@ -1333,6 +1468,15 @@ namespace TechnicalStation {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The RFID tag has been successfully read, with the next details:.
+        /// </summary>
+        internal static string RfidSuccessfullyScanned {
+            get {
+                return ResourceManager.GetString("RfidSuccessfullyScanned", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Rules_Station.
         /// </summary>
         internal static string Rules_Station {
@@ -1387,6 +1531,15 @@ namespace TechnicalStation {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Status.
+        /// </summary>
+        internal static string Status {
+            get {
+                return ResourceManager.GetString("Status", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Status for Sent To Service : .
         /// </summary>
         internal static string Status_for_Sent_To_Service__ {
@@ -1414,6 +1567,15 @@ namespace TechnicalStation {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Sterilization cart saved.
+        /// </summary>
+        internal static string SterilizationCartSaved {
+            get {
+                return ResourceManager.GetString("SterilizationCartSaved", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Successfully read tag!.
         /// </summary>
         internal static string SuccessfullyTag {
@@ -1432,7 +1594,7 @@ namespace TechnicalStation {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Tag does not match GS1 prefix. This is most likely because it is fresh from the factory and should be programmed. Press &apos;next&apos; to program..
+        ///   Looks up a localized string similar to Tag does not match GS1 prefix. This is most likely because it is fresh from the factory and should be programmed. Click on &quot;Program Tag&quot; to program it..
         /// </summary>
         internal static string TagDoesNotMatchGS1Prefix {
             get {
@@ -1545,6 +1707,33 @@ namespace TechnicalStation {
         internal static string TraySaved {
             get {
                 return ResourceManager.GetString("TraySaved", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Surgical trolley saved!.
+        /// </summary>
+        internal static string TrolleySaved {
+            get {
+                return ResourceManager.GetString("TrolleySaved", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Type.
+        /// </summary>
+        internal static string Type {
+            get {
+                return ResourceManager.GetString("Type", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Writing to tag skipped when using simulator.
+        /// </summary>
+        internal static string WritingToTagSkippedWhenUsingSimulator {
+            get {
+                return ResourceManager.GetString("WritingToTagSkippedWhenUsingSimulator", resourceCulture);
             }
         }
         

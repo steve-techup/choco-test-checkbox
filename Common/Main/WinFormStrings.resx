@@ -120,6 +120,21 @@
   <data name="An error occurred while performing database operations related to servicing the instrument" xml:space="preserve">
     <value>An error occurred while performing database operations related to servicing the instrument</value>
   </data>
+  <data name="DialogButtonAll" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="DialogButtonCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="DialogButtonNo" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="DialogButtonOk" xml:space="preserve">
+    <value>Ok</value>
+  </data>
+  <data name="DialogButtonYes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
   <data name="File To Import does NOT Exits Or EMPTY !!!" xml:space="preserve">
     <value>File To Import does NOT Exits Or EMPTY !!!</value>
   </data>

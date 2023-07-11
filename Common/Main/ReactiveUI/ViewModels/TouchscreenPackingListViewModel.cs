@@ -6,10 +6,12 @@ using System.Linq;
 using System.Reactive.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using Caretag_Class.Model;
 using Caretag_Class.My.Resources;
 using Caretag_Class.Repositories;
 using DynamicData;
+using Main.Model.Assets;
 using ReactiveUI;
 
 namespace Caretag_Class.ReactiveUI.ViewModels
@@ -19,6 +21,9 @@ namespace Caretag_Class.ReactiveUI.ViewModels
         private readonly SourceCache<PackingListRowViewModel, string> _packingListRows; //identified by description id as PK
         private readonly BindingList<PackingListRowViewModel> _packingListRowsCollection = new();
         public BindingList<PackingListRowViewModel> PackingListRowsCollection => _packingListRowsCollection;
+
+        public delegate void ManuallyAddedAssetEventHandler(object sender, ManuallyAddedAsset e);
+        public event ManuallyAddedAssetEventHandler OnManuallyAddedAsset;
 
         public enum Mode
         {
@@ -56,6 +61,11 @@ namespace Caretag_Class.ReactiveUI.ViewModels
             _packingListRows.Clear();
         }
 
+        public void AddManually(ManuallyAddedAsset asset)
+        {
+            OnManuallyAddedAsset(this, asset);
+        }
+
         private PackingListRowViewModel _selectedPackingListRow;
         public PackingListRowViewModel SelectedPackingListRow
         {
@@ -68,6 +78,34 @@ namespace Caretag_Class.ReactiveUI.ViewModels
         {
             get => _mode;
             set => this.RaiseAndSetIfChanged(ref _mode, value);
+        }
+
+        private string _desctiptionIdColumnHeaderText;
+        public string DescriptionIdColumnHeaderText
+        {
+            get => _desctiptionIdColumnHeaderText;
+            set => this.RaiseAndSetIfChanged(ref _desctiptionIdColumnHeaderText, value);
+        }
+
+        private string _descriptionColumnHeaderText;
+        public string DescriptionColumnHeaderText
+        {
+            get => _descriptionColumnHeaderText;
+            set => this.RaiseAndSetIfChanged(ref _descriptionColumnHeaderText, value);
+        }
+
+        private string _brandColumnHeaderText;
+        public string BrandColumnHeaderText
+        {
+            get => _brandColumnHeaderText;
+            set => this.RaiseAndSetIfChanged(ref _brandColumnHeaderText, value);
+        }
+
+        private string _quantityColumnHeaderText;
+        public string QuantityColumnHeaderText
+        {
+            get => _quantityColumnHeaderText;
+            set => this.RaiseAndSetIfChanged(ref _quantityColumnHeaderText, value);
         }
 
         public class PackingListRowViewModel
@@ -85,6 +123,8 @@ namespace Caretag_Class.ReactiveUI.ViewModels
             public List<Instrument_RFID> PackedInstruments { get; set; } = new();
             public Image? ManualImageColumnValue => CanPackManually ? Resources.edit_round_line_icon_sm : _emptyImage;
             public bool NotPacked { get; set; }
+            public List<int> AssetIds { get; set; }
+            public int AssetTypeId { get; set; }
         }
 
     }

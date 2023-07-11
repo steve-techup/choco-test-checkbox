@@ -7,5 +7,6 @@
         public ConnectionStrings ConnectionStrings { get; set; }
         public string ReportingInVerificationMode { get; set; }
         public string VerificationReportFilePath { get; set; }
+        public bool AllowScanAllOnClick { get; set; }
     }
 }

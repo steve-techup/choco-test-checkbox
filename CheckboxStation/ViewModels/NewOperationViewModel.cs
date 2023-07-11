@@ -1,5 +1,9 @@
-﻿using System.Reactive;
+﻿using System;
+using System.Reactive;
+using System.Threading;
+using OnScreenKeyboard;
 using ReactiveUI;
+using UIControls;
 
 namespace CheckboxStation.ViewModels
 {
@@ -44,5 +48,6 @@ namespace CheckboxStation.ViewModels
         public bool CreateSuccess { get; set; }
         public ReactiveCommand<Unit, Unit> Ok { get; private set; }
         public ReactiveCommand<Unit, Unit> Cancel { get; private set; }
+        public ReactiveCommand<EventArgs, Unit> ShowKeyboard { get; private set; }
     }
 }

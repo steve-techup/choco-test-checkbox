@@ -143,6 +143,14 @@ namespace Tests.CheckboxStation
             var firstHalfInstruments = CreateInstruments(firstHalf);
             var secondHalfInstruments = CreateInstruments(secondHalf);
 
+            var appSettings = _fixture.Create<AppSettingsBase>();
+            appSettings.UseApi = false;
+            _fixture.Inject(appSettings);
+
+            var checkboxSettings = _fixture.Create<CheckboxStationAppSettings>();
+            checkboxSettings.Features.VerificationEnabled = false;
+            _fixture.Inject(checkboxSettings);
+
             SetupInstrumentServiceWithInstruments(firstHalfInstruments.ToList(), firstHalf);
 
             SetupTrayWithPacklistCheckboxService(firstHalfInstruments.Concat(secondHalfInstruments).ToList());
@@ -185,7 +193,15 @@ namespace Tests.CheckboxStation
             var tagsScanned = GetRandomSubset(totalTags, n-m);
             var singleInstruments = CreateInstruments(totalTags.Take(n-m).ToList());
             var duplicatedInstruments = CreateInstruments(totalTags.Skip(n-m).ToList());
-            
+
+            var appSettings = _fixture.Create<AppSettingsBase>();
+            appSettings.UseApi = false;
+            _fixture.Inject(appSettings);
+
+            var checkboxSettings = _fixture.Create<CheckboxStationAppSettings>();
+            checkboxSettings.Features.VerificationEnabled = false;
+            _fixture.Inject(checkboxSettings);
+
             var totalInstruments = singleInstruments.Append(duplicatedInstruments).ToList();
             var instrumentsScanned = totalInstruments.Where(i => tagsScanned.Contains(i.EPC_Nr));
 
@@ -228,6 +244,10 @@ namespace Tests.CheckboxStation
             var checkboxSettings = _fixture.Create<CheckboxStationAppSettings>();
             checkboxSettings.Features.VerificationEnabled = false;
             _fixture.Inject(checkboxSettings);
+
+            var appSettings = _fixture.Create<AppSettingsBase>();
+            appSettings.UseApi = false;
+            _fixture.Inject(appSettings);
 
             SetupInstrumentServiceWithInstruments(instrumentsScanned.ToList(), tagsScanned);
             var tray = SetupTrayWithPacklistCheckboxService(totalInstruments);
@@ -292,6 +312,15 @@ namespace Tests.CheckboxStation
         [InlineData(100, 10)]
         public void Validate_Tray_Without_Duplicates_Extra_Instruments_Error(int n, int m)
         {
+
+            var appSettings = _fixture.Create<AppSettingsBase>();
+            appSettings.UseApi = false;
+            _fixture.Inject(appSettings);
+
+            var checkboxSettings = _fixture.Create<CheckboxStationAppSettings>();
+            checkboxSettings.Features.VerificationEnabled = false;
+            _fixture.Inject(checkboxSettings);
+
             var tags = GetTags(n+m);
             var instruments = CreateInstrumentsWithHalfDuplicates(tags.Take(n).ToList());
             var excesssInstruments = CreateInstrumentsWithHalfDuplicates(tags.Skip(n).Take(m).ToList());            
@@ -327,6 +356,13 @@ namespace Tests.CheckboxStation
         [InlineData(100)]
         public void Validate_Tray_With_Duplicates_OK(int n)
         {
+            var appSettings = _fixture.Create<AppSettingsBase>();
+            appSettings.UseApi = false;
+            _fixture.Inject(appSettings);
+
+            var checkboxSettings = _fixture.Create<CheckboxStationAppSettings>();
+            checkboxSettings.Features.VerificationEnabled = false;
+            _fixture.Inject(checkboxSettings);
 
             var tags = GetTags(n);
             var instruments = CreateInstrumentsWithHalfDuplicates(tags);

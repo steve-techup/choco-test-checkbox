@@ -16,6 +16,7 @@ namespace RFIDAbstractionLayer.TagEncoding
         public static uint Filter = 0;
         public static uint Partition = 5;
         public const uint CaretagPrefix = 0x56FE72;
+        public int? AssetTagId { get; set; }
 
         public bool ValidCaretagEPC = true;
         
