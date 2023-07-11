@@ -40,7 +40,7 @@ jobs:
         shell: cmd
 
       - name: Restore NuGet Packages
-        run: dotnet restore Caretag.sln
+        run: dotnet restore Caretag.sln --configfile NuGet.Config
 
       - name: Inject Git Version for Checkbox Station
         run: |
