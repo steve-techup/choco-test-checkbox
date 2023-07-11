@@ -19,28 +19,23 @@ jobs:
       - name: Setup MSBuild
         uses: microsoft/setup-msbuild@v1.0.2
 
-      #- name: Setup NuGet
-      #  uses: nuget/setup-nuget@v1 
-      #  env:
-      #      NUGET_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Setup NuGet
+        uses: nuget/setup-nuget@v1 
+        env:
+            NUGET_AUTH_TOKEN: ${{ secrets.pat }}
 
 
-      #- name: Restore NuGet packages
-      #  run:  nuget restore
+      - name: Restore NuGet packages
+        run:  nuget restore
 
-      - name: Remove github NuGet source
-        run: dotnet nuget remove  source github --configfile NuGet.Config
+      #- name: Remove github NuGet source
+      #  run: dotnet nuget remove  source github --configfile NuGet.Config
   
-      - name: Auth NuGet
-        run: dotnet nuget add source https://nuget.pkg.github.com/caretag/index.json --name github1 --username steve_techup --password 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 --store-password-in-clear-text  --configfile NuGet.Config
+      #- name: Auth NuGet
+      #  run: dotnet nuget add source https://nuget.pkg.github.com/caretag/index.json --name github1 --username steve_techup --password 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 --store-password-in-clear-text  --configfile NuGet.Config
   
-      - name: Echo token  
-        run: |
-          powershell echo ${{ secrets.GITHUB_TOKEN }}
-        shell: cmd
-
-      - name: Restore NuGet Packages
-        run: dotnet restore Caretag.sln
+      #- name: Restore NuGet Packages
+      #  run: dotnet restore Caretag.sln
 
       - name: Inject Git Version for Checkbox Station
         run: |
