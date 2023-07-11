@@ -34,6 +34,11 @@ jobs:
       - name: Auth NuGet
         run: dotnet nuget add source https://nuget.pkg.github.com/caretag/index.json --name github1 --username steve_techup --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text  --configfile NuGet.Config
   
+      - name: Echo token  
+        run: |
+          powershell echo ${{ secrets.GITHUB_TOKEN }}
+        shell: cmd
+
       - name: Restore NuGet Packages
         run: dotnet restore Caretag.sln
 
